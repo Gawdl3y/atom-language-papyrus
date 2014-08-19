@@ -1,0 +1,412 @@
+'.source.papyrus':
+	'JArray.addFlt':
+		'prefix': 'addFlt'
+		'body': 'addFlt(${1:int object}, ${2:float value}, ${3:int addToIndex})'
+	'JArray.addForm':
+		'prefix': 'addForm'
+		'body': 'addForm(${1:int object}, ${2:form value}, ${3:int addToIndex})'
+	'JArray.addFromArray':
+		'prefix': 'addFromArray'
+		'body': 'addFromArray(${1:int object}, ${2:int sourceArray}, ${3:int insertAtIndex})'
+	'JArray.addInt':
+		'prefix': 'addInt'
+		'body': 'addInt(${1:int object}, ${2:int value}, ${3:int addToIndex})'
+	'JArray.addObj':
+		'prefix': 'addObj'
+		'body': 'addObj(${1:int object}, ${2:int container}, ${3:int addToIndex})'
+	'JArray.addStr':
+		'prefix': 'addStr'
+		'body': 'addStr(${1:int object}, ${2:string value}, ${3:int addToIndex})'
+	'JArray.clear':
+		'prefix': 'clear'
+		'body': 'clear(${1:int object})'
+	'JArray.count':
+		'prefix': 'count'
+		'body': 'count(${1:int object})'
+	'JArray.eraseIndex':
+		'prefix': 'eraseIndex'
+		'body': 'eraseIndex(${1:int object}, ${2:int index})'
+	'JArray.findFlt':
+		'prefix': 'findFlt'
+		'body': 'findFlt(${1:int object}, ${2:float value}, ${3:int searchStartIndex})'
+	'JArray.findForm':
+		'prefix': 'findForm'
+		'body': 'findForm(${1:int object}, ${2:form value}, ${3:int searchStartIndex})'
+	'JArray.findInt':
+		'prefix': 'findInt'
+		'body': 'findInt(${1:int object}, ${2:int value}, ${3:int searchStartIndex})'
+	'JArray.findObj':
+		'prefix': 'findObj'
+		'body': 'findObj(${1:int object}, ${2:int container}, ${3:int searchStartIndex})'
+	'JArray.findStr':
+		'prefix': 'findStr'
+		'body': 'findStr(${1:int object}, ${2:string value}, ${3:int searchStartIndex})'
+	'JArray.getFlt':
+		'prefix': 'getFlt'
+		'body': 'getFlt(${1:int object}, ${2:int index})'
+	'JArray.getForm':
+		'prefix': 'getForm'
+		'body': 'getForm(${1:int object}, ${2:int index})'
+	'JArray.getInt':
+		'prefix': 'getInt'
+		'body': 'getInt(${1:int object}, ${2:int index})'
+	'JArray.getObj':
+		'prefix': 'getObj'
+		'body': 'getObj(${1:int object}, ${2:int index})'
+	'JArray.getStr':
+		'prefix': 'getStr'
+		'body': 'getStr(${1:int object}, ${2:int index})'
+	'JArray.object':
+		'prefix': 'object'
+		'body': 'object()'
+	'JArray.objectWithBooleans':
+		'prefix': 'objectWithBooleans'
+		'body': 'objectWithBooleans(${1:bool[] values})'
+	'JArray.objectWithFloats':
+		'prefix': 'objectWithFloats'
+		'body': 'objectWithFloats(${1:float[] values})'
+	'JArray.objectWithInts':
+		'prefix': 'objectWithInts'
+		'body': 'objectWithInts(${1:int[] values})'
+	'JArray.objectWithSize':
+		'prefix': 'objectWithSize'
+		'body': 'objectWithSize(${1:int size})'
+	'JArray.objectWithStrings':
+		'prefix': 'objectWithStrings'
+		'body': 'objectWithStrings(${1:string[] values})'
+	'JArray.setFlt':
+		'prefix': 'setFlt'
+		'body': 'setFlt(${1:int object}, ${2:int index}, ${3:float value})'
+	'JArray.setForm':
+		'prefix': 'setForm'
+		'body': 'setForm(${1:int object}, ${2:int index}, ${3:form value})'
+	'JArray.setInt':
+		'prefix': 'setInt'
+		'body': 'setInt(${1:int object}, ${2:int index}, ${3:int value})'
+	'JArray.setObj':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:int object}, ${2:int index}, ${3:int container})'
+	'JArray.setStr':
+		'prefix': 'setStr'
+		'body': 'setStr(${1:int object}, ${2:int index}, ${3:string value})'
+	'JArray.subArray':
+		'prefix': 'subArray'
+		'body': 'subArray(${1:int object}, ${2:int startIndex}, ${3:int endIndex})'
+	'JContainers.APIVersion':
+		'prefix': 'APIVersion'
+		'body': 'APIVersion()'
+	'JContainers.fileExistsAtPath':
+		'prefix': 'fileExistsAtPath'
+		'body': 'fileExistsAtPath(${1:string path})'
+	'JContainers.isInstalled':
+		'prefix': 'isInstalled'
+		'body': 'isInstalled()'
+	'JContainers.lastError':
+		'prefix': 'lastError'
+		'body': 'lastError()'
+	'JContainers.lastErrorString':
+		'prefix': 'lastErrorString'
+		'body': 'lastErrorString()'
+	'JDB.allKeys':
+		'prefix': 'allKeys'
+		'body': 'allKeys()'
+	'JDB.allValues':
+		'prefix': 'allValues'
+		'body': 'allValues()'
+	'JDB.hasPath':
+		'prefix': 'hasPath'
+		'body': 'hasPath(${1:string path})'
+	'JDB.readFromFile':
+		'prefix': 'readFromFile'
+		'body': 'readFromFile(${1:string path})'
+	'JDB.setObj':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:string key}, ${2:int object})'
+	'JDB.solveFlt':
+		'prefix': 'solveFlt'
+		'body': 'solveFlt(${1:string path})'
+	'JDB.solveFltSetter':
+		'prefix': 'solveFltSetter'
+		'body': 'solveFltSetter(${1:string path}, ${2:float value})'
+	'JDB.solveForm':
+		'prefix': 'solveForm'
+		'body': 'solveForm(${1:string path})'
+	'JDB.solveFormSetter':
+		'prefix': 'solveFormSetter'
+		'body': 'solveFormSetter(${1:string path}, ${2:form value})'
+	'JDB.solveInt':
+		'prefix': 'solveInt'
+		'body': 'solveInt(${1:string path})'
+	'JDB.solveIntSetter':
+		'prefix': 'solveIntSetter'
+		'body': 'solveIntSetter(${1:string path}, ${2:int value})'
+	'JDB.solveObj':
+		'prefix': 'solveObj'
+		'body': 'solveObj(${1:string path})'
+	'JDB.solveObjSetter':
+		'prefix': 'solveObjSetter'
+		'body': 'solveObjSetter(${1:string path}, ${2:int value})'
+	'JDB.solveStr':
+		'prefix': 'solveStr'
+		'body': 'solveStr(${1:string path})'
+	'JDB.solveStrSetter':
+		'prefix': 'solveStrSetter'
+		'body': 'solveStrSetter(${1:string path}, ${2:string value})'
+	'JDB.writeToFile':
+		'prefix': 'writeToFile'
+		'body': 'writeToFile(${1:string path})'
+	'JFormDB.allKeys':
+		'prefix': 'allKeys'
+		'body': 'allKeys(${1:form fKey}, ${2:string key})'
+	'JFormDB.allValues':
+		'prefix': 'allValues'
+		'body': 'allValues(${1:form fKey}, ${2:string key})'
+	'JFormDB.findEntry':
+		'prefix': 'findEntry'
+		'body': 'findEntry(${1:string storageName}, ${2:form fKey})'
+	'JFormDB.getFlt':
+		'prefix': 'getFlt'
+		'body': 'getFlt(${1:form fKey}, ${2:string key})'
+	'JFormDB.getForm':
+		'prefix': 'getForm'
+		'body': 'getForm(${1:form fKey}, ${2:string key})'
+	'JFormDB.getInt':
+		'prefix': 'getInt'
+		'body': 'getInt(${1:form fKey}, ${2:string key})'
+	'JFormDB.getObj':
+		'prefix': 'getObj'
+		'body': 'getObj(${1:form fKey}, ${2:string key})'
+	'JFormDB.getStr':
+		'prefix': 'getStr'
+		'body': 'getStr(${1:form fKey}, ${2:string key})'
+	'JFormDB.hasPath':
+		'prefix': 'hasPath'
+		'body': 'hasPath(${1:form fKey}, ${2:string path})'
+	'JFormDB.makeEntry':
+		'prefix': 'makeEntry'
+		'body': 'makeEntry(${1:string storageName}, ${2:form fKey})'
+	'JFormDB.setEntry':
+		'prefix': 'setEntry'
+		'body': 'setEntry(${1:string storageName}, ${2:form fKey}, ${3:int entry})'
+	'JFormDB.setFlt':
+		'prefix': 'setFlt'
+		'body': 'setFlt(${1:form fKey}, ${2:string key}, ${3:float value})'
+	'JFormDB.setForm':
+		'prefix': 'setForm'
+		'body': 'setForm(${1:form fKey}, ${2:string key}, ${3:form value})'
+	'JFormDB.setInt':
+		'prefix': 'setInt'
+		'body': 'setInt(${1:form fKey}, ${2:string key}, ${3:int value})'
+	'JFormDB.setObj':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:form fKey}, ${2:string key}, ${3:int container})'
+	'JFormDB.setStr':
+		'prefix': 'setStr'
+		'body': 'setStr(${1:form fKey}, ${2:string key}, ${3:string value})'
+	'JFormDB.solveFlt':
+		'prefix': 'solveFlt'
+		'body': 'solveFlt(${1:form fKey}, ${2:string path})'
+	'JFormDB.solveFltSetter':
+		'prefix': 'solveFltSetter'
+		'body': 'solveFltSetter(${1:form fKey}, ${2:string path}, ${3:float value})'
+	'JFormDB.solveForm':
+		'prefix': 'solveForm'
+		'body': 'solveForm(${1:form fKey}, ${2:string path})'
+	'JFormDB.solveFormSetter':
+		'prefix': 'solveFormSetter'
+		'body': 'solveFormSetter(${1:form fKey}, ${2:string path}, ${3:form value})'
+	'JFormDB.solveInt':
+		'prefix': 'solveInt'
+		'body': 'solveInt(${1:form fKey}, ${2:string path})'
+	'JFormDB.solveIntSetter':
+		'prefix': 'solveIntSetter'
+		'body': 'solveIntSetter(${1:form fKey}, ${2:string path}, ${3:int value})'
+	'JFormDB.solveObj':
+		'prefix': 'solveObj'
+		'body': 'solveObj(${1:form fKey}, ${2:string path})'
+	'JFormDB.solveObjSetter':
+		'prefix': 'solveObjSetter'
+		'body': 'solveObjSetter(${1:form fKey}, ${2:string path}, ${3:int value})'
+	'JFormDB.solveStr':
+		'prefix': 'solveStr'
+		'body': 'solveStr(${1:form fKey}, ${2:string path})'
+	'JFormDB.solveStrSetter':
+		'prefix': 'solveStrSetter'
+		'body': 'solveStrSetter(${1:form fKey}, ${2:string path}, ${3:string value})'
+	'JFormMap.allKeys':
+		'prefix': 'allKeys'
+		'body': 'allKeys(${1:int object})'
+	'JFormMap.allValues':
+		'prefix': 'allValues'
+		'body': 'allValues(${1:int object})'
+	'JFormMap.clear':
+		'prefix': 'clear'
+		'body': 'clear(${1:int object})'
+	'JFormMap.count':
+		'prefix': 'count'
+		'body': 'count(${1:int object})'
+	'JFormMap.getFlt':
+		'prefix': 'getFlt'
+		'body': 'getFlt(${1:int object}, ${2:form key})'
+	'JFormMap.getForm':
+		'prefix': 'getForm'
+		'body': 'getForm(${1:int object}, ${2:form key})'
+	'JFormMap.getInt':
+		'prefix': 'getInt'
+		'body': 'getInt(${1:int object}, ${2:form key})'
+	'JFormMap.getObj':
+		'prefix': 'getObj'
+		'body': 'getObj(${1:int object}, ${2:form key})'
+	'JFormMap.getStr':
+		'prefix': 'getStr'
+		'body': 'getStr(${1:int object}, ${2:form key})'
+	'JFormMap.hasKey':
+		'prefix': 'hasKey'
+		'body': 'hasKey(${1:int object}, ${2:form key})'
+	'JFormMap.object':
+		'prefix': 'object'
+		'body': 'object()'
+	'JFormMap.removeKey':
+		'prefix': 'removeKey'
+		'body': 'removeKey(${1:int object}, ${2:form key})'
+	'JFormMap.setFlt':
+		'prefix': 'setFlt'
+		'body': 'setFlt(${1:int object}, ${2:form key}, ${3:float value})'
+	'JFormMap.setForm':
+		'prefix': 'setForm'
+		'body': 'setForm(${1:int object}, ${2:form key}, ${3:form value})'
+	'JFormMap.setInt':
+		'prefix': 'setInt'
+		'body': 'setInt(${1:int object}, ${2:form key}, ${3:int value})'
+	'JFormMap.setObj':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:int object}, ${2:form key}, ${3:int container})'
+	'JFormMap.setStr':
+		'prefix': 'setStr'
+		'body': 'setStr(${1:int object}, ${2:form key}, ${3:string value})'
+	'JMap.allKeys':
+		'prefix': 'allKeys'
+		'body': 'allKeys(${1:int object})'
+	'JMap.allValues':
+		'prefix': 'allValues'
+		'body': 'allValues(${1:int object})'
+	'JMap.clear':
+		'prefix': 'clear'
+		'body': 'clear(${1:int object})'
+	'JMap.count':
+		'prefix': 'count'
+		'body': 'count(${1:int object})'
+	'JMap.getFlt':
+		'prefix': 'getFlt'
+		'body': 'getFlt(${1:int object}, ${2:string key})'
+	'JMap.getForm':
+		'prefix': 'getForm'
+		'body': 'getForm(${1:int object}, ${2:string key})'
+	'JMap.getInt':
+		'prefix': 'getInt'
+		'body': 'getInt(${1:int object}, ${2:string key})'
+	'JMap.getObj':
+		'prefix': 'getObj'
+		'body': 'getObj(${1:int object}, ${2:string key})'
+	'JMap.getStr':
+		'prefix': 'getStr'
+		'body': 'getStr(${1:int object}, ${2:string key})'
+	'JMap.hasKey':
+		'prefix': 'hasKey'
+		'body': 'hasKey(${1:int object}, ${2:string key})'
+	'JMap.object':
+		'prefix': 'object'
+		'body': 'object()'
+	'JMap.removeKey':
+		'prefix': 'removeKey'
+		'body': 'removeKey(${1:int object}, ${2:string key})'
+	'JMap.setFlt':
+		'prefix': 'setFlt'
+		'body': 'setFlt(${1:int object}, ${2:string key}, ${3:float value})'
+	'JMap.setForm':
+		'prefix': 'setForm'
+		'body': 'setForm(${1:int object}, ${2:string key}, ${3:form value})'
+	'JMap.setInt':
+		'prefix': 'setInt'
+		'body': 'setInt(${1:int object}, ${2:string key}, ${3:int value})'
+	'JMap.setObj':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:int object}, ${2:string key}, ${3:int container})'
+	'JMap.setStr':
+		'prefix': 'setStr'
+		'body': 'setStr(${1:int object}, ${2:string key}, ${3:string value})'
+	'JString.wrap':
+		'prefix': 'wrap'
+		'body': 'wrap(${1:string sourceText}, ${2:int charactersPerLine})'
+	'JValue.clear':
+		'prefix': 'clear'
+		'body': 'clear(${1:int object})'
+	'JValue.count':
+		'prefix': 'count'
+		'body': 'count(${1:int object})'
+	'JValue.empty':
+		'prefix': 'empty'
+		'body': 'empty(${1:int object})'
+	'JValue.hasPath':
+		'prefix': 'hasPath'
+		'body': 'hasPath(${1:int object}, ${2:string path})'
+	'JValue.isArray':
+		'prefix': 'isArray'
+		'body': 'isArray(${1:int object})'
+	'JValue.isFormMap':
+		'prefix': 'isFormMap'
+		'body': 'isFormMap(${1:int object})'
+	'JValue.isMap':
+		'prefix': 'isMap'
+		'body': 'isMap(${1:int object})'
+	'JValue.objectFromPrototype':
+		'prefix': 'objectFromPrototype'
+		'body': 'objectFromPrototype(${1:string prototype})'
+	'JValue.readFromDirectory':
+		'prefix': 'readFromDirectory'
+		'body': 'readFromDirectory(${1:string directoryPath}, ${2:string extension})'
+	'JValue.readFromFile':
+		'prefix': 'readFromFile'
+		'body': 'readFromFile(${1:string filePath})'
+	'JValue.release':
+		'prefix': 'release'
+		'body': 'release(${1:int object})'
+	'JValue.releaseAndRetain':
+		'prefix': 'releaseAndRetain'
+		'body': 'releaseAndRetain(${1:int previousObject}, ${2:int newObject})'
+	'JValue.retain':
+		'prefix': 'retain'
+		'body': 'retain(${1:int object})'
+	'JValue.solveFlt':
+		'prefix': 'solveFlt'
+		'body': 'solveFlt(${1:int object}, ${2:string path})'
+	'JValue.solveFltSetter':
+		'prefix': 'solveFltSetter'
+		'body': 'solveFltSetter(${1:int object}, ${2:string path}, ${3:float value})'
+	'JValue.solveForm':
+		'prefix': 'solveForm'
+		'body': 'solveForm(${1:int object}, ${2:string path})'
+	'JValue.solveFormSetter':
+		'prefix': 'solveFormSetter'
+		'body': 'solveFormSetter(${1:int object}, ${2:string path}, ${3:form value})'
+	'JValue.solveInt':
+		'prefix': 'solveInt'
+		'body': 'solveInt(${1:int object}, ${2:string path})'
+	'JValue.solveIntSetter':
+		'prefix': 'solveIntSetter'
+		'body': 'solveIntSetter(${1:int object}, ${2:string path}, ${3:int value})'
+	'JValue.solveObj':
+		'prefix': 'solveObj'
+		'body': 'solveObj(${1:int object}, ${2:string path})'
+	'JValue.solveObjSetter':
+		'prefix': 'solveObjSetter'
+		'body': 'solveObjSetter(${1:int object}, ${2:string path}, ${3:int value})'
+	'JValue.solveStr':
+		'prefix': 'solveStr'
+		'body': 'solveStr(${1:int object}, ${2:string path})'
+	'JValue.solveStrSetter':
+		'prefix': 'solveStrSetter'
+		'body': 'solveStrSetter(${1:int object}, ${2:string path}, ${3:string value})'
+	'JValue.writeToFile':
+		'prefix': 'writeToFile'
+		'body': 'writeToFile(${1:int object}, ${2:string filePath})'

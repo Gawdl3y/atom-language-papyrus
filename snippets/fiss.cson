@@ -1,0 +1,82 @@
+'.source.papyrus':
+	'FISSFactory.getFISS':
+		'prefix': 'getFISS'
+		'body': 'getFISS()'
+	'FISSInterface.beginLoad':
+		'prefix': 'beginLoad'
+		'body': 'beginLoad(${1:string filename})'
+	'FISSInterface.beginSave':
+		'prefix': 'beginSave'
+		'body': 'beginSave(${1:string filename}, ${2:string modname})'
+	'FISSInterface.blockInput':
+		'prefix': 'blockInput'
+		'body': 'blockInput(${1:bool block})'
+	'FISSInterface.endLoad':
+		'prefix': 'endLoad'
+		'body': 'endLoad()'
+	'FISSInterface.endSave':
+		'prefix': 'endSave'
+		'body': 'endSave()'
+	'FISSInterface.forceClose':
+		'prefix': 'forceClose'
+		'body': 'forceClose()'
+	'FISSInterface.getAllFilenamesInFolder':
+		'prefix': 'getAllFilenamesInFolder'
+		'body': 'getAllFilenamesInFolder(${1:string path})'
+	'FISSInterface.getInterfaceVersion':
+		'prefix': 'getInterfaceVersion'
+		'body': 'getInterfaceVersion()'
+	'FISSInterface.getModName':
+		'prefix': 'getModName'
+		'body': 'getModName()'
+	'FISSInterface.getVersion':
+		'prefix': 'getVersion'
+		'body': 'getVersion()'
+	'FISSInterface.hideInfoText':
+		'prefix': 'hideInfoText'
+		'body': 'hideInfoText(${1:bool hide})'
+	'FISSInterface.loadBool':
+		'prefix': 'loadBool'
+		'body': 'loadBool(${1:string name})'
+	'FISSInterface.loadFloat':
+		'prefix': 'loadFloat'
+		'body': 'loadFloat(${1:string name})'
+	'FISSInterface.loadInt':
+		'prefix': 'loadInt'
+		'body': 'loadInt(${1:string name})'
+	'FISSInterface.loadString':
+		'prefix': 'loadString'
+		'body': 'loadString(${1:string name})'
+	'FISSInterface.requestFilename':
+		'prefix': 'requestFilename'
+		'body': 'requestFilename()'
+	'FISSInterface.requestUserInput':
+		'prefix': 'requestUserInput'
+		'body': 'requestUserInput(${1:string titleMessage})'
+	'FISSInterface.saveBool':
+		'prefix': 'saveBool'
+		'body': 'saveBool(${1:string name}, ${2:bool b})'
+	'FISSInterface.saveFloat':
+		'prefix': 'saveFloat'
+		'body': 'saveFloat(${1:string name}, ${2:float f})'
+	'FISSInterface.saveInt':
+		'prefix': 'saveInt'
+		'body': 'saveInt(${1:string name}, ${2:int i})'
+	'FISSInterface.saveString':
+		'prefix': 'saveString'
+		'body': 'saveString(${1:string name}, ${2:string s})'
+	'FISSInterface.saveTextToTxtFile':
+		'prefix': 'saveTextToTxtFile'
+		'body': 'saveTextToTxtFile(${1:string filename}, ${2:string text})'
+	'FISSInterface.setInfoText':
+		'prefix': 'setInfoText'
+		'body': 'setInfoText(${1:string text})'
+	'FISSInterface.setText':
+		'prefix': 'setText'
+		'body': 'setText(${1:string text})'
+	'FISSInterface.setTheme':
+		'prefix': 'setTheme'
+		'body': 'setTheme(${1:string fissInputTheme}, ${2:float fissInputScale}, ${3:float fissInputAplha})'
+	'FISSInterface.setTitle':
+		'prefix': 'setTitle'
+		'body': 'setTitle(${1:string title})'

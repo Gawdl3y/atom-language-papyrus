@@ -1,0 +1,203 @@
+'scopeName': 'source.papyrus-assembly'
+'fileTypes': ['pas']
+'name': 'Papyrus Assembly'
+'patterns': [
+	{
+		'include': '#string'
+	}
+	{
+		'include': '#numeric'
+	}
+	{
+		'include': '#boolean'
+	}
+	{
+		'include': '#semicolon-comment'
+	}
+	{
+		'begin': '(?i)^\\s*(\\.)(function)\\s+(\\w+)((\\s+\\w+)*)'
+		'beginCaptures':
+			'3':
+				'name': 'entity.name.function.papyrus-assembly'
+
+			'4':
+				'name': 'storage.modifier.papyrus-assembly'
+		'end': '(?i)^\\s*(\\.)(endFunction)\\b'
+		'patterns': [
+			{
+				'captures':
+					'3':
+						'name': 'storage.type.papyrus-assembly'
+				'match': '(?i)^\\s*(\\.)(return)\\s+(\\w+)'
+			}
+			{
+				'include': '$self'
+			}
+		]
+	}
+	{
+		'captures':
+			'4':
+				'name': 'variable.other.temp.papyrus-assembly'
+			'5':
+				'name': 'variable.other.papyrus-assembly'
+			'6':
+				'name': 'storage.type.papyrus-assembly'
+			'8':
+				'name': 'storage.modifier.papyrus-assembly'
+		'match': '(?i)^\\s*(\\.)(variable|local|property)\\s+((::\\w+)|(\\w+))\\s+(\\w+)(\\s+(\\w+))?'
+	}
+	{
+		'captures':
+			'4':
+				'name': 'variable.parameter.temp.papyrus-assembly'
+			'5':
+				'name': 'variable.parameter.papyrus-assembly'
+			'6':
+				'name': 'storage.type.papyrus-assembly'
+		'match': '(?i)^\\s*(\\.)(param)\\s+((::\\w+)|(\\w+))\\s+(\\w+)'
+	}
+	{
+		'begin': '(?i)^\\s*(\\.)(code)\\b'
+		'end': '(?i)^\\s*(\\.)(endCode)\\b'
+		'patterns': [
+			'include': '#code'
+		]
+	}
+]
+'repository':
+	'numeric':
+		'match': '\\b[\\d.]+\\b'
+		'name': 'constant.numeric.papyrus-assembly'
+	'boolean':
+		'match': '(?i)\\b(true|false)\\b'
+		'name': 'constant.language.bool.papyrus-assembly'
+	'semicolon-comment':
+		'match': ';.*$'
+		'name': 'comment.line.semicolon.code.papyrus-assembly'
+	'string':
+		'end': '"'
+		'name': 'string.quoted.double.papyrus-assembly'
+		'begin': '"'
+		'patterns': [
+			'match': '\\\\.'
+			'name': 'constant.character.escape.papyrus-assembly'
+		]
+	'code':
+		'patterns': [
+			{
+				'include': '#string'
+			}
+			{
+				'include': '#numeric'
+			}
+			{
+				'include': '#boolean'
+			}
+			{
+				'include': '#semicolon-comment'
+			}
+			{
+				'match': '(?i)(::(state|NoneVar|temp\\d+)|\\bself)\\b'
+				'name': 'variable.language.code.papyrus-assembly'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.control.return.code.papyrus-assembly'
+				'match': '(?i)^\\s*(RETURN)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.callmethod.code.papyrus-assembly'
+				'match': '(?i)^\\s*(CALLMETHOD)\\s+(\\w+)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.callmethod.code.papyrus-assembly'
+					'2':
+						'name': 'storage.type.code.papyrus-assembly'
+				'match': '(?i)^\\s*(CALLSTATIC)\\s+(\\w+)\\s+(\\w+)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.callparent.code.papyrus-assembly'
+				'match': '(?i)^\\s*(CALLPARENT)\\s+(\\w+)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.code.papyrus-assembly'
+				'match': '(?i)^\\s*(PROPGET|PROPSET)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.cast.code.papyrus-assembly'
+				'match': '(?i)^\\s*(CAST)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.arithmetic.code.papyrus-assembly'
+				'match': '(?i)^\\s*((I|F)ADD|(I|F)SUBTRACT|(I|F)NEGATE|(I|F)MULTIPLY|(I|F)DIVIDE|IMOD)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.logical.code.papyrus-assembly'
+				'match': '(?i)^\\s*(COMPAREEQ|COMPAREGT(E)?|COMPARELT(E)?|NOT)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.string.code.papyrus-assembly'
+				'match': '(?i)^\\s*(STRCAT)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.assignment.code.papyrus-assembly'
+				'match': '(?i)^\\s*(ASSIGN)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.operator.array.code.papyrus-assembly'
+				'match': '(?i)^\\s*(ARRAYCREATE|ARRAYLENGTH|ARRAYGETELEMENT|ARRAYSETELEMENT|ARRAYFINDELEMENT|ARRAYRFINDELEMENT)\\b'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.control.jump.code.papyrus-assembly'
+					'2':
+						'name': 'entity.name.tag.alabel.code.papyrus-assembly'
+				'match': '(?i)^\\s*(JUMP)\\s+(\\w+)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.control.jump.code.papyrus-assembly'
+
+					'4':
+						'name': 'entity.name.tag.alabel.code.papyrus-assembly'
+				'match': '(?i)^\\s*(JUMP(F|T))\\s+(\\S+)\\s+(\\w+)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'entity.name.tag.alabel.code.papyrus-assembly'
+					'2':
+						'name': 'keyword.control.alabel.code.papyrus-assembly'
+				'match': '(?i)^\\s*(\\w+)(:)'
+			}
+			{
+				'captures':
+					'1':
+						'name': 'keyword.code.papyrus-assembly'
+				'match': '(?i)\\b(RETURN|CALLMETHOD|CALLSTATIC|CALLPARENT|PROPGET|PROPSET|CAST|(I|F)ADD|(I|F)SUBTRACT|(I|F)NEGATE|(I|F)MULTIPLY|(I|F)DIVIDE|IMOD|COMPAREEQ|COMPAREGT(E)?|COMPARELT(E)?|NOT|STRCAT|ASSIGN|ARRAYCREATE|ARRAYLENGTH|ARRAYGETELEMENT|ARRAYSETELEMENT|ARRAYFINDELEMENT|ARRAYRFINDELEMENT|JUMP|JUMP(F|T))\\b'
+			}
+		]

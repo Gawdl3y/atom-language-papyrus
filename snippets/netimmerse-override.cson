@@ -1,0 +1,256 @@
+'.source.papyrus':
+	'NiOverride.AddNodeOverrideBool':
+		'prefix': 'AddNodeOverrideBool'
+		'body': 'AddNodeOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:bool value}, ${7:bool persist})'
+	'NiOverride.AddNodeOverrideFloat':
+		'prefix': 'AddNodeOverrideFloat'
+		'body': 'AddNodeOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:float value}, ${7:bool persist})'
+	'NiOverride.AddNodeOverrideInt':
+		'prefix': 'AddNodeOverrideInt'
+		'body': 'AddNodeOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:int value}, ${7:bool persist})'
+	'NiOverride.AddNodeOverrideString':
+		'prefix': 'AddNodeOverrideString'
+		'body': 'AddNodeOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:string value}, ${7:bool persist})'
+	'NiOverride.AddNodeOverrideTextureSet':
+		'prefix': 'AddNodeOverrideTextureSet'
+		'body': 'AddNodeOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:TextureSet value}, ${7:bool persist})'
+	'NiOverride.AddOverlays':
+		'prefix': 'AddOverlays'
+		'body': 'AddOverlays(${1:ObjectReference ref})'
+	'NiOverride.AddOverrideBool':
+		'prefix': 'AddOverrideBool'
+		'body': 'AddOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:bool value}, ${9:bool persist})'
+	'NiOverride.AddOverrideFloat':
+		'prefix': 'AddOverrideFloat'
+		'body': 'AddOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:float value}, ${9:bool persist})'
+	'NiOverride.AddOverrideInt':
+		'prefix': 'AddOverrideInt'
+		'body': 'AddOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:int value}, ${9:bool persist})'
+	'NiOverride.AddOverrideString':
+		'prefix': 'AddOverrideString'
+		'body': 'AddOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:string value}, ${9:bool persist})'
+	'NiOverride.AddOverrideTextureSet':
+		'prefix': 'AddOverrideTextureSet'
+		'body': 'AddOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:TextureSet value}, ${9:bool persist})'
+	'NiOverride.AddWeaponOverrideBool':
+		'prefix': 'AddWeaponOverrideBool'
+		'body': 'AddWeaponOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:bool value}, ${9:bool persist})'
+	'NiOverride.AddWeaponOverrideFloat':
+		'prefix': 'AddWeaponOverrideFloat'
+		'body': 'AddWeaponOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:float value}, ${9:bool persist})'
+	'NiOverride.AddWeaponOverrideInt':
+		'prefix': 'AddWeaponOverrideInt'
+		'body': 'AddWeaponOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:int value}, ${9:bool persist})'
+	'NiOverride.AddWeaponOverrideString':
+		'prefix': 'AddWeaponOverrideString'
+		'body': 'AddWeaponOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:string value}, ${9:bool persist})'
+	'NiOverride.AddWeaponOverrideTextureSet':
+		'prefix': 'AddWeaponOverrideTextureSet'
+		'body': 'AddWeaponOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:TextureSet value}, ${9:bool persist})'
+	'NiOverride.ApplyNodeOverrides':
+		'prefix': 'ApplyNodeOverrides'
+		'body': 'ApplyNodeOverrides(${1:ObjectReference ref})'
+	'NiOverride.ApplyOverrides':
+		'prefix': 'ApplyOverrides'
+		'body': 'ApplyOverrides(${1:ObjectReference ref})'
+	'NiOverride.ApplyWeaponOverrides':
+		'prefix': 'ApplyWeaponOverrides'
+		'body': 'ApplyWeaponOverrides(${1:ObjectReference ref})'
+	'NiOverride.ClearMorphs':
+		'prefix': 'ClearMorphs'
+		'body': 'ClearMorphs(${1:ObjectReference ref})'
+	'NiOverride.ClearMorphValue':
+		'prefix': 'ClearMorphValue'
+		'body': 'ClearMorphValue(${1:ObjectReference ref}, ${2:string morphName})'
+	'NiOverride.GetMorphValue':
+		'prefix': 'GetMorphValue'
+		'body': 'GetMorphValue(${1:ObjectReference ref}, ${2:string morphName})'
+	'NiOverride.GetNodeOverrideBool':
+		'prefix': 'GetNodeOverrideBool'
+		'body': 'GetNodeOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodeOverrideFloat':
+		'prefix': 'GetNodeOverrideFloat'
+		'body': 'GetNodeOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodeOverrideInt':
+		'prefix': 'GetNodeOverrideInt'
+		'body': 'GetNodeOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodeOverrideString':
+		'prefix': 'GetNodeOverrideString'
+		'body': 'GetNodeOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodeOverrideTextureSet':
+		'prefix': 'GetNodeOverrideTextureSet'
+		'body': 'GetNodeOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodePropertyBool':
+		'prefix': 'GetNodePropertyBool'
+		'body': 'GetNodePropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodePropertyFloat':
+		'prefix': 'GetNodePropertyFloat'
+		'body': 'GetNodePropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodePropertyInt':
+		'prefix': 'GetNodePropertyInt'
+		'body': 'GetNodePropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNodePropertyString':
+		'prefix': 'GetNodePropertyString'
+		'body': 'GetNodePropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetNumBodyOverlays':
+		'prefix': 'GetNumBodyOverlays'
+		'body': 'GetNumBodyOverlays()'
+	'NiOverride.GetNumFaceOverlays':
+		'prefix': 'GetNumFaceOverlays'
+		'body': 'GetNumFaceOverlays()'
+	'NiOverride.GetNumFeetOverlays':
+		'prefix': 'GetNumFeetOverlays'
+		'body': 'GetNumFeetOverlays()'
+	'NiOverride.GetNumHandOverlays':
+		'prefix': 'GetNumHandOverlays'
+		'body': 'GetNumHandOverlays()'
+	'NiOverride.GetNumSpellBodyOverlays':
+		'prefix': 'GetNumSpellBodyOverlays'
+		'body': 'GetNumSpellBodyOverlays()'
+	'NiOverride.GetNumSpellFaceOverlays':
+		'prefix': 'GetNumSpellFaceOverlays'
+		'body': 'GetNumSpellFaceOverlays()'
+	'NiOverride.GetNumSpellFeetOverlays':
+		'prefix': 'GetNumSpellFeetOverlays'
+		'body': 'GetNumSpellFeetOverlays()'
+	'NiOverride.GetNumSpellHandOverlays':
+		'prefix': 'GetNumSpellHandOverlays'
+		'body': 'GetNumSpellHandOverlays()'
+	'NiOverride.GetOverrideBool':
+		'prefix': 'GetOverrideBool'
+		'body': 'GetOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetOverrideFloat':
+		'prefix': 'GetOverrideFloat'
+		'body': 'GetOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetOverrideInt':
+		'prefix': 'GetOverrideInt'
+		'body': 'GetOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetOverrideString':
+		'prefix': 'GetOverrideString'
+		'body': 'GetOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetOverrideTextureSet':
+		'prefix': 'GetOverrideTextureSet'
+		'body': 'GetOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetPropertyBool':
+		'prefix': 'GetPropertyBool'
+		'body': 'GetPropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetPropertyFloat':
+		'prefix': 'GetPropertyFloat'
+		'body': 'GetPropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetPropertyInt':
+		'prefix': 'GetPropertyInt'
+		'body': 'GetPropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetPropertyString':
+		'prefix': 'GetPropertyString'
+		'body': 'GetPropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponOverrideBool':
+		'prefix': 'GetWeaponOverrideBool'
+		'body': 'GetWeaponOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponOverrideFloat':
+		'prefix': 'GetWeaponOverrideFloat'
+		'body': 'GetWeaponOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponOverrideInt':
+		'prefix': 'GetWeaponOverrideInt'
+		'body': 'GetWeaponOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponOverrideString':
+		'prefix': 'GetWeaponOverrideString'
+		'body': 'GetWeaponOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponOverrideTextureSet':
+		'prefix': 'GetWeaponOverrideTextureSet'
+		'body': 'GetWeaponOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.GetWeaponPropertyBool':
+		'prefix': 'GetWeaponPropertyBool'
+		'body': 'GetWeaponPropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetWeaponPropertyFloat':
+		'prefix': 'GetWeaponPropertyFloat'
+		'body': 'GetWeaponPropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetWeaponPropertyInt':
+		'prefix': 'GetWeaponPropertyInt'
+		'body': 'GetWeaponPropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetWeaponPropertyString':
+		'prefix': 'GetWeaponPropertyString'
+		'body': 'GetWeaponPropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
+	'NiOverride.HasArmorAddonNode':
+		'prefix': 'HasArmorAddonNode'
+		'body': 'HasArmorAddonNode(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:bool debug = false})'
+	'NiOverride.HasNodeOverride':
+		'prefix': 'HasNodeOverride'
+		'body': 'HasNodeOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.HasOverlays':
+		'prefix': 'HasOverlays'
+		'body': 'HasOverlays(${1:ObjectReference ref})'
+	'NiOverride.HasOverride':
+		'prefix': 'HasOverride'
+		'body': 'HasOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.HasWeaponNode':
+		'prefix': 'HasWeaponNode'
+		'body': 'HasWeaponNode(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:bool debug = false})'
+	'NiOverride.HasWeaponOverride':
+		'prefix': 'HasWeaponOverride'
+		'body': 'HasWeaponOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.RemoveAllArmorAddonNodeOverrides':
+		'prefix': 'RemoveAllArmorAddonNodeOverrides'
+		'body': 'RemoveAllArmorAddonNodeOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node})'
+	'NiOverride.RemoveAllArmorAddonOverrides':
+		'prefix': 'RemoveAllArmorAddonOverrides'
+		'body': 'RemoveAllArmorAddonOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon})'
+	'NiOverride.RemoveAllArmorOverrides':
+		'prefix': 'RemoveAllArmorOverrides'
+		'body': 'RemoveAllArmorOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm})'
+	'NiOverride.RemoveAllNodeNameOverrides':
+		'prefix': 'RemoveAllNodeNameOverrides'
+		'body': 'RemoveAllNodeNameOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node})'
+	'NiOverride.RemoveAllNodeOverrides':
+		'prefix': 'RemoveAllNodeOverrides'
+		'body': 'RemoveAllNodeOverrides()'
+	'NiOverride.RemoveAllOverrides':
+		'prefix': 'RemoveAllOverrides'
+		'body': 'RemoveAllOverrides()'
+	'NiOverride.RemoveAllReferenceNodeOverrides':
+		'prefix': 'RemoveAllReferenceNodeOverrides'
+		'body': 'RemoveAllReferenceNodeOverrides(${1:ObjectReference ref})'
+	'NiOverride.RemoveAllReferenceOverrides':
+		'prefix': 'RemoveAllReferenceOverrides'
+		'body': 'RemoveAllReferenceOverrides(${1:ObjectReference ref})'
+	'NiOverride.RemoveAllReferenceWeaponOverrides':
+		'prefix': 'RemoveAllReferenceWeaponOverrides'
+		'body': 'RemoveAllReferenceWeaponOverrides(${1:ObjectReference ref})'
+	'NiOverride.RemoveAllWeaponBasedOverrides':
+		'prefix': 'RemoveAllWeaponBasedOverrides'
+		'body': 'RemoveAllWeaponBasedOverrides()'
+	'NiOverride.RemoveAllWeaponNodeOverrides':
+		'prefix': 'RemoveAllWeaponNodeOverrides'
+		'body': 'RemoveAllWeaponNodeOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node})'
+	'NiOverride.RemoveAllWeaponOverrides':
+		'prefix': 'RemoveAllWeaponOverrides'
+		'body': 'RemoveAllWeaponOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap})'
+	'NiOverride.RemoveNodeOverride':
+		'prefix': 'RemoveNodeOverride'
+		'body': 'RemoveNodeOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
+	'NiOverride.RemoveOverlays':
+		'prefix': 'RemoveOverlays'
+		'body': 'RemoveOverlays(${1:ObjectReference ref})'
+	'NiOverride.RemoveOverride':
+		'prefix': 'RemoveOverride'
+		'body': 'RemoveOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.RemoveWeaponOverride':
+		'prefix': 'RemoveWeaponOverride'
+		'body': 'RemoveWeaponOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
+	'NiOverride.RevertHeadOverlay':
+		'prefix': 'RevertHeadOverlay'
+		'body': 'RevertHeadOverlay(${1:ObjectReference ref}, ${2:string nodeName}, ${3:int partType}, ${4:int shaderType})'
+	'NiOverride.RevertHeadOverlays':
+		'prefix': 'RevertHeadOverlays'
+		'body': 'RevertHeadOverlays(${1:ObjectReference ref})'
+	'NiOverride.RevertOverlay':
+		'prefix': 'RevertOverlay'
+		'body': 'RevertOverlay(${1:ObjectReference ref}, ${2:string nodeName}, ${3:int armorMask}, ${4:int addonMask})'
+	'NiOverride.RevertOverlays':
+		'prefix': 'RevertOverlays'
+		'body': 'RevertOverlays(${1:ObjectReference ref})'
+	'NiOverride.SetMorphValue':
+		'prefix': 'SetMorphValue'
+		'body': 'SetMorphValue(${1:ObjectReference ref}, ${2:string morphName}, ${3:float value})'
+	'NiOverride.UpdateModelWeight':
+		'prefix': 'UpdateModelWeight'
+		'body': 'UpdateModelWeight(${1:ObjectReference ref})'

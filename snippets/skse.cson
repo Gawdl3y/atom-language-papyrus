@@ -1,0 +1,2422 @@
+'.source.papyrus':
+	'ActiveMagicEffect.GetDuration':
+		'prefix': 'GetDuration'
+		'body': 'GetDuration()'
+	'ActiveMagicEffect.GetMagnitude':
+		'prefix': 'GetMagnitude'
+		'body': 'GetMagnitude()'
+	'ActiveMagicEffect.GetTimeElapsed':
+		'prefix': 'GetTimeElapsed'
+		'body': 'GetTimeElapsed()'
+	'ActiveMagicEffect.OnActorAction':
+		'prefix': 'OnActorAction'
+		'body': 'Event OnActorAction(${1:int actionType}, ${2:Actor akActor}, ${3:Form source}, ${4:int slot})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnControlDown':
+		'prefix': 'OnControlDown'
+		'body': 'Event OnControlDown(${1:string control})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnControlUp':
+		'prefix': 'OnControlUp'
+		'body': 'Event OnControlUp(${1:string control}, ${2:float holdTime})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnCrosshairRefChange':
+		'prefix': 'OnCrosshairRefChange'
+		'body': 'Event OnCrosshairRefChange(${1:ObjectReference ref})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnKeyDown':
+		'prefix': 'OnKeyDown'
+		'body': 'Event OnKeyDown(${1:int keyCode})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnKeyUp':
+		'prefix': 'OnKeyUp'
+		'body': 'Event OnKeyUp(${1:int keyCode}, ${2:float holdTime})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnMenuClose':
+		'prefix': 'OnMenuClose'
+		'body': 'Event OnMenuClose(${1:string menuName})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnMenuOpen':
+		'prefix': 'OnMenuOpen'
+		'body': 'Event OnMenuOpen(${1:string menuName})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPlayerCameraState':
+		'prefix': 'OnPlayerCameraState'
+		'body': 'Event OnPlayerCameraState(${1:int oldState}, ${2:int newState})\n${0}\nEndEvent'
+	'ActiveMagicEffect.RegisterForActorAction':
+		'prefix': 'RegisterForActorAction'
+		'body': 'RegisterForActorAction(${1:int actionType})'
+	'ActiveMagicEffect.RegisterForCameraState':
+		'prefix': 'RegisterForCameraState'
+		'body': 'RegisterForCameraState()'
+	'ActiveMagicEffect.RegisterForControl':
+		'prefix': 'RegisterForControl'
+		'body': 'RegisterForControl(${1:string control})'
+	'ActiveMagicEffect.RegisterForCrosshairRef':
+		'prefix': 'RegisterForCrosshairRef'
+		'body': 'RegisterForCrosshairRef()'
+	'ActiveMagicEffect.RegisterForKey':
+		'prefix': 'RegisterForKey'
+		'body': 'RegisterForKey(${1:int keyCode})'
+	'ActiveMagicEffect.RegisterForMenu':
+		'prefix': 'RegisterForMenu'
+		'body': 'RegisterForMenu(${1:string menuName})'
+	'ActiveMagicEffect.RegisterForModEvent':
+		'prefix': 'RegisterForModEvent'
+		'body': 'RegisterForModEvent(${1:string eventName}, ${2:string callbackName})'
+	'ActiveMagicEffect.SendModEvent':
+		'prefix': 'SendModEvent'
+		'body': 'SendModEvent(${1:string eventName}, ${2:string strArg}, ${3:float numArg = 0})'
+	'ActiveMagicEffect.UnregisterForActorAction':
+		'prefix': 'UnregisterForActorAction'
+		'body': 'UnregisterForActorAction(${1:int actionType})'
+	'ActiveMagicEffect.UnregisterForAllControls':
+		'prefix': 'UnregisterForAllControls'
+		'body': 'UnregisterForAllControls()'
+	'ActiveMagicEffect.UnregisterForAllKeys':
+		'prefix': 'UnregisterForAllKeys'
+		'body': 'UnregisterForAllKeys()'
+	'ActiveMagicEffect.UnregisterForAllMenus':
+		'prefix': 'UnregisterForAllMenus'
+		'body': 'UnregisterForAllMenus()'
+	'ActiveMagicEffect.UnregisterForAllModEvents':
+		'prefix': 'UnregisterForAllModEvents'
+		'body': 'UnregisterForAllModEvents()'
+	'ActiveMagicEffect.UnregisterForCameraState':
+		'prefix': 'UnregisterForCameraState'
+		'body': 'UnregisterForCameraState()'
+	'ActiveMagicEffect.UnregisterForControl':
+		'prefix': 'UnregisterForControl'
+		'body': 'UnregisterForControl(${1:string control})'
+	'ActiveMagicEffect.UnregisterForCrosshairRef':
+		'prefix': 'UnregisterForCrosshairRef'
+		'body': 'UnregisterForCrosshairRef()'
+	'ActiveMagicEffect.UnregisterForKey':
+		'prefix': 'UnregisterForKey'
+		'body': 'UnregisterForKey(${1:int keyCode})'
+	'ActiveMagicEffect.UnregisterForMenu':
+		'prefix': 'UnregisterForMenu'
+		'body': 'UnregisterForMenu(${1:string menuName})'
+	'ActiveMagicEffect.UnregisterForModEvent':
+		'prefix': 'UnregisterForModEvent'
+		'body': 'UnregisterForModEvent(${1:string eventName})'
+	'Actor.ChangeHeadPart':
+		'prefix': 'ChangeHeadPart'
+		'body': 'ChangeHeadPart(${1:HeadPart hPart})'
+	'Actor.EquipItemById':
+		'prefix': 'EquipItemById'
+		'body': 'EquipItemById(${1:Form item}, ${2:int itemId}, ${3:int equipSlot = 0}, ${4:bool preventUnequip = false}, ${5:bool equipSound = true})'
+	'Actor.EquipItemEx':
+		'prefix': 'EquipItemEx'
+		'body': 'EquipItemEx(${1:Form item}, ${2:int equipSlot = 0}, ${3:bool preventUnequip = false}, ${4:bool equipSound = true})'
+	'Actor.GetEquippedItemId':
+		'prefix': 'GetEquippedItemId'
+		'body': 'GetEquippedItemId(${1:int location})'
+	'Actor.GetEquippedObject':
+		'prefix': 'GetEquippedObject'
+		'body': 'GetEquippedObject(${1:int location})'
+	'Actor.GetFurnitureReference':
+		'prefix': 'GetFurnitureReference'
+		'body': 'GetFurnitureReference()'
+	'Actor.GetNthSpell':
+		'prefix': 'GetNthSpell'
+		'body': 'GetNthSpell(${1:int n})'
+	'Actor.GetSpellCount':
+		'prefix': 'GetSpellCount'
+		'body': 'GetSpellCount()'
+	'Actor.GetWornForm':
+		'prefix': 'GetWornForm'
+		'body': 'GetWornForm(${1:int slotMask})'
+	'Actor.GetWornItemId':
+		'prefix': 'GetWornItemId'
+		'body': 'GetWornItemId(${1:int slotMask})'
+	'Actor.IsAIEnabled':
+		'prefix': 'IsAIEnabled'
+		'body': 'IsAIEnabled()'
+	'Actor.IsSwimming':
+		'prefix': 'IsSwimming'
+		'body': 'IsSwimming()'
+	'Actor.QueueNiNodeUpdate':
+		'prefix': 'QueueNiNodeUpdate'
+		'body': 'QueueNiNodeUpdate()'
+	'Actor.RegenerateHead':
+		'prefix': 'RegenerateHead'
+		'body': 'RegenerateHead()'
+	'Actor.ReplaceHeadPart':
+		'prefix': 'ReplaceHeadPart'
+		'body': 'ReplaceHeadPart(${1:HeadPart oPart}, ${2:HeadPart newPart})'
+	'Actor.ResetExpressionOverrides':
+		'prefix': 'ResetExpressionOverrides'
+		'body': 'ResetExpressionOverrides()'
+	'Actor.SetExpressionModifier':
+		'prefix': 'SetExpressionModifier'
+		'body': 'SetExpressionModifier(${1:int index}, ${2:float value})'
+	'Actor.SetExpressionPhoneme':
+		'prefix': 'SetExpressionPhoneme'
+		'body': 'SetExpressionPhoneme(${1:int index}, ${2:float value})'
+	'Actor.SheatheWeapon':
+		'prefix': 'SheatheWeapon'
+		'body': 'SheatheWeapon()'
+	'Actor.UnequipItemEx':
+		'prefix': 'UnequipItemEx'
+		'body': 'UnequipItemEx(${1:Form item}, ${2:int equipSlot = 0}, ${3:bool preventEquip = false})'
+	'Actor.UpdateWeight':
+		'prefix': 'UpdateWeight'
+		'body': 'UpdateWeight(${1:float neckDelta})'
+	'ActorBase.GetCombatStyle':
+		'prefix': 'GetCombatStyle'
+		'body': 'GetCombatStyle()'
+	'ActorBase.GetFaceMorph':
+		'prefix': 'GetFaceMorph'
+		'body': 'GetFaceMorph(${1:int index})'
+	'ActorBase.GetFacePreset':
+		'prefix': 'GetFacePreset'
+		'body': 'GetFacePreset(${1:int index})'
+	'ActorBase.GetFaceTextureSet':
+		'prefix': 'GetFaceTextureSet'
+		'body': 'GetFaceTextureSet()'
+	'ActorBase.GetHairColor':
+		'prefix': 'GetHairColor'
+		'body': 'GetHairColor()'
+	'ActorBase.GetHeight':
+		'prefix': 'GetHeight'
+		'body': 'GetHeight()'
+	'ActorBase.GetIndexOfHeadPartByType':
+		'prefix': 'GetIndexOfHeadPartByType'
+		'body': 'GetIndexOfHeadPartByType(${1:int type})'
+	'ActorBase.GetIndexOfOverlayHeadPartByType':
+		'prefix': 'GetIndexOfOverlayHeadPartByType'
+		'body': 'GetIndexOfOverlayHeadPartByType(${1:int type})'
+	'ActorBase.GetNthHeadPart':
+		'prefix': 'GetNthHeadPart'
+		'body': 'GetNthHeadPart(${1:int slotPart})'
+	'ActorBase.GetNthOverlayHeadPart':
+		'prefix': 'GetNthOverlayHeadPart'
+		'body': 'GetNthOverlayHeadPart(${1:int slotPart})'
+	'ActorBase.GetNthSpell':
+		'prefix': 'GetNthSpell'
+		'body': 'GetNthSpell(${1:int n})'
+	'ActorBase.GetNumHeadParts':
+		'prefix': 'GetNumHeadParts'
+		'body': 'GetNumHeadParts()'
+	'ActorBase.GetNumOverlayHeadParts':
+		'prefix': 'GetNumOverlayHeadParts'
+		'body': 'GetNumOverlayHeadParts()'
+	'ActorBase.GetOutfit':
+		'prefix': 'GetOutfit'
+		'body': 'GetOutfit(${1:bool bSleepOutfit = false})'
+	'ActorBase.GetSkin':
+		'prefix': 'GetSkin'
+		'body': 'GetSkin()'
+	'ActorBase.GetSkinFar':
+		'prefix': 'GetSkinFar'
+		'body': 'GetSkinFar()'
+	'ActorBase.GetSpellCount':
+		'prefix': 'GetSpellCount'
+		'body': 'GetSpellCount()'
+	'ActorBase.GetTemplate':
+		'prefix': 'GetTemplate'
+		'body': 'GetTemplate()'
+	'ActorBase.GetVoiceType':
+		'prefix': 'GetVoiceType'
+		'body': 'GetVoiceType()'
+	'ActorBase.GetWeight':
+		'prefix': 'GetWeight'
+		'body': 'GetWeight()'
+	'ActorBase.SetClass':
+		'prefix': 'SetClass'
+		'body': 'SetClass(${1:Class c})'
+	'ActorBase.SetCombatStyle':
+		'prefix': 'SetCombatStyle'
+		'body': 'SetCombatStyle(${1:CombatStyle cs})'
+	'ActorBase.SetFaceMorph':
+		'prefix': 'SetFaceMorph'
+		'body': 'SetFaceMorph(${1:float value}, ${2:int index})'
+	'ActorBase.SetFacePreset':
+		'prefix': 'SetFacePreset'
+		'body': 'SetFacePreset(${1:int value}, ${2:int index})'
+	'ActorBase.SetFaceTextureSet':
+		'prefix': 'SetFaceTextureSet'
+		'body': 'SetFaceTextureSet(${1:TextureSet textures})'
+	'ActorBase.SetHairColor':
+		'prefix': 'SetHairColor'
+		'body': 'SetHairColor(${1:ColorForm color})'
+	'ActorBase.SetHeight':
+		'prefix': 'SetHeight'
+		'body': 'SetHeight(${1:float height})'
+	'ActorBase.SetNthHeadPart':
+		'prefix': 'SetNthHeadPart'
+		'body': 'SetNthHeadPart(${1:HeadPart headPart}, ${2:int slotPart})'
+	'ActorBase.SetSkin':
+		'prefix': 'SetSkin'
+		'body': 'SetSkin(${1:Armor skin})'
+	'ActorBase.SetSkinFar':
+		'prefix': 'SetSkinFar'
+		'body': 'SetSkinFar(${1:Armor skin})'
+	'ActorBase.SetVoiceType':
+		'prefix': 'SetVoiceType'
+		'body': 'SetVoiceType(${1:VoiceType nVoice})'
+	'ActorBase.SetWeight':
+		'prefix': 'SetWeight'
+		'body': 'SetWeight(${1:float weight})'
+	'ActorValueInfo.AddSkillExperience':
+		'prefix': 'AddSkillExperience'
+		'body': 'AddSkillExperience(${1:float exp})'
+	'ActorValueInfo.GetActorValueInfoByID':
+		'prefix': 'GetActorValueInfoByID'
+		'body': 'GetActorValueInfoByID(${1:int id})'
+	'ActorValueInfo.GetActorValueInfoByName':
+		'prefix': 'GetActorValueInfoByName'
+		'body': 'GetActorValueInfoByName(${1:string avName})'
+	'ActorValueInfo.GetAVIByID':
+		'prefix': 'GetAVIByID'
+		'body': 'GetAVIByID(${1:int id})'
+	'ActorValueInfo.GetAVIByName':
+		'prefix': 'GetAVIByName'
+		'body': 'GetAVIByName(${1:string avName})'
+	'ActorValueInfo.GetExperienceForLevel':
+		'prefix': 'GetExperienceForLevel'
+		'body': 'GetExperienceForLevel(${1:int currentLevel})'
+	'ActorValueInfo.GetPerkTree':
+		'prefix': 'GetPerkTree'
+		'body': 'GetPerkTree(${1:FormList list}, ${2:Actor akActor = None}, ${3:bool unowned = true}, ${4:bool allRanks = false})'
+	'ActorValueInfo.GetSkillExperience':
+		'prefix': 'GetSkillExperience'
+		'body': 'GetSkillExperience()'
+	'ActorValueInfo.GetSkillImproveMult':
+		'prefix': 'GetSkillImproveMult'
+		'body': 'GetSkillImproveMult()'
+	'ActorValueInfo.GetSkillImproveOffset':
+		'prefix': 'GetSkillImproveOffset'
+		'body': 'GetSkillImproveOffset()'
+	'ActorValueInfo.GetSkillLegendaryLevel':
+		'prefix': 'GetSkillLegendaryLevel'
+		'body': 'GetSkillLegendaryLevel()'
+	'ActorValueInfo.GetSkillOffsetMult':
+		'prefix': 'GetSkillOffsetMult'
+		'body': 'GetSkillOffsetMult()'
+	'ActorValueInfo.GetSkillUseMult':
+		'prefix': 'GetSkillUseMult'
+		'body': 'GetSkillUseMult()'
+	'ActorValueInfo.IsSkill':
+		'prefix': 'IsSkill'
+		'body': 'IsSkill()'
+	'ActorValueInfo.SetSkillExperience':
+		'prefix': 'SetSkillExperience'
+		'body': 'SetSkillExperience(${1:float exp})'
+	'ActorValueInfo.SetSkillImproveMult':
+		'prefix': 'SetSkillImproveMult'
+		'body': 'SetSkillImproveMult(${1:float value})'
+	'ActorValueInfo.SetSkillImproveOffset':
+		'prefix': 'SetSkillImproveOffset'
+		'body': 'SetSkillImproveOffset(${1:float value})'
+	'ActorValueInfo.SetSkillLegendaryLevel':
+		'prefix': 'SetSkillLegendaryLevel'
+		'body': 'SetSkillLegendaryLevel(${1:int level})'
+	'ActorValueInfo.SetSkillOffsetMult':
+		'prefix': 'SetSkillOffsetMult'
+		'body': 'SetSkillOffsetMult(${1:float value})'
+	'ActorValueInfo.SetSkillUseMult':
+		'prefix': 'SetSkillUseMult'
+		'body': 'SetSkillUseMult(${1:float value})'
+	'Alias.GetID':
+		'prefix': 'GetID'
+		'body': 'GetID()'
+	'Alias.GetName':
+		'prefix': 'GetName'
+		'body': 'GetName()'
+	'Alias.OnActorAction':
+		'prefix': 'OnActorAction'
+		'body': 'Event OnActorAction(${1:int actionType}, ${2:Actor akActor}, ${3:Form source}, ${4:int slot})\n${0}\nEndEvent'
+	'Alias.OnControlDown':
+		'prefix': 'OnControlDown'
+		'body': 'Event OnControlDown(${1:string control})\n${0}\nEndEvent'
+	'Alias.OnControlUp':
+		'prefix': 'OnControlUp'
+		'body': 'Event OnControlUp(${1:string control}, ${2:float holdTime})\n${0}\nEndEvent'
+	'Alias.OnCrosshairRefChange':
+		'prefix': 'OnCrosshairRefChange'
+		'body': 'Event OnCrosshairRefChange(${1:ObjectReference ref})\n${0}\nEndEvent'
+	'Alias.OnKeyDown':
+		'prefix': 'OnKeyDown'
+		'body': 'Event OnKeyDown(${1:int keyCode})\n${0}\nEndEvent'
+	'Alias.OnKeyUp':
+		'prefix': 'OnKeyUp'
+		'body': 'Event OnKeyUp(${1:int keyCode}, ${2:float holdTime})\n${0}\nEndEvent'
+	'Alias.OnMenuClose':
+		'prefix': 'OnMenuClose'
+		'body': 'Event OnMenuClose(${1:string menuName})\n${0}\nEndEvent'
+	'Alias.OnMenuOpen':
+		'prefix': 'OnMenuOpen'
+		'body': 'Event OnMenuOpen(${1:string menuName})\n${0}\nEndEvent'
+	'Alias.OnPlayerCameraState':
+		'prefix': 'OnPlayerCameraState'
+		'body': 'Event OnPlayerCameraState(${1:int oldState}, ${2:int newState})\n${0}\nEndEvent'
+	'Alias.RegisterForActorAction':
+		'prefix': 'RegisterForActorAction'
+		'body': 'RegisterForActorAction(${1:int actionType})'
+	'Alias.RegisterForCameraState':
+		'prefix': 'RegisterForCameraState'
+		'body': 'RegisterForCameraState()'
+	'Alias.RegisterForControl':
+		'prefix': 'RegisterForControl'
+		'body': 'RegisterForControl(${1:string control})'
+	'Alias.RegisterForCrosshairRef':
+		'prefix': 'RegisterForCrosshairRef'
+		'body': 'RegisterForCrosshairRef()'
+	'Alias.RegisterForKey':
+		'prefix': 'RegisterForKey'
+		'body': 'RegisterForKey(${1:int keyCode})'
+	'Alias.RegisterForMenu':
+		'prefix': 'RegisterForMenu'
+		'body': 'RegisterForMenu(${1:string menuName})'
+	'Alias.RegisterForModEvent':
+		'prefix': 'RegisterForModEvent'
+		'body': 'RegisterForModEvent(${1:string eventName}, ${2:string callbackName})'
+	'Alias.SendModEvent':
+		'prefix': 'SendModEvent'
+		'body': 'SendModEvent(${1:string eventName}, ${2:string strArg}, ${3:float numArg = 0})'
+	'Alias.UnregisterForActorAction':
+		'prefix': 'UnregisterForActorAction'
+		'body': 'UnregisterForActorAction(${1:int actionType})'
+	'Alias.UnregisterForAllControls':
+		'prefix': 'UnregisterForAllControls'
+		'body': 'UnregisterForAllControls()'
+	'Alias.UnregisterForAllKeys':
+		'prefix': 'UnregisterForAllKeys'
+		'body': 'UnregisterForAllKeys()'
+	'Alias.UnregisterForAllMenus':
+		'prefix': 'UnregisterForAllMenus'
+		'body': 'UnregisterForAllMenus()'
+	'Alias.UnregisterForAllModEvents':
+		'prefix': 'UnregisterForAllModEvents'
+		'body': 'UnregisterForAllModEvents()'
+	'Alias.UnregisterForCameraState':
+		'prefix': 'UnregisterForCameraState'
+		'body': 'UnregisterForCameraState()'
+	'Alias.UnregisterForControl':
+		'prefix': 'UnregisterForControl'
+		'body': 'UnregisterForControl(${1:string control})'
+	'Alias.UnregisterForCrosshairRef':
+		'prefix': 'UnregisterForCrosshairRef'
+		'body': 'UnregisterForCrosshairRef()'
+	'Alias.UnregisterForKey':
+		'prefix': 'UnregisterForKey'
+		'body': 'UnregisterForKey(${1:int keyCode})'
+	'Alias.UnregisterForMenu':
+		'prefix': 'UnregisterForMenu'
+		'body': 'UnregisterForMenu(${1:string menuName})'
+	'Alias.UnregisterForModEvent':
+		'prefix': 'UnregisterForModEvent'
+		'body': 'UnregisterForModEvent(${1:string eventName})'
+	'Ammo.GetDamage':
+		'prefix': 'GetDamage'
+		'body': 'GetDamage()'
+	'Ammo.GetProjectile':
+		'prefix': 'GetProjectile'
+		'body': 'GetProjectile()'
+	'Ammo.IsBolt':
+		'prefix': 'IsBolt'
+		'body': 'IsBolt()'
+	'Apparatus.GetQuality':
+		'prefix': 'GetQuality'
+		'body': 'GetQuality()'
+	'Apparatus.SetQuality':
+		'prefix': 'SetQuality'
+		'body': 'SetQuality(${1:int quality})'
+	'Armor.AddSlotToMask':
+		'prefix': 'AddSlotToMask'
+		'body': 'AddSlotToMask(${1:int slotMask})'
+	'Armor.GetAR':
+		'prefix': 'GetAR'
+		'body': 'GetAR()'
+	'Armor.GetArmorRating':
+		'prefix': 'GetArmorRating'
+		'body': 'GetArmorRating()'
+	'Armor.GetEnchantment':
+		'prefix': 'GetEnchantment'
+		'body': 'GetEnchantment()'
+	'Armor.GetIconPath':
+		'prefix': 'GetIconPath'
+		'body': 'GetIconPath(${1:bool bFemalePath})'
+	'Armor.GetMaskForSlot':
+		'prefix': 'GetMaskForSlot'
+		'body': 'GetMaskForSlot(${1:int slot})'
+	'Armor.GetMessageIconPath':
+		'prefix': 'GetMessageIconPath'
+		'body': 'GetMessageIconPath(${1:bool bFemalePath})'
+	'Armor.GetModelPath':
+		'prefix': 'GetModelPath'
+		'body': 'GetModelPath(${1:bool bFemalePath})'
+	'Armor.GetNthArmorAddon':
+		'prefix': 'GetNthArmorAddon'
+		'body': 'GetNthArmorAddon(${1:int n})'
+	'Armor.GetNumArmorAddons':
+		'prefix': 'GetNumArmorAddons'
+		'body': 'GetNumArmorAddons()'
+	'Armor.GetSlotMask':
+		'prefix': 'GetSlotMask'
+		'body': 'GetSlotMask()'
+	'Armor.GetWeightClass':
+		'prefix': 'GetWeightClass'
+		'body': 'GetWeightClass()'
+	'Armor.IsBoots':
+		'prefix': 'IsBoots'
+		'body': 'IsBoots()'
+	'Armor.IsClothing':
+		'prefix': 'IsClothing'
+		'body': 'IsClothing()'
+	'Armor.IsClothingBody':
+		'prefix': 'IsClothingBody'
+		'body': 'IsClothingBody()'
+	'Armor.IsClothingFeet':
+		'prefix': 'IsClothingFeet'
+		'body': 'IsClothingFeet()'
+	'Armor.IsClothingHands':
+		'prefix': 'IsClothingHands'
+		'body': 'IsClothingHands()'
+	'Armor.IsClothingHead':
+		'prefix': 'IsClothingHead'
+		'body': 'IsClothingHead()'
+	'Armor.IsClothingPoor':
+		'prefix': 'IsClothingPoor'
+		'body': 'IsClothingPoor()'
+	'Armor.IsClothingRich':
+		'prefix': 'IsClothingRich'
+		'body': 'IsClothingRich()'
+	'Armor.IsClothingRing':
+		'prefix': 'IsClothingRing'
+		'body': 'IsClothingRing()'
+	'Armor.IsCuirass':
+		'prefix': 'IsCuirass'
+		'body': 'IsCuirass()'
+	'Armor.IsGauntlets':
+		'prefix': 'IsGauntlets'
+		'body': 'IsGauntlets()'
+	'Armor.IsHeavyArmor':
+		'prefix': 'IsHeavyArmor'
+		'body': 'IsHeavyArmor()'
+	'Armor.IsHelmet':
+		'prefix': 'IsHelmet'
+		'body': 'IsHelmet()'
+	'Armor.IsJewelry':
+		'prefix': 'IsJewelry'
+		'body': 'IsJewelry()'
+	'Armor.IsLightArmor':
+		'prefix': 'IsLightArmor'
+		'body': 'IsLightArmor()'
+	'Armor.IsShield':
+		'prefix': 'IsShield'
+		'body': 'IsShield()'
+	'Armor.ModAR':
+		'prefix': 'ModAR'
+		'body': 'ModAR(${1:int modBy})'
+	'Armor.ModArmorRating':
+		'prefix': 'ModArmorRating'
+		'body': 'ModArmorRating(${1:int modBy})'
+	'Armor.RemoveSlotFromMask':
+		'prefix': 'RemoveSlotFromMask'
+		'body': 'RemoveSlotFromMask(${1:int slotMask})'
+	'Armor.SetAR':
+		'prefix': 'SetAR'
+		'body': 'SetAR(${1:int armorRating})'
+	'Armor.SetArmorRating':
+		'prefix': 'SetArmorRating'
+		'body': 'SetArmorRating(${1:int armorRating})'
+	'Armor.SetEnchantment':
+		'prefix': 'SetEnchantment'
+		'body': 'SetEnchantment(${1:Enchantment e})'
+	'Armor.SetIconPath':
+		'prefix': 'SetIconPath'
+		'body': 'SetIconPath(${1:string path}, ${2:bool bFemalePath})'
+	'Armor.SetMessageIconPath':
+		'prefix': 'SetMessageIconPath'
+		'body': 'SetMessageIconPath(${1:string path}, ${2:bool bFemalePath})'
+	'Armor.SetModelPath':
+		'prefix': 'SetModelPath'
+		'body': 'SetModelPath(${1:string path}, ${2:bool bFemalePath})'
+	'Armor.SetSlotMask':
+		'prefix': 'SetSlotMask'
+		'body': 'SetSlotMask(${1:int slotMask})'
+	'Armor.SetWeightClass':
+		'prefix': 'SetWeightClass'
+		'body': 'SetWeightClass(${1:int weightClass})'
+	'ArmorAddon.AddSlotToMask':
+		'prefix': 'AddSlotToMask'
+		'body': 'AddSlotToMask(${1:int slotMask})'
+	'ArmorAddon.GetMaskForSlot':
+		'prefix': 'GetMaskForSlot'
+		'body': 'GetMaskForSlot(${1:int slot})'
+	'ArmorAddon.GetModelNthTextureSet':
+		'prefix': 'GetModelNthTextureSet'
+		'body': 'GetModelNthTextureSet(${1:int n}, ${2:bool first}, ${3:bool female})'
+	'ArmorAddon.GetModelNumTextureSets':
+		'prefix': 'GetModelNumTextureSets'
+		'body': 'GetModelNumTextureSets(${1:bool first}, ${2:bool female})'
+	'ArmorAddon.GetModelPath':
+		'prefix': 'GetModelPath'
+		'body': 'GetModelPath(${1:bool firstPerson}, ${2:bool female})'
+	'ArmorAddon.GetNthAdditionalRace':
+		'prefix': 'GetNthAdditionalRace'
+		'body': 'GetNthAdditionalRace(${1:int n})'
+	'ArmorAddon.GetNumAdditionalRaces':
+		'prefix': 'GetNumAdditionalRaces'
+		'body': 'GetNumAdditionalRaces()'
+	'ArmorAddon.GetSlotMask':
+		'prefix': 'GetSlotMask'
+		'body': 'GetSlotMask()'
+	'ArmorAddon.RemoveSlotFromMask':
+		'prefix': 'RemoveSlotFromMask'
+		'body': 'RemoveSlotFromMask(${1:int slotMask})'
+	'ArmorAddon.SetModelNthTextureSet':
+		'prefix': 'SetModelNthTextureSet'
+		'body': 'SetModelNthTextureSet(${1:TextureSet texture}, ${2:int n}, ${3:bool first}, ${4:bool female})'
+	'ArmorAddon.SetModelPath':
+		'prefix': 'SetModelPath'
+		'body': 'SetModelPath(${1:string path}, ${2:bool firstPerson}, ${3:bool female})'
+	'ArmorAddon.SetSlotMask':
+		'prefix': 'SetSlotMask'
+		'body': 'SetSlotMask(${1:int slotMask})'
+	'Art.GetModelPath':
+		'prefix': 'GetModelPath'
+		'body': 'GetModelPath()'
+	'Art.SetModelPath':
+		'prefix': 'SetModelPath'
+		'body': 'SetModelPath(${1:string path})'
+	'Book.GetSkill':
+		'prefix': 'GetSkill'
+		'body': 'GetSkill()'
+	'Book.GetSpell':
+		'prefix': 'GetSpell'
+		'body': 'GetSpell()'
+	'Book.IsRead':
+		'prefix': 'IsRead'
+		'body': 'IsRead()'
+	'Book.IsTakeable':
+		'prefix': 'IsTakeable'
+		'body': 'IsTakeable()'
+	'Cell.GetNthRef':
+		'prefix': 'GetNthRef'
+		'body': 'GetNthRef(${1:int n}, ${2:int formTypeFilter = 0})'
+	'Cell.GetNumRefs':
+		'prefix': 'GetNumRefs'
+		'body': 'GetNumRefs(${1:int formTypeFilter = 0})'
+	'ColorComponent.GetAlpha':
+		'prefix': 'GetAlpha'
+		'body': 'GetAlpha(${1:int argb})'
+	'ColorComponent.GetBlue':
+		'prefix': 'GetBlue'
+		'body': 'GetBlue(${1:int argb})'
+	'ColorComponent.GetGreen':
+		'prefix': 'GetGreen'
+		'body': 'GetGreen(${1:int argb})'
+	'ColorComponent.GetHue':
+		'prefix': 'GetHue'
+		'body': 'GetHue(${1:int argb})'
+	'ColorComponent.GetRed':
+		'prefix': 'GetRed'
+		'body': 'GetRed(${1:int argb})'
+	'ColorComponent.GetSaturation':
+		'prefix': 'GetSaturation'
+		'body': 'GetSaturation(${1:int argb})'
+	'ColorComponent.GetValue':
+		'prefix': 'GetValue'
+		'body': 'GetValue(${1:int argb})'
+	'ColorComponent.SetAlpha':
+		'prefix': 'SetAlpha'
+		'body': 'SetAlpha(${1:int argb}, ${2:int a})'
+	'ColorComponent.SetBlue':
+		'prefix': 'SetBlue'
+		'body': 'SetBlue(${1:int argb}, ${2:int b})'
+	'ColorComponent.SetGreen':
+		'prefix': 'SetGreen'
+		'body': 'SetGreen(${1:int argb}, ${2:int g})'
+	'ColorComponent.SetHue':
+		'prefix': 'SetHue'
+		'body': 'SetHue(${1:int argb}, ${2:float h})'
+	'ColorComponent.SetRed':
+		'prefix': 'SetRed'
+		'body': 'SetRed(${1:int argb}, ${2:int r})'
+	'ColorComponent.SetSaturation':
+		'prefix': 'SetSaturation'
+		'body': 'SetSaturation(${1:int argb}, ${2:float s})'
+	'ColorComponent.SetValue':
+		'prefix': 'SetValue'
+		'body': 'SetValue(${1:int argb}, ${2:float v})'
+	'ColorForm.GetBlue':
+		'prefix': 'GetBlue'
+		'body': 'GetBlue()'
+	'ColorForm.GetColor':
+		'prefix': 'GetColor'
+		'body': 'GetColor()'
+	'ColorForm.GetGreen':
+		'prefix': 'GetGreen'
+		'body': 'GetGreen()'
+	'ColorForm.GetHue':
+		'prefix': 'GetHue'
+		'body': 'GetHue()'
+	'ColorForm.GetRed':
+		'prefix': 'GetRed'
+		'body': 'GetRed()'
+	'ColorForm.GetSaturation':
+		'prefix': 'GetSaturation'
+		'body': 'GetSaturation()'
+	'ColorForm.GetValue':
+		'prefix': 'GetValue'
+		'body': 'GetValue()'
+	'ColorForm.SetColor':
+		'prefix': 'SetColor'
+		'body': 'SetColor(${1:int color})'
+	'CombatStyle.GetAllowDualWielding':
+		'prefix': 'GetAllowDualWielding'
+		'body': 'GetAllowDualWielding()'
+	'CombatStyle.GetAvoidThreatChance':
+		'prefix': 'GetAvoidThreatChance'
+		'body': 'GetAvoidThreatChance()'
+	'CombatStyle.GetCloseRangeDuelingCircleMult':
+		'prefix': 'GetCloseRangeDuelingCircleMult'
+		'body': 'GetCloseRangeDuelingCircleMult()'
+	'CombatStyle.GetCloseRangeDuelingFallbackMult':
+		'prefix': 'GetCloseRangeDuelingFallbackMult'
+		'body': 'GetCloseRangeDuelingFallbackMult()'
+	'CombatStyle.GetCloseRangeFlankingFlankDistance':
+		'prefix': 'GetCloseRangeFlankingFlankDistance'
+		'body': 'GetCloseRangeFlankingFlankDistance()'
+	'CombatStyle.GetCloseRangeFlankingStalkTime':
+		'prefix': 'GetCloseRangeFlankingStalkTime'
+		'body': 'GetCloseRangeFlankingStalkTime()'
+	'CombatStyle.GetDefensiveMult':
+		'prefix': 'GetDefensiveMult'
+		'body': 'GetDefensiveMult()'
+	'CombatStyle.GetFlightDiveBombChance':
+		'prefix': 'GetFlightDiveBombChance'
+		'body': 'GetFlightDiveBombChance()'
+	'CombatStyle.GetFlightFlyingAttackChance':
+		'prefix': 'GetFlightFlyingAttackChance'
+		'body': 'GetFlightFlyingAttackChance()'
+	'CombatStyle.GetFlightHoverChance':
+		'prefix': 'GetFlightHoverChance'
+		'body': 'GetFlightHoverChance()'
+	'CombatStyle.GetGroupOffensiveMult':
+		'prefix': 'GetGroupOffensiveMult'
+		'body': 'GetGroupOffensiveMult()'
+	'CombatStyle.GetLongRangeStrafeMult':
+		'prefix': 'GetLongRangeStrafeMult'
+		'body': 'GetLongRangeStrafeMult()'
+	'CombatStyle.GetMagicMult':
+		'prefix': 'GetMagicMult'
+		'body': 'GetMagicMult()'
+	'CombatStyle.GetMeleeAttackStaggeredMult':
+		'prefix': 'GetMeleeAttackStaggeredMult'
+		'body': 'GetMeleeAttackStaggeredMult()'
+	'CombatStyle.GetMeleeBashAttackMult':
+		'prefix': 'GetMeleeBashAttackMult'
+		'body': 'GetMeleeBashAttackMult()'
+	'CombatStyle.GetMeleeBashMult':
+		'prefix': 'GetMeleeBashMult'
+		'body': 'GetMeleeBashMult()'
+	'CombatStyle.GetMeleeBashPowerAttackMult':
+		'prefix': 'GetMeleeBashPowerAttackMult'
+		'body': 'GetMeleeBashPowerAttackMult()'
+	'CombatStyle.GetMeleeBashRecoiledMult':
+		'prefix': 'GetMeleeBashRecoiledMult'
+		'body': 'GetMeleeBashRecoiledMult()'
+	'CombatStyle.GetMeleeMult':
+		'prefix': 'GetMeleeMult'
+		'body': 'GetMeleeMult()'
+	'CombatStyle.GetMeleePowerAttackBlockingMult':
+		'prefix': 'GetMeleePowerAttackBlockingMult'
+		'body': 'GetMeleePowerAttackBlockingMult()'
+	'CombatStyle.GetMeleePowerAttackStaggeredMult':
+		'prefix': 'GetMeleePowerAttackStaggeredMult'
+		'body': 'GetMeleePowerAttackStaggeredMult()'
+	'CombatStyle.GetMeleeSpecialAttackMult':
+		'prefix': 'GetMeleeSpecialAttackMult'
+		'body': 'GetMeleeSpecialAttackMult()'
+	'CombatStyle.GetOffensiveMult':
+		'prefix': 'GetOffensiveMult'
+		'body': 'GetOffensiveMult()'
+	'CombatStyle.GetRangedMult':
+		'prefix': 'GetRangedMult'
+		'body': 'GetRangedMult()'
+	'CombatStyle.GetShoutMult':
+		'prefix': 'GetShoutMult'
+		'body': 'GetShoutMult()'
+	'CombatStyle.GetStaffMult':
+		'prefix': 'GetStaffMult'
+		'body': 'GetStaffMult()'
+	'CombatStyle.GetUnarmedMult':
+		'prefix': 'GetUnarmedMult'
+		'body': 'GetUnarmedMult()'
+	'CombatStyle.SetAllowDualWielding':
+		'prefix': 'SetAllowDualWielding'
+		'body': 'SetAllowDualWielding(${1:bool allow})'
+	'CombatStyle.SetAvoidThreatChance':
+		'prefix': 'SetAvoidThreatChance'
+		'body': 'SetAvoidThreatChance(${1:float chance})'
+	'CombatStyle.SetCloseRangeDuelingCircleMult':
+		'prefix': 'SetCloseRangeDuelingCircleMult'
+		'body': 'SetCloseRangeDuelingCircleMult(${1:float mult})'
+	'CombatStyle.SetCloseRangeDuelingFallbackMult':
+		'prefix': 'SetCloseRangeDuelingFallbackMult'
+		'body': 'SetCloseRangeDuelingFallbackMult(${1:float mult})'
+	'CombatStyle.SetCloseRangeFlankingFlankDistance':
+		'prefix': 'SetCloseRangeFlankingFlankDistance'
+		'body': 'SetCloseRangeFlankingFlankDistance(${1:float mult})'
+	'CombatStyle.SetCloseRangeFlankingStalkTime':
+		'prefix': 'SetCloseRangeFlankingStalkTime'
+		'body': 'SetCloseRangeFlankingStalkTime(${1:float mult})'
+	'CombatStyle.SetDefensiveMult':
+		'prefix': 'SetDefensiveMult'
+		'body': 'SetDefensiveMult(${1:float mult})'
+	'CombatStyle.SetFlightDiveBombChance':
+		'prefix': 'SetFlightDiveBombChance'
+		'body': 'SetFlightDiveBombChance(${1:float chance})'
+	'CombatStyle.SetFlightFlyingAttackChance':
+		'prefix': 'SetFlightFlyingAttackChance'
+		'body': 'SetFlightFlyingAttackChance(${1:float mult})'
+	'CombatStyle.SetFlightHoverChance':
+		'prefix': 'SetFlightHoverChance'
+		'body': 'SetFlightHoverChance(${1:float chance})'
+	'CombatStyle.SetGroupOffensiveMult':
+		'prefix': 'SetGroupOffensiveMult'
+		'body': 'SetGroupOffensiveMult(${1:float mult})'
+	'CombatStyle.SetLongRangeStrafeMult':
+		'prefix': 'SetLongRangeStrafeMult'
+		'body': 'SetLongRangeStrafeMult(${1:float mult})'
+	'CombatStyle.SetMagicMult':
+		'prefix': 'SetMagicMult'
+		'body': 'SetMagicMult(${1:float mult})'
+	'CombatStyle.SetMeleeAttackStaggeredMult':
+		'prefix': 'SetMeleeAttackStaggeredMult'
+		'body': 'SetMeleeAttackStaggeredMult(${1:float mult})'
+	'CombatStyle.SetMeleeBashAttackMult':
+		'prefix': 'SetMeleeBashAttackMult'
+		'body': 'SetMeleeBashAttackMult(${1:float mult})'
+	'CombatStyle.SetMeleeBashMult':
+		'prefix': 'SetMeleeBashMult'
+		'body': 'SetMeleeBashMult(${1:float mult})'
+	'CombatStyle.SetMeleeBashPowerAttackMult':
+		'prefix': 'SetMeleeBashPowerAttackMult'
+		'body': 'SetMeleeBashPowerAttackMult(${1:float mult})'
+	'CombatStyle.SetMeleeBashRecoiledMult':
+		'prefix': 'SetMeleeBashRecoiledMult'
+		'body': 'SetMeleeBashRecoiledMult(${1:float mult})'
+	'CombatStyle.SetMeleeMult':
+		'prefix': 'SetMeleeMult'
+		'body': 'SetMeleeMult(${1:float mult})'
+	'CombatStyle.SetMeleePowerAttackBlockingMult':
+		'prefix': 'SetMeleePowerAttackBlockingMult'
+		'body': 'SetMeleePowerAttackBlockingMult(${1:float mult})'
+	'CombatStyle.SetMeleePowerAttackStaggeredMult':
+		'prefix': 'SetMeleePowerAttackStaggeredMult'
+		'body': 'SetMeleePowerAttackStaggeredMult(${1:float mult})'
+	'CombatStyle.SetMeleeSpecialAttackMult':
+		'prefix': 'SetMeleeSpecialAttackMult'
+		'body': 'SetMeleeSpecialAttackMult(${1:float mult})'
+	'CombatStyle.SetOffensiveMult':
+		'prefix': 'SetOffensiveMult'
+		'body': 'SetOffensiveMult(${1:float mult})'
+	'CombatStyle.SetRangedMult':
+		'prefix': 'SetRangedMult'
+		'body': 'SetRangedMult(${1:float mult})'
+	'CombatStyle.SetShoutMult':
+		'prefix': 'SetShoutMult'
+		'body': 'SetShoutMult(${1:float mult})'
+	'CombatStyle.SetStaffMult':
+		'prefix': 'SetStaffMult'
+		'body': 'SetStaffMult(${1:float mult})'
+	'CombatStyle.SetUnarmedMult':
+		'prefix': 'SetUnarmedMult'
+		'body': 'SetUnarmedMult(${1:float mult})'
+	'ConstructibleObject.GetNthIngredient':
+		'prefix': 'GetNthIngredient'
+		'body': 'GetNthIngredient(${1:int n})'
+	'ConstructibleObject.GetNthIngredientQuantity':
+		'prefix': 'GetNthIngredientQuantity'
+		'body': 'GetNthIngredientQuantity(${1:int n})'
+	'ConstructibleObject.GetNumIngredients':
+		'prefix': 'GetNumIngredients'
+		'body': 'GetNumIngredients()'
+	'ConstructibleObject.GetResult':
+		'prefix': 'GetResult'
+		'body': 'GetResult()'
+	'ConstructibleObject.GetResultQuantity':
+		'prefix': 'GetResultQuantity'
+		'body': 'GetResultQuantity()'
+	'ConstructibleObject.GetWorkbenchKeyword':
+		'prefix': 'GetWorkbenchKeyword'
+		'body': 'GetWorkbenchKeyword()'
+	'ConstructibleObject.SetNthIngredient':
+		'prefix': 'SetNthIngredient'
+		'body': 'SetNthIngredient(${1:Form required}, ${2:int n})'
+	'ConstructibleObject.SetNthIngredientQuantity':
+		'prefix': 'SetNthIngredientQuantity'
+		'body': 'SetNthIngredientQuantity(${1:int value}, ${2:int n})'
+	'ConstructibleObject.SetResult':
+		'prefix': 'SetResult'
+		'body': 'SetResult(${1:Form result})'
+	'ConstructibleObject.SetResultQuantity':
+		'prefix': 'SetResultQuantity'
+		'body': 'SetResultQuantity(${1:int quantity})'
+	'ConstructibleObject.SetWorkbenchKeyword':
+		'prefix': 'SetWorkbenchKeyword'
+		'body': 'SetWorkbenchKeyword(${1:Keyword aKeyword})'
+	'DefaultObjectManager.GetForm':
+		'prefix': 'GetForm'
+		'body': 'GetForm(${1:string key})'
+	'DefaultObjectManager.SetForm':
+		'prefix': 'SetForm'
+		'body': 'SetForm(${1:string key}, ${2:Form newForm})'
+	'Enchantment.GetBaseEnchantment':
+		'prefix': 'GetBaseEnchantment'
+		'body': 'GetBaseEnchantment()'
+	'Enchantment.GetCostliestEffectIndex':
+		'prefix': 'GetCostliestEffectIndex'
+		'body': 'GetCostliestEffectIndex()'
+	'Enchantment.GetNthEffectArea':
+		'prefix': 'GetNthEffectArea'
+		'body': 'GetNthEffectArea(${1:int index})'
+	'Enchantment.GetNthEffectDuration':
+		'prefix': 'GetNthEffectDuration'
+		'body': 'GetNthEffectDuration(${1:int index})'
+	'Enchantment.GetNthEffectMagicEffect':
+		'prefix': 'GetNthEffectMagicEffect'
+		'body': 'GetNthEffectMagicEffect(${1:int index})'
+	'Enchantment.GetNthEffectMagnitude':
+		'prefix': 'GetNthEffectMagnitude'
+		'body': 'GetNthEffectMagnitude(${1:int index})'
+	'Enchantment.GetNumEffects':
+		'prefix': 'GetNumEffects'
+		'body': 'GetNumEffects()'
+	'Enchantment.SetNthEffectArea':
+		'prefix': 'SetNthEffectArea'
+		'body': 'SetNthEffectArea(${1:int index}, ${2:int value})'
+	'Enchantment.SetNthEffectDuration':
+		'prefix': 'SetNthEffectDuration'
+		'body': 'SetNthEffectDuration(${1:int index}, ${2:int value})'
+	'Enchantment.SetNthEffectMagnitude':
+		'prefix': 'SetNthEffectMagnitude'
+		'body': 'SetNthEffectMagnitude(${1:int index}, ${2:float value})'
+	'EquipSlot.GetNthParent':
+		'prefix': 'GetNthParent'
+		'body': 'GetNthParent(${1:int n})'
+	'EquipSlot.GetNumParents':
+		'prefix': 'GetNumParents'
+		'body': 'GetNumParents()'
+	'Flora.GetHarvestSound':
+		'prefix': 'GetHarvestSound'
+		'body': 'GetHarvestSound()'
+	'Flora.GetIngredient':
+		'prefix': 'GetIngredient'
+		'body': 'GetIngredient()'
+	'Flora.SetHarvestSound':
+		'prefix': 'SetHarvestSound'
+		'body': 'SetHarvestSound(${1:SoundDescriptor akSoundDescriptor})'
+	'Flora.SetIngredient':
+		'prefix': 'SetIngredient'
+		'body': 'SetIngredient(${1:Ingredient akIngredient})'
+	'Form.GetName':
+		'prefix': 'GetName'
+		'body': 'GetName()'
+	'Form.GetNthKeyword':
+		'prefix': 'GetNthKeyword'
+		'body': 'GetNthKeyword(${1:int index})'
+	'Form.GetNumKeywords':
+		'prefix': 'GetNumKeywords'
+		'body': 'GetNumKeywords()'
+	'Form.GetType':
+		'prefix': 'GetType'
+		'body': 'GetType()'
+	'Form.GetWeight':
+		'prefix': 'GetWeight'
+		'body': 'GetWeight()'
+	'Form.GetWorldModelNthTextureSet':
+		'prefix': 'GetWorldModelNthTextureSet'
+		'body': 'GetWorldModelNthTextureSet(${1:int n})'
+	'Form.GetWorldModelNumTextureSets':
+		'prefix': 'GetWorldModelNumTextureSets'
+		'body': 'GetWorldModelNumTextureSets()'
+	'Form.GetWorldModelPath':
+		'prefix': 'GetWorldModelPath'
+		'body': 'GetWorldModelPath()'
+	'Form.HasKeywordString':
+		'prefix': 'HasKeywordString'
+		'body': 'HasKeywordString(${1:string s})'
+	'Form.HasWorldModel':
+		'prefix': 'HasWorldModel'
+		'body': 'HasWorldModel()'
+	'Form.IsPlayable':
+		'prefix': 'IsPlayable'
+		'body': 'IsPlayable()'
+	'Form.OnActorAction':
+		'prefix': 'OnActorAction'
+		'body': 'Event OnActorAction(${1:int actionType}, ${2:Actor akActor}, ${3:Form source}, ${4:int slot})\n${0}\nEndEvent'
+	'Form.OnControlDown':
+		'prefix': 'OnControlDown'
+		'body': 'Event OnControlDown(${1:string control})\n${0}\nEndEvent'
+	'Form.OnControlUp':
+		'prefix': 'OnControlUp'
+		'body': 'Event OnControlUp(${1:string control}, ${2:float holdTime})\n${0}\nEndEvent'
+	'Form.OnCrosshairRefChange':
+		'prefix': 'OnCrosshairRefChange'
+		'body': 'Event OnCrosshairRefChange(${1:ObjectReference ref})\n${0}\nEndEvent'
+	'Form.OnKeyDown':
+		'prefix': 'OnKeyDown'
+		'body': 'Event OnKeyDown(${1:int keyCode})\n${0}\nEndEvent'
+	'Form.OnKeyUp':
+		'prefix': 'OnKeyUp'
+		'body': 'Event OnKeyUp(${1:int keyCode}, ${2:float holdTime})\n${0}\nEndEvent'
+	'Form.OnMenuClose':
+		'prefix': 'OnMenuClose'
+		'body': 'Event OnMenuClose(${1:string menuName})\n${0}\nEndEvent'
+	'Form.OnMenuOpen':
+		'prefix': 'OnMenuOpen'
+		'body': 'Event OnMenuOpen(${1:string menuName})\n${0}\nEndEvent'
+	'Form.OnPlayerCameraState':
+		'prefix': 'OnPlayerCameraState'
+		'body': 'Event OnPlayerCameraState(${1:int oldState}, ${2:int newState})\n${0}\nEndEvent'
+	'Form.RegisterForActorAction':
+		'prefix': 'RegisterForActorAction'
+		'body': 'RegisterForActorAction(${1:int actionType})'
+	'Form.RegisterForCameraState':
+		'prefix': 'RegisterForCameraState'
+		'body': 'RegisterForCameraState()'
+	'Form.RegisterForControl':
+		'prefix': 'RegisterForControl'
+		'body': 'RegisterForControl(${1:string control})'
+	'Form.RegisterForCrosshairRef':
+		'prefix': 'RegisterForCrosshairRef'
+		'body': 'RegisterForCrosshairRef()'
+	'Form.RegisterForKey':
+		'prefix': 'RegisterForKey'
+		'body': 'RegisterForKey(${1:int keyCode})'
+	'Form.RegisterForMenu':
+		'prefix': 'RegisterForMenu'
+		'body': 'RegisterForMenu(${1:string menuName})'
+	'Form.RegisterForModEvent':
+		'prefix': 'RegisterForModEvent'
+		'body': 'RegisterForModEvent(${1:string eventName}, ${2:string callbackName})'
+	'Form.SendModEvent':
+		'prefix': 'SendModEvent'
+		'body': 'SendModEvent(${1:string eventName}, ${2:string strArg}, ${3:float numArg = 0})'
+	'Form.SetGoldValue':
+		'prefix': 'SetGoldValue'
+		'body': 'SetGoldValue(${1:int value})'
+	'Form.SetName':
+		'prefix': 'SetName'
+		'body': 'SetName(${1:string name})'
+	'Form.SetPlayerKnows':
+		'prefix': 'SetPlayerKnows'
+		'body': 'SetPlayerKnows(${1:bool knows})'
+	'Form.SetWeight':
+		'prefix': 'SetWeight'
+		'body': 'SetWeight(${1:float weight})'
+	'Form.SetWorldModelNthTextureSet':
+		'prefix': 'SetWorldModelNthTextureSet'
+		'body': 'SetWorldModelNthTextureSet(${1:TextureSet nSet}, ${2:int n})'
+	'Form.SetWorldModelPath':
+		'prefix': 'SetWorldModelPath'
+		'body': 'SetWorldModelPath(${1:string path})'
+	'Form.TempClone':
+		'prefix': 'TempClone'
+		'body': 'TempClone()'
+	'Form.UnregisterForActorAction':
+		'prefix': 'UnregisterForActorAction'
+		'body': 'UnregisterForActorAction(${1:int actionType})'
+	'Form.UnregisterForAllControls':
+		'prefix': 'UnregisterForAllControls'
+		'body': 'UnregisterForAllControls()'
+	'Form.UnregisterForAllKeys':
+		'prefix': 'UnregisterForAllKeys'
+		'body': 'UnregisterForAllKeys()'
+	'Form.UnregisterForAllMenus':
+		'prefix': 'UnregisterForAllMenus'
+		'body': 'UnregisterForAllMenus()'
+	'Form.UnregisterForAllModEvents':
+		'prefix': 'UnregisterForAllModEvents'
+		'body': 'UnregisterForAllModEvents()'
+	'Form.UnregisterForCameraState':
+		'prefix': 'UnregisterForCameraState'
+		'body': 'UnregisterForCameraState()'
+	'Form.UnregisterForControl':
+		'prefix': 'UnregisterForControl'
+		'body': 'UnregisterForControl(${1:string control})'
+	'Form.UnregisterForCrosshairRef':
+		'prefix': 'UnregisterForCrosshairRef'
+		'body': 'UnregisterForCrosshairRef()'
+	'Form.UnregisterForKey':
+		'prefix': 'UnregisterForKey'
+		'body': 'UnregisterForKey(${1:int keyCode})'
+	'Form.UnregisterForMenu':
+		'prefix': 'UnregisterForMenu'
+		'body': 'UnregisterForMenu(${1:string menuName})'
+	'Form.UnregisterForModEvent':
+		'prefix': 'UnregisterForModEvent'
+		'body': 'UnregisterForModEvent(${1:string eventName})'
+	'Game.GetCameraState':
+		'prefix': 'GetCameraState'
+		'body': 'GetCameraState()'
+	'Game.GetCurrentCrosshairRef':
+		'prefix': 'GetCurrentCrosshairRef'
+		'body': 'GetCurrentCrosshairRef()'
+	'Game.GetDialogueTarget':
+		'prefix': 'GetDialogueTarget'
+		'body': 'GetDialogueTarget()'
+	'Game.GetExperienceForLevel':
+		'prefix': 'GetExperienceForLevel'
+		'body': 'GetExperienceForLevel(${1:int currentLevel})'
+	'Game.GetFormEx':
+		'prefix': 'GetFormEx'
+		'body': 'GetFormEx(${1:int formId})'
+	'Game.GetHotkeyBoundObject':
+		'prefix': 'GetHotkeyBoundObject'
+		'body': 'GetHotkeyBoundObject(${1:int hotkey})'
+	'Game.GetModAuthor':
+		'prefix': 'GetModAuthor'
+		'body': 'GetModAuthor(${1:int modIndex})'
+	'Game.GetModByName':
+		'prefix': 'GetModByName'
+		'body': 'GetModByName(${1:string name})'
+	'Game.GetModCount':
+		'prefix': 'GetModCount'
+		'body': 'GetModCount()'
+	'Game.GetModDependencyCount':
+		'prefix': 'GetModDependencyCount'
+		'body': 'GetModDependencyCount(${1:int modIndex})'
+	'Game.GetModDescription':
+		'prefix': 'GetModDescription'
+		'body': 'GetModDescription(${1:int modIndex})'
+	'Game.GetModName':
+		'prefix': 'GetModName'
+		'body': 'GetModName(${1:int modIndex})'
+	'Game.GetNthModDependency':
+		'prefix': 'GetNthModDependency'
+		'body': 'GetNthModDependency(${1:int modIndex}, ${2:int n})'
+	'Game.GetNthTintMaskColor':
+		'prefix': 'GetNthTintMaskColor'
+		'body': 'GetNthTintMaskColor(${1:int n})'
+	'Game.GetNthTintMaskTexturePath':
+		'prefix': 'GetNthTintMaskTexturePath'
+		'body': 'GetNthTintMaskTexturePath(${1:int n})'
+	'Game.GetNthTintMaskType':
+		'prefix': 'GetNthTintMaskType'
+		'body': 'GetNthTintMaskType(${1:int n})'
+	'Game.GetNumTintMasks':
+		'prefix': 'GetNumTintMasks'
+		'body': 'GetNumTintMasks()'
+	'Game.GetNumTintsByType':
+		'prefix': 'GetNumTintsByType'
+		'body': 'GetNumTintsByType(${1:int type})'
+	'Game.GetPerkPoints':
+		'prefix': 'GetPerkPoints'
+		'body': 'GetPerkPoints()'
+	'Game.GetPlayerExperience':
+		'prefix': 'GetPlayerExperience'
+		'body': 'GetPlayerExperience()'
+	'Game.GetPlayerMovementMode':
+		'prefix': 'GetPlayerMovementMode'
+		'body': 'GetPlayerMovementMode()'
+	'Game.GetSkillLegendaryLevel':
+		'prefix': 'GetSkillLegendaryLevel'
+		'body': 'GetSkillLegendaryLevel(${1:string actorValue})'
+	'Game.GetTintMaskColor':
+		'prefix': 'GetTintMaskColor'
+		'body': 'GetTintMaskColor(${1:int type}, ${2:int index})'
+	'Game.GetTintMaskTexturePath':
+		'prefix': 'GetTintMaskTexturePath'
+		'body': 'GetTintMaskTexturePath(${1:int type}, ${2:int index})'
+	'Game.IsObjectFavorited':
+		'prefix': 'IsObjectFavorited'
+		'body': 'IsObjectFavorited(${1:Form form})'
+	'Game.LoadGame':
+		'prefix': 'LoadGame'
+		'body': 'LoadGame(${1:string name})'
+	'Game.ModPerkPoints':
+		'prefix': 'ModPerkPoints'
+		'body': 'ModPerkPoints(${1:int perkPoints})'
+	'Game.SaveGame':
+		'prefix': 'SaveGame'
+		'body': 'SaveGame(${1:string name})'
+	'Game.SetGameSettingBool':
+		'prefix': 'SetGameSettingBool'
+		'body': 'SetGameSettingBool(${1:string setting}, ${2:bool value})'
+	'Game.SetGameSettingFloat':
+		'prefix': 'SetGameSettingFloat'
+		'body': 'SetGameSettingFloat(${1:string setting}, ${2:float value})'
+	'Game.SetGameSettingInt':
+		'prefix': 'SetGameSettingInt'
+		'body': 'SetGameSettingInt(${1:string setting}, ${2:int value})'
+	'Game.SetGameSettingString':
+		'prefix': 'SetGameSettingString'
+		'body': 'SetGameSettingString(${1:string setting}, ${2:string value})'
+	'Game.SetMiscStat':
+		'prefix': 'SetMiscStat'
+		'body': 'SetMiscStat(${1:string name}, ${2:int value})'
+	'Game.SetNthTintMaskColor':
+		'prefix': 'SetNthTintMaskColor'
+		'body': 'SetNthTintMaskColor(${1:int n}, ${2:int color})'
+	'Game.SetNthTintMaskTexturePath':
+		'prefix': 'SetNthTintMaskTexturePath'
+		'body': 'SetNthTintMaskTexturePath(${1:string path}, ${2:int n})'
+	'Game.SetPerkPoints':
+		'prefix': 'SetPerkPoints'
+		'body': 'SetPerkPoints(${1:int perkPoints})'
+	'Game.SetPlayerExperience':
+		'prefix': 'SetPlayerExperience'
+		'body': 'SetPlayerExperience(${1:float exp})'
+	'Game.SetPlayersLastRiddenHorse':
+		'prefix': 'SetPlayersLastRiddenHorse'
+		'body': 'SetPlayersLastRiddenHorse(${1:Actor horse})'
+	'Game.SetSkillLegendaryLevel':
+		'prefix': 'SetSkillLegendaryLevel'
+		'body': 'SetSkillLegendaryLevel(${1:string actorValue}, ${2:int level})'
+	'Game.SetTintMaskColor':
+		'prefix': 'SetTintMaskColor'
+		'body': 'SetTintMaskColor(${1:int color}, ${2:int type}, ${3:int index})'
+	'Game.SetTintMaskTexturePath':
+		'prefix': 'SetTintMaskTexturePath'
+		'body': 'SetTintMaskTexturePath(${1:string path}, ${2:int type}, ${3:int index})'
+	'Game.UnbindObjectHotkey':
+		'prefix': 'UnbindObjectHotkey'
+		'body': 'UnbindObjectHotkey(${1:int hotkey})'
+	'Game.UpdateHairColor':
+		'prefix': 'UpdateHairColor'
+		'body': 'UpdateHairColor()'
+	'Game.UpdateThirdPerson':
+		'prefix': 'UpdateThirdPerson'
+		'body': 'UpdateThirdPerson()'
+	'Game.UpdateTintMaskColors':
+		'prefix': 'UpdateTintMaskColors'
+		'body': 'UpdateTintMaskColors()'
+	'HeadPart.GetHeadPart':
+		'prefix': 'GetHeadPart'
+		'body': 'GetHeadPart(${1:string name})'
+	'HeadPart.GetIndexOfExtraPart':
+		'prefix': 'GetIndexOfExtraPart'
+		'body': 'GetIndexOfExtraPart(${1:HeadPart p})'
+	'HeadPart.GetNthExtraPart':
+		'prefix': 'GetNthExtraPart'
+		'body': 'GetNthExtraPart(${1:int n})'
+	'HeadPart.GetNumExtraParts':
+		'prefix': 'GetNumExtraParts'
+		'body': 'GetNumExtraParts()'
+	'HeadPart.GetType':
+		'prefix': 'GetType'
+		'body': 'GetType()'
+	'HeadPart.GetValidRaces':
+		'prefix': 'GetValidRaces'
+		'body': 'GetValidRaces()'
+	'HeadPart.HasExtraPart':
+		'prefix': 'HasExtraPart'
+		'body': 'HasExtraPart(${1:HeadPart p})'
+	'HeadPart.IsExtraPart':
+		'prefix': 'IsExtraPart'
+		'body': 'IsExtraPart()'
+	'HeadPart.SetValidRaces':
+		'prefix': 'SetValidRaces'
+		'body': 'SetValidRaces(${1:FormList vRaces})'
+	'Ingredient.GetCostliestEffectIndex':
+		'prefix': 'GetCostliestEffectIndex'
+		'body': 'GetCostliestEffectIndex()'
+	'Ingredient.GetIsNthEffectKnown':
+		'prefix': 'GetIsNthEffectKnown'
+		'body': 'GetIsNthEffectKnown(${1:int index})'
+	'Ingredient.GetNthEffectArea':
+		'prefix': 'GetNthEffectArea'
+		'body': 'GetNthEffectArea(${1:int index})'
+	'Ingredient.GetNthEffectDuration':
+		'prefix': 'GetNthEffectDuration'
+		'body': 'GetNthEffectDuration(${1:int index})'
+	'Ingredient.GetNthEffectMagicEffect':
+		'prefix': 'GetNthEffectMagicEffect'
+		'body': 'GetNthEffectMagicEffect(${1:int index})'
+	'Ingredient.GetNthEffectMagnitude':
+		'prefix': 'GetNthEffectMagnitude'
+		'body': 'GetNthEffectMagnitude(${1:int index})'
+	'Ingredient.GetNumEffects':
+		'prefix': 'GetNumEffects'
+		'body': 'GetNumEffects()'
+	'Ingredient.SetNthEffectArea':
+		'prefix': 'SetNthEffectArea'
+		'body': 'SetNthEffectArea(${1:int index}, ${2:int value})'
+	'Ingredient.SetNthEffectDuration':
+		'prefix': 'SetNthEffectDuration'
+		'body': 'SetNthEffectDuration(${1:int index}, ${2:int value})'
+	'Ingredient.SetNthEffectMagnitude':
+		'prefix': 'SetNthEffectMagnitude'
+		'body': 'SetNthEffectMagnitude(${1:int index}, ${2:float value})'
+	'Input.GetMappedControl':
+		'prefix': 'GetMappedControl'
+		'body': 'GetMappedControl(${1:int keycode})'
+	'Input.GetMappedKey':
+		'prefix': 'GetMappedKey'
+		'body': 'GetMappedKey(${1:string control}, ${2:int deviceType = 0xFF})'
+	'Input.GetNthKeyPressed':
+		'prefix': 'GetNthKeyPressed'
+		'body': 'GetNthKeyPressed(${1:int n})'
+	'Input.GetNumKeysPressed':
+		'prefix': 'GetNumKeysPressed'
+		'body': 'GetNumKeysPressed()'
+	'Input.HoldKey':
+		'prefix': 'HoldKey'
+		'body': 'HoldKey(${1:Int dxKeycode})'
+	'Input.IsKeyPressed':
+		'prefix': 'IsKeyPressed'
+		'body': 'IsKeyPressed(${1:Int dxKeycode})'
+	'Input.ReleaseKey':
+		'prefix': 'ReleaseKey'
+		'body': 'ReleaseKey(${1:Int dxKeycode})'
+	'Input.TapKey':
+		'prefix': 'TapKey'
+		'body': 'TapKey(${1:Int dxKeycode})'
+	'Keyword.GetKeyword':
+		'prefix': 'GetKeyword'
+		'body': 'GetKeyword(${1:string key})'
+	'Keyword.GetString':
+		'prefix': 'GetString'
+		'body': 'GetString()'
+	'LeveledActor.GetNthCount':
+		'prefix': 'GetNthCount'
+		'body': 'GetNthCount(${1:int n})'
+	'LeveledActor.GetNthForm':
+		'prefix': 'GetNthForm'
+		'body': 'GetNthForm(${1:int n})'
+	'LeveledActor.GetNthLevel':
+		'prefix': 'GetNthLevel'
+		'body': 'GetNthLevel(${1:int n})'
+	'LeveledActor.GetNumForms':
+		'prefix': 'GetNumForms'
+		'body': 'GetNumForms()'
+	'LeveledActor.SetNthCount':
+		'prefix': 'SetNthCount'
+		'body': 'SetNthCount(${1:int n}, ${2:int count})'
+	'LeveledActor.SetNthLevel':
+		'prefix': 'SetNthLevel'
+		'body': 'SetNthLevel(${1:int n}, ${2:int level})'
+	'LeveledItem.GetChanceGlobal':
+		'prefix': 'GetChanceGlobal'
+		'body': 'GetChanceGlobal()'
+	'LeveledItem.GetChanceNone':
+		'prefix': 'GetChanceNone'
+		'body': 'GetChanceNone()'
+	'LeveledItem.GetNthCount':
+		'prefix': 'GetNthCount'
+		'body': 'GetNthCount(${1:int n})'
+	'LeveledItem.GetNthForm':
+		'prefix': 'GetNthForm'
+		'body': 'GetNthForm(${1:int n})'
+	'LeveledItem.GetNthLevel':
+		'prefix': 'GetNthLevel'
+		'body': 'GetNthLevel(${1:int n})'
+	'LeveledItem.GetNumForms':
+		'prefix': 'GetNumForms'
+		'body': 'GetNumForms()'
+	'LeveledItem.SetChanceGlobal':
+		'prefix': 'SetChanceGlobal'
+		'body': 'SetChanceGlobal(${1:GlobalVariable glob})'
+	'LeveledItem.SetChanceNone':
+		'prefix': 'SetChanceNone'
+		'body': 'SetChanceNone(${1:int chance})'
+	'LeveledItem.SetNthCount':
+		'prefix': 'SetNthCount'
+		'body': 'SetNthCount(${1:int n}, ${2:int count})'
+	'LeveledItem.SetNthLevel':
+		'prefix': 'SetNthLevel'
+		'body': 'SetNthLevel(${1:int n}, ${2:int level})'
+	'LeveledSpell.GetChanceNone':
+		'prefix': 'GetChanceNone'
+		'body': 'GetChanceNone()'
+	'LeveledSpell.GetNthForm':
+		'prefix': 'GetNthForm'
+		'body': 'GetNthForm(${1:int n})'
+	'LeveledSpell.GetNthLevel':
+		'prefix': 'GetNthLevel'
+		'body': 'GetNthLevel(${1:int n})'
+	'LeveledSpell.GetNumForms':
+		'prefix': 'GetNumForms'
+		'body': 'GetNumForms()'
+	'LeveledSpell.SetChanceNone':
+		'prefix': 'SetChanceNone'
+		'body': 'SetChanceNone(${1:int chance})'
+	'LeveledSpell.SetNthLevel':
+		'prefix': 'SetNthLevel'
+		'body': 'SetNthLevel(${1:int n}, ${2:int level})'
+	'MagicEffect.ClearEffectFlag':
+		'prefix': 'ClearEffectFlag'
+		'body': 'ClearEffectFlag(${1:int flag})'
+	'MagicEffect.GetArea':
+		'prefix': 'GetArea'
+		'body': 'GetArea()'
+	'MagicEffect.GetBaseCost':
+		'prefix': 'GetBaseCost'
+		'body': 'GetBaseCost()'
+	'MagicEffect.GetCastingArt':
+		'prefix': 'GetCastingArt'
+		'body': 'GetCastingArt()'
+	'MagicEffect.GetCastingType':
+		'prefix': 'GetCastingType'
+		'body': 'GetCastingType()'
+	'MagicEffect.GetCastTime':
+		'prefix': 'GetCastTime'
+		'body': 'GetCastTime()'
+	'MagicEffect.GetDeliveryType':
+		'prefix': 'GetDeliveryType'
+		'body': 'GetDeliveryType()'
+	'MagicEffect.GetEnchantArt':
+		'prefix': 'GetEnchantArt'
+		'body': 'GetEnchantArt()'
+	'MagicEffect.GetEnchantShader':
+		'prefix': 'GetEnchantShader'
+		'body': 'GetEnchantShader()'
+	'MagicEffect.GetEquipAbility':
+		'prefix': 'GetEquipAbility'
+		'body': 'GetEquipAbility()'
+	'MagicEffect.GetExplosion':
+		'prefix': 'GetExplosion'
+		'body': 'GetExplosion()'
+	'MagicEffect.GetHitEffectArt':
+		'prefix': 'GetHitEffectArt'
+		'body': 'GetHitEffectArt()'
+	'MagicEffect.GetHitShader':
+		'prefix': 'GetHitShader'
+		'body': 'GetHitShader()'
+	'MagicEffect.GetImageSpaceMod':
+		'prefix': 'GetImageSpaceMod'
+		'body': 'GetImageSpaceMod()'
+	'MagicEffect.GetImpactDataSet':
+		'prefix': 'GetImpactDataSet'
+		'body': 'GetImpactDataSet()'
+	'MagicEffect.GetLight':
+		'prefix': 'GetLight'
+		'body': 'GetLight()'
+	'MagicEffect.GetPerk':
+		'prefix': 'GetPerk'
+		'body': 'GetPerk()'
+	'MagicEffect.GetProjectile':
+		'prefix': 'GetProjectile'
+		'body': 'GetProjectile()'
+	'MagicEffect.GetResistance':
+		'prefix': 'GetResistance'
+		'body': 'GetResistance()'
+	'MagicEffect.GetSkillLevel':
+		'prefix': 'GetSkillLevel'
+		'body': 'GetSkillLevel()'
+	'MagicEffect.GetSkillUsageMult':
+		'prefix': 'GetSkillUsageMult'
+		'body': 'GetSkillUsageMult()'
+	'MagicEffect.IsEffectFlagSet':
+		'prefix': 'IsEffectFlagSet'
+		'body': 'IsEffectFlagSet(${1:int flag})'
+	'MagicEffect.SetArea':
+		'prefix': 'SetArea'
+		'body': 'SetArea(${1:int area})'
+	'MagicEffect.SetAssociatedSkill':
+		'prefix': 'SetAssociatedSkill'
+		'body': 'SetAssociatedSkill(${1:string skill})'
+	'MagicEffect.SetBaseCost':
+		'prefix': 'SetBaseCost'
+		'body': 'SetBaseCost(${1:float cost})'
+	'MagicEffect.SetCastingArt':
+		'prefix': 'SetCastingArt'
+		'body': 'SetCastingArt(${1:Art obj})'
+	'MagicEffect.SetCastTime':
+		'prefix': 'SetCastTime'
+		'body': 'SetCastTime(${1:float castTime})'
+	'MagicEffect.SetEffectFlag':
+		'prefix': 'SetEffectFlag'
+		'body': 'SetEffectFlag(${1:int flag})'
+	'MagicEffect.SetEnchantArt':
+		'prefix': 'SetEnchantArt'
+		'body': 'SetEnchantArt(${1:Art obj})'
+	'MagicEffect.SetEnchantShader':
+		'prefix': 'SetEnchantShader'
+		'body': 'SetEnchantShader(${1:EffectShader obj})'
+	'MagicEffect.SetEquipAbility':
+		'prefix': 'SetEquipAbility'
+		'body': 'SetEquipAbility(${1:Spell obj})'
+	'MagicEffect.SetExplosion':
+		'prefix': 'SetExplosion'
+		'body': 'SetExplosion(${1:Explosion obj})'
+	'MagicEffect.SetHitEffectArt':
+		'prefix': 'SetHitEffectArt'
+		'body': 'SetHitEffectArt(${1:Art obj})'
+	'MagicEffect.SetHitShader':
+		'prefix': 'SetHitShader'
+		'body': 'SetHitShader(${1:EffectShader obj})'
+	'MagicEffect.SetImageSpaceMod':
+		'prefix': 'SetImageSpaceMod'
+		'body': 'SetImageSpaceMod(${1:ImageSpaceModifier obj})'
+	'MagicEffect.SetImpactDataSet':
+		'prefix': 'SetImpactDataSet'
+		'body': 'SetImpactDataSet(${1:ImpactDataSet obj})'
+	'MagicEffect.SetLight':
+		'prefix': 'SetLight'
+		'body': 'SetLight(${1:Light obj})'
+	'MagicEffect.SetPerk':
+		'prefix': 'SetPerk'
+		'body': 'SetPerk(${1:Perk obj})'
+	'MagicEffect.SetProjectile':
+		'prefix': 'SetProjectile'
+		'body': 'SetProjectile(${1:Projectile obj})'
+	'MagicEffect.SetResistance':
+		'prefix': 'SetResistance'
+		'body': 'SetResistance(${1:string skill})'
+	'MagicEffect.SetSkillLevel':
+		'prefix': 'SetSkillLevel'
+		'body': 'SetSkillLevel(${1:int level})'
+	'MagicEffect.SetSkillUsageMult':
+		'prefix': 'SetSkillUsageMult'
+		'body': 'SetSkillUsageMult(${1:float usageMult})'
+	'Math.LeftShift':
+		'prefix': 'LeftShift'
+		'body': 'LeftShift(${1:int value}, ${2:int shiftBy})'
+	'Math.Log':
+		'prefix': 'Log'
+		'body': 'Log(${1:float arg1})'
+	'Math.LogicalAnd':
+		'prefix': 'LogicalAnd'
+		'body': 'LogicalAnd(${1:int arg1}, ${2:int arg2})'
+	'Math.LogicalNot':
+		'prefix': 'LogicalNot'
+		'body': 'LogicalNot(${1:int arg1})'
+	'Math.LogicalOr':
+		'prefix': 'LogicalOr'
+		'body': 'LogicalOr(${1:int arg1}, ${2:int arg2})'
+	'Math.LogicalXor':
+		'prefix': 'LogicalXor'
+		'body': 'LogicalXor(${1:int arg1}, ${2:int arg2})'
+	'Math.RightShift':
+		'prefix': 'RightShift'
+		'body': 'RightShift(${1:int value}, ${2:int shiftBy})'
+	'ModEvent.Create':
+		'prefix': 'Create'
+		'body': 'Create(${1:string eventName})'
+	'ModEvent.PushBool':
+		'prefix': 'PushBool'
+		'body': 'PushBool(${1:int handle}, ${2:bool value})'
+	'ModEvent.PushFloat':
+		'prefix': 'PushFloat'
+		'body': 'PushFloat(${1:int handle}, ${2:float value})'
+	'ModEvent.PushForm':
+		'prefix': 'PushForm'
+		'body': 'PushForm(${1:int handle}, ${2:Form value})'
+	'ModEvent.PushInt':
+		'prefix': 'PushInt'
+		'body': 'PushInt(${1:int handle}, ${2:int value})'
+	'ModEvent.PushString':
+		'prefix': 'PushString'
+		'body': 'PushString(${1:int handle}, ${2:string value})'
+	'ModEvent.Release':
+		'prefix': 'Release'
+		'body': 'Release(${1:int handle})'
+	'ModEvent.Send':
+		'prefix': 'Send'
+		'body': 'Send(${1:int handle})'
+	'NetImmerse.GetNodePositionX':
+		'prefix': 'GetNodePositionX'
+		'body': 'GetNodePositionX(${1:ObjectReference ref}, ${2:string node}, ${3:bool firstPerson})'
+	'NetImmerse.GetNodePositionY':
+		'prefix': 'GetNodePositionY'
+		'body': 'GetNodePositionY(${1:ObjectReference ref}, ${2:string node}, ${3:bool firstPerson})'
+	'NetImmerse.GetNodePositionZ':
+		'prefix': 'GetNodePositionZ'
+		'body': 'GetNodePositionZ(${1:ObjectReference ref}, ${2:string node}, ${3:bool firstPerson})'
+	'NetImmerse.GetNodeScale':
+		'prefix': 'GetNodeScale'
+		'body': 'GetNodeScale(${1:ObjectReference ref}, ${2:string node}, ${3:bool firstPerson})'
+	'NetImmerse.GetRelativeNodePositionX':
+		'prefix': 'GetRelativeNodePositionX'
+		'body': 'GetRelativeNodePositionX(${1:ObjectReference ref}, ${2:string nodeA}, ${3:string nodeB}, ${4:bool firstPerson})'
+	'NetImmerse.GetRelativeNodePositionY':
+		'prefix': 'GetRelativeNodePositionY'
+		'body': 'GetRelativeNodePositionY(${1:ObjectReference ref}, ${2:string nodeA}, ${3:string nodeB}, ${4:bool firstPerson})'
+	'NetImmerse.GetRelativeNodePositionZ':
+		'prefix': 'GetRelativeNodePositionZ'
+		'body': 'GetRelativeNodePositionZ(${1:ObjectReference ref}, ${2:string nodeA}, ${3:string nodeB}, ${4:bool firstPerson})'
+	'NetImmerse.HasNode':
+		'prefix': 'HasNode'
+		'body': 'HasNode(${1:ObjectReference ref}, ${2:string node}, ${3:bool firstPerson})'
+	'NetImmerse.SetNodePositionX':
+		'prefix': 'SetNodePositionX'
+		'body': 'SetNodePositionX(${1:ObjectReference ref}, ${2:string node}, ${3:float x}, ${4:bool firstPerson})'
+	'NetImmerse.SetNodePositionY':
+		'prefix': 'SetNodePositionY'
+		'body': 'SetNodePositionY(${1:ObjectReference ref}, ${2:string node}, ${3:float y}, ${4:bool firstPerson})'
+	'NetImmerse.SetNodePositionZ':
+		'prefix': 'SetNodePositionZ'
+		'body': 'SetNodePositionZ(${1:ObjectReference ref}, ${2:string node}, ${3:float z}, ${4:bool firstPerson})'
+	'NetImmerse.SetNodeScale':
+		'prefix': 'SetNodeScale'
+		'body': 'SetNodeScale(${1:ObjectReference ref}, ${2:string node}, ${3:float scale}, ${4:bool firstPerson})'
+	'NetImmerse.SetNodeTextureSet':
+		'prefix': 'SetNodeTextureSet'
+		'body': 'SetNodeTextureSet(${1:ObjectReference ref}, ${2:string node}, ${3:TextureSet tSet}, ${4:bool firstPerson})'
+	'ObjectReference.CreateEnchantment':
+		'prefix': 'CreateEnchantment'
+		'body': 'CreateEnchantment(${1:float maxCharge}, ${2:MagicEffect[] effects}, ${3:float[] magnitudes}, ${4:int[] areas}, ${5:int[] durations})'
+	'ObjectReference.GetAllForms':
+		'prefix': 'GetAllForms'
+		'body': 'GetAllForms(${1:FormList toFill})'
+	'ObjectReference.GetDisplayName':
+		'prefix': 'GetDisplayName'
+		'body': 'GetDisplayName()'
+	'ObjectReference.GetEnableParent':
+		'prefix': 'GetEnableParent'
+		'body': 'GetEnableParent()'
+	'ObjectReference.GetEnchantment':
+		'prefix': 'GetEnchantment'
+		'body': 'GetEnchantment()'
+	'ObjectReference.GetItemCharge':
+		'prefix': 'GetItemCharge'
+		'body': 'GetItemCharge()'
+	'ObjectReference.GetItemMaxCharge':
+		'prefix': 'GetItemMaxCharge'
+		'body': 'GetItemMaxCharge()'
+	'ObjectReference.GetNthForm':
+		'prefix': 'GetNthForm'
+		'body': 'GetNthForm(${1:int index})'
+	'ObjectReference.GetNthReferenceAlias':
+		'prefix': 'GetNthReferenceAlias'
+		'body': 'GetNthReferenceAlias(${1:int n})'
+	'ObjectReference.GetNumItems':
+		'prefix': 'GetNumItems'
+		'body': 'GetNumItems()'
+	'ObjectReference.GetNumReferenceAliases':
+		'prefix': 'GetNumReferenceAliases'
+		'body': 'GetNumReferenceAliases()'
+	'ObjectReference.GetPoison':
+		'prefix': 'GetPoison'
+		'body': 'GetPoison()'
+	'ObjectReference.GetTotalArmorWeight':
+		'prefix': 'GetTotalArmorWeight'
+		'body': 'GetTotalArmorWeight()'
+	'ObjectReference.GetTotalItemWeight':
+		'prefix': 'GetTotalItemWeight'
+		'body': 'GetTotalItemWeight()'
+	'ObjectReference.IsHarvested':
+		'prefix': 'IsHarvested'
+		'body': 'IsHarvested()'
+	'ObjectReference.IsOffLimits':
+		'prefix': 'IsOffLimits'
+		'body': 'IsOffLimits()'
+	'ObjectReference.ResetInventory':
+		'prefix': 'ResetInventory'
+		'body': 'ResetInventory()'
+	'ObjectReference.SetDisplayName':
+		'prefix': 'SetDisplayName'
+		'body': 'SetDisplayName(${1:string name}, ${2:bool force = false})'
+	'ObjectReference.SetEnchantment':
+		'prefix': 'SetEnchantment'
+		'body': 'SetEnchantment(${1:Enchantment source}, ${2:float maxCharge})'
+	'ObjectReference.SetHarvested':
+		'prefix': 'SetHarvested'
+		'body': 'SetHarvested(${1:bool harvested})'
+	'ObjectReference.SetItemCharge':
+		'prefix': 'SetItemCharge'
+		'body': 'SetItemCharge(${1:float charge})'
+	'ObjectReference.SetItemHealthPercent':
+		'prefix': 'SetItemHealthPercent'
+		'body': 'SetItemHealthPercent(${1:float health})'
+	'ObjectReference.SetItemMaxCharge':
+		'prefix': 'SetItemMaxCharge'
+		'body': 'SetItemMaxCharge(${1:float maxCharge})'
+	'Outfit.GetNthPart':
+		'prefix': 'GetNthPart'
+		'body': 'GetNthPart(${1:int n})'
+	'Outfit.GetNumParts':
+		'prefix': 'GetNumParts'
+		'body': 'GetNumParts()'
+	'Perk.GetNextPerk':
+		'prefix': 'GetNextPerk'
+		'body': 'GetNextPerk()'
+	'Perk.GetNthEntryLeveledList':
+		'prefix': 'GetNthEntryLeveledList'
+		'body': 'GetNthEntryLeveledList(${1:int n})'
+	'Perk.GetNthEntryPriority':
+		'prefix': 'GetNthEntryPriority'
+		'body': 'GetNthEntryPriority(${1:int n})'
+	'Perk.GetNthEntryQuest':
+		'prefix': 'GetNthEntryQuest'
+		'body': 'GetNthEntryQuest(${1:int n})'
+	'Perk.GetNthEntryRank':
+		'prefix': 'GetNthEntryRank'
+		'body': 'GetNthEntryRank(${1:int n})'
+	'Perk.GetNthEntrySpell':
+		'prefix': 'GetNthEntrySpell'
+		'body': 'GetNthEntrySpell(${1:int n})'
+	'Perk.GetNthEntryStage':
+		'prefix': 'GetNthEntryStage'
+		'body': 'GetNthEntryStage(${1:int n})'
+	'Perk.GetNthEntryText':
+		'prefix': 'GetNthEntryText'
+		'body': 'GetNthEntryText(${1:int n})'
+	'Perk.GetNthEntryValue':
+		'prefix': 'GetNthEntryValue'
+		'body': 'GetNthEntryValue(${1:int n}, ${2:int i})'
+	'Perk.GetNumEntries':
+		'prefix': 'GetNumEntries'
+		'body': 'GetNumEntries()'
+	'Perk.SetNthEntryLeveledList':
+		'prefix': 'SetNthEntryLeveledList'
+		'body': 'SetNthEntryLeveledList(${1:int n}, ${2:LeveledItem lList})'
+	'Perk.SetNthEntryPriority':
+		'prefix': 'SetNthEntryPriority'
+		'body': 'SetNthEntryPriority(${1:int n}, ${2:int priority})'
+	'Perk.SetNthEntryQuest':
+		'prefix': 'SetNthEntryQuest'
+		'body': 'SetNthEntryQuest(${1:int n}, ${2:Quest newQuest})'
+	'Perk.SetNthEntryRank':
+		'prefix': 'SetNthEntryRank'
+		'body': 'SetNthEntryRank(${1:int n}, ${2:int rank})'
+	'Perk.SetNthEntrySpell':
+		'prefix': 'SetNthEntrySpell'
+		'body': 'SetNthEntrySpell(${1:int n}, ${2:Spell newSpell})'
+	'Perk.SetNthEntryStage':
+		'prefix': 'SetNthEntryStage'
+		'body': 'SetNthEntryStage(${1:int n}, ${2:int stage})'
+	'Perk.SetNthEntryText':
+		'prefix': 'SetNthEntryText'
+		'body': 'SetNthEntryText(${1:int n}, ${2:string newText})'
+	'Perk.SetNthEntryValue':
+		'prefix': 'SetNthEntryValue'
+		'body': 'SetNthEntryValue(${1:int n}, ${2:int i}, ${3:float value})'
+	'Potion.GetCostliestEffectIndex':
+		'prefix': 'GetCostliestEffectIndex'
+		'body': 'GetCostliestEffectIndex()'
+	'Potion.GetNthEffectArea':
+		'prefix': 'GetNthEffectArea'
+		'body': 'GetNthEffectArea(${1:int index})'
+	'Potion.GetNthEffectDuration':
+		'prefix': 'GetNthEffectDuration'
+		'body': 'GetNthEffectDuration(${1:int index})'
+	'Potion.GetNthEffectMagicEffect':
+		'prefix': 'GetNthEffectMagicEffect'
+		'body': 'GetNthEffectMagicEffect(${1:int index})'
+	'Potion.GetNthEffectMagnitude':
+		'prefix': 'GetNthEffectMagnitude'
+		'body': 'GetNthEffectMagnitude(${1:int index})'
+	'Potion.GetNumEffects':
+		'prefix': 'GetNumEffects'
+		'body': 'GetNumEffects()'
+	'Potion.GetUseSound':
+		'prefix': 'GetUseSound'
+		'body': 'GetUseSound()'
+	'Potion.IsFood':
+		'prefix': 'IsFood'
+		'body': 'IsFood()'
+	'Potion.IsPoison':
+		'prefix': 'IsPoison'
+		'body': 'IsPoison()'
+	'Potion.SetNthEffectArea':
+		'prefix': 'SetNthEffectArea'
+		'body': 'SetNthEffectArea(${1:int index}, ${2:int value})'
+	'Potion.SetNthEffectDuration':
+		'prefix': 'SetNthEffectDuration'
+		'body': 'SetNthEffectDuration(${1:int index}, ${2:int value})'
+	'Potion.SetNthEffectMagnitude':
+		'prefix': 'SetNthEffectMagnitude'
+		'body': 'SetNthEffectMagnitude(${1:int index}, ${2:float value})'
+	'Quest.GetAliasByName':
+		'prefix': 'GetAliasByName'
+		'body': 'GetAliasByName(${1:string name})'
+	'Quest.GetID':
+		'prefix': 'GetID'
+		'body': 'GetID()'
+	'Quest.GetNthAlias':
+		'prefix': 'GetNthAlias'
+		'body': 'GetNthAlias(${1:int index})'
+	'Quest.GetNumAliases':
+		'prefix': 'GetNumAliases'
+		'body': 'GetNumAliases()'
+	'Quest.GetPriority':
+		'prefix': 'GetPriority'
+		'body': 'GetPriority()'
+	'Quest.GetQuest':
+		'prefix': 'GetQuest'
+		'body': 'GetQuest(${1:string editorId})'
+	'Race.AllowPCDialogue':
+		'prefix': 'AllowPCDialogue'
+		'body': 'AllowPCDialogue()'
+	'Race.AllowPickpocket':
+		'prefix': 'AllowPickpocket'
+		'body': 'AllowPickpocket()'
+	'Race.AvoidsRoads':
+		'prefix': 'AvoidsRoads'
+		'body': 'AvoidsRoads()'
+	'Race.CanFly':
+		'prefix': 'CanFly'
+		'body': 'CanFly()'
+	'Race.CanSwim':
+		'prefix': 'CanSwim'
+		'body': 'CanSwim()'
+	'Race.CantOpenDoors':
+		'prefix': 'CantOpenDoors'
+		'body': 'CantOpenDoors()'
+	'Race.CanWalk':
+		'prefix': 'CanWalk'
+		'body': 'CanWalk()'
+	'Race.ClearAllowPCDialogue':
+		'prefix': 'ClearAllowPCDialogue'
+		'body': 'ClearAllowPCDialogue()'
+	'Race.ClearAllowPickpocket':
+		'prefix': 'ClearAllowPickpocket'
+		'body': 'ClearAllowPickpocket()'
+	'Race.ClearAvoidsRoads':
+		'prefix': 'ClearAvoidsRoads'
+		'body': 'ClearAvoidsRoads()'
+	'Race.ClearCantOpenDoors':
+		'prefix': 'ClearCantOpenDoors'
+		'body': 'ClearCantOpenDoors()'
+	'Race.ClearNoCombatInWater':
+		'prefix': 'ClearNoCombatInWater'
+		'body': 'ClearNoCombatInWater()'
+	'Race.ClearNoKNockdowns':
+		'prefix': 'ClearNoKNockdowns'
+		'body': 'ClearNoKNockdowns()'
+	'Race.ClearNoShadow':
+		'prefix': 'ClearNoShadow'
+		'body': 'ClearNoShadow()'
+	'Race.ClearRaceFlag':
+		'prefix': 'ClearRaceFlag'
+		'body': 'ClearRaceFlag(${1:int n})'
+	'Race.GetDefaultVoiceType':
+		'prefix': 'GetDefaultVoiceType'
+		'body': 'GetDefaultVoiceType(${1:bool female})'
+	'Race.GetNthPlayableRace':
+		'prefix': 'GetNthPlayableRace'
+		'body': 'GetNthPlayableRace(${1:int n})'
+	'Race.GetNthSpell':
+		'prefix': 'GetNthSpell'
+		'body': 'GetNthSpell(${1:int n})'
+	'Race.GetNumPlayableRaces':
+		'prefix': 'GetNumPlayableRaces'
+		'body': 'GetNumPlayableRaces()'
+	'Race.GetRace':
+		'prefix': 'GetRace'
+		'body': 'GetRace(${1:string editorId})'
+	'Race.GetSkin':
+		'prefix': 'GetSkin'
+		'body': 'GetSkin()'
+	'Race.GetSpellCount':
+		'prefix': 'GetSpellCount'
+		'body': 'GetSpellCount()'
+	'Race.IsChildRace':
+		'prefix': 'IsChildRace'
+		'body': 'IsChildRace()'
+	'Race.IsImmobile':
+		'prefix': 'IsImmobile'
+		'body': 'IsImmobile()'
+	'Race.IsNotPushable':
+		'prefix': 'IsNotPushable'
+		'body': 'IsNotPushable()'
+	'Race.IsPlayable':
+		'prefix': 'IsPlayable'
+		'body': 'IsPlayable()'
+	'Race.IsRaceFlagSet':
+		'prefix': 'IsRaceFlagSet'
+		'body': 'IsRaceFlagSet(${1:int n})'
+	'Race.MakeCanFly':
+		'prefix': 'MakeCanFly'
+		'body': 'MakeCanFly()'
+	'Race.MakeCanSwim':
+		'prefix': 'MakeCanSwim'
+		'body': 'MakeCanSwim()'
+	'Race.MakeCanWalk':
+		'prefix': 'MakeCanWalk'
+		'body': 'MakeCanWalk()'
+	'Race.MakeChildRace':
+		'prefix': 'MakeChildRace'
+		'body': 'MakeChildRace()'
+	'Race.MakeImmobile':
+		'prefix': 'MakeImmobile'
+		'body': 'MakeImmobile()'
+	'Race.MakeMobile':
+		'prefix': 'MakeMobile'
+		'body': 'MakeMobile()'
+	'Race.MakeNoKnockdowns':
+		'prefix': 'MakeNoKnockdowns'
+		'body': 'MakeNoKnockdowns()'
+	'Race.MakeNonChildRace':
+		'prefix': 'MakeNonChildRace'
+		'body': 'MakeNonChildRace()'
+	'Race.MakeNonFlying':
+		'prefix': 'MakeNonFlying'
+		'body': 'MakeNonFlying()'
+	'Race.MakeNonSwimming':
+		'prefix': 'MakeNonSwimming'
+		'body': 'MakeNonSwimming()'
+	'Race.MakeNonWalking':
+		'prefix': 'MakeNonWalking'
+		'body': 'MakeNonWalking()'
+	'Race.MakeNotPushable':
+		'prefix': 'MakeNotPushable'
+		'body': 'MakeNotPushable()'
+	'Race.MakePlayable':
+		'prefix': 'MakePlayable'
+		'body': 'MakePlayable()'
+	'Race.MakePushable':
+		'prefix': 'MakePushable'
+		'body': 'MakePushable()'
+	'Race.MakeUnplayable':
+		'prefix': 'MakeUnplayable'
+		'body': 'MakeUnplayable()'
+	'Race.NoCombatInWater':
+		'prefix': 'NoCombatInWater'
+		'body': 'NoCombatInWater()'
+	'Race.NoKnockdowns':
+		'prefix': 'NoKnockdowns'
+		'body': 'NoKnockdowns()'
+	'Race.NoShadow':
+		'prefix': 'NoShadow'
+		'body': 'NoShadow()'
+	'Race.SetAllowPCDialogue':
+		'prefix': 'SetAllowPCDialogue'
+		'body': 'SetAllowPCDialogue()'
+	'Race.SetAllowPickpocket':
+		'prefix': 'SetAllowPickpocket'
+		'body': 'SetAllowPickpocket()'
+	'Race.SetAvoidsRoads':
+		'prefix': 'SetAvoidsRoads'
+		'body': 'SetAvoidsRoads()'
+	'Race.SetCantOpenDoors':
+		'prefix': 'SetCantOpenDoors'
+		'body': 'SetCantOpenDoors()'
+	'Race.SetDefaultVoiceType':
+		'prefix': 'SetDefaultVoiceType'
+		'body': 'SetDefaultVoiceType(${1:bool female}, ${2:VoiceType voice})'
+	'Race.SetNoCombatInWater':
+		'prefix': 'SetNoCombatInWater'
+		'body': 'SetNoCombatInWater()'
+	'Race.SetNoShadow':
+		'prefix': 'SetNoShadow'
+		'body': 'SetNoShadow()'
+	'Race.SetRaceFlag':
+		'prefix': 'SetRaceFlag'
+		'body': 'SetRaceFlag(${1:int n})'
+	'Race.SetSkin':
+		'prefix': 'SetSkin'
+		'body': 'SetSkin(${1:Armor skin})'
+	'Scroll.GetCastTime':
+		'prefix': 'GetCastTime'
+		'body': 'GetCastTime()'
+	'Scroll.GetCostliestEffectIndex':
+		'prefix': 'GetCostliestEffectIndex'
+		'body': 'GetCostliestEffectIndex()'
+	'Scroll.GetEquipType':
+		'prefix': 'GetEquipType'
+		'body': 'GetEquipType()'
+	'Scroll.GetNthEffectArea':
+		'prefix': 'GetNthEffectArea'
+		'body': 'GetNthEffectArea(${1:int index})'
+	'Scroll.GetNthEffectDuration':
+		'prefix': 'GetNthEffectDuration'
+		'body': 'GetNthEffectDuration(${1:int index})'
+	'Scroll.GetNthEffectMagicEffect':
+		'prefix': 'GetNthEffectMagicEffect'
+		'body': 'GetNthEffectMagicEffect(${1:int index})'
+	'Scroll.GetNthEffectMagnitude':
+		'prefix': 'GetNthEffectMagnitude'
+		'body': 'GetNthEffectMagnitude(${1:int index})'
+	'Scroll.GetNumEffects':
+		'prefix': 'GetNumEffects'
+		'body': 'GetNumEffects()'
+	'Scroll.GetPerk':
+		'prefix': 'GetPerk'
+		'body': 'GetPerk()'
+	'Scroll.SetEquipType':
+		'prefix': 'SetEquipType'
+		'body': 'SetEquipType(${1:EquipSlot type})'
+	'Scroll.SetNthEffectArea':
+		'prefix': 'SetNthEffectArea'
+		'body': 'SetNthEffectArea(${1:int index}, ${2:int value})'
+	'Scroll.SetNthEffectDuration':
+		'prefix': 'SetNthEffectDuration'
+		'body': 'SetNthEffectDuration(${1:int index}, ${2:int value})'
+	'Scroll.SetNthEffectMagnitude':
+		'prefix': 'SetNthEffectMagnitude'
+		'body': 'SetNthEffectMagnitude(${1:int index}, ${2:float value})'
+	'Shout.GetNthRecoveryTime':
+		'prefix': 'GetNthRecoveryTime'
+		'body': 'GetNthRecoveryTime(${1:int n})'
+	'Shout.GetNthSpell':
+		'prefix': 'GetNthSpell'
+		'body': 'GetNthSpell(${1:int n})'
+	'Shout.GetNthWordOfPower':
+		'prefix': 'GetNthWordOfPower'
+		'body': 'GetNthWordOfPower(${1:int n})'
+	'Shout.SetNthRecoveryTime':
+		'prefix': 'SetNthRecoveryTime'
+		'body': 'SetNthRecoveryTime(${1:int n}, ${2:float time})'
+	'Shout.SetNthSpell':
+		'prefix': 'SetNthSpell'
+		'body': 'SetNthSpell(${1:int n}, ${2:Spell aSpell})'
+	'Shout.SetNthWordOfPower':
+		'prefix': 'SetNthWordOfPower'
+		'body': 'SetNthWordOfPower(${1:int n}, ${2:WordOfPower aWoop})'
+	'SKSE.GetPluginVersion':
+		'prefix': 'GetPluginVersion'
+		'body': 'GetPluginVersion(${1:string name})'
+	'SKSE.GetScriptVersionRelease':
+		'prefix': 'GetScriptVersionRelease'
+		'body': 'GetScriptVersionRelease()'
+	'SKSE.GetVersion':
+		'prefix': 'GetVersion'
+		'body': 'GetVersion()'
+	'SKSE.GetVersionBeta':
+		'prefix': 'GetVersionBeta'
+		'body': 'GetVersionBeta()'
+	'SKSE.GetVersionMinor':
+		'prefix': 'GetVersionMinor'
+		'body': 'GetVersionMinor()'
+	'SKSE.GetVersionRelease':
+		'prefix': 'GetVersionRelease'
+		'body': 'GetVersionRelease()'
+	'SoulGem.GetGemSize':
+		'prefix': 'GetGemSize'
+		'body': 'GetGemSize()'
+	'SoulGem.GetSoulSize':
+		'prefix': 'GetSoulSize'
+		'body': 'GetSoulSize()'
+	'Sound.GetDescriptor':
+		'prefix': 'GetDescriptor'
+		'body': 'GetDescriptor()'
+	'SoundDescriptor.GetDecibelAttenuation':
+		'prefix': 'GetDecibelAttenuation'
+		'body': 'GetDecibelAttenuation()'
+	'SoundDescriptor.GetDecibelVariance':
+		'prefix': 'GetDecibelVariance'
+		'body': 'GetDecibelVariance()'
+	'SoundDescriptor.GetFrequencyShift':
+		'prefix': 'GetFrequencyShift'
+		'body': 'GetFrequencyShift()'
+	'SoundDescriptor.GetFrequencyVariance':
+		'prefix': 'GetFrequencyVariance'
+		'body': 'GetFrequencyVariance()'
+	'SoundDescriptor.SetDecibelAttenuation':
+		'prefix': 'SetDecibelAttenuation'
+		'body': 'SetDecibelAttenuation(${1:float dbAttenuation})'
+	'SoundDescriptor.SetDecibelVariance':
+		'prefix': 'SetDecibelVariance'
+		'body': 'SetDecibelVariance(${1:int dbVariance})'
+	'SoundDescriptor.SetFrequencyShift':
+		'prefix': 'SetFrequencyShift'
+		'body': 'SetFrequencyShift(${1:int frequencyShift})'
+	'SoundDescriptor.SetFrequencyVariance':
+		'prefix': 'SetFrequencyVariance'
+		'body': 'SetFrequencyVariance(${1:int frequencyVariance})'
+	'Spell.GetCastTime':
+		'prefix': 'GetCastTime'
+		'body': 'GetCastTime()'
+	'Spell.GetCostliestEffectIndex':
+		'prefix': 'GetCostliestEffectIndex'
+		'body': 'GetCostliestEffectIndex()'
+	'Spell.GetEffectiveMagickaCost':
+		'prefix': 'GetEffectiveMagickaCost'
+		'body': 'GetEffectiveMagickaCost(${1:Actor caster})'
+	'Spell.GetEquipType':
+		'prefix': 'GetEquipType'
+		'body': 'GetEquipType()'
+	'Spell.GetMagickaCost':
+		'prefix': 'GetMagickaCost'
+		'body': 'GetMagickaCost()'
+	'Spell.GetNthEffectArea':
+		'prefix': 'GetNthEffectArea'
+		'body': 'GetNthEffectArea(${1:int index})'
+	'Spell.GetNthEffectDuration':
+		'prefix': 'GetNthEffectDuration'
+		'body': 'GetNthEffectDuration(${1:int index})'
+	'Spell.GetNthEffectMagicEffect':
+		'prefix': 'GetNthEffectMagicEffect'
+		'body': 'GetNthEffectMagicEffect(${1:int index})'
+	'Spell.GetNthEffectMagnitude':
+		'prefix': 'GetNthEffectMagnitude'
+		'body': 'GetNthEffectMagnitude(${1:int index})'
+	'Spell.GetNumEffects':
+		'prefix': 'GetNumEffects'
+		'body': 'GetNumEffects()'
+	'Spell.GetPerk':
+		'prefix': 'GetPerk'
+		'body': 'GetPerk()'
+	'Spell.SetEquipType':
+		'prefix': 'SetEquipType'
+		'body': 'SetEquipType(${1:EquipSlot type})'
+	'Spell.SetNthEffectArea':
+		'prefix': 'SetNthEffectArea'
+		'body': 'SetNthEffectArea(${1:int index}, ${2:int value})'
+	'Spell.SetNthEffectDuration':
+		'prefix': 'SetNthEffectDuration'
+		'body': 'SetNthEffectDuration(${1:int index}, ${2:int value})'
+	'Spell.SetNthEffectMagnitude':
+		'prefix': 'SetNthEffectMagnitude'
+		'body': 'SetNthEffectMagnitude(${1:int index}, ${2:float value})'
+	'StringUtil.AsChar':
+		'prefix': 'AsChar'
+		'body': 'AsChar(${1:int c})'
+	'StringUtil.AsOrd':
+		'prefix': 'AsOrd'
+		'body': 'AsOrd(${1:string c})'
+	'StringUtil.Find':
+		'prefix': 'Find'
+		'body': 'Find(${1:string s}, ${2:string toFind}, ${3:int startIndex = 0})'
+	'StringUtil.GetLength':
+		'prefix': 'GetLength'
+		'body': 'GetLength(${1:string s})'
+	'StringUtil.GetNthChar':
+		'prefix': 'GetNthChar'
+		'body': 'GetNthChar(${1:string s}, ${2:int index})'
+	'StringUtil.IsDigit':
+		'prefix': 'IsDigit'
+		'body': 'IsDigit(${1:string c})'
+	'StringUtil.IsLetter':
+		'prefix': 'IsLetter'
+		'body': 'IsLetter(${1:string c})'
+	'StringUtil.IsPrintable':
+		'prefix': 'IsPrintable'
+		'body': 'IsPrintable(${1:string c})'
+	'StringUtil.IsPunctuation':
+		'prefix': 'IsPunctuation'
+		'body': 'IsPunctuation(${1:string c})'
+	'StringUtil.Substring':
+		'prefix': 'Substring'
+		'body': 'Substring(${1:string s}, ${2:int startIndex}, ${3:int len = 0})'
+	'TextureSet.GetNthTexturePath':
+		'prefix': 'GetNthTexturePath'
+		'body': 'GetNthTexturePath(${1:int n})'
+	'TextureSet.GetNumTexturePaths':
+		'prefix': 'GetNumTexturePaths'
+		'body': 'GetNumTexturePaths()'
+	'TextureSet.SetNthTexturePath':
+		'prefix': 'SetNthTexturePath'
+		'body': 'SetNthTexturePath(${1:int n}, ${2:string texturePath})'
+	'Tree.GetHarvestSound':
+		'prefix': 'GetHarvestSound'
+		'body': 'GetHarvestSound()'
+	'Tree.GetIngredient':
+		'prefix': 'GetIngredient'
+		'body': 'GetIngredient()'
+	'Tree.SetHarvestSound':
+		'prefix': 'SetHarvestSound'
+		'body': 'SetHarvestSound(${1:SoundDescriptor akSoundDescriptor})'
+	'Tree.SetIngredient':
+		'prefix': 'SetIngredient'
+		'body': 'SetIngredient(${1:Ingredient akIngredient})'
+	'UI.CloseCustomMenu':
+		'prefix': 'CloseCustomMenu'
+		'body': 'CloseCustomMenu()'
+	'UI.GetBool':
+		'prefix': 'GetBool'
+		'body': 'GetBool(${1:string menuName}, ${2:string target})'
+	'UI.GetFloat':
+		'prefix': 'GetFloat'
+		'body': 'GetFloat(${1:string menuName}, ${2:string target})'
+	'UI.GetInt':
+		'prefix': 'GetInt'
+		'body': 'GetInt(${1:string menuName}, ${2:string target})'
+	'UI.GetNumber':
+		'prefix': 'GetNumber'
+		'body': 'GetNumber(${1:string menuName}, ${2:string target})'
+	'UI.GetString':
+		'prefix': 'GetString'
+		'body': 'GetString(${1:string menuName}, ${2:string target})'
+	'UI.Invoke':
+		'prefix': 'Invoke'
+		'body': 'Invoke(${1:string menuName}, ${2:string target})'
+	'UI.InvokeBool':
+		'prefix': 'InvokeBool'
+		'body': 'InvokeBool(${1:string menuName}, ${2:string target}, ${3:bool arg})'
+	'UI.InvokeBoolA':
+		'prefix': 'InvokeBoolA'
+		'body': 'InvokeBoolA(${1:string menuName}, ${2:string target}, ${3:bool[] args})'
+	'UI.InvokeFloat':
+		'prefix': 'InvokeFloat'
+		'body': 'InvokeFloat(${1:string menuName}, ${2:string target}, ${3:float arg})'
+	'UI.InvokeFloatA':
+		'prefix': 'InvokeFloatA'
+		'body': 'InvokeFloatA(${1:string menuName}, ${2:string target}, ${3:float[] args})'
+	'UI.InvokeForm':
+		'prefix': 'InvokeForm'
+		'body': 'InvokeForm(${1:string menuName}, ${2:string target}, ${3:Form arg})'
+	'UI.InvokeInt':
+		'prefix': 'InvokeInt'
+		'body': 'InvokeInt(${1:string menuName}, ${2:string target}, ${3:int arg})'
+	'UI.InvokeIntA':
+		'prefix': 'InvokeIntA'
+		'body': 'InvokeIntA(${1:string menuName}, ${2:string target}, ${3:int[] args})'
+	'UI.InvokeNumber':
+		'prefix': 'InvokeNumber'
+		'body': 'InvokeNumber(${1:string menuName}, ${2:string target}, ${3:float arg})'
+	'UI.InvokeNumberA':
+		'prefix': 'InvokeNumberA'
+		'body': 'InvokeNumberA(${1:string menuName}, ${2:string target}, ${3:float[] args})'
+	'UI.InvokeString':
+		'prefix': 'InvokeString'
+		'body': 'InvokeString(${1:string menuName}, ${2:string target}, ${3:string arg})'
+	'UI.InvokeStringA':
+		'prefix': 'InvokeStringA'
+		'body': 'InvokeStringA(${1:string menuName}, ${2:string target}, ${3:string[] args})'
+	'UI.IsMenuOpen':
+		'prefix': 'IsMenuOpen'
+		'body': 'IsMenuOpen(${1:string menuName})'
+	'UI.IsTextInputEnabled':
+		'prefix': 'IsTextInputEnabled'
+		'body': 'IsTextInputEnabled()'
+	'UI.OpenCustomMenu':
+		'prefix': 'OpenCustomMenu'
+		'body': 'OpenCustomMenu(${1:string swfPath}, ${2:int flags = 0})'
+	'UI.SetBool':
+		'prefix': 'SetBool'
+		'body': 'SetBool(${1:string menuName}, ${2:string target}, ${3:bool value})'
+	'UI.SetFloat':
+		'prefix': 'SetFloat'
+		'body': 'SetFloat(${1:string menuName}, ${2:string target}, ${3:float value})'
+	'UI.SetInt':
+		'prefix': 'SetInt'
+		'body': 'SetInt(${1:string menuName}, ${2:string target}, ${3:int value})'
+	'UI.SetNumber':
+		'prefix': 'SetNumber'
+		'body': 'SetNumber(${1:string menuName}, ${2:string target}, ${3:float value})'
+	'UI.SetString':
+		'prefix': 'SetString'
+		'body': 'SetString(${1:string menuName}, ${2:string target}, ${3:string value})'
+	'UICallback.Create':
+		'prefix': 'Create'
+		'body': 'Create(${1:string menuName}, ${2:string target})'
+	'UICallback.PushBool':
+		'prefix': 'PushBool'
+		'body': 'PushBool(${1:int handle}, ${2:bool value})'
+	'UICallback.PushBoolA':
+		'prefix': 'PushBoolA'
+		'body': 'PushBoolA(${1:int handle}, ${2:bool[] args})'
+	'UICallback.PushFloat':
+		'prefix': 'PushFloat'
+		'body': 'PushFloat(${1:int handle}, ${2:float value})'
+	'UICallback.PushFloatA':
+		'prefix': 'PushFloatA'
+		'body': 'PushFloatA(${1:int handle}, ${2:float[] args})'
+	'UICallback.PushInt':
+		'prefix': 'PushInt'
+		'body': 'PushInt(${1:int handle}, ${2:int value})'
+	'UICallback.PushIntA':
+		'prefix': 'PushIntA'
+		'body': 'PushIntA(${1:int handle}, ${2:int[] args})'
+	'UICallback.PushString':
+		'prefix': 'PushString'
+		'body': 'PushString(${1:int handle}, ${2:string value})'
+	'UICallback.PushStringA':
+		'prefix': 'PushStringA'
+		'body': 'PushStringA(${1:int handle}, ${2:string[] args})'
+	'UICallback.Release':
+		'prefix': 'Release'
+		'body': 'Release(${1:int handle})'
+	'UICallback.Send':
+		'prefix': 'Send'
+		'body': 'Send(${1:int handle})'
+	'Utility.GetINIBool':
+		'prefix': 'GetINIBool'
+		'body': 'GetINIBool(${1:string ini})'
+	'Utility.GetINIFloat':
+		'prefix': 'GetINIFloat'
+		'body': 'GetINIFloat(${1:string ini})'
+	'Utility.GetINIInt':
+		'prefix': 'GetINIInt'
+		'body': 'GetINIInt(${1:string ini})'
+	'Utility.GetINIString':
+		'prefix': 'GetINIString'
+		'body': 'GetINIString(${1:string ini})'
+	'Weapon.GetBaseDamage':
+		'prefix': 'GetBaseDamage'
+		'body': 'GetBaseDamage()'
+	'Weapon.GetCritDamage':
+		'prefix': 'GetCritDamage'
+		'body': 'GetCritDamage()'
+	'Weapon.GetCritEffect':
+		'prefix': 'GetCritEffect'
+		'body': 'GetCritEffect()'
+	'Weapon.GetCritEffectOnDeath':
+		'prefix': 'GetCritEffectOnDeath'
+		'body': 'GetCritEffectOnDeath()'
+	'Weapon.GetCritMultiplier':
+		'prefix': 'GetCritMultiplier'
+		'body': 'GetCritMultiplier()'
+	'Weapon.GetEnchantment':
+		'prefix': 'GetEnchantment'
+		'body': 'GetEnchantment()'
+	'Weapon.GetEnchantmentValue':
+		'prefix': 'GetEnchantmentValue'
+		'body': 'GetEnchantmentValue()'
+	'Weapon.GetEquippedModel':
+		'prefix': 'GetEquippedModel'
+		'body': 'GetEquippedModel()'
+	'Weapon.GetEquipType':
+		'prefix': 'GetEquipType'
+		'body': 'GetEquipType()'
+	'Weapon.GetIconPath':
+		'prefix': 'GetIconPath'
+		'body': 'GetIconPath()'
+	'Weapon.GetMaxRange':
+		'prefix': 'GetMaxRange'
+		'body': 'GetMaxRange()'
+	'Weapon.GetMessageIconPath':
+		'prefix': 'GetMessageIconPath'
+		'body': 'GetMessageIconPath()'
+	'Weapon.GetMinRange':
+		'prefix': 'GetMinRange'
+		'body': 'GetMinRange()'
+	'Weapon.GetModelPath':
+		'prefix': 'GetModelPath'
+		'body': 'GetModelPath()'
+	'Weapon.GetReach':
+		'prefix': 'GetReach'
+		'body': 'GetReach()'
+	'Weapon.GetResist':
+		'prefix': 'GetResist'
+		'body': 'GetResist()'
+	'Weapon.GetSkill':
+		'prefix': 'GetSkill'
+		'body': 'GetSkill()'
+	'Weapon.GetSpeed':
+		'prefix': 'GetSpeed'
+		'body': 'GetSpeed()'
+	'Weapon.GetStagger':
+		'prefix': 'GetStagger'
+		'body': 'GetStagger()'
+	'Weapon.GetTemplate':
+		'prefix': 'GetTemplate'
+		'body': 'GetTemplate()'
+	'Weapon.GetWeaponType':
+		'prefix': 'GetWeaponType'
+		'body': 'GetWeaponType()'
+	'Weapon.IsBattleaxe':
+		'prefix': 'IsBattleaxe'
+		'body': 'IsBattleaxe()'
+	'Weapon.IsBow':
+		'prefix': 'IsBow'
+		'body': 'IsBow()'
+	'Weapon.IsDagger':
+		'prefix': 'IsDagger'
+		'body': 'IsDagger()'
+	'Weapon.IsGreatsword':
+		'prefix': 'IsGreatsword'
+		'body': 'IsGreatsword()'
+	'Weapon.IsMace':
+		'prefix': 'IsMace'
+		'body': 'IsMace()'
+	'Weapon.IsStaff':
+		'prefix': 'IsStaff'
+		'body': 'IsStaff()'
+	'Weapon.IsSword':
+		'prefix': 'IsSword'
+		'body': 'IsSword()'
+	'Weapon.IsWarAxe':
+		'prefix': 'IsWarAxe'
+		'body': 'IsWarAxe()'
+	'Weapon.IsWarhammer':
+		'prefix': 'IsWarhammer'
+		'body': 'IsWarhammer()'
+	'Weapon.SetBaseDamage':
+		'prefix': 'SetBaseDamage'
+		'body': 'SetBaseDamage(${1:int damage})'
+	'Weapon.SetCritDamage':
+		'prefix': 'SetCritDamage'
+		'body': 'SetCritDamage(${1:int damage})'
+	'Weapon.SetCritEffect':
+		'prefix': 'SetCritEffect'
+		'body': 'SetCritEffect(${1:Spell ce})'
+	'Weapon.SetCritEffectOnDeath':
+		'prefix': 'SetCritEffectOnDeath'
+		'body': 'SetCritEffectOnDeath(${1:bool ceod})'
+	'Weapon.SetCritMultiplier':
+		'prefix': 'SetCritMultiplier'
+		'body': 'SetCritMultiplier(${1:float crit})'
+	'Weapon.SetEnchantment':
+		'prefix': 'SetEnchantment'
+		'body': 'SetEnchantment(${1:Enchantment e})'
+	'Weapon.SetEnchantmentValue':
+		'prefix': 'SetEnchantmentValue'
+		'body': 'SetEnchantmentValue(${1:int value})'
+	'Weapon.SetEquippedModel':
+		'prefix': 'SetEquippedModel'
+		'body': 'SetEquippedModel(${1:Static model})'
+	'Weapon.SetEquipType':
+		'prefix': 'SetEquipType'
+		'body': 'SetEquipType(${1:EquipSlot type})'
+	'Weapon.SetIconPath':
+		'prefix': 'SetIconPath'
+		'body': 'SetIconPath(${1:string path})'
+	'Weapon.SetMaxRange':
+		'prefix': 'SetMaxRange'
+		'body': 'SetMaxRange(${1:float maxRange})'
+	'Weapon.SetMessageIconPath':
+		'prefix': 'SetMessageIconPath'
+		'body': 'SetMessageIconPath(${1:string path})'
+	'Weapon.SetMinRange':
+		'prefix': 'SetMinRange'
+		'body': 'SetMinRange(${1:float minRange})'
+	'Weapon.SetModelPath':
+		'prefix': 'SetModelPath'
+		'body': 'SetModelPath(${1:string path})'
+	'Weapon.SetReach':
+		'prefix': 'SetReach'
+		'body': 'SetReach(${1:float reach})'
+	'Weapon.SetResist':
+		'prefix': 'SetResist'
+		'body': 'SetResist(${1:string resist})'
+	'Weapon.SetSkill':
+		'prefix': 'SetSkill'
+		'body': 'SetSkill(${1:string skill})'
+	'Weapon.SetSpeed':
+		'prefix': 'SetSpeed'
+		'body': 'SetSpeed(${1:float speed})'
+	'Weapon.SetStagger':
+		'prefix': 'SetStagger'
+		'body': 'SetStagger(${1:float stagger})'
+	'Weapon.SetWeaponType':
+		'prefix': 'SetWeaponType'
+		'body': 'SetWeaponType(${1:int type})'
+	'Weather.GetFogDistance':
+		'prefix': 'GetFogDistance'
+		'body': 'GetFogDistance(${1:bool day}, ${2:int type})'
+	'Weather.GetSunDamage':
+		'prefix': 'GetSunDamage'
+		'body': 'GetSunDamage()'
+	'Weather.GetSunGlare':
+		'prefix': 'GetSunGlare'
+		'body': 'GetSunGlare()'
+	'Weather.GetWindDirection':
+		'prefix': 'GetWindDirection'
+		'body': 'GetWindDirection()'
+	'Weather.GetWindDirectionRange':
+		'prefix': 'GetWindDirectionRange'
+		'body': 'GetWindDirectionRange()'
+	'WornObject.CreateEnchantment':
+		'prefix': 'CreateEnchantment'
+		'body': 'CreateEnchantment(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:float maxCharge}, ${5:MagicEffect[] effects}, ${6:float[] magnitudes}, ${7:int[] areas}, ${8:int[] durations})'
+	'WornObject.GetDisplayName':
+		'prefix': 'GetDisplayName'
+		'body': 'GetDisplayName(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetEnchantment':
+		'prefix': 'GetEnchantment'
+		'body': 'GetEnchantment(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetItemCharge':
+		'prefix': 'GetItemCharge'
+		'body': 'GetItemCharge(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetItemHealthPercent':
+		'prefix': 'GetItemHealthPercent'
+		'body': 'GetItemHealthPercent(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetItemMaxCharge':
+		'prefix': 'GetItemMaxCharge'
+		'body': 'GetItemMaxCharge(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetNthReferenceAlias':
+		'prefix': 'GetNthReferenceAlias'
+		'body': 'GetNthReferenceAlias(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:int n})'
+	'WornObject.GetNumReferenceAliases':
+		'prefix': 'GetNumReferenceAliases'
+		'body': 'GetNumReferenceAliases(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.GetPoison':
+		'prefix': 'GetPoison'
+		'body': 'GetPoison(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask})'
+	'WornObject.SetDisplayName':
+		'prefix': 'SetDisplayName'
+		'body': 'SetDisplayName(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:string name}, ${5:bool force = false})'
+	'WornObject.SetEnchantment':
+		'prefix': 'SetEnchantment'
+		'body': 'SetEnchantment(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:Enchantment source}, ${5:float maxCharge})'
+	'WornObject.SetItemHealthPercent':
+		'prefix': 'SetItemHealthPercent'
+		'body': 'SetItemHealthPercent(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:float health})'
+	'WornObject.SetItemMaxCharge':
+		'prefix': 'SetItemMaxCharge'
+		'body': 'SetItemMaxCharge(${1:Actor akActor}, ${2:int handSlot}, ${3:int slotMask}, ${4:float maxCharge})'

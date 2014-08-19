@@ -1,0 +1,7 @@
+'.source.papyrus':
+	'editor':
+		'commentStart': '; '
+		'foldStartPattern': '(?i)^\\s*(state|event|(\\S+\\s+)?function)'
+		'foldEndPattern': '(?i)^\\s*(endstate|endevent|endfunction)'
+		'increaseIndentPattern': '(?i)^\\s*((\\w+\\s+)?function|(auto\\s+)?state|event|elseif|else|if|while|\\w+\\s+property(?!.*\\bauto(readonly)?\\b))\\b'
+		'decreaseIndentPattern': '(?i)^\\s*(endfunction|endstate|endevent|elseif|else|endif|endwhile|endproperty)\\b'

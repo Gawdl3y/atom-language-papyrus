@@ -1,0 +1,2875 @@
+'.source.papyrus':
+	'ActiveMagicEffect.AddInventoryEventFilter':
+		'prefix': 'AddInventoryEventFilter'
+		'body': 'AddInventoryEventFilter(${1:Form akFilter})'
+	'ActiveMagicEffect.Dispel':
+		'prefix': 'Dispel'
+		'body': 'Dispel()'
+	'ActiveMagicEffect.GetBaseObject':
+		'prefix': 'GetBaseObject'
+		'body': 'GetBaseObject()'
+	'ActiveMagicEffect.GetCasterActor':
+		'prefix': 'GetCasterActor'
+		'body': 'GetCasterActor()'
+	'ActiveMagicEffect.GetTargetActor':
+		'prefix': 'GetTargetActor'
+		'body': 'GetTargetActor()'
+	'ActiveMagicEffect.OnActivate':
+		'prefix': 'OnActivate'
+		'body': 'Event OnActivate(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnAnimationEvent':
+		'prefix': 'OnAnimationEvent'
+		'body': 'Event OnAnimationEvent(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnAnimationEventUnregistered':
+		'prefix': 'OnAnimationEventUnregistered'
+		'body': 'Event OnAnimationEventUnregistered(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnAttachedToCell':
+		'prefix': 'OnAttachedToCell'
+		'body': 'Event OnAttachedToCell()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnCellAttach':
+		'prefix': 'OnCellAttach'
+		'body': 'Event OnCellAttach()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnCellDetach':
+		'prefix': 'OnCellDetach'
+		'body': 'Event OnCellDetach()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnCellLoad':
+		'prefix': 'OnCellLoad'
+		'body': 'Event OnCellLoad()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnClose':
+		'prefix': 'OnClose'
+		'body': 'Event OnClose(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnCombatStateChanged':
+		'prefix': 'OnCombatStateChanged'
+		'body': 'Event OnCombatStateChanged(${1:Actor akTarget}, ${2:int aeCombatState})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnContainerChanged':
+		'prefix': 'OnContainerChanged'
+		'body': 'Event OnContainerChanged(${1:ObjectReference akNewContainer}, ${2:ObjectReference akOldContainer})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnDeath':
+		'prefix': 'OnDeath'
+		'body': 'Event OnDeath(${1:Actor akKiller})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnDestructionStageChanged':
+		'prefix': 'OnDestructionStageChanged'
+		'body': 'Event OnDestructionStageChanged(${1:int aiOldStage}, ${2:int aiCurrentStage})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnDetachedFromCell':
+		'prefix': 'OnDetachedFromCell'
+		'body': 'Event OnDetachedFromCell()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnDying':
+		'prefix': 'OnDying'
+		'body': 'Event OnDying(${1:Actor akKiller})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnEffectFinish':
+		'prefix': 'OnEffectFinish'
+		'body': 'Event OnEffectFinish(${1:Actor akTarget}, ${2:Actor akCaster})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnEffectStart':
+		'prefix': 'OnEffectStart'
+		'body': 'Event OnEffectStart(${1:Actor akTarget}, ${2:Actor akCaster})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnEquipped':
+		'prefix': 'OnEquipped'
+		'body': 'Event OnEquipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnGainLOS':
+		'prefix': 'OnGainLOS'
+		'body': 'Event OnGainLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnGetUp':
+		'prefix': 'OnGetUp'
+		'body': 'Event OnGetUp(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnGrab':
+		'prefix': 'OnGrab'
+		'body': 'Event OnGrab()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnHit':
+		'prefix': 'OnHit'
+		'body': 'Event OnHit(${1:ObjectReference akAggressor}, ${2:Form akSource}, ${3:Projectile akProjectile}, ${4:bool abPowerAttack}, ${5:bool abSneakAttack}, ${6:bool abBashAttack}, ${7:bool abHitBlocked})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnItemAdded':
+		'prefix': 'OnItemAdded'
+		'body': 'Event OnItemAdded(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akSourceContainer})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnItemRemoved':
+		'prefix': 'OnItemRemoved'
+		'body': 'Event OnItemRemoved(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akDestContainer})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnLoad':
+		'prefix': 'OnLoad'
+		'body': 'Event OnLoad()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnLocationChange':
+		'prefix': 'OnLocationChange'
+		'body': 'Event OnLocationChange(${1:Location akOldLoc}, ${2:Location akNewLoc})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnLockStateChanged':
+		'prefix': 'OnLockStateChanged'
+		'body': 'Event OnLockStateChanged()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnLostLOS':
+		'prefix': 'OnLostLOS'
+		'body': 'Event OnLostLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnMagicEffectApply':
+		'prefix': 'OnMagicEffectApply'
+		'body': 'Event OnMagicEffectApply(${1:ObjectReference akCaster}, ${2:MagicEffect akEffect})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnObjectEquipped':
+		'prefix': 'OnObjectEquipped'
+		'body': 'Event OnObjectEquipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnObjectUnequipped':
+		'prefix': 'OnObjectUnequipped'
+		'body': 'Event OnObjectUnequipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnOpen':
+		'prefix': 'OnOpen'
+		'body': 'Event OnOpen(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPackageChange':
+		'prefix': 'OnPackageChange'
+		'body': 'Event OnPackageChange(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPackageEnd':
+		'prefix': 'OnPackageEnd'
+		'body': 'Event OnPackageEnd(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPackageStart':
+		'prefix': 'OnPackageStart'
+		'body': 'Event OnPackageStart(${1:Package akNewPackage})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPlayerBowShot':
+		'prefix': 'OnPlayerBowShot'
+		'body': 'Event OnPlayerBowShot(${1:Weapon akWeapon}, ${2:Ammo akAmmo}, ${3:float afPower}, ${4:bool abSunGazing})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnPlayerLoadGame':
+		'prefix': 'OnPlayerLoadGame'
+		'body': 'Event OnPlayerLoadGame()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnRaceSwitchComplete':
+		'prefix': 'OnRaceSwitchComplete'
+		'body': 'Event OnRaceSwitchComplete()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnRead':
+		'prefix': 'OnRead'
+		'body': 'Event OnRead()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnRelease':
+		'prefix': 'OnRelease'
+		'body': 'Event OnRelease()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnReset':
+		'prefix': 'OnReset'
+		'body': 'Event OnReset()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnSell':
+		'prefix': 'OnSell'
+		'body': 'Event OnSell(${1:Actor akSeller})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnSit':
+		'prefix': 'OnSit'
+		'body': 'Event OnSit(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnSleepStart':
+		'prefix': 'OnSleepStart'
+		'body': 'Event OnSleepStart(${1:float afSleepStartTime}, ${2:float afDesiredSleepEndTime})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnSleepStop':
+		'prefix': 'OnSleepStop'
+		'body': 'Event OnSleepStop(${1:bool abInterrupted})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnSpellCast':
+		'prefix': 'OnSpellCast'
+		'body': 'Event OnSpellCast(${1:Form akSpell})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTrackedStatsEvent':
+		'prefix': 'OnTrackedStatsEvent'
+		'body': 'Event OnTrackedStatsEvent(${1:string arStatName}, ${2:int aiStatValue})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTranslationComplete':
+		'prefix': 'OnTranslationComplete'
+		'body': 'Event OnTranslationComplete()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTranslationFailed':
+		'prefix': 'OnTranslationFailed'
+		'body': 'Event OnTranslationFailed()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTrapHit':
+		'prefix': 'OnTrapHit'
+		'body': 'Event OnTrapHit(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTrapHitStart':
+		'prefix': 'OnTrapHitStart'
+		'body': 'Event OnTrapHitStart(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTrapHitStop':
+		'prefix': 'OnTrapHitStop'
+		'body': 'Event OnTrapHitStop(${1:ObjectReference akTarget})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTrigger':
+		'prefix': 'OnTrigger'
+		'body': 'Event OnTrigger(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTriggerEnter':
+		'prefix': 'OnTriggerEnter'
+		'body': 'Event OnTriggerEnter(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnTriggerLeave':
+		'prefix': 'OnTriggerLeave'
+		'body': 'Event OnTriggerLeave(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnUnequipped':
+		'prefix': 'OnUnequipped'
+		'body': 'Event OnUnequipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnUnload':
+		'prefix': 'OnUnload'
+		'body': 'Event OnUnload()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnUpdate':
+		'prefix': 'OnUpdate'
+		'body': 'Event OnUpdate()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnUpdateGameTime':
+		'prefix': 'OnUpdateGameTime'
+		'body': 'Event OnUpdateGameTime()\n${0}\nEndEvent'
+	'ActiveMagicEffect.OnWardHit':
+		'prefix': 'OnWardHit'
+		'body': 'Event OnWardHit(${1:ObjectReference akCaster}, ${2:Spell akSpell}, ${3:int aiStatus})\n${0}\nEndEvent'
+	'ActiveMagicEffect.RegisterForAnimationEvent':
+		'prefix': 'RegisterForAnimationEvent'
+		'body': 'RegisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'ActiveMagicEffect.RegisterForLOS':
+		'prefix': 'RegisterForLOS'
+		'body': 'RegisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'ActiveMagicEffect.RegisterForSingleLOSGain':
+		'prefix': 'RegisterForSingleLOSGain'
+		'body': 'RegisterForSingleLOSGain(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'ActiveMagicEffect.RegisterForSingleLOSLost':
+		'prefix': 'RegisterForSingleLOSLost'
+		'body': 'RegisterForSingleLOSLost(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'ActiveMagicEffect.RegisterForSingleUpdate':
+		'prefix': 'RegisterForSingleUpdate'
+		'body': 'RegisterForSingleUpdate(${1:float afInterval})'
+	'ActiveMagicEffect.RegisterForSingleUpdateGameTime':
+		'prefix': 'RegisterForSingleUpdateGameTime'
+		'body': 'RegisterForSingleUpdateGameTime(${1:float afInterval})'
+	'ActiveMagicEffect.RegisterForSleep':
+		'prefix': 'RegisterForSleep'
+		'body': 'RegisterForSleep()'
+	'ActiveMagicEffect.RegisterForTrackedStatsEvent':
+		'prefix': 'RegisterForTrackedStatsEvent'
+		'body': 'RegisterForTrackedStatsEvent()'
+	'ActiveMagicEffect.RegisterForUpdate':
+		'prefix': 'RegisterForUpdate'
+		'body': 'RegisterForUpdate(${1:float afInterval})'
+	'ActiveMagicEffect.RegisterForUpdateGameTime':
+		'prefix': 'RegisterForUpdateGameTime'
+		'body': 'RegisterForUpdateGameTime(${1:float afInterval})'
+	'ActiveMagicEffect.RemoveAllInventoryEventFilters':
+		'prefix': 'RemoveAllInventoryEventFilters'
+		'body': 'RemoveAllInventoryEventFilters()'
+	'ActiveMagicEffect.RemoveInventoryEventFilter':
+		'prefix': 'RemoveInventoryEventFilter'
+		'body': 'RemoveInventoryEventFilter(${1:Form akFilter})'
+	'ActiveMagicEffect.StartObjectProfiling':
+		'prefix': 'StartObjectProfiling'
+		'body': 'StartObjectProfiling()'
+	'ActiveMagicEffect.StopObjectProfiling':
+		'prefix': 'StopObjectProfiling'
+		'body': 'StopObjectProfiling()'
+	'ActiveMagicEffect.UnregisterForAnimationEvent':
+		'prefix': 'UnregisterForAnimationEvent'
+		'body': 'UnregisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'ActiveMagicEffect.UnregisterForLOS':
+		'prefix': 'UnregisterForLOS'
+		'body': 'UnregisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'ActiveMagicEffect.UnregisterForSleep':
+		'prefix': 'UnregisterForSleep'
+		'body': 'UnregisterForSleep()'
+	'ActiveMagicEffect.UnregisterForTrackedStatsEvent':
+		'prefix': 'UnregisterForTrackedStatsEvent'
+		'body': 'UnregisterForTrackedStatsEvent()'
+	'ActiveMagicEffect.UnregisterForUpdate':
+		'prefix': 'UnregisterForUpdate'
+		'body': 'UnregisterForUpdate()'
+	'ActiveMagicEffect.UnregisterForUpdateGameTime':
+		'prefix': 'UnregisterForUpdateGameTime'
+		'body': 'UnregisterForUpdateGameTime()'
+	'Actor.AddPerk':
+		'prefix': 'AddPerk'
+		'body': 'AddPerk(${1:Perk akPerk})'
+	'Actor.AddShout':
+		'prefix': 'AddShout'
+		'body': 'AddShout(${1:Shout akShout})'
+	'Actor.AddSpell':
+		'prefix': 'AddSpell'
+		'body': 'AddSpell(${1:Spell akSpell}, ${2:bool abVerbose})'
+	'Actor.AddToFaction':
+		'prefix': 'AddToFaction'
+		'body': 'AddToFaction(${1:Faction akFaction})'
+	'Actor.AllowBleedoutDialogue':
+		'prefix': 'AllowBleedoutDialogue'
+		'body': 'AllowBleedoutDialogue(${1:bool abCanTalk})'
+	'Actor.AllowPCDialogue':
+		'prefix': 'AllowPCDialogue'
+		'body': 'AllowPCDialogue(${1:bool abTalk})'
+	'Actor.AttachAshPile':
+		'prefix': 'AttachAshPile'
+		'body': 'AttachAshPile(${1:Form akAshPileBase = None})'
+	'Actor.CanFlyHere':
+		'prefix': 'CanFlyHere'
+		'body': 'CanFlyHere()'
+	'Actor.ClearArrested':
+		'prefix': 'ClearArrested'
+		'body': 'ClearArrested()'
+	'Actor.ClearExpressionOverride':
+		'prefix': 'ClearExpressionOverride'
+		'body': 'ClearExpressionOverride()'
+	'Actor.ClearExtraArrows':
+		'prefix': 'ClearExtraArrows'
+		'body': 'ClearExtraArrows()'
+	'Actor.ClearForcedLandingMarker':
+		'prefix': 'ClearForcedLandingMarker'
+		'body': 'ClearForcedLandingMarker()'
+	'Actor.ClearForcedMovement':
+		'prefix': 'ClearForcedMovement'
+		'body': 'ClearForcedMovement()'
+	'Actor.ClearKeepOffsetFromActor':
+		'prefix': 'ClearKeepOffsetFromActor'
+		'body': 'ClearKeepOffsetFromActor()'
+	'Actor.ClearLookAt':
+		'prefix': 'ClearLookAt'
+		'body': 'ClearLookAt()'
+	'Actor.DamageActorValue':
+		'prefix': 'DamageActorValue'
+		'body': 'DamageActorValue(${1:string asValueName}, ${2:float afDamage})'
+	'Actor.DamageAV':
+		'prefix': 'DamageAV'
+		'body': 'DamageAV(${1:string asValueName}, ${2:float afDamage})'
+	'Actor.Dismount':
+		'prefix': 'Dismount'
+		'body': 'Dismount()'
+	'Actor.DispelAllSpells':
+		'prefix': 'DispelAllSpells'
+		'body': 'DispelAllSpells()'
+	'Actor.DispelSpell':
+		'prefix': 'DispelSpell'
+		'body': 'DispelSpell(${1:Spell akSpell})'
+	'Actor.DoCombatSpellApply':
+		'prefix': 'DoCombatSpellApply'
+		'body': 'DoCombatSpellApply(${1:Spell akSpell}, ${2:ObjectReference akTarget})'
+	'Actor.DrawWeapon':
+		'prefix': 'DrawWeapon'
+		'body': 'DrawWeapon()'
+	'Actor.EnableAI':
+		'prefix': 'EnableAI'
+		'body': 'EnableAI(${1:bool abEnable = true})'
+	'Actor.EndDeferredKill':
+		'prefix': 'EndDeferredKill'
+		'body': 'EndDeferredKill()'
+	'Actor.EquipItem':
+		'prefix': 'EquipItem'
+		'body': 'EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = false}, ${3:bool abSilent = false})'
+	'Actor.EquipShout':
+		'prefix': 'EquipShout'
+		'body': 'EquipShout(${1:Shout akShout})'
+	'Actor.EquipSpell':
+		'prefix': 'EquipSpell'
+		'body': 'EquipSpell(${1:Spell akSpell}, ${2:int aiSource})'
+	'Actor.EvaluatePackage':
+		'prefix': 'EvaluatePackage'
+		'body': 'EvaluatePackage()'
+	'Actor.ForceActorValue':
+		'prefix': 'ForceActorValue'
+		'body': 'ForceActorValue(${1:string asValueName}, ${2:float afNewValue})'
+	'Actor.ForceAV':
+		'prefix': 'ForceAV'
+		'body': 'ForceAV(${1:string asValueName}, ${2:float afNewValue})'
+	'Actor.ForceMovementDirection':
+		'prefix': 'ForceMovementDirection'
+		'body': 'ForceMovementDirection(${1:float afXAngle = 0}, ${2:float afYAngle = 0}, ${3:float afZAngle = 0})'
+	'Actor.ForceMovementDirectionRamp':
+		'prefix': 'ForceMovementDirectionRamp'
+		'body': 'ForceMovementDirectionRamp(${1:float afXAngle = 0}, ${2:float afYAngle = 0}, ${3:float afZAngle = 0}, ${4:float afRampTime = 0})'
+	'Actor.ForceMovementRotationSpeed':
+		'prefix': 'ForceMovementRotationSpeed'
+		'body': 'ForceMovementRotationSpeed(${1:float afXMult = 0}, ${2:float afYMult = 0}, ${3:float afZMult = 0})'
+	'Actor.ForceMovementRotationSpeedRamp':
+		'prefix': 'ForceMovementRotationSpeedRamp'
+		'body': 'ForceMovementRotationSpeedRamp(${1:float afXMult = 0}, ${2:float afYMult = 0}, ${3:float afZMult = 0}, ${4:float afRampTime = 0})'
+	'Actor.ForceMovementSpeed':
+		'prefix': 'ForceMovementSpeed'
+		'body': 'ForceMovementSpeed(${1:float afSpeedMult})'
+	'Actor.ForceMovementSpeedRamp':
+		'prefix': 'ForceMovementSpeedRamp'
+		'body': 'ForceMovementSpeedRamp(${1:float afSpeedMult}, ${2:float afRampTime = 0})'
+	'Actor.ForceTargetAngle':
+		'prefix': 'ForceTargetAngle'
+		'body': 'ForceTargetAngle(${1:float afXAngle = 0}, ${2:float afYAngle = 0}, ${3:float afZAngle = 0})'
+	'Actor.ForceTargetDirection':
+		'prefix': 'ForceTargetDirection'
+		'body': 'ForceTargetDirection(${1:float afXAngle = 0}, ${2:float afYAngle = 0}, ${3:float afZAngle = 0})'
+	'Actor.ForceTargetSpeed':
+		'prefix': 'ForceTargetSpeed'
+		'body': 'ForceTargetSpeed(${1:float afSpeed})'
+	'Actor.GetActorBase':
+		'prefix': 'GetActorBase'
+		'body': 'GetActorBase()'
+	'Actor.GetActorValue':
+		'prefix': 'GetActorValue'
+		'body': 'GetActorValue(${1:string asValueName})'
+	'Actor.GetActorValuePercentage':
+		'prefix': 'GetActorValuePercentage'
+		'body': 'GetActorValuePercentage(${1:string asValueName})'
+	'Actor.GetAV':
+		'prefix': 'GetAV'
+		'body': 'GetAV(${1:string asValueName})'
+	'Actor.GetAVPercentage':
+		'prefix': 'GetAVPercentage'
+		'body': 'GetAVPercentage(${1:string asValueName})'
+	'Actor.GetBaseActorValue':
+		'prefix': 'GetBaseActorValue'
+		'body': 'GetBaseActorValue(${1:string asValueName})'
+	'Actor.GetBaseAV':
+		'prefix': 'GetBaseAV'
+		'body': 'GetBaseAV(${1:string asValueName})'
+	'Actor.GetBribeAmount':
+		'prefix': 'GetBribeAmount'
+		'body': 'GetBribeAmount()'
+	'Actor.GetCombatState':
+		'prefix': 'GetCombatState'
+		'body': 'GetCombatState()'
+	'Actor.GetCombatTarget':
+		'prefix': 'GetCombatTarget'
+		'body': 'GetCombatTarget()'
+	'Actor.GetCrimeFaction':
+		'prefix': 'GetCrimeFaction'
+		'body': 'GetCrimeFaction()'
+	'Actor.GetCurrentPackage':
+		'prefix': 'GetCurrentPackage'
+		'body': 'GetCurrentPackage()'
+	'Actor.GetDialogueTarget':
+		'prefix': 'GetDialogueTarget'
+		'body': 'GetDialogueTarget()'
+	'Actor.GetEquippedItemType':
+		'prefix': 'GetEquippedItemType'
+		'body': 'GetEquippedItemType(${1:int aiHand})'
+	'Actor.GetEquippedShield':
+		'prefix': 'GetEquippedShield'
+		'body': 'GetEquippedShield()'
+	'Actor.GetEquippedShout':
+		'prefix': 'GetEquippedShout'
+		'body': 'GetEquippedShout()'
+	'Actor.GetEquippedSpell':
+		'prefix': 'GetEquippedSpell'
+		'body': 'GetEquippedSpell(${1:int aiSource})'
+	'Actor.GetEquippedWeapon':
+		'prefix': 'GetEquippedWeapon'
+		'body': 'GetEquippedWeapon(${1:bool abLeftHand = false})'
+	'Actor.GetFactionRank':
+		'prefix': 'GetFactionRank'
+		'body': 'GetFactionRank(${1:Faction akFaction})'
+	'Actor.GetFactionReaction':
+		'prefix': 'GetFactionReaction'
+		'body': 'GetFactionReaction(${1:Actor akOther})'
+	'Actor.GetFlyingState':
+		'prefix': 'GetFlyingState'
+		'body': 'GetFlyingState()'
+	'Actor.GetForcedLandingMarker':
+		'prefix': 'GetForcedLandingMarker'
+		'body': 'GetForcedLandingMarker()'
+	'Actor.GetGoldAmount':
+		'prefix': 'GetGoldAmount'
+		'body': 'GetGoldAmount()'
+	'Actor.GetHighestRelationshipRank':
+		'prefix': 'GetHighestRelationshipRank'
+		'body': 'GetHighestRelationshipRank()'
+	'Actor.GetKiller':
+		'prefix': 'GetKiller'
+		'body': 'GetKiller()'
+	'Actor.GetLevel':
+		'prefix': 'GetLevel'
+		'body': 'GetLevel()'
+	'Actor.GetLeveledActorBase':
+		'prefix': 'GetLeveledActorBase'
+		'body': 'GetLeveledActorBase()'
+	'Actor.GetLightLevel':
+		'prefix': 'GetLightLevel'
+		'body': 'GetLightLevel()'
+	'Actor.GetLowestRelationshipRank':
+		'prefix': 'GetLowestRelationshipRank'
+		'body': 'GetLowestRelationshipRank()'
+	'Actor.GetNoBleedoutRecovery':
+		'prefix': 'GetNoBleedoutRecovery'
+		'body': 'GetNoBleedoutRecovery()'
+	'Actor.GetPlayerControls':
+		'prefix': 'GetPlayerControls'
+		'body': 'GetPlayerControls()'
+	'Actor.GetRace':
+		'prefix': 'GetRace'
+		'body': 'GetRace()'
+	'Actor.GetRelationshipRank':
+		'prefix': 'GetRelationshipRank'
+		'body': 'GetRelationshipRank(${1:Actor akOther})'
+	'Actor.GetSitState':
+		'prefix': 'GetSitState'
+		'body': 'GetSitState()'
+	'Actor.GetSleepState':
+		'prefix': 'GetSleepState'
+		'body': 'GetSleepState()'
+	'Actor.GetVoiceRecoveryTime':
+		'prefix': 'GetVoiceRecoveryTime'
+		'body': 'GetVoiceRecoveryTime()'
+	'Actor.HasAssociation':
+		'prefix': 'HasAssociation'
+		'body': 'HasAssociation(${1:AssociationType akAssociation}, ${2:Actor akOther = None})'
+	'Actor.HasFamilyRelationship':
+		'prefix': 'HasFamilyRelationship'
+		'body': 'HasFamilyRelationship(${1:Actor akOther = None})'
+	'Actor.HasLOS':
+		'prefix': 'HasLOS'
+		'body': 'HasLOS(${1:ObjectReference akOther})'
+	'Actor.HasMagicEffect':
+		'prefix': 'HasMagicEffect'
+		'body': 'HasMagicEffect(${1:MagicEffect akEffect})'
+	'Actor.HasMagicEffectWithKeyword':
+		'prefix': 'HasMagicEffectWithKeyword'
+		'body': 'HasMagicEffectWithKeyword(${1:Keyword akKeyword})'
+	'Actor.HasParentRelationship':
+		'prefix': 'HasParentRelationship'
+		'body': 'HasParentRelationship(${1:Actor akOther})'
+	'Actor.HasPerk':
+		'prefix': 'HasPerk'
+		'body': 'HasPerk(${1:Perk akPerk})'
+	'Actor.HasSpell':
+		'prefix': 'HasSpell'
+		'body': 'HasSpell(${1:Form akForm})'
+	'Actor.IsAlarmed':
+		'prefix': 'IsAlarmed'
+		'body': 'IsAlarmed()'
+	'Actor.IsAlerted':
+		'prefix': 'IsAlerted'
+		'body': 'IsAlerted()'
+	'Actor.IsAllowedToFly':
+		'prefix': 'IsAllowedToFly'
+		'body': 'IsAllowedToFly()'
+	'Actor.IsArrested':
+		'prefix': 'IsArrested'
+		'body': 'IsArrested()'
+	'Actor.IsArrestingTarget':
+		'prefix': 'IsArrestingTarget'
+		'body': 'IsArrestingTarget()'
+	'Actor.IsBeingRidden':
+		'prefix': 'IsBeingRidden'
+		'body': 'IsBeingRidden()'
+	'Actor.IsBleedingOut':
+		'prefix': 'IsBleedingOut'
+		'body': 'IsBleedingOut()'
+	'Actor.IsBribed':
+		'prefix': 'IsBribed'
+		'body': 'IsBribed()'
+	'Actor.IsChild':
+		'prefix': 'IsChild'
+		'body': 'IsChild()'
+	'Actor.IsCommandedActor':
+		'prefix': 'IsCommandedActor'
+		'body': 'IsCommandedActor()'
+	'Actor.IsDead':
+		'prefix': 'IsDead'
+		'body': 'IsDead()'
+	'Actor.IsDetectedBy':
+		'prefix': 'IsDetectedBy'
+		'body': 'IsDetectedBy(${1:Actor akOther})'
+	'Actor.IsDoingFavor':
+		'prefix': 'IsDoingFavor'
+		'body': 'IsDoingFavor()'
+	'Actor.IsEquipped':
+		'prefix': 'IsEquipped'
+		'body': 'IsEquipped(${1:Form akItem})'
+	'Actor.IsEssential':
+		'prefix': 'IsEssential'
+		'body': 'IsEssential()'
+	'Actor.IsFlying':
+		'prefix': 'IsFlying'
+		'body': 'IsFlying()'
+	'Actor.IsGhost':
+		'prefix': 'IsGhost'
+		'body': 'IsGhost()'
+	'Actor.IsGuard':
+		'prefix': 'IsGuard'
+		'body': 'IsGuard()'
+	'Actor.IsHostileToActor':
+		'prefix': 'IsHostileToActor'
+		'body': 'IsHostileToActor(${1:Actor akActor})'
+	'Actor.IsInCombat':
+		'prefix': 'IsInCombat'
+		'body': 'IsInCombat()'
+	'Actor.IsInFaction':
+		'prefix': 'IsInFaction'
+		'body': 'IsInFaction(${1:Faction akFaction})'
+	'Actor.IsInKillMove':
+		'prefix': 'IsInKillMove'
+		'body': 'IsInKillMove()'
+	'Actor.IsIntimidated':
+		'prefix': 'IsIntimidated'
+		'body': 'IsIntimidated()'
+	'Actor.IsOnMount':
+		'prefix': 'IsOnMount'
+		'body': 'IsOnMount()'
+	'Actor.IsPlayersLastRiddenHorse':
+		'prefix': 'IsPlayersLastRiddenHorse'
+		'body': 'IsPlayersLastRiddenHorse()'
+	'Actor.IsPlayerTeammate':
+		'prefix': 'IsPlayerTeammate'
+		'body': 'IsPlayerTeammate()'
+	'Actor.IsRunning':
+		'prefix': 'IsRunning'
+		'body': 'IsRunning()'
+	'Actor.IsSneaking':
+		'prefix': 'IsSneaking'
+		'body': 'IsSneaking()'
+	'Actor.IsSprinting':
+		'prefix': 'IsSprinting'
+		'body': 'IsSprinting()'
+	'Actor.IsTrespassing':
+		'prefix': 'IsTrespassing'
+		'body': 'IsTrespassing()'
+	'Actor.IsUnconscious':
+		'prefix': 'IsUnconscious'
+		'body': 'IsUnconscious()'
+	'Actor.IsWeaponDrawn':
+		'prefix': 'IsWeaponDrawn'
+		'body': 'IsWeaponDrawn()'
+	'Actor.KeepOffsetFromActor':
+		'prefix': 'KeepOffsetFromActor'
+		'body': 'KeepOffsetFromActor(${1:Actor arTarget}, ${2:float afOffsetX}, ${3:float afOffsetY}, ${4:float afOffsetZ}, ${5:float afOffsetAngleX = 0}, ${6:float afOffsetAngleY = 0}, ${7:float afOffsetAngleZ = 0}, ${8:float afCatchUpRadius = 20}, ${9:float afFollowRadius = 5})'
+	'Actor.Kill':
+		'prefix': 'Kill'
+		'body': 'Kill(${1:Actor akKiller = None})'
+	'Actor.KillEssential':
+		'prefix': 'KillEssential'
+		'body': 'KillEssential(${1:Actor akKiller = None})'
+	'Actor.KillSilent':
+		'prefix': 'KillSilent'
+		'body': 'KillSilent(${1:Actor akKiller = None})'
+	'Actor.MakePlayerFriend':
+		'prefix': 'MakePlayerFriend'
+		'body': 'MakePlayerFriend()'
+	'Actor.ModActorValue':
+		'prefix': 'ModActorValue'
+		'body': 'ModActorValue(${1:string asValueName}, ${2:float afAmount})'
+	'Actor.ModAV':
+		'prefix': 'ModAV'
+		'body': 'ModAV(${1:string asValueName}, ${2:float afAmount})'
+	'Actor.ModFactionRank':
+		'prefix': 'ModFactionRank'
+		'body': 'ModFactionRank(${1:Faction akFaction}, ${2:int aiMod})'
+	'Actor.ModFavorPoints':
+		'prefix': 'ModFavorPoints'
+		'body': 'ModFavorPoints(${1:int iFavorPoints = 1})'
+	'Actor.ModFavorPointsWithGlobal':
+		'prefix': 'ModFavorPointsWithGlobal'
+		'body': 'ModFavorPointsWithGlobal(${1:GlobalVariable FavorPointsGlobal})'
+	'Actor.MoveToPackageLocation':
+		'prefix': 'MoveToPackageLocation'
+		'body': 'MoveToPackageLocation()'
+	'Actor.OnCombatStateChanged':
+		'prefix': 'OnCombatStateChanged'
+		'body': 'Event OnCombatStateChanged(${1:Actor akTarget}, ${2:int aeCombatState})\n${0}\nEndEvent'
+	'Actor.OnDeath':
+		'prefix': 'OnDeath'
+		'body': 'Event OnDeath(${1:Actor akKiller})\n${0}\nEndEvent'
+	'Actor.OnDying':
+		'prefix': 'OnDying'
+		'body': 'Event OnDying(${1:Actor akKiller})\n${0}\nEndEvent'
+	'Actor.OnEnterBleedout':
+		'prefix': 'OnEnterBleedout'
+		'body': 'Event OnEnterBleedout()\n${0}\nEndEvent'
+	'Actor.OnGetUp':
+		'prefix': 'OnGetUp'
+		'body': 'Event OnGetUp(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'Actor.OnLocationChange':
+		'prefix': 'OnLocationChange'
+		'body': 'Event OnLocationChange(${1:Location akOldLoc}, ${2:Location akNewLoc})\n${0}\nEndEvent'
+	'Actor.OnObjectEquipped':
+		'prefix': 'OnObjectEquipped'
+		'body': 'Event OnObjectEquipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'Actor.OnObjectUnequipped':
+		'prefix': 'OnObjectUnequipped'
+		'body': 'Event OnObjectUnequipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'Actor.OnPackageChange':
+		'prefix': 'OnPackageChange'
+		'body': 'Event OnPackageChange(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'Actor.OnPackageEnd':
+		'prefix': 'OnPackageEnd'
+		'body': 'Event OnPackageEnd(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'Actor.OnPackageStart':
+		'prefix': 'OnPackageStart'
+		'body': 'Event OnPackageStart(${1:Package akNewPackage})\n${0}\nEndEvent'
+	'Actor.OnPlayerBowShot':
+		'prefix': 'OnPlayerBowShot'
+		'body': 'Event OnPlayerBowShot(${1:Weapon akWeapon}, ${2:Ammo akAmmo}, ${3:float afPower}, ${4:bool abSunGazing})\n${0}\nEndEvent'
+	'Actor.OnPlayerLoadGame':
+		'prefix': 'OnPlayerLoadGame'
+		'body': 'Event OnPlayerLoadGame()\n${0}\nEndEvent'
+	'Actor.OnRaceSwitchComplete':
+		'prefix': 'OnRaceSwitchComplete'
+		'body': 'Event OnRaceSwitchComplete()\n${0}\nEndEvent'
+	'Actor.OnSit':
+		'prefix': 'OnSit'
+		'body': 'Event OnSit(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'Actor.OpenInventory':
+		'prefix': 'OpenInventory'
+		'body': 'OpenInventory(${1:bool abForceOpen = false})'
+	'Actor.PathToReference':
+		'prefix': 'PathToReference'
+		'body': 'PathToReference(${1:ObjectReference aTarget}, ${2:float afWalkRunPercent})'
+	'Actor.PlayIdle':
+		'prefix': 'PlayIdle'
+		'body': 'PlayIdle(${1:Idle akIdle})'
+	'Actor.PlayIdleWithTarget':
+		'prefix': 'PlayIdleWithTarget'
+		'body': 'PlayIdleWithTarget(${1:Idle akIdle}, ${2:ObjectReference akTarget})'
+	'Actor.PlaySubGraphAnimation':
+		'prefix': 'PlaySubGraphAnimation'
+		'body': 'PlaySubGraphAnimation(${1:string asEventName})'
+	'Actor.RemoveFromAllFactions':
+		'prefix': 'RemoveFromAllFactions'
+		'body': 'RemoveFromAllFactions()'
+	'Actor.RemoveFromFaction':
+		'prefix': 'RemoveFromFaction'
+		'body': 'RemoveFromFaction(${1:Faction akFaction})'
+	'Actor.RemovePerk':
+		'prefix': 'RemovePerk'
+		'body': 'RemovePerk(${1:Perk akPerk})'
+	'Actor.RemoveShout':
+		'prefix': 'RemoveShout'
+		'body': 'RemoveShout(${1:Shout akShout})'
+	'Actor.RemoveSpell':
+		'prefix': 'RemoveSpell'
+		'body': 'RemoveSpell(${1:Spell akSpell})'
+	'Actor.ResetHealthAndLimbs':
+		'prefix': 'ResetHealthAndLimbs'
+		'body': 'ResetHealthAndLimbs()'
+	'Actor.RestoreActorValue':
+		'prefix': 'RestoreActorValue'
+		'body': 'RestoreActorValue(${1:string asValueName}, ${2:float afAmount})'
+	'Actor.RestoreAV':
+		'prefix': 'RestoreAV'
+		'body': 'RestoreAV(${1:string asValueName}, ${2:float afAmount})'
+	'Actor.Resurrect':
+		'prefix': 'Resurrect'
+		'body': 'Resurrect()'
+	'Actor.SendAssaultAlarm':
+		'prefix': 'SendAssaultAlarm'
+		'body': 'SendAssaultAlarm()'
+	'Actor.SendTrespassAlarm':
+		'prefix': 'SendTrespassAlarm'
+		'body': 'SendTrespassAlarm(${1:Actor akCriminal})'
+	'Actor.SetActorValue':
+		'prefix': 'SetActorValue'
+		'body': 'SetActorValue(${1:string asValueName}, ${2:float afValue})'
+	'Actor.SetAlert':
+		'prefix': 'SetAlert'
+		'body': 'SetAlert(${1:bool abAlerted = true})'
+	'Actor.SetAllowFlying':
+		'prefix': 'SetAllowFlying'
+		'body': 'SetAllowFlying(${1:bool abAllowed = true})'
+	'Actor.SetAllowFlyingEx':
+		'prefix': 'SetAllowFlyingEx'
+		'body': 'SetAllowFlyingEx(${1:bool abAllowed = true}, ${2:bool abAllowCrash = true}, ${3:bool abAllowSearch = false})'
+	'Actor.SetAlpha':
+		'prefix': 'SetAlpha'
+		'body': 'SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = false})'
+	'Actor.SetAttackActorOnSight':
+		'prefix': 'SetAttackActorOnSight'
+		'body': 'SetAttackActorOnSight(${1:bool abAttackOnSight = true})'
+	'Actor.SetAV':
+		'prefix': 'SetAV'
+		'body': 'SetAV(${1:string asValueName}, ${2:float afValue})'
+	'Actor.SetBribed':
+		'prefix': 'SetBribed'
+		'body': 'SetBribed(${1:bool abBribe = true})'
+	'Actor.SetCrimeFaction':
+		'prefix': 'SetCrimeFaction'
+		'body': 'SetCrimeFaction(${1:Faction akFaction})'
+	'Actor.SetCriticalStage':
+		'prefix': 'SetCriticalStage'
+		'body': 'SetCriticalStage(${1:int aiStage})'
+	'Actor.SetDoingFavor':
+		'prefix': 'SetDoingFavor'
+		'body': 'SetDoingFavor(${1:bool abDoingFavor = true})'
+	'Actor.SetDontMove':
+		'prefix': 'SetDontMove'
+		'body': 'SetDontMove(${1:bool abDontMove = true})'
+	'Actor.SetExpressionOverride':
+		'prefix': 'SetExpressionOverride'
+		'body': 'SetExpressionOverride(${1:int aiMood}, ${2:int aiStrength = 100})'
+	'Actor.SetEyeTexture':
+		'prefix': 'SetEyeTexture'
+		'body': 'SetEyeTexture(${1:TextureSet akNewTexture})'
+	'Actor.SetFactionRank':
+		'prefix': 'SetFactionRank'
+		'body': 'SetFactionRank(${1:Faction akFaction}, ${2:int aiRank})'
+	'Actor.SetForcedLandingMarker':
+		'prefix': 'SetForcedLandingMarker'
+		'body': 'SetForcedLandingMarker(${1:ObjectReference aMarker})'
+	'Actor.SetGhost':
+		'prefix': 'SetGhost'
+		'body': 'SetGhost(${1:bool abIsGhost = true})'
+	'Actor.SetHeadTracking':
+		'prefix': 'SetHeadTracking'
+		'body': 'SetHeadTracking(${1:bool abEnable = true})'
+	'Actor.SetIntimidated':
+		'prefix': 'SetIntimidated'
+		'body': 'SetIntimidated(${1:bool abIntimidate = true})'
+	'Actor.SetLookAt':
+		'prefix': 'SetLookAt'
+		'body': 'SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = false})'
+	'Actor.SetNoBleedoutRecovery':
+		'prefix': 'SetNoBleedoutRecovery'
+		'body': 'SetNoBleedoutRecovery(${1:bool abAllowed})'
+	'Actor.SetNotShowOnStealthMeter':
+		'prefix': 'SetNotShowOnStealthMeter'
+		'body': 'SetNotShowOnStealthMeter(${1:bool abNotShow})'
+	'Actor.SetOutfit':
+		'prefix': 'SetOutfit'
+		'body': 'SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})'
+	'Actor.SetPlayerControls':
+		'prefix': 'SetPlayerControls'
+		'body': 'SetPlayerControls(${1:bool abControls})'
+	'Actor.SetPlayerResistingArrest':
+		'prefix': 'SetPlayerResistingArrest'
+		'body': 'SetPlayerResistingArrest()'
+	'Actor.SetPlayerTeammate':
+		'prefix': 'SetPlayerTeammate'
+		'body': 'SetPlayerTeammate(${1:bool abTeammate = true}, ${2:bool abCanDoFavor})'
+	'Actor.SetRace':
+		'prefix': 'SetRace'
+		'body': 'SetRace(${1:Race akRace = None})'
+	'Actor.SetRelationshipRank':
+		'prefix': 'SetRelationshipRank'
+		'body': 'SetRelationshipRank(${1:Actor akOther}, ${2:int aiRank})'
+	'Actor.SetRestrained':
+		'prefix': 'SetRestrained'
+		'body': 'SetRestrained(${1:bool abRestrained = true})'
+	'Actor.SetSubGraphFloatVariable':
+		'prefix': 'SetSubGraphFloatVariable'
+		'body': 'SetSubGraphFloatVariable(${1:string asVariableName}, ${2:float afValue})'
+	'Actor.SetUnconscious':
+		'prefix': 'SetUnconscious'
+		'body': 'SetUnconscious(${1:bool abUnconscious = true})'
+	'Actor.SetVehicle':
+		'prefix': 'SetVehicle'
+		'body': 'SetVehicle(${1:ObjectReference akVehicle})'
+	'Actor.SetVoiceRecoveryTime':
+		'prefix': 'SetVoiceRecoveryTime'
+		'body': 'SetVoiceRecoveryTime(${1:float afTime})'
+	'Actor.ShowBarterMenu':
+		'prefix': 'ShowBarterMenu'
+		'body': 'ShowBarterMenu()'
+	'Actor.ShowGiftMenu':
+		'prefix': 'ShowGiftMenu'
+		'body': 'ShowGiftMenu(${1:bool abGivingGift}, ${2:FormList apFilterList = None}, ${3:bool abShowStolenItems = false}, ${4:bool abUseFavorPoints = true})'
+	'Actor.StartCannibal':
+		'prefix': 'StartCannibal'
+		'body': 'StartCannibal(${1:Actor akTarget})'
+	'Actor.StartCombat':
+		'prefix': 'StartCombat'
+		'body': 'StartCombat(${1:Actor akTarget})'
+	'Actor.StartDeferredKill':
+		'prefix': 'StartDeferredKill'
+		'body': 'StartDeferredKill()'
+	'Actor.StartSneaking':
+		'prefix': 'StartSneaking'
+		'body': 'StartSneaking()'
+	'Actor.StartVampireFeed':
+		'prefix': 'StartVampireFeed'
+		'body': 'StartVampireFeed(${1:Actor akTarget})'
+	'Actor.StopCombat':
+		'prefix': 'StopCombat'
+		'body': 'StopCombat()'
+	'Actor.StopCombatAlarm':
+		'prefix': 'StopCombatAlarm'
+		'body': 'StopCombatAlarm()'
+	'Actor.TrapSoul':
+		'prefix': 'TrapSoul'
+		'body': 'TrapSoul(${1:Actor akTarget})'
+	'Actor.UnequipAll':
+		'prefix': 'UnequipAll'
+		'body': 'UnequipAll()'
+	'Actor.UnequipItem':
+		'prefix': 'UnequipItem'
+		'body': 'UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = false}, ${3:bool abSilent = false})'
+	'Actor.UnequipItemSlot':
+		'prefix': 'UnequipItemSlot'
+		'body': 'UnequipItemSlot(${1:int aiSlot})'
+	'Actor.UnequipShout':
+		'prefix': 'UnequipShout'
+		'body': 'UnequipShout(${1:Shout akShout})'
+	'Actor.UnequipSpell':
+		'prefix': 'UnequipSpell'
+		'body': 'UnequipSpell(${1:Spell akSpell}, ${2:int aiSource})'
+	'Actor.UnLockOwnedDoorsInCell':
+		'prefix': 'UnLockOwnedDoorsInCell'
+		'body': 'UnLockOwnedDoorsInCell()'
+	'Actor.WillIntimidateSucceed':
+		'prefix': 'WillIntimidateSucceed'
+		'body': 'WillIntimidateSucceed()'
+	'Actor.WornHasKeyword':
+		'prefix': 'WornHasKeyword'
+		'body': 'WornHasKeyword(${1:Keyword akKeyword})'
+	'ActorBase.GetClass':
+		'prefix': 'GetClass'
+		'body': 'GetClass()'
+	'ActorBase.GetDeadCount':
+		'prefix': 'GetDeadCount'
+		'body': 'GetDeadCount()'
+	'ActorBase.GetGiftFilter':
+		'prefix': 'GetGiftFilter'
+		'body': 'GetGiftFilter()'
+	'ActorBase.GetRace':
+		'prefix': 'GetRace'
+		'body': 'GetRace()'
+	'ActorBase.GetSex':
+		'prefix': 'GetSex'
+		'body': 'GetSex()'
+	'ActorBase.IsEssential':
+		'prefix': 'IsEssential'
+		'body': 'IsEssential()'
+	'ActorBase.IsInvulnerable':
+		'prefix': 'IsInvulnerable'
+		'body': 'IsInvulnerable()'
+	'ActorBase.IsProtected':
+		'prefix': 'IsProtected'
+		'body': 'IsProtected()'
+	'ActorBase.IsUnique':
+		'prefix': 'IsUnique'
+		'body': 'IsUnique()'
+	'ActorBase.SetEssential':
+		'prefix': 'SetEssential'
+		'body': 'SetEssential(${1:bool abEssential = true})'
+	'ActorBase.SetInvulnerable':
+		'prefix': 'SetInvulnerable'
+		'body': 'SetInvulnerable(${1:bool abInvulnerable = true})'
+	'ActorBase.SetOutfit':
+		'prefix': 'SetOutfit'
+		'body': 'SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})'
+	'ActorBase.SetProtected':
+		'prefix': 'SetProtected'
+		'body': 'SetProtected(${1:bool abProtected = true})'
+	'Alias.GetOwningQuest':
+		'prefix': 'GetOwningQuest'
+		'body': 'GetOwningQuest()'
+	'Alias.OnAnimationEvent':
+		'prefix': 'OnAnimationEvent'
+		'body': 'Event OnAnimationEvent(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'Alias.OnAnimationEventUnregistered':
+		'prefix': 'OnAnimationEventUnregistered'
+		'body': 'Event OnAnimationEventUnregistered(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'Alias.OnGainLOS':
+		'prefix': 'OnGainLOS'
+		'body': 'Event OnGainLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'Alias.OnLostLOS':
+		'prefix': 'OnLostLOS'
+		'body': 'Event OnLostLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'Alias.OnSleepStart':
+		'prefix': 'OnSleepStart'
+		'body': 'Event OnSleepStart(${1:float afSleepStartTime}, ${2:float afDesiredSleepEndTime})\n${0}\nEndEvent'
+	'Alias.OnSleepStop':
+		'prefix': 'OnSleepStop'
+		'body': 'Event OnSleepStop(${1:bool abInterrupted})\n${0}\nEndEvent'
+	'Alias.OnTrackedStatsEvent':
+		'prefix': 'OnTrackedStatsEvent'
+		'body': 'Event OnTrackedStatsEvent(${1:string arStatName}, ${2:int aiStatValue})\n${0}\nEndEvent'
+	'Alias.OnUpdate':
+		'prefix': 'OnUpdate'
+		'body': 'Event OnUpdate()\n${0}\nEndEvent'
+	'Alias.OnUpdateGameTime':
+		'prefix': 'OnUpdateGameTime'
+		'body': 'Event OnUpdateGameTime()\n${0}\nEndEvent'
+	'Alias.RegisterForAnimationEvent':
+		'prefix': 'RegisterForAnimationEvent'
+		'body': 'RegisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'Alias.RegisterForLOS':
+		'prefix': 'RegisterForLOS'
+		'body': 'RegisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Alias.RegisterForSingleLOSGain':
+		'prefix': 'RegisterForSingleLOSGain'
+		'body': 'RegisterForSingleLOSGain(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Alias.RegisterForSingleLOSLost':
+		'prefix': 'RegisterForSingleLOSLost'
+		'body': 'RegisterForSingleLOSLost(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Alias.RegisterForSingleUpdate':
+		'prefix': 'RegisterForSingleUpdate'
+		'body': 'RegisterForSingleUpdate(${1:float afInterval})'
+	'Alias.RegisterForSingleUpdateGameTime':
+		'prefix': 'RegisterForSingleUpdateGameTime'
+		'body': 'RegisterForSingleUpdateGameTime(${1:float afInterval})'
+	'Alias.RegisterForSleep':
+		'prefix': 'RegisterForSleep'
+		'body': 'RegisterForSleep()'
+	'Alias.RegisterForTrackedStatsEvent':
+		'prefix': 'RegisterForTrackedStatsEvent'
+		'body': 'RegisterForTrackedStatsEvent()'
+	'Alias.RegisterForUpdate':
+		'prefix': 'RegisterForUpdate'
+		'body': 'RegisterForUpdate(${1:float afInterval})'
+	'Alias.RegisterForUpdateGameTime':
+		'prefix': 'RegisterForUpdateGameTime'
+		'body': 'RegisterForUpdateGameTime(${1:float afInterval})'
+	'Alias.StartObjectProfiling':
+		'prefix': 'StartObjectProfiling'
+		'body': 'StartObjectProfiling()'
+	'Alias.StopObjectProfiling':
+		'prefix': 'StopObjectProfiling'
+		'body': 'StopObjectProfiling()'
+	'Alias.UnregisterForAnimationEvent':
+		'prefix': 'UnregisterForAnimationEvent'
+		'body': 'UnregisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'Alias.UnregisterForLOS':
+		'prefix': 'UnregisterForLOS'
+		'body': 'UnregisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Alias.UnregisterForSleep':
+		'prefix': 'UnregisterForSleep'
+		'body': 'UnregisterForSleep()'
+	'Alias.UnregisterForTrackedStatsEvent':
+		'prefix': 'UnregisterForTrackedStatsEvent'
+		'body': 'UnregisterForTrackedStatsEvent()'
+	'Alias.UnregisterForUpdate':
+		'prefix': 'UnregisterForUpdate'
+		'body': 'UnregisterForUpdate()'
+	'Alias.UnregisterForUpdateGameTime':
+		'prefix': 'UnregisterForUpdateGameTime'
+		'body': 'UnregisterForUpdateGameTime()'
+	'Auto State':
+		'prefix': 'astate'
+		'body': 'Auto State ${1:state}\n\t${0}\nEndState'
+	'Cell.GetActorOwner':
+		'prefix': 'GetActorOwner'
+		'body': 'GetActorOwner()'
+	'Cell.GetFactionOwner':
+		'prefix': 'GetFactionOwner'
+		'body': 'GetFactionOwner()'
+	'Cell.IsAttached':
+		'prefix': 'IsAttached'
+		'body': 'IsAttached()'
+	'Cell.IsInterior':
+		'prefix': 'IsInterior'
+		'body': 'IsInterior()'
+	'Cell.Reset':
+		'prefix': 'Reset'
+		'body': 'Reset()'
+	'Cell.SetActorOwner':
+		'prefix': 'SetActorOwner'
+		'body': 'SetActorOwner(${1:ActorBase akActor})'
+	'Cell.SetFactionOwner':
+		'prefix': 'SetFactionOwner'
+		'body': 'SetFactionOwner(${1:Faction akFaction})'
+	'Cell.SetFogColor':
+		'prefix': 'SetFogColor'
+		'body': 'SetFogColor(${1:int aiNearRed}, ${2:int aiNearGreen}, ${3:int aiNearBlue})'
+	'Cell.SetFogPlanes':
+		'prefix': 'SetFogPlanes'
+		'body': 'SetFogPlanes(${1:float afNear}, ${2:float afFar})'
+	'Cell.SetFogPower':
+		'prefix': 'SetFogPower'
+		'body': 'SetFogPower(${1:float afPower})'
+	'Cell.SetPublic':
+		'prefix': 'SetPublic'
+		'body': 'SetPublic(${1:bool abPublic = true})'
+	'Debug.CenterOnCell':
+		'prefix': 'CenterOnCell'
+		'body': 'CenterOnCell(${1:string asCellname})'
+	'Debug.CenterOnCellAndWait':
+		'prefix': 'CenterOnCellAndWait'
+		'body': 'CenterOnCellAndWait(${1:string asCellname})'
+	'Debug.CloseUserLog':
+		'prefix': 'CloseUserLog'
+		'body': 'CloseUserLog(${1:string asLogName})'
+	'Debug.DBSendPlayerPosition':
+		'prefix': 'DBSendPlayerPosition'
+		'body': 'DBSendPlayerPosition()'
+	'Debug.DebugChannelNotify':
+		'prefix': 'DebugChannelNotify'
+		'body': 'DebugChannelNotify(${1:string channel}, ${2:string message})'
+	'Debug.DumpAliasData':
+		'prefix': 'DumpAliasData'
+		'body': 'DumpAliasData(${1:Quest akQuest})'
+	'Debug.GetConfigName':
+		'prefix': 'GetConfigName'
+		'body': 'GetConfigName()'
+	'Debug.GetPlatformName':
+		'prefix': 'GetPlatformName'
+		'body': 'GetPlatformName()'
+	'Debug.GetVersionNumber':
+		'prefix': 'GetVersionNumber'
+		'body': 'GetVersionNumber()'
+	'Debug.MessageBox':
+		'prefix': 'MessageBox'
+		'body': 'MessageBox(${1:string asMessageBoxText})'
+	'Debug.Notification':
+		'prefix': 'Notification'
+		'body': 'Notification(${1:string asNotificationText})'
+	'Debug.OpenUserLog':
+		'prefix': 'OpenUserLog'
+		'body': 'OpenUserLog(${1:string asLogName})'
+	'Debug.PlayerMoveToAndWait':
+		'prefix': 'PlayerMoveToAndWait'
+		'body': 'PlayerMoveToAndWait(${1:string asDestRef})'
+	'Debug.QuitGame':
+		'prefix': 'QuitGame'
+		'body': 'QuitGame()'
+	'Debug.SendAnimationEvent':
+		'prefix': 'SendAnimationEvent'
+		'body': 'SendAnimationEvent(${1:ObjectReference arRef}, ${2:string asEventName})'
+	'Debug.SetFootIK':
+		'prefix': 'SetFootIK'
+		'body': 'SetFootIK(${1:bool abFootIK})'
+	'Debug.SetGodMode':
+		'prefix': 'SetGodMode'
+		'body': 'SetGodMode(${1:bool abGodMode})'
+	'Debug.ShowRefPosition':
+		'prefix': 'ShowRefPosition'
+		'body': 'ShowRefPosition(${1:ObjectReference arRef})'
+	'Debug.StartScriptProfiling':
+		'prefix': 'StartScriptProfiling'
+		'body': 'StartScriptProfiling(${1:string asScriptName})'
+	'Debug.StartStackProfiling':
+		'prefix': 'StartStackProfiling'
+		'body': 'StartStackProfiling()'
+	'Debug.StopScriptProfiling':
+		'prefix': 'StopScriptProfiling'
+		'body': 'StopScriptProfiling(${1:string asScriptName})'
+	'Debug.StopStackProfiling':
+		'prefix': 'StopStackProfiling'
+		'body': 'StopStackProfiling()'
+	'Debug.TakeScreenshot':
+		'prefix': 'TakeScreenshot'
+		'body': 'TakeScreenshot(${1:string asFilename})'
+	'Debug.ToggleAI':
+		'prefix': 'ToggleAI'
+		'body': 'ToggleAI()'
+	'Debug.ToggleCollisions':
+		'prefix': 'ToggleCollisions'
+		'body': 'ToggleCollisions()'
+	'Debug.ToggleMenus':
+		'prefix': 'ToggleMenus'
+		'body': 'ToggleMenus()'
+	'Debug.Trace':
+		'prefix': 'Trace'
+		'body': 'Trace(${1:string asTextToPrint}, ${2:int aiSeverity = 0})'
+	'Debug.TraceAndBox':
+		'prefix': 'TraceAndBox'
+		'body': 'TraceAndBox(${1:string asTextToPrint}, ${2:int aiSeverity = 0})'
+	'Debug.TraceConditional':
+		'prefix': 'TraceConditional'
+		'body': 'TraceConditional(${1:string TextToPrint}, ${2:bool ShowTrace})'
+	'Debug.TraceStack':
+		'prefix': 'TraceStack'
+		'body': 'TraceStack(${1:string asTextToPrint}, ${2:int aiSeverity = 0})'
+	'Debug.TraceUser':
+		'prefix': 'TraceUser'
+		'body': 'TraceUser(${1:string asUserLog}, ${2:string asTextToPrint}, ${3:int aiSeverity = 0})'
+	'EffectShader.Play':
+		'prefix': 'Play'
+		'body': 'Play(${1:ObjectReference akObject}, ${2:float afDuration})'
+	'EffectShader.Stop':
+		'prefix': 'Stop'
+		'body': 'Stop(${1:ObjectReference akObject})'
+	'Enchantment.IsHostile':
+		'prefix': 'IsHostile'
+		'body': 'IsHostile()'
+	'Event':
+		'prefix': 'event'
+		'body': 'Event ${1:EventName}(${2:Parameters})\n\t${0}\nEndEvent'
+	'Faction.CanPayCrimeGold':
+		'prefix': 'CanPayCrimeGold'
+		'body': 'CanPayCrimeGold()'
+	'Faction.GetCrimeGold':
+		'prefix': 'GetCrimeGold'
+		'body': 'GetCrimeGold()'
+	'Faction.GetCrimeGoldNonViolent':
+		'prefix': 'GetCrimeGoldNonViolent'
+		'body': 'GetCrimeGoldNonViolent()'
+	'Faction.GetCrimeGoldViolent':
+		'prefix': 'GetCrimeGoldViolent'
+		'body': 'GetCrimeGoldViolent()'
+	'Faction.GetInfamy':
+		'prefix': 'GetInfamy'
+		'body': 'GetInfamy()'
+	'Faction.GetInfamyNonViolent':
+		'prefix': 'GetInfamyNonViolent'
+		'body': 'GetInfamyNonViolent()'
+	'Faction.GetInfamyViolent':
+		'prefix': 'GetInfamyViolent'
+		'body': 'GetInfamyViolent()'
+	'Faction.GetReaction':
+		'prefix': 'GetReaction'
+		'body': 'GetReaction(${1:Faction akOther})'
+	'Faction.GetStolenItemValueCrime':
+		'prefix': 'GetStolenItemValueCrime'
+		'body': 'GetStolenItemValueCrime()'
+	'Faction.GetStolenItemValueNoCrime':
+		'prefix': 'GetStolenItemValueNoCrime'
+		'body': 'GetStolenItemValueNoCrime()'
+	'Faction.IsFactionInCrimeGroup':
+		'prefix': 'IsFactionInCrimeGroup'
+		'body': 'IsFactionInCrimeGroup(${1:Faction akOther})'
+	'Faction.IsPlayerExpelled':
+		'prefix': 'IsPlayerExpelled'
+		'body': 'IsPlayerExpelled()'
+	'Faction.ModCrimeGold':
+		'prefix': 'ModCrimeGold'
+		'body': 'ModCrimeGold(${1:int aiAmount}, ${2:bool abViolent = false})'
+	'Faction.ModReaction':
+		'prefix': 'ModReaction'
+		'body': 'ModReaction(${1:Faction akOther}, ${2:int aiAmount})'
+	'Faction.PlayerPayCrimeGold':
+		'prefix': 'PlayerPayCrimeGold'
+		'body': 'PlayerPayCrimeGold(${1:bool abRemoveStolenItems = true}, ${2:bool abGoToJail = true})'
+	'Faction.SendAssaultAlarm':
+		'prefix': 'SendAssaultAlarm'
+		'body': 'SendAssaultAlarm()'
+	'Faction.SendPlayerToJail':
+		'prefix': 'SendPlayerToJail'
+		'body': 'SendPlayerToJail(${1:bool abRemoveInventory = true}, ${2:bool abRealJail = true})'
+	'Faction.SetAlly':
+		'prefix': 'SetAlly'
+		'body': 'SetAlly(${1:Faction akOther}, ${2:bool abSelfIsFriendToOther = false}, ${3:bool abOtherIsFriendToSelf = false})'
+	'Faction.SetCrimeGold':
+		'prefix': 'SetCrimeGold'
+		'body': 'SetCrimeGold(${1:int aiGold})'
+	'Faction.SetCrimeGoldViolent':
+		'prefix': 'SetCrimeGoldViolent'
+		'body': 'SetCrimeGoldViolent(${1:int aiGold})'
+	'Faction.SetEnemy':
+		'prefix': 'SetEnemy'
+		'body': 'SetEnemy(${1:Faction akOther}, ${2:bool abSelfIsNeutralToOther = false}, ${3:bool abOtherIsNeutralToSelf = false})'
+	'Faction.SetPlayerEnemy':
+		'prefix': 'SetPlayerEnemy'
+		'body': 'SetPlayerEnemy(${1:bool abIsEnemy = true})'
+	'Faction.SetPlayerExpelled':
+		'prefix': 'SetPlayerExpelled'
+		'body': 'SetPlayerExpelled(${1:bool abIsExpelled = true})'
+	'Faction.SetReaction':
+		'prefix': 'SetReaction'
+		'body': 'SetReaction(${1:Faction akOther}, ${2:int aiNewValue})'
+	'Pseudo For Loop':
+		'prefix': 'for'
+		'body': 'Int ${1:iCount} = 0\nWhile(${1:iCount} < ${2:maxSize})\n\t${0}\n\t${1:iCount} += 1\nEndWhile'
+	'Form.GetFormID':
+		'prefix': 'GetFormID'
+		'body': 'GetFormID()'
+	'Form.GetGoldValue':
+		'prefix': 'GetGoldValue'
+		'body': 'GetGoldValue()'
+	'Form.HasKeyword':
+		'prefix': 'HasKeyword'
+		'body': 'HasKeyword(${1:Keyword akKeyword})'
+	'Form.OnAnimationEvent':
+		'prefix': 'OnAnimationEvent'
+		'body': 'Event OnAnimationEvent(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'Form.OnAnimationEventUnregistered':
+		'prefix': 'OnAnimationEventUnregistered'
+		'body': 'Event OnAnimationEventUnregistered(${1:ObjectReference akSource}, ${2:string asEventName})\n${0}\nEndEvent'
+	'Form.OnGainLOS':
+		'prefix': 'OnGainLOS'
+		'body': 'Event OnGainLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'Form.OnLostLOS':
+		'prefix': 'OnLostLOS'
+		'body': 'Event OnLostLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})\n${0}\nEndEvent'
+	'Form.OnSleepStart':
+		'prefix': 'OnSleepStart'
+		'body': 'Event OnSleepStart(${1:float afSleepStartTime}, ${2:float afDesiredSleepEndTime})\n${0}\nEndEvent'
+	'Form.OnSleepStop':
+		'prefix': 'OnSleepStop'
+		'body': 'Event OnSleepStop(${1:bool abInterrupted})\n${0}\nEndEvent'
+	'Form.OnTrackedStatsEvent':
+		'prefix': 'OnTrackedStatsEvent'
+		'body': 'Event OnTrackedStatsEvent(${1:string arStatName}, ${2:int aiStatValue})\n${0}\nEndEvent'
+	'Form.OnUpdate':
+		'prefix': 'OnUpdate'
+		'body': 'Event OnUpdate()\n${0}\nEndEvent'
+	'Form.OnUpdateGameTime':
+		'prefix': 'OnUpdateGameTime'
+		'body': 'Event OnUpdateGameTime()\n${0}\nEndEvent'
+	'Form.PlayerKnows':
+		'prefix': 'PlayerKnows'
+		'body': 'PlayerKnows()'
+	'Form.RegisterForAnimationEvent':
+		'prefix': 'RegisterForAnimationEvent'
+		'body': 'RegisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'Form.RegisterForLOS':
+		'prefix': 'RegisterForLOS'
+		'body': 'RegisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Form.RegisterForSingleLOSGain':
+		'prefix': 'RegisterForSingleLOSGain'
+		'body': 'RegisterForSingleLOSGain(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Form.RegisterForSingleLOSLost':
+		'prefix': 'RegisterForSingleLOSLost'
+		'body': 'RegisterForSingleLOSLost(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Form.RegisterForSingleUpdate':
+		'prefix': 'RegisterForSingleUpdate'
+		'body': 'RegisterForSingleUpdate(${1:float afInterval})'
+	'Form.RegisterForSingleUpdateGameTime':
+		'prefix': 'RegisterForSingleUpdateGameTime'
+		'body': 'RegisterForSingleUpdateGameTime(${1:float afInterval})'
+	'Form.RegisterForSleep':
+		'prefix': 'RegisterForSleep'
+		'body': 'RegisterForSleep()'
+	'Form.RegisterForTrackedStatsEvent':
+		'prefix': 'RegisterForTrackedStatsEvent'
+		'body': 'RegisterForTrackedStatsEvent()'
+	'Form.RegisterForUpdate':
+		'prefix': 'RegisterForUpdate'
+		'body': 'RegisterForUpdate(${1:float afInterval})'
+	'Form.RegisterForUpdateGameTime':
+		'prefix': 'RegisterForUpdateGameTime'
+		'body': 'RegisterForUpdateGameTime(${1:float afInterval})'
+	'Form.StartObjectProfiling':
+		'prefix': 'StartObjectProfiling'
+		'body': 'StartObjectProfiling()'
+	'Form.StopObjectProfiling':
+		'prefix': 'StopObjectProfiling'
+		'body': 'StopObjectProfiling()'
+	'Form.UnregisterForAnimationEvent':
+		'prefix': 'UnregisterForAnimationEvent'
+		'body': 'UnregisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})'
+	'Form.UnregisterForLOS':
+		'prefix': 'UnregisterForLOS'
+		'body': 'UnregisterForLOS(${1:Actor akViewer}, ${2:ObjectReference akTarget})'
+	'Form.UnregisterForSleep':
+		'prefix': 'UnregisterForSleep'
+		'body': 'UnregisterForSleep()'
+	'Form.UnregisterForTrackedStatsEvent':
+		'prefix': 'UnregisterForTrackedStatsEvent'
+		'body': 'UnregisterForTrackedStatsEvent()'
+	'Form.UnregisterForUpdate':
+		'prefix': 'UnregisterForUpdate'
+		'body': 'UnregisterForUpdate()'
+	'Form.UnregisterForUpdateGameTime':
+		'prefix': 'UnregisterForUpdateGameTime'
+		'body': 'UnregisterForUpdateGameTime()'
+	'FormList.AddForm':
+		'prefix': 'AddForm'
+		'body': 'AddForm(${1:Form apForm})'
+	'FormList.Find':
+		'prefix': 'Find'
+		'body': 'Find(${1:Form apForm})'
+	'FormList.GetAt':
+		'prefix': 'GetAt'
+		'body': 'GetAt(${1:int aiIndex})'
+	'FormList.GetSize':
+		'prefix': 'GetSize'
+		'body': 'GetSize()'
+	'FormList.HasForm':
+		'prefix': 'HasForm'
+		'body': 'HasForm(${1:Form akForm})'
+	'FormList.RemoveAddedForm':
+		'prefix': 'RemoveAddedForm'
+		'body': 'RemoveAddedForm(${1:Form apForm})'
+	'FormList.Revert':
+		'prefix': 'Revert'
+		'body': 'Revert()'
+	'Function':
+		'prefix': 'function'
+		'body': '${1:Type} Function ${2:FunctionName}(${3:Parameters})\n\t${0}\nEndFunction'
+	'Game.AddAchievement':
+		'prefix': 'AddAchievement'
+		'body': 'AddAchievement(${1:int aiAchievementID})'
+	'Game.AddHavokBallAndSocketConstraint':
+		'prefix': 'AddHavokBallAndSocketConstraint'
+		'body': 'AddHavokBallAndSocketConstraint(${1:ObjectReference arRefA}, ${2:string arRefANode}, ${3:ObjectReference arRefB}, ${4:string arRefBNode}, ${5:float afRefALocalOffsetX = 0}, ${6:float afRefALocalOffsetY = 0}, ${7:float afRefALocalOffsetZ = 0}, ${8:float afRefBLocalOffsetX = 0}, ${9:float afRefBLocalOffsetY = 0}, ${10:float afRefBLocalOffsetZ = 0})'
+	'Game.AddPerkPoints':
+		'prefix': 'AddPerkPoints'
+		'body': 'AddPerkPoints(${1:int aiPerkPoints})'
+	'Game.AdvanceSkill':
+		'prefix': 'AdvanceSkill'
+		'body': 'AdvanceSkill(${1:string asSkillName}, ${2:float afMagnitude})'
+	'Game.CalculateFavorCost':
+		'prefix': 'CalculateFavorCost'
+		'body': 'CalculateFavorCost(${1:int aiFavorPrice})'
+	'Game.ClearPrison':
+		'prefix': 'ClearPrison'
+		'body': 'ClearPrison()'
+	'Game.ClearTempEffects':
+		'prefix': 'ClearTempEffects'
+		'body': 'ClearTempEffects()'
+	'Game.DisablePlayerControls':
+		'prefix': 'DisablePlayerControls'
+		'body': 'DisablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = false}, ${4:bool abLooking = false})'
+	'Game.EnableFastTravel':
+		'prefix': 'EnableFastTravel'
+		'body': 'EnableFastTravel(${1:bool abEnable = true})'
+	'Game.EnablePlayerControls':
+		'prefix': 'EnablePlayerControls'
+		'body': 'EnablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = true}, ${4:bool abLooking = true})'
+	'Game.FadeOutGame':
+		'prefix': 'FadeOutGame'
+		'body': 'FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration})'
+	'Game.FastTravel':
+		'prefix': 'FastTravel'
+		'body': 'FastTravel(${1:ObjectReference akDestination})'
+	'Game.FindClosestActor':
+		'prefix': 'FindClosestActor'
+		'body': 'FindClosestActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})'
+	'Game.FindClosestActorFromRef':
+		'prefix': 'FindClosestActorFromRef'
+		'body': 'FindClosestActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})'
+	'Game.FindClosestReferenceOfAnyTypeInList':
+		'prefix': 'FindClosestReferenceOfAnyTypeInList'
+		'body': 'FindClosestReferenceOfAnyTypeInList(${1:FormList arBaseObjects}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})'
+	'Game.FindClosestReferenceOfAnyTypeInListFromRef':
+		'prefix': 'FindClosestReferenceOfAnyTypeInListFromRef'
+		'body': 'FindClosestReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjects}, ${2:ObjectReference arCenter}, ${3:float afRadius})'
+	'Game.FindClosestReferenceOfType':
+		'prefix': 'FindClosestReferenceOfType'
+		'body': 'FindClosestReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})'
+	'Game.FindClosestReferenceOfTypeFromRef':
+		'prefix': 'FindClosestReferenceOfTypeFromRef'
+		'body': 'FindClosestReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})'
+	'Game.FindRandomActor':
+		'prefix': 'FindRandomActor'
+		'body': 'FindRandomActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})'
+	'Game.FindRandomActorFromRef':
+		'prefix': 'FindRandomActorFromRef'
+		'body': 'FindRandomActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})'
+	'Game.FindRandomReferenceOfAnyTypeInList':
+		'prefix': 'FindRandomReferenceOfAnyTypeInList'
+		'body': 'FindRandomReferenceOfAnyTypeInList(${1:FormList arBaseObjects}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})'
+	'Game.FindRandomReferenceOfAnyTypeInListFromRef':
+		'prefix': 'FindRandomReferenceOfAnyTypeInListFromRef'
+		'body': 'FindRandomReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjects}, ${2:ObjectReference arCenter}, ${3:float afRadius})'
+	'Game.FindRandomReferenceOfType':
+		'prefix': 'FindRandomReferenceOfType'
+		'body': 'FindRandomReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})'
+	'Game.FindRandomReferenceOfTypeFromRef':
+		'prefix': 'FindRandomReferenceOfTypeFromRef'
+		'body': 'FindRandomReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})'
+	'Game.ForceFirstPerson':
+		'prefix': 'ForceFirstPerson'
+		'body': 'ForceFirstPerson()'
+	'Game.ForceThirdPerson':
+		'prefix': 'ForceThirdPerson'
+		'body': 'ForceThirdPerson()'
+	'Game.GetForm':
+		'prefix': 'GetForm'
+		'body': 'GetForm(${1:int aiFormID})'
+	'Game.GetFormFromFile':
+		'prefix': 'GetFormFromFile'
+		'body': 'GetFormFromFile(${1:int aiFormID}, ${2:string asFilename})'
+	'Game.GetGameSettingFloat':
+		'prefix': 'GetGameSettingFloat'
+		'body': 'GetGameSettingFloat(${1:string asGameSetting})'
+	'Game.GetGameSettingInt':
+		'prefix': 'GetGameSettingInt'
+		'body': 'GetGameSettingInt(${1:string asGameSetting})'
+	'Game.GetGameSettingString':
+		'prefix': 'GetGameSettingString'
+		'body': 'GetGameSettingString(${1:string asGameSetting})'
+	'Game.GetPlayer':
+		'prefix': 'GetPlayer'
+		'body': 'GetPlayer()'
+	'Game.GetPlayerGrabbedRef':
+		'prefix': 'GetPlayerGrabbedRef'
+		'body': 'GetPlayerGrabbedRef()'
+	'Game.GetPlayersLastRiddenHorse':
+		'prefix': 'GetPlayersLastRiddenHorse'
+		'body': 'GetPlayersLastRiddenHorse()'
+	'Game.GetRealHoursPassed':
+		'prefix': 'GetRealHoursPassed'
+		'body': 'GetRealHoursPassed()'
+	'Game.GetSunPositionX':
+		'prefix': 'GetSunPositionX'
+		'body': 'GetSunPositionX()'
+	'Game.GetSunPositionY':
+		'prefix': 'GetSunPositionY'
+		'body': 'GetSunPositionY()'
+	'Game.GetSunPositionZ':
+		'prefix': 'GetSunPositionZ'
+		'body': 'GetSunPositionZ()'
+	'Game.HideTitleSequenceMenu':
+		'prefix': 'HideTitleSequenceMenu'
+		'body': 'HideTitleSequenceMenu()'
+	'Game.IncrementSkill':
+		'prefix': 'IncrementSkill'
+		'body': 'IncrementSkill(${1:string asSkillName})'
+	'Game.IncrementSkillBy':
+		'prefix': 'IncrementSkillBy'
+		'body': 'IncrementSkillBy(${1:string asSkillName}, ${2:int aiCount})'
+	'Game.IncrementStat':
+		'prefix': 'IncrementStat'
+		'body': 'IncrementStat(${1:string asStatName}, ${2:int aiModAmount = 1})'
+	'Game.IsActivateControlsEnabled':
+		'prefix': 'IsActivateControlsEnabled'
+		'body': 'IsActivateControlsEnabled()'
+	'Game.IsCamSwitchControlsEnabled':
+		'prefix': 'IsCamSwitchControlsEnabled'
+		'body': 'IsCamSwitchControlsEnabled()'
+	'Game.IsFastTravelControlsEnabled':
+		'prefix': 'IsFastTravelControlsEnabled'
+		'body': 'IsFastTravelControlsEnabled()'
+	'Game.IsFastTravelEnabled':
+		'prefix': 'IsFastTravelEnabled'
+		'body': 'IsFastTravelEnabled()'
+	'Game.IsFightingControlsEnabled':
+		'prefix': 'IsFightingControlsEnabled'
+		'body': 'IsFightingControlsEnabled()'
+	'Game.IsJournalControlsEnabled':
+		'prefix': 'IsJournalControlsEnabled'
+		'body': 'IsJournalControlsEnabled()'
+	'Game.IsLookingControlsEnabled':
+		'prefix': 'IsLookingControlsEnabled'
+		'body': 'IsLookingControlsEnabled()'
+	'Game.IsMenuControlsEnabled':
+		'prefix': 'IsMenuControlsEnabled'
+		'body': 'IsMenuControlsEnabled()'
+	'Game.IsMovementControlsEnabled':
+		'prefix': 'IsMovementControlsEnabled'
+		'body': 'IsMovementControlsEnabled()'
+	'Game.IsPlayerSungazing':
+		'prefix': 'IsPlayerSungazing'
+		'body': 'IsPlayerSungazing()'
+	'Game.IsSneakingControlsEnabled':
+		'prefix': 'IsSneakingControlsEnabled'
+		'body': 'IsSneakingControlsEnabled()'
+	'Game.IsWordUnlocked':
+		'prefix': 'IsWordUnlocked'
+		'body': 'IsWordUnlocked(${1:WordOfPower akWord})'
+	'Game.PlayBink':
+		'prefix': 'PlayBink'
+		'body': 'PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true})'
+	'Game.PrecacheCharGen':
+		'prefix': 'PrecacheCharGen'
+		'body': 'PrecacheCharGen()'
+	'Game.PrecacheCharGenClear':
+		'prefix': 'PrecacheCharGenClear'
+		'body': 'PrecacheCharGenClear()'
+	'Game.QueryStat':
+		'prefix': 'QueryStat'
+		'body': 'QueryStat(${1:string asStat})'
+	'Game.QuitToMainMenu':
+		'prefix': 'QuitToMainMenu'
+		'body': 'QuitToMainMenu()'
+	'Game.RemoveHavokConstraints':
+		'prefix': 'RemoveHavokConstraints'
+		'body': 'RemoveHavokConstraints(${1:ObjectReference arFirstRef}, ${2:string arFirstRefNodeName}, ${3:ObjectReference arSecondRef}, ${4:string arSecondRefNodeName})'
+	'Game.RequestAutoSave':
+		'prefix': 'RequestAutoSave'
+		'body': 'RequestAutoSave()'
+	'Game.RequestModel':
+		'prefix': 'RequestModel'
+		'body': 'RequestModel(${1:string asModelName})'
+	'Game.RequestSave':
+		'prefix': 'RequestSave'
+		'body': 'RequestSave()'
+	'Game.SendWereWolfTransformation':
+		'prefix': 'SendWereWolfTransformation'
+		'body': 'SendWereWolfTransformation()'
+	'Game.ServeTime':
+		'prefix': 'ServeTime'
+		'body': 'ServeTime()'
+	'Game.SetAllowFlyingMountLandingRequests':
+		'prefix': 'SetAllowFlyingMountLandingRequests'
+		'body': 'SetAllowFlyingMountLandingRequests(${1:bool abAllow})'
+	'Game.SetBeastForm':
+		'prefix': 'SetBeastForm'
+		'body': 'SetBeastForm(${1:bool abEntering})'
+	'Game.SetCameraTarget':
+		'prefix': 'SetCameraTarget'
+		'body': 'SetCameraTarget(${1:Actor arTarget})'
+	'Game.SetHudCartMode':
+		'prefix': 'SetHudCartMode'
+		'body': 'SetHudCartMode(${1:bool abSetCartMode = true})'
+	'Game.SetInChargen':
+		'prefix': 'SetInChargen'
+		'body': 'SetInChargen(${1:bool abDisableSaving}, ${2:bool abDisableWaiting}, ${3:bool abShowControlsDisabledMessage})'
+	'Game.SetPlayerAIDriven':
+		'prefix': 'SetPlayerAIDriven'
+		'body': 'SetPlayerAIDriven(${1:bool abAIDriven = true})'
+	'Game.SetPlayerReportCrime':
+		'prefix': 'SetPlayerReportCrime'
+		'body': 'SetPlayerReportCrime(${1:bool abReportCrime = true})'
+	'Game.SetSittingRotation':
+		'prefix': 'SetSittingRotation'
+		'body': 'SetSittingRotation(${1:float afValue})'
+	'Game.SetSunGazeImageSpaceModifier':
+		'prefix': 'SetSunGazeImageSpaceModifier'
+		'body': 'SetSunGazeImageSpaceModifier(${1:ImageSpaceModifier apImod = NONE})'
+	'Game.ShakeCamera':
+		'prefix': 'ShakeCamera'
+		'body': 'ShakeCamera(${1:ObjectReference akSource = None}, ${2:float afStrength = 0}, ${3:float afDuration = 0})'
+	'Game.ShakeController':
+		'prefix': 'ShakeController'
+		'body': 'ShakeController(${1:float afSmallMotorStrength}, ${2:float afBigMotorStreangth}, ${3:float afDuration})'
+	'Game.ShowFirstPersonGeometry':
+		'prefix': 'ShowFirstPersonGeometry'
+		'body': 'ShowFirstPersonGeometry(${1:bool abShow = true})'
+	'Game.ShowLimitedRaceMenu':
+		'prefix': 'ShowLimitedRaceMenu'
+		'body': 'ShowLimitedRaceMenu()'
+	'Game.ShowRaceMenu':
+		'prefix': 'ShowRaceMenu'
+		'body': 'ShowRaceMenu()'
+	'Game.ShowTitleSequenceMenu':
+		'prefix': 'ShowTitleSequenceMenu'
+		'body': 'ShowTitleSequenceMenu()'
+	'Game.ShowTrainingMenu':
+		'prefix': 'ShowTrainingMenu'
+		'body': 'ShowTrainingMenu(${1:Actor aTrainer})'
+	'Game.StartTitleSequence':
+		'prefix': 'StartTitleSequence'
+		'body': 'StartTitleSequence(${1:string asSequenceName})'
+	'Game.TeachWord':
+		'prefix': 'TeachWord'
+		'body': 'TeachWord(${1:WordOfPower akWord})'
+	'Game.TriggerScreenBlood':
+		'prefix': 'TriggerScreenBlood'
+		'body': 'TriggerScreenBlood(${1:int aiValue})'
+	'Game.UnlockWord':
+		'prefix': 'UnlockWord'
+		'body': 'UnlockWord(${1:WordOfPower akWord})'
+	'Game.UsingGamepad':
+		'prefix': 'UsingGamepad'
+		'body': 'UsingGamepad()'
+	'GetState()':
+		'prefix': 'getstate'
+		'body': 'GetState()'
+	'GlobalVariable.get':
+		'prefix': 'get'
+		'body': 'get()'
+	'GlobalVariable.GetValue':
+		'prefix': 'GetValue'
+		'body': 'GetValue()'
+	'GlobalVariable.GetValueInt':
+		'prefix': 'GetValueInt'
+		'body': 'GetValueInt()'
+	'GlobalVariable.Mod':
+		'prefix': 'Mod'
+		'body': 'Mod(${1:float afHowMuch})'
+	'GlobalVariable.set':
+		'prefix': 'set'
+		'body': 'set(${1:float afValue})'
+	'GlobalVariable.SetValue':
+		'prefix': 'SetValue'
+		'body': 'SetValue(${1:float afNewValue})'
+	'GlobalVariable.SetValueInt':
+		'prefix': 'SetValueInt'
+		'body': 'SetValueInt(${1:int aiNewValue})'
+	'GoToState()':
+		'prefix': 'gotostate'
+		'body': 'GoToState(${1:String asState})'
+	'If Condition':
+		'prefix': 'if'
+		'body': 'If(${1:$SELECTION})\n\t${0}\nEndIf'
+	'ImageSpaceModifier.Apply':
+		'prefix': 'Apply'
+		'body': 'Apply(${1:float afStrength = 1})'
+	'ImageSpaceModifier.ApplyCrossFade':
+		'prefix': 'ApplyCrossFade'
+		'body': 'ApplyCrossFade(${1:float afFadeDuration = 1})'
+	'ImageSpaceModifier.PopTo':
+		'prefix': 'PopTo'
+		'body': 'PopTo(${1:ImageSpaceModifier akNewModifier}, ${2:float afStrength = 1})'
+	'ImageSpaceModifier.Remove':
+		'prefix': 'Remove'
+		'body': 'Remove()'
+	'ImageSpaceModifier.RemoveCrossFade':
+		'prefix': 'RemoveCrossFade'
+		'body': 'RemoveCrossFade(${1:float afFadeDuration = 1})'
+	'Ingredient.IsHostile':
+		'prefix': 'IsHostile'
+		'body': 'IsHostile()'
+	'Ingredient.LearnAllEffects':
+		'prefix': 'LearnAllEffects'
+		'body': 'LearnAllEffects()'
+	'Ingredient.LearnEffect':
+		'prefix': 'LearnEffect'
+		'body': 'LearnEffect(${1:int aiIndex})'
+	'Ingredient.LearnNextEffect':
+		'prefix': 'LearnNextEffect'
+		'body': 'LearnNextEffect()'
+	'Keyword.SendStoryEvent':
+		'prefix': 'SendStoryEvent'
+		'body': 'SendStoryEvent(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0})'
+	'Keyword.SendStoryEventAndWait':
+		'prefix': 'SendStoryEventAndWait'
+		'body': 'SendStoryEventAndWait(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None})'
+	'LeveledActor.AddForm':
+		'prefix': 'AddForm'
+		'body': 'AddForm(${1:Form apForm}, ${2:int aiLevel})'
+	'LeveledActor.Revert':
+		'prefix': 'Revert'
+		'body': 'Revert()'
+	'LeveledItem.AddForm':
+		'prefix': 'AddForm'
+		'body': 'AddForm(${1:Form apForm}, ${2:int aiLevel}, ${3:int aiCount})'
+	'LeveledItem.Revert':
+		'prefix': 'Revert'
+		'body': 'Revert()'
+	'LeveledSpell.AddForm':
+		'prefix': 'AddForm'
+		'body': 'AddForm(${1:Form apForm}, ${2:int aiLevel})'
+	'LeveledSpell.Revert':
+		'prefix': 'Revert'
+		'body': 'Revert()'
+	'Location.GetKeywordData':
+		'prefix': 'GetKeywordData'
+		'body': 'GetKeywordData(${1:Keyword akKeyword})'
+	'Location.GetRefTypeAliveCount':
+		'prefix': 'GetRefTypeAliveCount'
+		'body': 'GetRefTypeAliveCount(${1:LocationRefType akRefType})'
+	'Location.GetRefTypeDeadCount':
+		'prefix': 'GetRefTypeDeadCount'
+		'body': 'GetRefTypeDeadCount(${1:LocationRefType akRefType})'
+	'Location.HasCommonParent':
+		'prefix': 'HasCommonParent'
+		'body': 'HasCommonParent(${1:Location akOther}, ${2:Keyword akFilter = None})'
+	'Location.HasRefType':
+		'prefix': 'HasRefType'
+		'body': 'HasRefType(${1:LocationRefType akRefType})'
+	'Location.IsChild':
+		'prefix': 'IsChild'
+		'body': 'IsChild(${1:Location akOther})'
+	'Location.IsCleared':
+		'prefix': 'IsCleared'
+		'body': 'IsCleared()'
+	'Location.IsLoaded':
+		'prefix': 'IsLoaded'
+		'body': 'IsLoaded()'
+	'Location.IsSameLocation':
+		'prefix': 'IsSameLocation'
+		'body': 'IsSameLocation(${1:Location akOtherLocation}, ${2:Keyword akKeyword = None})'
+	'Location.SetCleared':
+		'prefix': 'SetCleared'
+		'body': 'SetCleared(${1:bool abCleared = true})'
+	'Location.SetKeywordData':
+		'prefix': 'SetKeywordData'
+		'body': 'SetKeywordData(${1:Keyword akKeyword}, ${2:float afData})'
+	'LocationAlias.Clear':
+		'prefix': 'Clear'
+		'body': 'Clear()'
+	'LocationAlias.ForceLocationTo':
+		'prefix': 'ForceLocationTo'
+		'body': 'ForceLocationTo(${1:Location akNewLocation})'
+	'LocationAlias.GetLocation':
+		'prefix': 'GetLocation'
+		'body': 'GetLocation()'
+	'MagicEffect.GetAssociatedSkill':
+		'prefix': 'GetAssociatedSkill'
+		'body': 'GetAssociatedSkill()'
+	'Math.abs':
+		'prefix': 'abs'
+		'body': 'abs(${1:float afValue})'
+	'Math.acos':
+		'prefix': 'acos'
+		'body': 'acos(${1:float afValue})'
+	'Math.asin':
+		'prefix': 'asin'
+		'body': 'asin(${1:float afValue})'
+	'Math.atan':
+		'prefix': 'atan'
+		'body': 'atan(${1:float afValue})'
+	'Math.Ceiling':
+		'prefix': 'Ceiling'
+		'body': 'Ceiling(${1:float afValue})'
+	'Math.cos':
+		'prefix': 'cos'
+		'body': 'cos(${1:float afValue})'
+	'Math.DegreesToRadians':
+		'prefix': 'DegreesToRadians'
+		'body': 'DegreesToRadians(${1:float afDegrees})'
+	'Math.Floor':
+		'prefix': 'Floor'
+		'body': 'Floor(${1:float afValue})'
+	'Math.pow':
+		'prefix': 'pow'
+		'body': 'pow(${1:float x}, ${2:float y})'
+	'Math.RadiansToDegrees':
+		'prefix': 'RadiansToDegrees'
+		'body': 'RadiansToDegrees(${1:float afRadians})'
+	'Math.sin':
+		'prefix': 'sin'
+		'body': 'sin(${1:float afValue})'
+	'Math.sqrt':
+		'prefix': 'sqrt'
+		'body': 'sqrt(${1:float afValue})'
+	'Math.tan':
+		'prefix': 'tan'
+		'body': 'tan(${1:float afValue})'
+	'Message.ResetHelpMessage':
+		'prefix': 'ResetHelpMessage'
+		'body': 'ResetHelpMessage(${1:string asEvent})'
+	'Message.Show':
+		'prefix': 'Show'
+		'body': 'Show(${1:float afArg1 = 0}, ${2:float afArg2 = 0}, ${3:float afArg3 = 0}, ${4:float afArg4 = 0}, ${5:float afArg5 = 0}, ${6:float afArg6 = 0}, ${7:float afArg7 = 0}, ${8:float afArg8 = 0}, ${9:float afArg9 = 0})'
+	'Message.ShowAsHelpMessage':
+		'prefix': 'ShowAsHelpMessage'
+		'body': 'ShowAsHelpMessage(${1:string asEvent}, ${2:float afDuration}, ${3:float afInterval}, ${4:int aiMaxTimes})'
+	'MusicType.Add':
+		'prefix': 'Add'
+		'body': 'Add()'
+	'MusicType.Remove':
+		'prefix': 'Remove'
+		'body': 'Remove()'
+	'ObjectReference.Activate':
+		'prefix': 'Activate'
+		'body': 'Activate(${1:ObjectReference akActivator}, ${2:bool abDefaultProcessingOnly = false})'
+	'ObjectReference.AddDependentAnimatedObjectReference':
+		'prefix': 'AddDependentAnimatedObjectReference'
+		'body': 'AddDependentAnimatedObjectReference(${1:ObjectReference akDependent})'
+	'ObjectReference.AddInventoryEventFilter':
+		'prefix': 'AddInventoryEventFilter'
+		'body': 'AddInventoryEventFilter(${1:Form akFilter})'
+	'ObjectReference.AddItem':
+		'prefix': 'AddItem'
+		'body': 'AddItem(${1:Form akItemToAdd}, ${2:int aiCount = 1}, ${3:bool abSilent = false})'
+	'ObjectReference.AddKeyIfNeeded':
+		'prefix': 'AddKeyIfNeeded'
+		'body': 'AddKeyIfNeeded(${1:ObjectReference ObjectWithNeededKey})'
+	'ObjectReference.AddToMap':
+		'prefix': 'AddToMap'
+		'body': 'AddToMap(${1:bool abAllowFastTravel = false})'
+	'ObjectReference.ApplyHavokImpulse':
+		'prefix': 'ApplyHavokImpulse'
+		'body': 'ApplyHavokImpulse(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afMagnitude})'
+	'ObjectReference.BlockActivation':
+		'prefix': 'BlockActivation'
+		'body': 'BlockActivation(${1:bool abBlocked = true})'
+	'ObjectReference.CalculateEncounterLevel':
+		'prefix': 'CalculateEncounterLevel'
+		'body': 'CalculateEncounterLevel(${1:int aiDifficulty = 4})'
+	'ObjectReference.CanFastTravelToMarker':
+		'prefix': 'CanFastTravelToMarker'
+		'body': 'CanFastTravelToMarker()'
+	'ObjectReference.ClearDestruction':
+		'prefix': 'ClearDestruction'
+		'body': 'ClearDestruction()'
+	'ObjectReference.countLinkedRefChain':
+		'prefix': 'countLinkedRefChain'
+		'body': 'countLinkedRefChain(${1:keyword apKeyword = None}, ${2:int maxExpectedLinkedRefs = 100})'
+	'ObjectReference.CreateDetectionEvent':
+		'prefix': 'CreateDetectionEvent'
+		'body': 'CreateDetectionEvent(${1:Actor akOwner}, ${2:int aiSoundLevel = 0})'
+	'ObjectReference.DamageObject':
+		'prefix': 'DamageObject'
+		'body': 'DamageObject(${1:float afDamage})'
+	'ObjectReference.Delete':
+		'prefix': 'Delete'
+		'body': 'Delete()'
+	'ObjectReference.DeleteWhenAble':
+		'prefix': 'DeleteWhenAble'
+		'body': 'DeleteWhenAble()'
+	'ObjectReference.Disable':
+		'prefix': 'Disable'
+		'body': 'Disable(${1:bool abFadeOut = false})'
+	'ObjectReference.DisableLinkChain':
+		'prefix': 'DisableLinkChain'
+		'body': 'DisableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeOut = false})'
+	'ObjectReference.DisableNoWait':
+		'prefix': 'DisableNoWait'
+		'body': 'DisableNoWait(${1:bool abFadeOut = false})'
+	'ObjectReference.DropObject':
+		'prefix': 'DropObject'
+		'body': 'DropObject(${1:Form akObject}, ${2:int aiCount = 1})'
+	'ObjectReference.Enable':
+		'prefix': 'Enable'
+		'body': 'Enable(${1:bool abFadeIn = false})'
+	'ObjectReference.EnableFastTravel':
+		'prefix': 'EnableFastTravel'
+		'body': 'EnableFastTravel(${1:bool abEnable = true})'
+	'ObjectReference.EnableLinkChain':
+		'prefix': 'EnableLinkChain'
+		'body': 'EnableLinkChain(${1:Keyword apKeyword = None})'
+	'ObjectReference.EnableNoWait':
+		'prefix': 'EnableNoWait'
+		'body': 'EnableNoWait(${1:bool abFadeIn = false})'
+	'ObjectReference.ForceAddRagdollToWorld':
+		'prefix': 'ForceAddRagdollToWorld'
+		'body': 'ForceAddRagdollToWorld()'
+	'ObjectReference.ForceRemoveRagdollFromWorld':
+		'prefix': 'ForceRemoveRagdollFromWorld'
+		'body': 'ForceRemoveRagdollFromWorld()'
+	'ObjectReference.get':
+		'prefix': 'get'
+		'body': 'get()'
+	'ObjectReference.GetActorOwner':
+		'prefix': 'GetActorOwner'
+		'body': 'GetActorOwner()'
+	'ObjectReference.GetAngleX':
+		'prefix': 'GetAngleX'
+		'body': 'GetAngleX()'
+	'ObjectReference.GetAngleY':
+		'prefix': 'GetAngleY'
+		'body': 'GetAngleY()'
+	'ObjectReference.GetAngleZ':
+		'prefix': 'GetAngleZ'
+		'body': 'GetAngleZ()'
+	'ObjectReference.GetAnimationVariableBool':
+		'prefix': 'GetAnimationVariableBool'
+		'body': 'GetAnimationVariableBool(${1:string arVariableName})'
+	'ObjectReference.GetAnimationVariableFloat':
+		'prefix': 'GetAnimationVariableFloat'
+		'body': 'GetAnimationVariableFloat(${1:string arVariableName})'
+	'ObjectReference.GetAnimationVariableInt':
+		'prefix': 'GetAnimationVariableInt'
+		'body': 'GetAnimationVariableInt(${1:string arVariableName})'
+	'ObjectReference.GetBaseObject':
+		'prefix': 'GetBaseObject'
+		'body': 'GetBaseObject()'
+	'ObjectReference.GetCurrentDestructionStage':
+		'prefix': 'GetCurrentDestructionStage'
+		'body': 'GetCurrentDestructionStage()'
+	'ObjectReference.GetCurrentLocation':
+		'prefix': 'GetCurrentLocation'
+		'body': 'GetCurrentLocation()'
+	'ObjectReference.GetCurrentScene':
+		'prefix': 'GetCurrentScene'
+		'body': 'GetCurrentScene()'
+	'ObjectReference.GetDistance':
+		'prefix': 'GetDistance'
+		'body': 'GetDistance(${1:ObjectReference akOther})'
+	'ObjectReference.GetEditorLocation':
+		'prefix': 'GetEditorLocation'
+		'body': 'GetEditorLocation()'
+	'ObjectReference.GetFactionOwner':
+		'prefix': 'GetFactionOwner'
+		'body': 'GetFactionOwner()'
+	'ObjectReference.GetHeadingAngle':
+		'prefix': 'GetHeadingAngle'
+		'body': 'GetHeadingAngle(${1:ObjectReference akOther})'
+	'ObjectReference.GetHeight':
+		'prefix': 'GetHeight'
+		'body': 'GetHeight()'
+	'ObjectReference.GetItemCount':
+		'prefix': 'GetItemCount'
+		'body': 'GetItemCount(${1:Form akItem})'
+	'ObjectReference.GetItemHealthPercent':
+		'prefix': 'GetItemHealthPercent'
+		'body': 'GetItemHealthPercent()'
+	'ObjectReference.GetKey':
+		'prefix': 'GetKey'
+		'body': 'GetKey()'
+	'ObjectReference.GetLength':
+		'prefix': 'GetLength'
+		'body': 'GetLength()'
+	'ObjectReference.GetLinkedRef':
+		'prefix': 'GetLinkedRef'
+		'body': 'GetLinkedRef(${1:Keyword apKeyword = NONE})'
+	'ObjectReference.GetLockLevel':
+		'prefix': 'GetLockLevel'
+		'body': 'GetLockLevel()'
+	'ObjectReference.GetMass':
+		'prefix': 'GetMass'
+		'body': 'GetMass()'
+	'ObjectReference.GetNthLinkedRef':
+		'prefix': 'GetNthLinkedRef'
+		'body': 'GetNthLinkedRef(${1:int aiLinkedRef})'
+	'ObjectReference.GetOpenState':
+		'prefix': 'GetOpenState'
+		'body': 'GetOpenState()'
+	'ObjectReference.GetParentCell':
+		'prefix': 'GetParentCell'
+		'body': 'GetParentCell()'
+	'ObjectReference.GetPositionX':
+		'prefix': 'GetPositionX'
+		'body': 'GetPositionX()'
+	'ObjectReference.GetPositionY':
+		'prefix': 'GetPositionY'
+		'body': 'GetPositionY()'
+	'ObjectReference.GetPositionZ':
+		'prefix': 'GetPositionZ'
+		'body': 'GetPositionZ()'
+	'ObjectReference.GetScale':
+		'prefix': 'GetScale'
+		'body': 'GetScale()'
+	'ObjectReference.GetSelfAsActor':
+		'prefix': 'GetSelfAsActor'
+		'body': 'GetSelfAsActor()'
+	'ObjectReference.GetTriggerObjectCount':
+		'prefix': 'GetTriggerObjectCount'
+		'body': 'GetTriggerObjectCount()'
+	'ObjectReference.GetVoiceType':
+		'prefix': 'GetVoiceType'
+		'body': 'GetVoiceType()'
+	'ObjectReference.GetWidth':
+		'prefix': 'GetWidth'
+		'body': 'GetWidth()'
+	'ObjectReference.GetWorldSpace':
+		'prefix': 'GetWorldSpace'
+		'body': 'GetWorldSpace()'
+	'ObjectReference.HasEffectKeyword':
+		'prefix': 'HasEffectKeyword'
+		'body': 'HasEffectKeyword(${1:Keyword akKeyword})'
+	'ObjectReference.HasNode':
+		'prefix': 'HasNode'
+		'body': 'HasNode(${1:string asNodeName})'
+	'ObjectReference.HasRefType':
+		'prefix': 'HasRefType'
+		'body': 'HasRefType(${1:LocationRefType akRefType})'
+	'ObjectReference.IgnoreFriendlyHits':
+		'prefix': 'IgnoreFriendlyHits'
+		'body': 'IgnoreFriendlyHits(${1:bool abIgnore = true})'
+	'ObjectReference.InterruptCast':
+		'prefix': 'InterruptCast'
+		'body': 'InterruptCast()'
+	'ObjectReference.Is3DLoaded':
+		'prefix': 'Is3DLoaded'
+		'body': 'Is3DLoaded()'
+	'ObjectReference.IsActivateChild':
+		'prefix': 'IsActivateChild'
+		'body': 'IsActivateChild(${1:ObjectReference akChild})'
+	'ObjectReference.IsActivationBlocked':
+		'prefix': 'IsActivationBlocked'
+		'body': 'IsActivationBlocked()'
+	'ObjectReference.IsDeleted':
+		'prefix': 'IsDeleted'
+		'body': 'IsDeleted()'
+	'ObjectReference.IsDisabled':
+		'prefix': 'IsDisabled'
+		'body': 'IsDisabled()'
+	'ObjectReference.IsEnabled':
+		'prefix': 'IsEnabled'
+		'body': 'IsEnabled()'
+	'ObjectReference.IsFurnitureInUse':
+		'prefix': 'IsFurnitureInUse'
+		'body': 'IsFurnitureInUse(${1:bool abIgnoreReserved = false})'
+	'ObjectReference.IsFurnitureMarkerInUse':
+		'prefix': 'IsFurnitureMarkerInUse'
+		'body': 'IsFurnitureMarkerInUse(${1:int aiMarker}, ${2:bool abIgnoreReserved = false})'
+	'ObjectReference.IsIgnoringFriendlyHits':
+		'prefix': 'IsIgnoringFriendlyHits'
+		'body': 'IsIgnoringFriendlyHits()'
+	'ObjectReference.IsInDialogueWithPlayer':
+		'prefix': 'IsInDialogueWithPlayer'
+		'body': 'IsInDialogueWithPlayer()'
+	'ObjectReference.IsInInterior':
+		'prefix': 'IsInInterior'
+		'body': 'IsInInterior()'
+	'ObjectReference.IsInLocation':
+		'prefix': 'IsInLocation'
+		'body': 'IsInLocation(${1:Location akLocation})'
+	'ObjectReference.IsLockBroken':
+		'prefix': 'IsLockBroken'
+		'body': 'IsLockBroken()'
+	'ObjectReference.IsLocked':
+		'prefix': 'IsLocked'
+		'body': 'IsLocked()'
+	'ObjectReference.IsMapMarkerVisible':
+		'prefix': 'IsMapMarkerVisible'
+		'body': 'IsMapMarkerVisible()'
+	'ObjectReference.IsNearPlayer':
+		'prefix': 'IsNearPlayer'
+		'body': 'IsNearPlayer()'
+	'ObjectReference.KnockAreaEffect':
+		'prefix': 'KnockAreaEffect'
+		'body': 'KnockAreaEffect(${1:float afMagnitude}, ${2:float afRadius})'
+	'ObjectReference.Lock':
+		'prefix': 'Lock'
+		'body': 'Lock(${1:bool abLock = true}, ${2:bool abAsOwner = false})'
+	'ObjectReference.MoveTo':
+		'prefix': 'MoveTo'
+		'body': 'MoveTo(${1:ObjectReference akTarget}, ${2:float afXOffset = 0}, ${3:float afYOffset = 0}, ${4:float afZOffset = 0}, ${5:bool abMatchRotation = true})'
+	'ObjectReference.MoveToIfUnloaded':
+		'prefix': 'MoveToIfUnloaded'
+		'body': 'MoveToIfUnloaded(${1:ObjectReference akTarget}, ${2:float afXOffset = 0}, ${3:float afYOffset = 0}, ${4:float afZOffset = 0})'
+	'ObjectReference.MoveToInteractionLocation':
+		'prefix': 'MoveToInteractionLocation'
+		'body': 'MoveToInteractionLocation(${1:ObjectReference akTarget})'
+	'ObjectReference.MoveToMyEditorLocation':
+		'prefix': 'MoveToMyEditorLocation'
+		'body': 'MoveToMyEditorLocation()'
+	'ObjectReference.MoveToNode':
+		'prefix': 'MoveToNode'
+		'body': 'MoveToNode(${1:ObjectReference akTarget}, ${2:string asNodeName})'
+	'ObjectReference.MoveToWhenUnloaded':
+		'prefix': 'MoveToWhenUnloaded'
+		'body': 'MoveToWhenUnloaded(${1:ObjectReference akTarget}, ${2:float afXOffset = 0}, ${3:float afYOffset = 0}, ${4:float afZOffset = 0})'
+	'ObjectReference.OnActivate':
+		'prefix': 'OnActivate'
+		'body': 'Event OnActivate(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnAttachedToCell':
+		'prefix': 'OnAttachedToCell'
+		'body': 'Event OnAttachedToCell()\n${0}\nEndEvent'
+	'ObjectReference.OnCellAttach':
+		'prefix': 'OnCellAttach'
+		'body': 'Event OnCellAttach()\n${0}\nEndEvent'
+	'ObjectReference.OnCellDetach':
+		'prefix': 'OnCellDetach'
+		'body': 'Event OnCellDetach()\n${0}\nEndEvent'
+	'ObjectReference.OnCellLoad':
+		'prefix': 'OnCellLoad'
+		'body': 'Event OnCellLoad()\n${0}\nEndEvent'
+	'ObjectReference.OnClose':
+		'prefix': 'OnClose'
+		'body': 'Event OnClose(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnContainerChanged':
+		'prefix': 'OnContainerChanged'
+		'body': 'Event OnContainerChanged(${1:ObjectReference akNewContainer}, ${2:ObjectReference akOldContainer})\n${0}\nEndEvent'
+	'ObjectReference.OnDestructionStageChanged':
+		'prefix': 'OnDestructionStageChanged'
+		'body': 'Event OnDestructionStageChanged(${1:int aiOldStage}, ${2:int aiCurrentStage})\n${0}\nEndEvent'
+	'ObjectReference.OnDetachedFromCell':
+		'prefix': 'OnDetachedFromCell'
+		'body': 'Event OnDetachedFromCell()\n${0}\nEndEvent'
+	'ObjectReference.OnEquipped':
+		'prefix': 'OnEquipped'
+		'body': 'Event OnEquipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ObjectReference.OnGrab':
+		'prefix': 'OnGrab'
+		'body': 'Event OnGrab()\n${0}\nEndEvent'
+	'ObjectReference.OnHit':
+		'prefix': 'OnHit'
+		'body': 'Event OnHit(${1:ObjectReference akAggressor}, ${2:Form akSource}, ${3:Projectile akProjectile}, ${4:bool abPowerAttack}, ${5:bool abSneakAttack}, ${6:bool abBashAttack}, ${7:bool abHitBlocked})\n${0}\nEndEvent'
+	'ObjectReference.OnItemAdded':
+		'prefix': 'OnItemAdded'
+		'body': 'Event OnItemAdded(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akSourceContainer})\n${0}\nEndEvent'
+	'ObjectReference.OnItemRemoved':
+		'prefix': 'OnItemRemoved'
+		'body': 'Event OnItemRemoved(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akDestContainer})\n${0}\nEndEvent'
+	'ObjectReference.OnLoad':
+		'prefix': 'OnLoad'
+		'body': 'Event OnLoad()\n${0}\nEndEvent'
+	'ObjectReference.OnLockStateChanged':
+		'prefix': 'OnLockStateChanged'
+		'body': 'Event OnLockStateChanged()\n${0}\nEndEvent'
+	'ObjectReference.OnMagicEffectApply':
+		'prefix': 'OnMagicEffectApply'
+		'body': 'Event OnMagicEffectApply(${1:ObjectReference akCaster}, ${2:MagicEffect akEffect})\n${0}\nEndEvent'
+	'ObjectReference.OnOpen':
+		'prefix': 'OnOpen'
+		'body': 'Event OnOpen(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnRead':
+		'prefix': 'OnRead'
+		'body': 'Event OnRead()\n${0}\nEndEvent'
+	'ObjectReference.OnRelease':
+		'prefix': 'OnRelease'
+		'body': 'Event OnRelease()\n${0}\nEndEvent'
+	'ObjectReference.OnReset':
+		'prefix': 'OnReset'
+		'body': 'Event OnReset()\n${0}\nEndEvent'
+	'ObjectReference.OnSell':
+		'prefix': 'OnSell'
+		'body': 'Event OnSell(${1:Actor akSeller})\n${0}\nEndEvent'
+	'ObjectReference.OnSpellCast':
+		'prefix': 'OnSpellCast'
+		'body': 'Event OnSpellCast(${1:Form akSpell})\n${0}\nEndEvent'
+	'ObjectReference.OnTranslationAlmostComplete':
+		'prefix': 'OnTranslationAlmostComplete'
+		'body': 'Event OnTranslationAlmostComplete()\n${0}\nEndEvent'
+	'ObjectReference.OnTranslationComplete':
+		'prefix': 'OnTranslationComplete'
+		'body': 'Event OnTranslationComplete()\n${0}\nEndEvent'
+	'ObjectReference.OnTranslationFailed':
+		'prefix': 'OnTranslationFailed'
+		'body': 'Event OnTranslationFailed()\n${0}\nEndEvent'
+	'ObjectReference.OnTrapHit':
+		'prefix': 'OnTrapHit'
+		'body': 'Event OnTrapHit(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ObjectReference.OnTrapHitStart':
+		'prefix': 'OnTrapHitStart'
+		'body': 'Event OnTrapHitStart(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ObjectReference.OnTrapHitStop':
+		'prefix': 'OnTrapHitStop'
+		'body': 'Event OnTrapHitStop(${1:ObjectReference akTarget})\n${0}\nEndEvent'
+	'ObjectReference.OnTrigger':
+		'prefix': 'OnTrigger'
+		'body': 'Event OnTrigger(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnTriggerEnter':
+		'prefix': 'OnTriggerEnter'
+		'body': 'Event OnTriggerEnter(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnTriggerLeave':
+		'prefix': 'OnTriggerLeave'
+		'body': 'Event OnTriggerLeave(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ObjectReference.OnUnequipped':
+		'prefix': 'OnUnequipped'
+		'body': 'Event OnUnequipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ObjectReference.OnUnload':
+		'prefix': 'OnUnload'
+		'body': 'Event OnUnload()\n${0}\nEndEvent'
+	'ObjectReference.OnWardHit':
+		'prefix': 'OnWardHit'
+		'body': 'Event OnWardHit(${1:ObjectReference akCaster}, ${2:Spell akSpell}, ${3:int aiStatus})\n${0}\nEndEvent'
+	'ObjectReference.PlaceActorAtMe':
+		'prefix': 'PlaceActorAtMe'
+		'body': 'PlaceActorAtMe(${1:ActorBase akActorToPlace}, ${2:int aiLevelMod = 4}, ${3:EncounterZone akZone = None})'
+	'ObjectReference.PlaceAtMe':
+		'prefix': 'PlaceAtMe'
+		'body': 'PlaceAtMe(${1:Form akFormToPlace}, ${2:int aiCount = 1}, ${3:bool abForcePersist = false}, ${4:bool abInitiallyDisabled = false})'
+	'ObjectReference.PlayAnimation':
+		'prefix': 'PlayAnimation'
+		'body': 'PlayAnimation(${1:string asAnimation})'
+	'ObjectReference.PlayAnimationAndWait':
+		'prefix': 'PlayAnimationAndWait'
+		'body': 'PlayAnimationAndWait(${1:string asAnimation}, ${2:string asEventName})'
+	'ObjectReference.PlayGamebryoAnimation':
+		'prefix': 'PlayGamebryoAnimation'
+		'body': 'PlayGamebryoAnimation(${1:string asAnimation}, ${2:bool abStartOver = false}, ${3:float afEaseInTime = 0})'
+	'ObjectReference.PlayImpactEffect':
+		'prefix': 'PlayImpactEffect'
+		'body': 'PlayImpactEffect(${1:ImpactDataSet akImpactEffect}, ${2:string asNodeName}, ${3:float afPickDirX = 0}, ${4:float afPickDirY = 0}, ${5:float afPickDirZ}, ${6:float afPickLength = 512}, ${7:bool abApplyNodeRotation = false}, ${8:bool abUseNodeLocalRotation = false})'
+	'ObjectReference.PlaySyncedAnimationAndWaitSS':
+		'prefix': 'PlaySyncedAnimationAndWaitSS'
+		'body': 'PlaySyncedAnimationAndWaitSS(${1:string asAnimation1}, ${2:string asEvent1}, ${3:ObjectReference akObj2}, ${4:string asAnimation2}, ${5:string asEvent2})'
+	'ObjectReference.PlaySyncedAnimationSS':
+		'prefix': 'PlaySyncedAnimationSS'
+		'body': 'PlaySyncedAnimationSS(${1:string asAnimation1}, ${2:ObjectReference akObj2}, ${3:string asAnimation2})'
+	'ObjectReference.PlayTerrainEffect':
+		'prefix': 'PlayTerrainEffect'
+		'body': 'PlayTerrainEffect(${1:string asEffectModelName}, ${2:string asAttachBoneName})'
+	'ObjectReference.ProcessTrapHit':
+		'prefix': 'ProcessTrapHit'
+		'body': 'ProcessTrapHit(${1:ObjectReference akTrap}, ${2:float afDamage}, ${3:float afPushback}, ${4:float afXVel}, ${5:float afYVel}, ${6:float afZVel}, ${7:float afXPos}, ${8:float afYPos}, ${9:float afZPos}, ${10:int aeMaterial}, ${11:float afStagger})'
+	'ObjectReference.PushActorAway':
+		'prefix': 'PushActorAway'
+		'body': 'PushActorAway(${1:Actor akActorToPush}, ${2:float aiKnockbackForce})'
+	'ObjectReference.rampRumble':
+		'prefix': 'rampRumble'
+		'body': 'rampRumble(${1:float power = 0}, ${2:float duration = 0}, ${3:float falloff = 1600})'
+	'ObjectReference.RemoveAllInventoryEventFilters':
+		'prefix': 'RemoveAllInventoryEventFilters'
+		'body': 'RemoveAllInventoryEventFilters()'
+	'ObjectReference.RemoveAllItems':
+		'prefix': 'RemoveAllItems'
+		'body': 'RemoveAllItems(${1:ObjectReference akTransferTo = None}, ${2:bool abKeepOwnership = false}, ${3:bool abRemoveQuestItems = false})'
+	'ObjectReference.RemoveDependentAnimatedObjectReference':
+		'prefix': 'RemoveDependentAnimatedObjectReference'
+		'body': 'RemoveDependentAnimatedObjectReference(${1:ObjectReference akDependent})'
+	'ObjectReference.RemoveInventoryEventFilter':
+		'prefix': 'RemoveInventoryEventFilter'
+		'body': 'RemoveInventoryEventFilter(${1:Form akFilter})'
+	'ObjectReference.RemoveItem':
+		'prefix': 'RemoveItem'
+		'body': 'RemoveItem(${1:Form akItemToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})'
+	'ObjectReference.Reset':
+		'prefix': 'Reset'
+		'body': 'Reset(${1:ObjectReference akTarget = None})'
+	'ObjectReference.Say':
+		'prefix': 'Say'
+		'body': 'Say(${1:Topic akTopicToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false})'
+	'ObjectReference.SendStealAlarm':
+		'prefix': 'SendStealAlarm'
+		'body': 'SendStealAlarm(${1:Actor akThief})'
+	'ObjectReference.SetActorCause':
+		'prefix': 'SetActorCause'
+		'body': 'SetActorCause(${1:Actor akActor})'
+	'ObjectReference.SetActorOwner':
+		'prefix': 'SetActorOwner'
+		'body': 'SetActorOwner(${1:ActorBase akActorBase})'
+	'ObjectReference.SetAngle':
+		'prefix': 'SetAngle'
+		'body': 'SetAngle(${1:float afXAngle}, ${2:float afYAngle}, ${3:float afZAngle})'
+	'ObjectReference.SetAnimationVariableBool':
+		'prefix': 'SetAnimationVariableBool'
+		'body': 'SetAnimationVariableBool(${1:string arVariableName}, ${2:bool abNewValue})'
+	'ObjectReference.SetAnimationVariableFloat':
+		'prefix': 'SetAnimationVariableFloat'
+		'body': 'SetAnimationVariableFloat(${1:string arVariableName}, ${2:float afNewValue})'
+	'ObjectReference.SetAnimationVariableInt':
+		'prefix': 'SetAnimationVariableInt'
+		'body': 'SetAnimationVariableInt(${1:string arVariableName}, ${2:int aiNewValue})'
+	'ObjectReference.SetDestroyed':
+		'prefix': 'SetDestroyed'
+		'body': 'SetDestroyed(${1:bool abDestroyed = true})'
+	'ObjectReference.SetFactionOwner':
+		'prefix': 'SetFactionOwner'
+		'body': 'SetFactionOwner(${1:Faction akFaction})'
+	'ObjectReference.SetLockLevel':
+		'prefix': 'SetLockLevel'
+		'body': 'SetLockLevel(${1:int aiLockLevel})'
+	'ObjectReference.SetMotionType':
+		'prefix': 'SetMotionType'
+		'body': 'SetMotionType(${1:int aeMotionType}, ${2:bool abAllowActivate = true})'
+	'ObjectReference.SetNoFavorAllowed':
+		'prefix': 'SetNoFavorAllowed'
+		'body': 'SetNoFavorAllowed(${1:bool abNoFavor = true})'
+	'ObjectReference.SetOpen':
+		'prefix': 'SetOpen'
+		'body': 'SetOpen(${1:bool abOpen = true})'
+	'ObjectReference.SetPosition':
+		'prefix': 'SetPosition'
+		'body': 'SetPosition(${1:float afX}, ${2:float afY}, ${3:float afZ})'
+	'ObjectReference.SetScale':
+		'prefix': 'SetScale'
+		'body': 'SetScale(${1:float afScale})'
+	'ObjectReference.SplineTranslateTo':
+		'prefix': 'SplineTranslateTo'
+		'body': 'SplineTranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afXAngle}, ${5:float afYAngle}, ${6:float afZAngle}, ${7:float afTangentMagnitude}, ${8:float afSpeed}, ${9:float afMaxRotationSpeed = 0})'
+	'ObjectReference.SplineTranslateToRef':
+		'prefix': 'SplineTranslateToRef'
+		'body': 'SplineTranslateToRef(${1:ObjectReference arTarget}, ${2:float afTangentMagnitude}, ${3:float afSpeed}, ${4:float afMaxRotationSpeed = 0})'
+	'ObjectReference.SplineTranslateToRefNode':
+		'prefix': 'SplineTranslateToRefNode'
+		'body': 'SplineTranslateToRefNode(${1:ObjectReference arTarget}, ${2:string arNodeName}, ${3:float afTangentMagnitude}, ${4:float afSpeed}, ${5:float afMaxRotationSpeed = 0})'
+	'ObjectReference.StopTranslation':
+		'prefix': 'StopTranslation'
+		'body': 'StopTranslation()'
+	'ObjectReference.TetherToHorse':
+		'prefix': 'TetherToHorse'
+		'body': 'TetherToHorse(${1:ObjectReference akHorse})'
+	'ObjectReference.TranslateTo':
+		'prefix': 'TranslateTo'
+		'body': 'TranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afXAngle}, ${5:float afYAngle}, ${6:float afZAngle}, ${7:float afSpeed}, ${8:float afMaxRotationSpeed = 0})'
+	'ObjectReference.TranslateToRef':
+		'prefix': 'TranslateToRef'
+		'body': 'TranslateToRef(${1:ObjectReference arTarget}, ${2:float afSpeed}, ${3:float afMaxRotationSpeed = 0})'
+	'ObjectReference.WaitForAnimationEvent':
+		'prefix': 'WaitForAnimationEvent'
+		'body': 'WaitForAnimationEvent(${1:string asEventName})'
+	'OnBeginState':
+		'prefix': 'onbeginstate'
+		'body': 'Event OnBeginState()\n${0}\nEndEvent'
+	'OnEndState':
+		'prefix': 'onendstate'
+		'body': 'Event OnEndState()\n${0}\nEndEvent'
+	'OnInit':
+		'prefix': 'OnInit'
+		'body': 'Event OnInit()\n${0}\nEndEvent'
+	'Package.GetOwningQuest':
+		'prefix': 'GetOwningQuest'
+		'body': 'GetOwningQuest()'
+	'Package.GetTemplate':
+		'prefix': 'GetTemplate'
+		'body': 'GetTemplate()'
+	'Potion.IsHostile':
+		'prefix': 'IsHostile'
+		'body': 'IsHostile()'
+	'Property':
+		'prefix': 'property'
+		'body': '${1:Type} Property ${2:PropertyName} ${3:Auto}'
+	'Quest.CompleteAllObjectives':
+		'prefix': 'CompleteAllObjectives'
+		'body': 'CompleteAllObjectives()'
+	'Quest.CompleteQuest':
+		'prefix': 'CompleteQuest'
+		'body': 'CompleteQuest()'
+	'Quest.FailAllObjectives':
+		'prefix': 'FailAllObjectives'
+		'body': 'FailAllObjectives()'
+	'Quest.GetAlias':
+		'prefix': 'GetAlias'
+		'body': 'GetAlias(${1:int aiAliasID})'
+	'Quest.GetCurrentStageID':
+		'prefix': 'GetCurrentStageID'
+		'body': 'GetCurrentStageID()'
+	'Quest.GetStage':
+		'prefix': 'GetStage'
+		'body': 'GetStage()'
+	'Quest.GetStageDone':
+		'prefix': 'GetStageDone'
+		'body': 'GetStageDone(${1:int aiStage})'
+	'Quest.IsActive':
+		'prefix': 'IsActive'
+		'body': 'IsActive()'
+	'Quest.IsCompleted':
+		'prefix': 'IsCompleted'
+		'body': 'IsCompleted()'
+	'Quest.IsObjectiveCompleted':
+		'prefix': 'IsObjectiveCompleted'
+		'body': 'IsObjectiveCompleted(${1:int aiObjective})'
+	'Quest.IsObjectiveDisplayed':
+		'prefix': 'IsObjectiveDisplayed'
+		'body': 'IsObjectiveDisplayed(${1:int aiObjective})'
+	'Quest.IsObjectiveFailed':
+		'prefix': 'IsObjectiveFailed'
+		'body': 'IsObjectiveFailed(${1:int aiObjective})'
+	'Quest.IsRunning':
+		'prefix': 'IsRunning'
+		'body': 'IsRunning()'
+	'Quest.IsStageDone':
+		'prefix': 'IsStageDone'
+		'body': 'IsStageDone(${1:int aiStage})'
+	'Quest.IsStarting':
+		'prefix': 'IsStarting'
+		'body': 'IsStarting()'
+	'Quest.IsStopped':
+		'prefix': 'IsStopped'
+		'body': 'IsStopped()'
+	'Quest.IsStopping':
+		'prefix': 'IsStopping'
+		'body': 'IsStopping()'
+	'Quest.ModObjectiveGlobal':
+		'prefix': 'ModObjectiveGlobal'
+		'body': 'ModObjectiveGlobal(${1:float afModValue}, ${2:GlobalVariable aModGlobal}, ${3:int aiObjectiveID}, ${4:float afTargetValue}, ${5:bool abCountingUp = true}, ${6:bool abCompleteObjective = true}, ${7:bool abRedisplayObjective = true})'
+	'Quest.OnStoryActivateActor':
+		'prefix': 'OnStoryActivateActor'
+		'body': 'Event OnStoryActivateActor(${1:Location akLocation}, ${2:ObjectReference akActor})\n${0}\nEndEvent'
+	'Quest.OnStoryAddToPlayer':
+		'prefix': 'OnStoryAddToPlayer'
+		'body': 'Event OnStoryAddToPlayer(${1:ObjectReference akOwner}, ${2:ObjectReference akContainer})\n${0}\nEndEvent'
+	'Quest.OnStoryArrest':
+		'prefix': 'OnStoryArrest'
+		'body': 'Event OnStoryArrest(${1:ObjectReference akArrestingGuard}, ${2:ObjectReference akCriminal})\n${0}\nEndEvent'
+	'Quest.OnStoryAssaultActor':
+		'prefix': 'OnStoryAssaultActor'
+		'body': 'Event OnStoryAssaultActor(${1:ObjectReference akVictim}, ${2:ObjectReference akAttacker})\n${0}\nEndEvent'
+	'Quest.OnStoryBribeNPC':
+		'prefix': 'OnStoryBribeNPC'
+		'body': 'Event OnStoryBribeNPC(${1:ObjectReference akActor})\n${0}\nEndEvent'
+	'Quest.OnStoryCastMagic':
+		'prefix': 'OnStoryCastMagic'
+		'body': 'Event OnStoryCastMagic(${1:ObjectReference akCastingActor}, ${2:ObjectReference akSpellTarget})\n${0}\nEndEvent'
+	'Quest.OnStoryChangeLocation':
+		'prefix': 'OnStoryChangeLocation'
+		'body': 'Event OnStoryChangeLocation(${1:ObjectReference akActor}, ${2:Location akOldLocation})\n${0}\nEndEvent'
+	'Quest.OnStoryCraftItem':
+		'prefix': 'OnStoryCraftItem'
+		'body': 'Event OnStoryCraftItem(${1:ObjectReference akBench}, ${2:Location akLocation}, ${3:Form akCreatedItem})\n${0}\nEndEvent'
+	'Quest.OnStoryCrimeGold':
+		'prefix': 'OnStoryCrimeGold'
+		'body': 'Event OnStoryCrimeGold(${1:ObjectReference akVictim}, ${2:ObjectReference akCriminal})\n${0}\nEndEvent'
+	'Quest.OnStoryCure':
+		'prefix': 'OnStoryCure'
+		'body': 'Event OnStoryCure(${1:Form akInfection})\n${0}\nEndEvent'
+	'Quest.OnStoryDialogue':
+		'prefix': 'OnStoryDialogue'
+		'body': 'Event OnStoryDialogue(${1:Location akLocation}, ${2:ObjectReference akActor1}, ${3:ObjectReference akActor2})\n${0}\nEndEvent'
+	'Quest.OnStoryDiscoverDeadBody':
+		'prefix': 'OnStoryDiscoverDeadBody'
+		'body': 'Event OnStoryDiscoverDeadBody(${1:ObjectReference akActor}, ${2:ObjectReference akDeadActor})\n${0}\nEndEvent'
+	'Quest.OnStoryEscapeJail':
+		'prefix': 'OnStoryEscapeJail'
+		'body': 'Event OnStoryEscapeJail(${1:Location akLocation}, ${2:Form akCrimeGroup})\n${0}\nEndEvent'
+	'Quest.OnStoryFlatterNPC':
+		'prefix': 'OnStoryFlatterNPC'
+		'body': 'Event OnStoryFlatterNPC(${1:ObjectReference akActor})\n${0}\nEndEvent'
+	'Quest.OnStoryHello':
+		'prefix': 'OnStoryHello'
+		'body': 'Event OnStoryHello(${1:Location akLocation}, ${2:ObjectReference akActor1}, ${3:ObjectReference akActor2})\n${0}\nEndEvent'
+	'Quest.OnStoryIncreaseLevel':
+		'prefix': 'OnStoryIncreaseLevel'
+		'body': 'Event OnStoryIncreaseLevel(${1:int aiNewLevel})\n${0}\nEndEvent'
+	'Quest.OnStoryIncreaseSkill':
+		'prefix': 'OnStoryIncreaseSkill'
+		'body': 'Event OnStoryIncreaseSkill(${1:string asSkill})\n${0}\nEndEvent'
+	'Quest.OnStoryInfection':
+		'prefix': 'OnStoryInfection'
+		'body': 'Event OnStoryInfection(${1:ObjectReference akTransmittingActor}, ${2:Form akInfection})\n${0}\nEndEvent'
+	'Quest.OnStoryIntimidateNPC':
+		'prefix': 'OnStoryIntimidateNPC'
+		'body': 'Event OnStoryIntimidateNPC(${1:ObjectReference akActor})\n${0}\nEndEvent'
+	'Quest.OnStoryJail':
+		'prefix': 'OnStoryJail'
+		'body': 'Event OnStoryJail(${1:ObjectReference akGuard}, ${2:Form akCrimeGroup}, ${3:Location akLocation})\n${0}\nEndEvent'
+	'Quest.OnStoryKillActor':
+		'prefix': 'OnStoryKillActor'
+		'body': 'Event OnStoryKillActor(${1:ObjectReference akVictim}, ${2:ObjectReference akKiller})\n${0}\nEndEvent'
+	'Quest.OnStoryNewVoicePower':
+		'prefix': 'OnStoryNewVoicePower'
+		'body': 'Event OnStoryNewVoicePower(${1:ObjectReference akActor}, ${2:Form akVoicePower})\n${0}\nEndEvent'
+	'Quest.OnStoryPayFine':
+		'prefix': 'OnStoryPayFine'
+		'body': 'Event OnStoryPayFine(${1:ObjectReference akCriminal}, ${2:ObjectReference akGuard})\n${0}\nEndEvent'
+	'Quest.OnStoryPickLock':
+		'prefix': 'OnStoryPickLock'
+		'body': 'Event OnStoryPickLock(${1:ObjectReference akActor}, ${2:ObjectReference akLock})\n${0}\nEndEvent'
+	'Quest.OnStoryPlayerGetsFavor':
+		'prefix': 'OnStoryPlayerGetsFavor'
+		'body': 'Event OnStoryPlayerGetsFavor(${1:ObjectReference akActor})\n${0}\nEndEvent'
+	'Quest.OnStoryRelationshipChange':
+		'prefix': 'OnStoryRelationshipChange'
+		'body': 'Event OnStoryRelationshipChange(${1:ObjectReference akActor1}, ${2:ObjectReference akActor2})\n${0}\nEndEvent'
+	'Quest.OnStoryRemoveFromPlayer':
+		'prefix': 'OnStoryRemoveFromPlayer'
+		'body': 'Event OnStoryRemoveFromPlayer(${1:ObjectReference akOwner}, ${2:ObjectReference akItem})\n${0}\nEndEvent'
+	'Quest.OnStoryScript':
+		'prefix': 'OnStoryScript'
+		'body': 'Event OnStoryScript(${1:Keyword akKeyword}, ${2:Location akLocation}, ${3:ObjectReference akRef1})\n${0}\nEndEvent'
+	'Quest.OnStoryServedTime':
+		'prefix': 'OnStoryServedTime'
+		'body': 'Event OnStoryServedTime(${1:Location akLocation}, ${2:Form akCrimeGroup}, ${3:int aiCrimeGold})\n${0}\nEndEvent'
+	'Quest.OnStoryTrespass':
+		'prefix': 'OnStoryTrespass'
+		'body': 'Event OnStoryTrespass(${1:ObjectReference akVictim}, ${2:ObjectReference akTrespasser})\n${0}\nEndEvent'
+	'Quest.Reset':
+		'prefix': 'Reset'
+		'body': 'Reset()'
+	'Quest.SetActive':
+		'prefix': 'SetActive'
+		'body': 'SetActive(${1:bool abActive = true})'
+	'Quest.SetCurrentStageID':
+		'prefix': 'SetCurrentStageID'
+		'body': 'SetCurrentStageID(${1:int aiStageID})'
+	'Quest.SetObjectiveCompleted':
+		'prefix': 'SetObjectiveCompleted'
+		'body': 'SetObjectiveCompleted(${1:int aiObjective}, ${2:bool abCompleted = true})'
+	'Quest.SetObjectiveDisplayed':
+		'prefix': 'SetObjectiveDisplayed'
+		'body': 'SetObjectiveDisplayed(${1:int aiObjective}, ${2:bool abDisplayed = true}, ${3:bool abForce = false})'
+	'Quest.SetObjectiveFailed':
+		'prefix': 'SetObjectiveFailed'
+		'body': 'SetObjectiveFailed(${1:int aiObjective}, ${2:bool abFailed = true})'
+	'Quest.SetStage':
+		'prefix': 'SetStage'
+		'body': 'SetStage(${1:int aiStage})'
+	'Quest.Start':
+		'prefix': 'Start'
+		'body': 'Start()'
+	'Quest.Stop':
+		'prefix': 'Stop'
+		'body': 'Stop()'
+	'Quest.UpdateCurrentInstanceGlobal':
+		'prefix': 'UpdateCurrentInstanceGlobal'
+		'body': 'UpdateCurrentInstanceGlobal(${1:GlobalVariable aUpdateGlobal})'
+	'ReferenceAlias.AddInventoryEventFilter':
+		'prefix': 'AddInventoryEventFilter'
+		'body': 'AddInventoryEventFilter(${1:Form akFilter})'
+	'ReferenceAlias.Clear':
+		'prefix': 'Clear'
+		'body': 'Clear()'
+	'ReferenceAlias.ForceRefIfEmpty':
+		'prefix': 'ForceRefIfEmpty'
+		'body': 'ForceRefIfEmpty(${1:ObjectReference akNewRef})'
+	'ReferenceAlias.ForceRefTo':
+		'prefix': 'ForceRefTo'
+		'body': 'ForceRefTo(${1:ObjectReference akNewRef})'
+	'ReferenceAlias.GetActorRef':
+		'prefix': 'GetActorRef'
+		'body': 'GetActorRef()'
+	'ReferenceAlias.GetActorReference':
+		'prefix': 'GetActorReference'
+		'body': 'GetActorReference()'
+	'ReferenceAlias.GetRef':
+		'prefix': 'GetRef'
+		'body': 'GetRef()'
+	'ReferenceAlias.GetReference':
+		'prefix': 'GetReference'
+		'body': 'GetReference()'
+	'ReferenceAlias.OnActivate':
+		'prefix': 'OnActivate'
+		'body': 'Event OnActivate(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnAttachedToCell':
+		'prefix': 'OnAttachedToCell'
+		'body': 'Event OnAttachedToCell()\n${0}\nEndEvent'
+	'ReferenceAlias.OnCellAttach':
+		'prefix': 'OnCellAttach'
+		'body': 'Event OnCellAttach()\n${0}\nEndEvent'
+	'ReferenceAlias.OnCellDetach':
+		'prefix': 'OnCellDetach'
+		'body': 'Event OnCellDetach()\n${0}\nEndEvent'
+	'ReferenceAlias.OnCellLoad':
+		'prefix': 'OnCellLoad'
+		'body': 'Event OnCellLoad()\n${0}\nEndEvent'
+	'ReferenceAlias.OnClose':
+		'prefix': 'OnClose'
+		'body': 'Event OnClose(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnCombatStateChanged':
+		'prefix': 'OnCombatStateChanged'
+		'body': 'Event OnCombatStateChanged(${1:Actor akTarget}, ${2:int aeCombatState})\n${0}\nEndEvent'
+	'ReferenceAlias.OnContainerChanged':
+		'prefix': 'OnContainerChanged'
+		'body': 'Event OnContainerChanged(${1:ObjectReference akNewContainer}, ${2:ObjectReference akOldContainer})\n${0}\nEndEvent'
+	'ReferenceAlias.OnDeath':
+		'prefix': 'OnDeath'
+		'body': 'Event OnDeath(${1:Actor akKiller})\n${0}\nEndEvent'
+	'ReferenceAlias.OnDestructionStageChanged':
+		'prefix': 'OnDestructionStageChanged'
+		'body': 'Event OnDestructionStageChanged(${1:int aiOldStage}, ${2:int aiCurrentStage})\n${0}\nEndEvent'
+	'ReferenceAlias.OnDetachedFromCell':
+		'prefix': 'OnDetachedFromCell'
+		'body': 'Event OnDetachedFromCell()\n${0}\nEndEvent'
+	'ReferenceAlias.OnDying':
+		'prefix': 'OnDying'
+		'body': 'Event OnDying(${1:Actor akKiller})\n${0}\nEndEvent'
+	'ReferenceAlias.OnEnterBleedout':
+		'prefix': 'OnEnterBleedout'
+		'body': 'Event OnEnterBleedout()\n${0}\nEndEvent'
+	'ReferenceAlias.OnEquipped':
+		'prefix': 'OnEquipped'
+		'body': 'Event OnEquipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ReferenceAlias.OnGetUp':
+		'prefix': 'OnGetUp'
+		'body': 'Event OnGetUp(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'ReferenceAlias.OnGrab':
+		'prefix': 'OnGrab'
+		'body': 'Event OnGrab()\n${0}\nEndEvent'
+	'ReferenceAlias.OnHit':
+		'prefix': 'OnHit'
+		'body': 'Event OnHit(${1:ObjectReference akAggressor}, ${2:Form akSource}, ${3:Projectile akProjectile}, ${4:bool abPowerAttack}, ${5:bool abSneakAttack}, ${6:bool abBashAttack}, ${7:bool abHitBlocked})\n${0}\nEndEvent'
+	'ReferenceAlias.OnItemAdded':
+		'prefix': 'OnItemAdded'
+		'body': 'Event OnItemAdded(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akSourceContainer})\n${0}\nEndEvent'
+	'ReferenceAlias.OnItemRemoved':
+		'prefix': 'OnItemRemoved'
+		'body': 'Event OnItemRemoved(${1:Form akBaseItem}, ${2:int aiItemCount}, ${3:ObjectReference akItemReference}, ${4:ObjectReference akDestContainer})\n${0}\nEndEvent'
+	'ReferenceAlias.OnLoad':
+		'prefix': 'OnLoad'
+		'body': 'Event OnLoad()\n${0}\nEndEvent'
+	'ReferenceAlias.OnLocationChange':
+		'prefix': 'OnLocationChange'
+		'body': 'Event OnLocationChange(${1:Location akOldLoc}, ${2:Location akNewLoc})\n${0}\nEndEvent'
+	'ReferenceAlias.OnLockStateChanged':
+		'prefix': 'OnLockStateChanged'
+		'body': 'Event OnLockStateChanged()\n${0}\nEndEvent'
+	'ReferenceAlias.OnMagicEffectApply':
+		'prefix': 'OnMagicEffectApply'
+		'body': 'Event OnMagicEffectApply(${1:ObjectReference akCaster}, ${2:MagicEffect akEffect})\n${0}\nEndEvent'
+	'ReferenceAlias.OnObjectEquipped':
+		'prefix': 'OnObjectEquipped'
+		'body': 'Event OnObjectEquipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'ReferenceAlias.OnObjectUnequipped':
+		'prefix': 'OnObjectUnequipped'
+		'body': 'Event OnObjectUnequipped(${1:Form akBaseObject}, ${2:ObjectReference akReference})\n${0}\nEndEvent'
+	'ReferenceAlias.OnOpen':
+		'prefix': 'OnOpen'
+		'body': 'Event OnOpen(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnPackageChange':
+		'prefix': 'OnPackageChange'
+		'body': 'Event OnPackageChange(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'ReferenceAlias.OnPackageEnd':
+		'prefix': 'OnPackageEnd'
+		'body': 'Event OnPackageEnd(${1:Package akOldPackage})\n${0}\nEndEvent'
+	'ReferenceAlias.OnPackageStart':
+		'prefix': 'OnPackageStart'
+		'body': 'Event OnPackageStart(${1:Package akNewPackage})\n${0}\nEndEvent'
+	'ReferenceAlias.OnPlayerBowShot':
+		'prefix': 'OnPlayerBowShot'
+		'body': 'Event OnPlayerBowShot(${1:Weapon akWeapon}, ${2:Ammo akAmmo}, ${3:float afPower}, ${4:bool abSunGazing})\n${0}\nEndEvent'
+	'ReferenceAlias.OnPlayerLoadGame':
+		'prefix': 'OnPlayerLoadGame'
+		'body': 'Event OnPlayerLoadGame()\n${0}\nEndEvent'
+	'ReferenceAlias.OnRaceSwitchComplete':
+		'prefix': 'OnRaceSwitchComplete'
+		'body': 'Event OnRaceSwitchComplete()\n${0}\nEndEvent'
+	'ReferenceAlias.OnRead':
+		'prefix': 'OnRead'
+		'body': 'Event OnRead()\n${0}\nEndEvent'
+	'ReferenceAlias.OnRelease':
+		'prefix': 'OnRelease'
+		'body': 'Event OnRelease()\n${0}\nEndEvent'
+	'ReferenceAlias.OnReset':
+		'prefix': 'OnReset'
+		'body': 'Event OnReset()\n${0}\nEndEvent'
+	'ReferenceAlias.OnSell':
+		'prefix': 'OnSell'
+		'body': 'Event OnSell(${1:Actor akSeller})\n${0}\nEndEvent'
+	'ReferenceAlias.OnSit':
+		'prefix': 'OnSit'
+		'body': 'Event OnSit(${1:ObjectReference akFurniture})\n${0}\nEndEvent'
+	'ReferenceAlias.OnSpellCast':
+		'prefix': 'OnSpellCast'
+		'body': 'Event OnSpellCast(${1:Form akSpell})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTranslationComplete':
+		'prefix': 'OnTranslationComplete'
+		'body': 'Event OnTranslationComplete()\n${0}\nEndEvent'
+	'ReferenceAlias.OnTranslationFailed':
+		'prefix': 'OnTranslationFailed'
+		'body': 'Event OnTranslationFailed()\n${0}\nEndEvent'
+	'ReferenceAlias.OnTrapHit':
+		'prefix': 'OnTrapHit'
+		'body': 'Event OnTrapHit(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTrapHitStart':
+		'prefix': 'OnTrapHitStart'
+		'body': 'Event OnTrapHitStart(${1:ObjectReference akTarget}, ${2:float afXVel}, ${3:float afYVel}, ${4:float afZVel}, ${5:float afXPos}, ${6:float afYPos}, ${7:float afZPos})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTrapHitStop':
+		'prefix': 'OnTrapHitStop'
+		'body': 'Event OnTrapHitStop(${1:ObjectReference akTarget})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTrigger':
+		'prefix': 'OnTrigger'
+		'body': 'Event OnTrigger(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTriggerEnter':
+		'prefix': 'OnTriggerEnter'
+		'body': 'Event OnTriggerEnter(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnTriggerLeave':
+		'prefix': 'OnTriggerLeave'
+		'body': 'Event OnTriggerLeave(${1:ObjectReference akActionRef})\n${0}\nEndEvent'
+	'ReferenceAlias.OnUnequipped':
+		'prefix': 'OnUnequipped'
+		'body': 'Event OnUnequipped(${1:Actor akActor})\n${0}\nEndEvent'
+	'ReferenceAlias.OnUnload':
+		'prefix': 'OnUnload'
+		'body': 'Event OnUnload()\n${0}\nEndEvent'
+	'ReferenceAlias.OnWardHit':
+		'prefix': 'OnWardHit'
+		'body': 'Event OnWardHit(${1:ObjectReference akCaster}, ${2:Spell akSpell}, ${3:int aiStatus})\n${0}\nEndEvent'
+	'ReferenceAlias.RemoveAllInventoryEventFilters':
+		'prefix': 'RemoveAllInventoryEventFilters'
+		'body': 'RemoveAllInventoryEventFilters()'
+	'ReferenceAlias.RemoveInventoryEventFilter':
+		'prefix': 'RemoveInventoryEventFilter'
+		'body': 'RemoveInventoryEventFilter(${1:Form akFilter})'
+	'ReferenceAlias.TryToAddToFaction':
+		'prefix': 'TryToAddToFaction'
+		'body': 'TryToAddToFaction(${1:Faction FactionToAddTo})'
+	'ReferenceAlias.TryToClear':
+		'prefix': 'TryToClear'
+		'body': 'TryToClear()'
+	'ReferenceAlias.TryToDisable':
+		'prefix': 'TryToDisable'
+		'body': 'TryToDisable()'
+	'ReferenceAlias.TryToDisableNoWait':
+		'prefix': 'TryToDisableNoWait'
+		'body': 'TryToDisableNoWait()'
+	'ReferenceAlias.TryToEnable':
+		'prefix': 'TryToEnable'
+		'body': 'TryToEnable()'
+	'ReferenceAlias.TryToEnableNoWait':
+		'prefix': 'TryToEnableNoWait'
+		'body': 'TryToEnableNoWait()'
+	'ReferenceAlias.TryToEvaluatePackage':
+		'prefix': 'TryToEvaluatePackage'
+		'body': 'TryToEvaluatePackage()'
+	'ReferenceAlias.TryToKill':
+		'prefix': 'TryToKill'
+		'body': 'TryToKill()'
+	'ReferenceAlias.TryToMoveTo':
+		'prefix': 'TryToMoveTo'
+		'body': 'TryToMoveTo(${1:ObjectReference RefToMoveTo})'
+	'ReferenceAlias.TryToRemoveFromFaction':
+		'prefix': 'TryToRemoveFromFaction'
+		'body': 'TryToRemoveFromFaction(${1:Faction FactionToRemoveFrom})'
+	'ReferenceAlias.TryToReset':
+		'prefix': 'TryToReset'
+		'body': 'TryToReset()'
+	'ReferenceAlias.TryToStopCombat':
+		'prefix': 'TryToStopCombat'
+		'body': 'TryToStopCombat()'
+	'Scene.ForceStart':
+		'prefix': 'ForceStart'
+		'body': 'ForceStart()'
+	'Scene.GetOwningQuest':
+		'prefix': 'GetOwningQuest'
+		'body': 'GetOwningQuest()'
+	'Scene.IsActionComplete':
+		'prefix': 'IsActionComplete'
+		'body': 'IsActionComplete(${1:int aiActionID})'
+	'Scene.IsPlaying':
+		'prefix': 'IsPlaying'
+		'body': 'IsPlaying()'
+	'Scene.Start':
+		'prefix': 'Start'
+		'body': 'Start()'
+	'Scene.Stop':
+		'prefix': 'Stop'
+		'body': 'Stop()'
+	'Scroll.Cast':
+		'prefix': 'Cast'
+		'body': 'Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget})'
+	'ShaderParticleGeometry.Apply':
+		'prefix': 'Apply'
+		'body': 'Apply(${1:float afFadeTime})'
+	'ShaderParticleGeometry.Remove':
+		'prefix': 'Remove'
+		'body': 'Remove(${1:float afFadeTime})'
+	'Sound.Play':
+		'prefix': 'Play'
+		'body': 'Play(${1:ObjectReference akSource})'
+	'Sound.PlayAndWait':
+		'prefix': 'PlayAndWait'
+		'body': 'PlayAndWait(${1:ObjectReference akSource})'
+	'Sound.SetInstanceVolume':
+		'prefix': 'SetInstanceVolume'
+		'body': 'SetInstanceVolume(${1:int aiPlaybackInstance}, ${2:float afVolume})'
+	'Sound.StopInstance':
+		'prefix': 'StopInstance'
+		'body': 'StopInstance(${1:int aiPlaybackInstance})'
+	'SoundCategory.Mute':
+		'prefix': 'Mute'
+		'body': 'Mute()'
+	'SoundCategory.Pause':
+		'prefix': 'Pause'
+		'body': 'Pause()'
+	'SoundCategory.SetFrequency':
+		'prefix': 'SetFrequency'
+		'body': 'SetFrequency(${1:float afFrequencyCoeffecient})'
+	'SoundCategory.SetVolume':
+		'prefix': 'SetVolume'
+		'body': 'SetVolume(${1:float afVolume})'
+	'SoundCategory.UnMute':
+		'prefix': 'UnMute'
+		'body': 'UnMute()'
+	'SoundCategory.UnPause':
+		'prefix': 'UnPause'
+		'body': 'UnPause()'
+	'Spell.Cast':
+		'prefix': 'Cast'
+		'body': 'Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget})'
+	'Spell.IsHostile':
+		'prefix': 'IsHostile'
+		'body': 'IsHostile()'
+	'Spell.Preload':
+		'prefix': 'Preload'
+		'body': 'Preload()'
+	'Spell.RemoteCast':
+		'prefix': 'RemoteCast'
+		'body': 'RemoteCast(${1:ObjectReference akSource}, ${2:Actor akBlameActor}, ${3:ObjectReference akTarget})'
+	'Spell.Unload':
+		'prefix': 'Unload'
+		'body': 'Unload()'
+	'State':
+		'prefix': 'state'
+		'body': 'State ${1:$SELECTION}\n\t${0}\nEndState'
+	'Topic.Add':
+		'prefix': 'Add'
+		'body': 'Add()'
+	'TopicInfo.GetOwningQuest':
+		'prefix': 'GetOwningQuest'
+		'body': 'GetOwningQuest()'
+	'Utility.CaptureFrameRate':
+		'prefix': 'CaptureFrameRate'
+		'body': 'CaptureFrameRate(${1:int numFrames})'
+	'Utility.EndFrameRateCapture':
+		'prefix': 'EndFrameRateCapture'
+		'body': 'EndFrameRateCapture()'
+	'Utility.GameTimeToString':
+		'prefix': 'GameTimeToString'
+		'body': 'GameTimeToString(${1:float afGameTime})'
+	'Utility.GetAverageFrameRate':
+		'prefix': 'GetAverageFrameRate'
+		'body': 'GetAverageFrameRate()'
+	'Utility.GetBudgetCount':
+		'prefix': 'GetBudgetCount'
+		'body': 'GetBudgetCount()'
+	'Utility.GetBudgetName':
+		'prefix': 'GetBudgetName'
+		'body': 'GetBudgetName(${1:int aiBudgetNumber})'
+	'Utility.GetCurrentBudget':
+		'prefix': 'GetCurrentBudget'
+		'body': 'GetCurrentBudget(${1:int aiBudgetNumber})'
+	'Utility.GetCurrentGameTime':
+		'prefix': 'GetCurrentGameTime'
+		'body': 'GetCurrentGameTime()'
+	'Utility.GetCurrentMemory':
+		'prefix': 'GetCurrentMemory'
+		'body': 'GetCurrentMemory(${1:it sets})'
+	'Utility.GetCurrentRealTime':
+		'prefix': 'GetCurrentRealTime'
+		'body': 'GetCurrentRealTime()'
+	'Utility.GetMaxFrameRate':
+		'prefix': 'GetMaxFrameRate'
+		'body': 'GetMaxFrameRate()'
+	'Utility.GetMinFrameRate':
+		'prefix': 'GetMinFrameRate'
+		'body': 'GetMinFrameRate()'
+	'Utility.IsInMenuMode':
+		'prefix': 'IsInMenuMode'
+		'body': 'IsInMenuMode()'
+	'Utility.OverBudget':
+		'prefix': 'OverBudget'
+		'body': 'OverBudget(${1:int aiBudgetNumber})'
+	'Utility.RandomFloat':
+		'prefix': 'RandomFloat'
+		'body': 'RandomFloat(${1:float afMin = 0}, ${2:float afMax = 1})'
+	'Utility.RandomInt':
+		'prefix': 'RandomInt'
+		'body': 'RandomInt(${1:int aiMin = 0}, ${2:int aiMax = 100})'
+	'Utility.SetINIBool':
+		'prefix': 'SetINIBool'
+		'body': 'SetINIBool(${1:string ini}, ${2:bool value})'
+	'Utility.SetINIFloat':
+		'prefix': 'SetINIFloat'
+		'body': 'SetINIFloat(${1:string ini}, ${2:float value})'
+	'Utility.SetINIInt':
+		'prefix': 'SetINIInt'
+		'body': 'SetINIInt(${1:string ini}, ${2:int value})'
+	'Utility.SetINIString':
+		'prefix': 'SetINIString'
+		'body': 'SetINIString(${1:string ini}, ${2:string value})'
+	'Utility.StartFrameRateCapture':
+		'prefix': 'StartFrameRateCapture'
+		'body': 'StartFrameRateCapture()'
+	'Utility.Wait':
+		'prefix': 'Wait'
+		'body': 'Wait(${1:float afSeconds})'
+	'Utility.WaitGameTime':
+		'prefix': 'WaitGameTime'
+		'body': 'WaitGameTime(${1:float afHours})'
+	'Utility.WaitMenuMode':
+		'prefix': 'WaitMenuMode'
+		'body': 'WaitMenuMode(${1:float afSeconds})'
+	'VisualEffect.Play':
+		'prefix': 'Play'
+		'body': 'Play(${1:ObjectReference akObject}, ${2:float afTime}, ${3:ObjectReference akFacingObject = None})'
+	'VisualEffect.Stop':
+		'prefix': 'Stop'
+		'body': 'Stop(${1:ObjectReference akObject})'
+	'Weapon.Fire':
+		'prefix': 'Fire'
+		'body': 'Fire(${1:ObjectReference akSource}, ${2:Ammo akAmmo = None})'
+	'Weather.FindWeather':
+		'prefix': 'FindWeather'
+		'body': 'FindWeather(${1:int auiType})'
+	'Weather.ForceActive':
+		'prefix': 'ForceActive'
+		'body': 'ForceActive(${1:bool abOverride})'
+	'Weather.GetClassification':
+		'prefix': 'GetClassification'
+		'body': 'GetClassification()'
+	'Weather.GetCurrentWeather':
+		'prefix': 'GetCurrentWeather'
+		'body': 'GetCurrentWeather()'
+	'Weather.GetCurrentWeatherTransition':
+		'prefix': 'GetCurrentWeatherTransition'
+		'body': 'GetCurrentWeatherTransition()'
+	'Weather.GetOutgoingWeather':
+		'prefix': 'GetOutgoingWeather'
+		'body': 'GetOutgoingWeather()'
+	'Weather.GetSkyMode':
+		'prefix': 'GetSkyMode'
+		'body': 'GetSkyMode()'
+	'Weather.ReleaseOverride':
+		'prefix': 'ReleaseOverride'
+		'body': 'ReleaseOverride()'
+	'Weather.SetActive':
+		'prefix': 'SetActive'
+		'body': 'SetActive(${1:bool abOverride}, ${2:bool abAccelerate})'
+	'While Loop':
+		'prefix': 'while'
+		'body': 'While(${1:$SELECTION})\n\t${0}\nEndWhile'

@@ -1,0 +1,5 @@
+'.source.papyrus-assembly':
+	'editor':
+		'commentStart': '; '
+		'foldStartPattern': '^\\s*\\.(info|userFlagsRef)'
+		'foldEndPattern': '^\\s*\\.(endInfo|endUserFlagsRef)'

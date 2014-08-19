@@ -1,0 +1,232 @@
+'.source.papyrus':
+	'SKI_ConfigBase.AddColorOption':
+		'prefix': 'AddColorOption'
+		'body': 'AddColorOption(${1:string a_text}, ${2:int a_color}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddColorOptionST':
+		'prefix': 'AddColorOptionST'
+		'body': 'AddColorOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:int a_color}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddEmptyOption':
+		'prefix': 'AddEmptyOption'
+		'body': 'AddEmptyOption()'
+	'SKI_ConfigBase.AddHeaderOption':
+		'prefix': 'AddHeaderOption'
+		'body': 'AddHeaderOption(${1:string a_text}, ${2:int a_flags = 0})'
+	'SKI_ConfigBase.AddKeyMapOption':
+		'prefix': 'AddKeyMapOption'
+		'body': 'AddKeyMapOption(${1:string a_text}, ${2:int a_keyCode}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddKeyMapOptionST':
+		'prefix': 'AddKeyMapOptionST'
+		'body': 'AddKeyMapOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:int a_keyCode}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddMenuOption':
+		'prefix': 'AddMenuOption'
+		'body': 'AddMenuOption(${1:string a_text}, ${2:string a_value}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddMenuOptionST':
+		'prefix': 'AddMenuOptionST'
+		'body': 'AddMenuOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:string a_value}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddSliderOption':
+		'prefix': 'AddSliderOption'
+		'body': 'AddSliderOption(${1:string a_text}, ${2:float a_value}, ${3:string a_formatString}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddSliderOptionST':
+		'prefix': 'AddSliderOptionST'
+		'body': 'AddSliderOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:float a_value}, ${4:string a_formatString}, ${5:int a_flags = 0})'
+	'SKI_ConfigBase.AddTextOption':
+		'prefix': 'AddTextOption'
+		'body': 'AddTextOption(${1:string a_text}, ${2:string a_value}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddTextOptionST':
+		'prefix': 'AddTextOptionST'
+		'body': 'AddTextOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:string a_value}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddToggleOption':
+		'prefix': 'AddToggleOption'
+		'body': 'AddToggleOption(${1:string a_text}, ${2:bool a_checked}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddToggleOptionST':
+		'prefix': 'AddToggleOptionST'
+		'body': 'AddToggleOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:bool a_checked}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.ForcePageReset':
+		'prefix': 'ForcePageReset'
+		'body': 'ForcePageReset()'
+	'SKI_ConfigBase.GetCustomControl':
+		'prefix': 'GetCustomControl'
+		'body': 'GetCustomControl(${1:int a_keyCode})'
+	'SKI_ConfigBase.GetVersion':
+		'prefix': 'GetVersion'
+		'body': 'GetVersion()'
+	'SKI_ConfigBase.LoadCustomContent':
+		'prefix': 'LoadCustomContent'
+		'body': 'LoadCustomContent(${1:string a_source}, ${2:float a_x = 0}, ${3:float a_y = 0})'
+	'SKI_ConfigBase.OnColorAcceptST':
+		'prefix': 'OnColorAcceptST'
+		'body': 'Event OnColorAcceptST(${1:int a_color})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnColorOpenST':
+		'prefix': 'OnColorOpenST'
+		'body': 'Event OnColorOpenST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigClose':
+		'prefix': 'OnConfigClose'
+		'body': 'Event OnConfigClose()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigInit':
+		'prefix': 'OnConfigInit'
+		'body': 'Event OnConfigInit()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigOpen':
+		'prefix': 'OnConfigOpen'
+		'body': 'Event OnConfigOpen()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigRegister':
+		'prefix': 'OnConfigRegister'
+		'body': 'Event OnConfigRegister()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnDefaultST':
+		'prefix': 'OnDefaultST'
+		'body': 'Event OnDefaultST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnHighlightST':
+		'prefix': 'OnHighlightST'
+		'body': 'Event OnHighlightST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnKeyMapChangeST':
+		'prefix': 'OnKeyMapChangeST'
+		'body': 'Event OnKeyMapChangeST(${1:int a_keyCode}, ${2:string a_conflictControl}, ${3:string a_conflictName})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnMenuAcceptST':
+		'prefix': 'OnMenuAcceptST'
+		'body': 'Event OnMenuAcceptST(${1:int a_index})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnMenuOpenST':
+		'prefix': 'OnMenuOpenST'
+		'body': 'Event OnMenuOpenST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionColorAccept':
+		'prefix': 'OnOptionColorAccept'
+		'body': 'Event OnOptionColorAccept(${1:int a_option}, ${2:int a_color})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionColorOpen':
+		'prefix': 'OnOptionColorOpen'
+		'body': 'Event OnOptionColorOpen(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionDefault':
+		'prefix': 'OnOptionDefault'
+		'body': 'Event OnOptionDefault(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionHighlight':
+		'prefix': 'OnOptionHighlight'
+		'body': 'Event OnOptionHighlight(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionKeyMapChange':
+		'prefix': 'OnOptionKeyMapChange'
+		'body': 'Event OnOptionKeyMapChange(${1:int a_option}, ${2:int a_keyCode}, ${3:string a_conflictControl}, ${4:string a_conflictName})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionMenuAccept':
+		'prefix': 'OnOptionMenuAccept'
+		'body': 'Event OnOptionMenuAccept(${1:int a_option}, ${2:int a_index})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionMenuOpen':
+		'prefix': 'OnOptionMenuOpen'
+		'body': 'Event OnOptionMenuOpen(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSelect':
+		'prefix': 'OnOptionSelect'
+		'body': 'Event OnOptionSelect(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSliderAccept':
+		'prefix': 'OnOptionSliderAccept'
+		'body': 'Event OnOptionSliderAccept(${1:int a_option}, ${2:float a_value})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSliderOpen':
+		'prefix': 'OnOptionSliderOpen'
+		'body': 'Event OnOptionSliderOpen(${1:int a_option})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnPageReset':
+		'prefix': 'OnPageReset'
+		'body': 'Event OnPageReset(${1:string a_page})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnSelectST':
+		'prefix': 'OnSelectST'
+		'body': 'Event OnSelectST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnSliderAcceptST':
+		'prefix': 'OnSliderAcceptST'
+		'body': 'Event OnSliderAcceptST(${1:float a_value})\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnSliderOpenST':
+		'prefix': 'OnSliderOpenST'
+		'body': 'Event OnSliderOpenST()\n${0}\nEndEvent'
+	'SKI_ConfigBase.OnVersionUpdate':
+		'prefix': 'OnVersionUpdate'
+		'body': 'Event OnVersionUpdate(${1:int a_version})\n${0}\nEndEvent'
+	'SKI_ConfigBase.SetColorDialogDefaultColor':
+		'prefix': 'SetColorDialogDefaultColor'
+		'body': 'SetColorDialogDefaultColor(${1:int a_color})'
+	'SKI_ConfigBase.SetColorDialogStartColor':
+		'prefix': 'SetColorDialogStartColor'
+		'body': 'SetColorDialogStartColor(${1:int a_color})'
+	'SKI_ConfigBase.SetColorOptionValue':
+		'prefix': 'SetColorOptionValue'
+		'body': 'SetColorOptionValue(${1:int a_option}, ${2:int a_color}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetColorOptionValueST':
+		'prefix': 'SetColorOptionValueST'
+		'body': 'SetColorOptionValueST(${1:int a_color}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetCursorFillMode':
+		'prefix': 'SetCursorFillMode'
+		'body': 'SetCursorFillMode(${1:int a_fillMode})'
+	'SKI_ConfigBase.SetCursorPosition':
+		'prefix': 'SetCursorPosition'
+		'body': 'SetCursorPosition(${1:int a_position})'
+	'SKI_ConfigBase.SetInfoText':
+		'prefix': 'SetInfoText'
+		'body': 'SetInfoText(${1:string a_text})'
+	'SKI_ConfigBase.SetKeyMapOptionValue':
+		'prefix': 'SetKeyMapOptionValue'
+		'body': 'SetKeyMapOptionValue(${1:int a_option}, ${2:int a_keyCode}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetKeyMapOptionValueST':
+		'prefix': 'SetKeyMapOptionValueST'
+		'body': 'SetKeyMapOptionValueST(${1:int a_keyCode}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetMenuDialogDefaultIndex':
+		'prefix': 'SetMenuDialogDefaultIndex'
+		'body': 'SetMenuDialogDefaultIndex(${1:int a_value})'
+	'SKI_ConfigBase.SetMenuDialogOptions':
+		'prefix': 'SetMenuDialogOptions'
+		'body': 'SetMenuDialogOptions(${1:string[] a_options})'
+	'SKI_ConfigBase.SetMenuDialogStartIndex':
+		'prefix': 'SetMenuDialogStartIndex'
+		'body': 'SetMenuDialogStartIndex(${1:int a_value})'
+	'SKI_ConfigBase.SetMenuOptionValue':
+		'prefix': 'SetMenuOptionValue'
+		'body': 'SetMenuOptionValue(${1:int a_option}, ${2:string a_value}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetMenuOptionValueST':
+		'prefix': 'SetMenuOptionValueST'
+		'body': 'SetMenuOptionValueST(${1:string a_value}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetOptionFlags':
+		'prefix': 'SetOptionFlags'
+		'body': 'SetOptionFlags(${1:int a_option}, ${2:int a_flags}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetOptionFlagsST':
+		'prefix': 'SetOptionFlagsST'
+		'body': 'SetOptionFlagsST(${1:int a_flags}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetSliderDialogDefaultValue':
+		'prefix': 'SetSliderDialogDefaultValue'
+		'body': 'SetSliderDialogDefaultValue(${1:float a_value})'
+	'SKI_ConfigBase.SetSliderDialogInterval':
+		'prefix': 'SetSliderDialogInterval'
+		'body': 'SetSliderDialogInterval(${1:float a_value})'
+	'SKI_ConfigBase.SetSliderDialogRange':
+		'prefix': 'SetSliderDialogRange'
+		'body': 'SetSliderDialogRange(${1:float a_minValue}, ${2:float a_maxValue})'
+	'SKI_ConfigBase.SetSliderDialogStartValue':
+		'prefix': 'SetSliderDialogStartValue'
+		'body': 'SetSliderDialogStartValue(${1:float a_value})'
+	'SKI_ConfigBase.SetSliderOptionValue':
+		'prefix': 'SetSliderOptionValue'
+		'body': 'SetSliderOptionValue(${1:int a_option}, ${2:float a_value}, ${3:string a_formatString}, ${4:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetSliderOptionValueST':
+		'prefix': 'SetSliderOptionValueST'
+		'body': 'SetSliderOptionValueST(${1:float a_value}, ${2:string a_formatString}, ${3:bool a_noUpdate = false}, ${4:string a_stateName})'
+	'SKI_ConfigBase.SetTextOptionValue':
+		'prefix': 'SetTextOptionValue'
+		'body': 'SetTextOptionValue(${1:int a_option}, ${2:string a_value}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetTextOptionValueST':
+		'prefix': 'SetTextOptionValueST'
+		'body': 'SetTextOptionValueST(${1:string a_value}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetTitleText':
+		'prefix': 'SetTitleText'
+		'body': 'SetTitleText(${1:string a_text})'
+	'SKI_ConfigBase.SetToggleOptionValue':
+		'prefix': 'SetToggleOptionValue'
+		'body': 'SetToggleOptionValue(${1:int a_option}, ${2:bool a_checked}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetToggleOptionValueST':
+		'prefix': 'SetToggleOptionValueST'
+		'body': 'SetToggleOptionValueST(${1:bool a_checked}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.ShowMessage':
+		'prefix': 'ShowMessage'
+		'body': 'ShowMessage(${1:string a_message}, ${2:bool a_withCancel = true}, ${3:string a_acceptLabel}, ${4:string a_cancelLabel})'
+	'SKI_ConfigBase.UnloadCustomContent':
+		'prefix': 'UnloadCustomContent'
+		'body': 'UnloadCustomContent()'
+	'SKI_QuestBase.CheckVersion':
+		'prefix': 'CheckVersion'
+		'body': 'CheckVersion()'
+	'SKI_QuestBase.GetVersion':
+		'prefix': 'GetVersion'
+		'body': 'GetVersion()'
+	'SKI_QuestBase.OnGameReload':
+		'prefix': 'OnGameReload'
+		'body': 'Event OnGameReload()\n${0}\nEndEvent'
+	'SKI_QuestBase.OnVersionUpdate':
+		'prefix': 'OnVersionUpdate'
+		'body': 'Event OnVersionUpdate(${1:int a_version})\n${0}\nEndEvent'
