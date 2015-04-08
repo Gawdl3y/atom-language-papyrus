@@ -95,6 +95,9 @@
 	'JContainers.APIVersion':
 		'prefix': 'APIVersion'
 		'body': 'APIVersion()'
+	'JContainers.featureVersion':
+		'prefix': 'featureVersion'
+		'body': 'featureVersion()'
 	'JContainers.fileExistsAtPath':
 		'prefix': 'fileExistsAtPath'
 		'body': 'fileExistsAtPath(${1:string path})'
