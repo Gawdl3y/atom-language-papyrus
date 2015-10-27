@@ -1,3 +1,7 @@
+## 1.1.0
+* Added SkyUILib, UIExtensions, and CampUtil snippets and highlighting
+* Updated existing snippets and grammar to the latest versions
+
 ## 1.0.1
 * Added more information to the readme
 
