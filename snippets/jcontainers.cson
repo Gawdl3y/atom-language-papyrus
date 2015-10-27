@@ -1,415 +1,568 @@
 '.source.papyrus':
-	'JArray.addFlt':
+	'JArray.addFlt (JContainers)':
 		'prefix': 'addFlt'
 		'body': 'addFlt(${1:int object}, ${2:float value}, ${3:int addToIndex})'
-	'JArray.addForm':
+	'JArray.addForm (JContainers)':
 		'prefix': 'addForm'
 		'body': 'addForm(${1:int object}, ${2:form value}, ${3:int addToIndex})'
-	'JArray.addFromArray':
+	'JArray.addFromArray (JContainers)':
 		'prefix': 'addFromArray'
-		'body': 'addFromArray(${1:int object}, ${2:int sourceArray}, ${3:int insertAtIndex})'
-	'JArray.addInt':
+		'body': 'addFromArray(${1:int object}, ${2:int source}, ${3:int insertAtIndex})'
+	'JArray.addFromFormList (JContainers)':
+		'prefix': 'addFromFormList'
+		'body': 'addFromFormList(${1:int object}, ${2:FormList source}, ${3:int insertAtIndex})'
+	'JArray.addInt (JContainers)':
 		'prefix': 'addInt'
 		'body': 'addInt(${1:int object}, ${2:int value}, ${3:int addToIndex})'
-	'JArray.addObj':
+	'JArray.addObj (JContainers)':
 		'prefix': 'addObj'
 		'body': 'addObj(${1:int object}, ${2:int container}, ${3:int addToIndex})'
-	'JArray.addStr':
+	'JArray.addStr (JContainers)':
 		'prefix': 'addStr'
 		'body': 'addStr(${1:int object}, ${2:string value}, ${3:int addToIndex})'
-	'JArray.clear':
+	'JArray.clear (JContainers)':
 		'prefix': 'clear'
 		'body': 'clear(${1:int object})'
-	'JArray.count':
+	'JArray.count (JContainers)':
 		'prefix': 'count'
 		'body': 'count(${1:int object})'
-	'JArray.eraseIndex':
+	'JArray.eraseIndex (JContainers)':
 		'prefix': 'eraseIndex'
 		'body': 'eraseIndex(${1:int object}, ${2:int index})'
-	'JArray.findFlt':
+	'JArray.findFlt (JContainers)':
 		'prefix': 'findFlt'
 		'body': 'findFlt(${1:int object}, ${2:float value}, ${3:int searchStartIndex})'
-	'JArray.findForm':
+	'JArray.findForm (JContainers)':
 		'prefix': 'findForm'
 		'body': 'findForm(${1:int object}, ${2:form value}, ${3:int searchStartIndex})'
-	'JArray.findInt':
+	'JArray.findInt (JContainers)':
 		'prefix': 'findInt'
 		'body': 'findInt(${1:int object}, ${2:int value}, ${3:int searchStartIndex})'
-	'JArray.findObj':
+	'JArray.findObj (JContainers)':
 		'prefix': 'findObj'
 		'body': 'findObj(${1:int object}, ${2:int container}, ${3:int searchStartIndex})'
-	'JArray.findStr':
+	'JArray.findStr (JContainers)':
 		'prefix': 'findStr'
 		'body': 'findStr(${1:int object}, ${2:string value}, ${3:int searchStartIndex})'
-	'JArray.getFlt':
+	'JArray.getFlt (JContainers)':
 		'prefix': 'getFlt'
-		'body': 'getFlt(${1:int object}, ${2:int index})'
-	'JArray.getForm':
+		'body': 'getFlt(${1:int object}, ${2:int index}, ${3:float default})'
+	'JArray.getForm (JContainers)':
 		'prefix': 'getForm'
-		'body': 'getForm(${1:int object}, ${2:int index})'
-	'JArray.getInt':
+		'body': 'getForm(${1:int object}, ${2:int index}, ${3:form default})'
+	'JArray.getInt (JContainers)':
 		'prefix': 'getInt'
-		'body': 'getInt(${1:int object}, ${2:int index})'
-	'JArray.getObj':
+		'body': 'getInt(${1:int object}, ${2:int index}, ${3:int default})'
+	'JArray.getObj (JContainers)':
 		'prefix': 'getObj'
-		'body': 'getObj(${1:int object}, ${2:int index})'
-	'JArray.getStr':
+		'body': 'getObj(${1:int object}, ${2:int index}, ${3:int default})'
+	'JArray.getStr (JContainers)':
 		'prefix': 'getStr'
-		'body': 'getStr(${1:int object}, ${2:int index})'
-	'JArray.object':
+		'body': 'getStr(${1:int object}, ${2:int index}, ${3:string default})'
+	'JArray.object (JContainers)':
 		'prefix': 'object'
 		'body': 'object()'
-	'JArray.objectWithBooleans':
+	'JArray.objectWithBooleans (JContainers)':
 		'prefix': 'objectWithBooleans'
 		'body': 'objectWithBooleans(${1:bool[] values})'
-	'JArray.objectWithFloats':
+	'JArray.objectWithFloats (JContainers)':
 		'prefix': 'objectWithFloats'
 		'body': 'objectWithFloats(${1:float[] values})'
-	'JArray.objectWithInts':
+	'JArray.objectWithInts (JContainers)':
 		'prefix': 'objectWithInts'
 		'body': 'objectWithInts(${1:int[] values})'
-	'JArray.objectWithSize':
+	'JArray.objectWithSize (JContainers)':
 		'prefix': 'objectWithSize'
 		'body': 'objectWithSize(${1:int size})'
-	'JArray.objectWithStrings':
+	'JArray.objectWithStrings (JContainers)':
 		'prefix': 'objectWithStrings'
 		'body': 'objectWithStrings(${1:string[] values})'
-	'JArray.setFlt':
+	'JArray.setFlt (JContainers)':
 		'prefix': 'setFlt'
 		'body': 'setFlt(${1:int object}, ${2:int index}, ${3:float value})'
-	'JArray.setForm':
+	'JArray.setForm (JContainers)':
 		'prefix': 'setForm'
 		'body': 'setForm(${1:int object}, ${2:int index}, ${3:form value})'
-	'JArray.setInt':
+	'JArray.setInt (JContainers)':
 		'prefix': 'setInt'
 		'body': 'setInt(${1:int object}, ${2:int index}, ${3:int value})'
-	'JArray.setObj':
+	'JArray.setObj (JContainers)':
 		'prefix': 'setObj'
 		'body': 'setObj(${1:int object}, ${2:int index}, ${3:int container})'
-	'JArray.setStr':
+	'JArray.setStr (JContainers)':
 		'prefix': 'setStr'
 		'body': 'setStr(${1:int object}, ${2:int index}, ${3:string value})'
-	'JArray.subArray':
+	'JArray.sort (JContainers)':
+		'prefix': 'sort'
+		'body': 'sort(${1:int object})'
+	'JArray.subArray (JContainers)':
 		'prefix': 'subArray'
 		'body': 'subArray(${1:int object}, ${2:int startIndex}, ${3:int endIndex})'
-	'JContainers.APIVersion':
+	'JArray.swapItems (JContainers)':
+		'prefix': 'swapItems'
+		'body': 'swapItems(${1:int object}, ${2:int index1}, ${3:int index2})'
+	'JArray.unique (JContainers)':
+		'prefix': 'unique'
+		'body': 'unique(${1:int object})'
+	'JArray.valueType (JContainers)':
+		'prefix': 'valueType'
+		'body': 'valueType(${1:int object}, ${2:int index})'
+	'JContainers.APIVersion (JContainers)':
 		'prefix': 'APIVersion'
 		'body': 'APIVersion()'
-	'JContainers.featureVersion':
+	'JContainers.featureVersion (JContainers)':
 		'prefix': 'featureVersion'
 		'body': 'featureVersion()'
-	'JContainers.fileExistsAtPath':
+	'JContainers.fileExistsAtPath (JContainers)':
 		'prefix': 'fileExistsAtPath'
 		'body': 'fileExistsAtPath(${1:string path})'
-	'JContainers.isInstalled':
+	'JContainers.isInstalled (JContainers)':
 		'prefix': 'isInstalled'
 		'body': 'isInstalled()'
-	'JContainers.lastError':
+	'JContainers.lastError (JContainers)':
 		'prefix': 'lastError'
 		'body': 'lastError()'
-	'JContainers.lastErrorString':
+	'JContainers.lastErrorString (JContainers)':
 		'prefix': 'lastErrorString'
 		'body': 'lastErrorString()'
-	'JDB.allKeys':
+	'JContainers.removeFileAtPath (JContainers)':
+		'prefix': 'removeFileAtPath'
+		'body': 'removeFileAtPath(${1:string path})'
+	'JContainers.userDirectory (JContainers)':
+		'prefix': 'userDirectory'
+		'body': 'userDirectory()'
+	'JContainers.__isInstalled (JContainers)':
+		'prefix': '__isInstalled'
+		'body': '__isInstalled()'
+	'JDB.allKeys (JContainers)':
 		'prefix': 'allKeys'
 		'body': 'allKeys()'
-	'JDB.allValues':
+	'JDB.allValues (JContainers)':
 		'prefix': 'allValues'
 		'body': 'allValues()'
-	'JDB.hasPath':
+	'JDB.hasPath (JContainers)':
 		'prefix': 'hasPath'
 		'body': 'hasPath(${1:string path})'
-	'JDB.readFromFile':
+	'JDB.readFromFile (JContainers)':
 		'prefix': 'readFromFile'
 		'body': 'readFromFile(${1:string path})'
-	'JDB.setObj':
+	'JDB.setObj (JContainers)':
 		'prefix': 'setObj'
 		'body': 'setObj(${1:string key}, ${2:int object})'
-	'JDB.solveFlt':
+	'JDB.solveFlt (JContainers)':
 		'prefix': 'solveFlt'
-		'body': 'solveFlt(${1:string path})'
-	'JDB.solveFltSetter':
+		'body': 'solveFlt(${1:string path}, ${2:float default})'
+	'JDB.solveFltSetter (JContainers)':
 		'prefix': 'solveFltSetter'
-		'body': 'solveFltSetter(${1:string path}, ${2:float value})'
-	'JDB.solveForm':
+		'body': 'solveFltSetter(${1:string path}, ${2:float value}, ${3:bool createMissingKeys})'
+	'JDB.solveForm (JContainers)':
 		'prefix': 'solveForm'
-		'body': 'solveForm(${1:string path})'
-	'JDB.solveFormSetter':
+		'body': 'solveForm(${1:string path}, ${2:form default})'
+	'JDB.solveFormSetter (JContainers)':
 		'prefix': 'solveFormSetter'
-		'body': 'solveFormSetter(${1:string path}, ${2:form value})'
-	'JDB.solveInt':
+		'body': 'solveFormSetter(${1:string path}, ${2:form value}, ${3:bool createMissingKeys})'
+	'JDB.solveInt (JContainers)':
 		'prefix': 'solveInt'
-		'body': 'solveInt(${1:string path})'
-	'JDB.solveIntSetter':
+		'body': 'solveInt(${1:string path}, ${2:int default})'
+	'JDB.solveIntSetter (JContainers)':
 		'prefix': 'solveIntSetter'
-		'body': 'solveIntSetter(${1:string path}, ${2:int value})'
-	'JDB.solveObj':
+		'body': 'solveIntSetter(${1:string path}, ${2:int value}, ${3:bool createMissingKeys})'
+	'JDB.solveObj (JContainers)':
 		'prefix': 'solveObj'
-		'body': 'solveObj(${1:string path})'
-	'JDB.solveObjSetter':
+		'body': 'solveObj(${1:string path}, ${2:int default})'
+	'JDB.solveObjSetter (JContainers)':
 		'prefix': 'solveObjSetter'
-		'body': 'solveObjSetter(${1:string path}, ${2:int value})'
-	'JDB.solveStr':
+		'body': 'solveObjSetter(${1:string path}, ${2:int value}, ${3:bool createMissingKeys})'
+	'JDB.solveStr (JContainers)':
 		'prefix': 'solveStr'
-		'body': 'solveStr(${1:string path})'
-	'JDB.solveStrSetter':
+		'body': 'solveStr(${1:string path}, ${2:string default})'
+	'JDB.solveStrSetter (JContainers)':
 		'prefix': 'solveStrSetter'
-		'body': 'solveStrSetter(${1:string path}, ${2:string value})'
-	'JDB.writeToFile':
+		'body': 'solveStrSetter(${1:string path}, ${2:string value}, ${3:bool createMissingKeys})'
+	'JDB.writeToFile (JContainers)':
 		'prefix': 'writeToFile'
 		'body': 'writeToFile(${1:string path})'
-	'JFormDB.allKeys':
+	'JFormDB.allKeys (JContainers)':
 		'prefix': 'allKeys'
 		'body': 'allKeys(${1:form fKey}, ${2:string key})'
-	'JFormDB.allValues':
+	'JFormDB.allValues (JContainers)':
 		'prefix': 'allValues'
 		'body': 'allValues(${1:form fKey}, ${2:string key})'
-	'JFormDB.findEntry':
+	'JFormDB.findEntry (JContainers)':
 		'prefix': 'findEntry'
 		'body': 'findEntry(${1:string storageName}, ${2:form fKey})'
-	'JFormDB.getFlt':
+	'JFormDB.getFlt (JContainers)':
 		'prefix': 'getFlt'
 		'body': 'getFlt(${1:form fKey}, ${2:string key})'
-	'JFormDB.getForm':
+	'JFormDB.getForm (JContainers)':
 		'prefix': 'getForm'
 		'body': 'getForm(${1:form fKey}, ${2:string key})'
-	'JFormDB.getInt':
+	'JFormDB.getInt (JContainers)':
 		'prefix': 'getInt'
 		'body': 'getInt(${1:form fKey}, ${2:string key})'
-	'JFormDB.getObj':
+	'JFormDB.getObj (JContainers)':
 		'prefix': 'getObj'
 		'body': 'getObj(${1:form fKey}, ${2:string key})'
-	'JFormDB.getStr':
+	'JFormDB.getStr (JContainers)':
 		'prefix': 'getStr'
 		'body': 'getStr(${1:form fKey}, ${2:string key})'
-	'JFormDB.hasPath':
+	'JFormDB.hasPath (JContainers)':
 		'prefix': 'hasPath'
 		'body': 'hasPath(${1:form fKey}, ${2:string path})'
-	'JFormDB.makeEntry':
+	'JFormDB.makeEntry (JContainers)':
 		'prefix': 'makeEntry'
 		'body': 'makeEntry(${1:string storageName}, ${2:form fKey})'
-	'JFormDB.setEntry':
+	'JFormDB.setEntry (JContainers)':
 		'prefix': 'setEntry'
 		'body': 'setEntry(${1:string storageName}, ${2:form fKey}, ${3:int entry})'
-	'JFormDB.setFlt':
+	'JFormDB.setFlt (JContainers)':
 		'prefix': 'setFlt'
 		'body': 'setFlt(${1:form fKey}, ${2:string key}, ${3:float value})'
-	'JFormDB.setForm':
+	'JFormDB.setForm (JContainers)':
 		'prefix': 'setForm'
 		'body': 'setForm(${1:form fKey}, ${2:string key}, ${3:form value})'
-	'JFormDB.setInt':
+	'JFormDB.setInt (JContainers)':
 		'prefix': 'setInt'
 		'body': 'setInt(${1:form fKey}, ${2:string key}, ${3:int value})'
-	'JFormDB.setObj':
+	'JFormDB.setObj (JContainers)':
 		'prefix': 'setObj'
 		'body': 'setObj(${1:form fKey}, ${2:string key}, ${3:int container})'
-	'JFormDB.setStr':
+	'JFormDB.setStr (JContainers)':
 		'prefix': 'setStr'
 		'body': 'setStr(${1:form fKey}, ${2:string key}, ${3:string value})'
-	'JFormDB.solveFlt':
+	'JFormDB.solveFlt (JContainers)':
 		'prefix': 'solveFlt'
-		'body': 'solveFlt(${1:form fKey}, ${2:string path})'
-	'JFormDB.solveFltSetter':
+		'body': 'solveFlt(${1:form fKey}, ${2:string path}, ${3:float default})'
+	'JFormDB.solveFltSetter (JContainers)':
 		'prefix': 'solveFltSetter'
-		'body': 'solveFltSetter(${1:form fKey}, ${2:string path}, ${3:float value})'
-	'JFormDB.solveForm':
+		'body': 'solveFltSetter(${1:form fKey}, ${2:string path}, ${3:float value}, ${4:bool createMissingKeys})'
+	'JFormDB.solveForm (JContainers)':
 		'prefix': 'solveForm'
-		'body': 'solveForm(${1:form fKey}, ${2:string path})'
-	'JFormDB.solveFormSetter':
+		'body': 'solveForm(${1:form fKey}, ${2:string path}, ${3:form default})'
+	'JFormDB.solveFormSetter (JContainers)':
 		'prefix': 'solveFormSetter'
-		'body': 'solveFormSetter(${1:form fKey}, ${2:string path}, ${3:form value})'
-	'JFormDB.solveInt':
+		'body': 'solveFormSetter(${1:form fKey}, ${2:string path}, ${3:form value}, ${4:bool createMissingKeys})'
+	'JFormDB.solveInt (JContainers)':
 		'prefix': 'solveInt'
-		'body': 'solveInt(${1:form fKey}, ${2:string path})'
-	'JFormDB.solveIntSetter':
+		'body': 'solveInt(${1:form fKey}, ${2:string path}, ${3:int default})'
+	'JFormDB.solveIntSetter (JContainers)':
 		'prefix': 'solveIntSetter'
-		'body': 'solveIntSetter(${1:form fKey}, ${2:string path}, ${3:int value})'
-	'JFormDB.solveObj':
+		'body': 'solveIntSetter(${1:form fKey}, ${2:string path}, ${3:int value}, ${4:bool createMissingKeys})'
+	'JFormDB.solveObj (JContainers)':
 		'prefix': 'solveObj'
-		'body': 'solveObj(${1:form fKey}, ${2:string path})'
-	'JFormDB.solveObjSetter':
+		'body': 'solveObj(${1:form fKey}, ${2:string path}, ${3:int default})'
+	'JFormDB.solveObjSetter (JContainers)':
 		'prefix': 'solveObjSetter'
-		'body': 'solveObjSetter(${1:form fKey}, ${2:string path}, ${3:int value})'
-	'JFormDB.solveStr':
+		'body': 'solveObjSetter(${1:form fKey}, ${2:string path}, ${3:int value}, ${4:bool createMissingKeys})'
+	'JFormDB.solveStr (JContainers)':
 		'prefix': 'solveStr'
-		'body': 'solveStr(${1:form fKey}, ${2:string path})'
-	'JFormDB.solveStrSetter':
+		'body': 'solveStr(${1:form fKey}, ${2:string path}, ${3:string default})'
+	'JFormDB.solveStrSetter (JContainers)':
 		'prefix': 'solveStrSetter'
-		'body': 'solveStrSetter(${1:form fKey}, ${2:string path}, ${3:string value})'
-	'JFormMap.allKeys':
+		'body': 'solveStrSetter(${1:form fKey}, ${2:string path}, ${3:string value}, ${4:bool createMissingKeys})'
+	'JFormMap.addPairs (JContainers)':
+		'prefix': 'addPairs'
+		'body': 'addPairs(${1:int object}, ${2:int source}, ${3:bool overrideDuplicates})'
+	'JFormMap.allKeys (JContainers)':
 		'prefix': 'allKeys'
 		'body': 'allKeys(${1:int object})'
-	'JFormMap.allValues':
+	'JFormMap.allValues (JContainers)':
 		'prefix': 'allValues'
 		'body': 'allValues(${1:int object})'
-	'JFormMap.clear':
+	'JFormMap.clear (JContainers)':
 		'prefix': 'clear'
 		'body': 'clear(${1:int object})'
-	'JFormMap.count':
+	'JFormMap.count (JContainers)':
 		'prefix': 'count'
 		'body': 'count(${1:int object})'
-	'JFormMap.getFlt':
+	'JFormMap.getFlt (JContainers)':
 		'prefix': 'getFlt'
-		'body': 'getFlt(${1:int object}, ${2:form key})'
-	'JFormMap.getForm':
+		'body': 'getFlt(${1:int object}, ${2:form key}, ${3:float default})'
+	'JFormMap.getForm (JContainers)':
 		'prefix': 'getForm'
-		'body': 'getForm(${1:int object}, ${2:form key})'
-	'JFormMap.getInt':
+		'body': 'getForm(${1:int object}, ${2:form key}, ${3:form default})'
+	'JFormMap.getInt (JContainers)':
 		'prefix': 'getInt'
-		'body': 'getInt(${1:int object}, ${2:form key})'
-	'JFormMap.getObj':
+		'body': 'getInt(${1:int object}, ${2:form key}, ${3:int default})'
+	'JFormMap.getNthKey (JContainers)':
+		'prefix': 'getNthKey'
+		'body': 'getNthKey(${1:int object}, ${2:int keyIndex})'
+	'JFormMap.getObj (JContainers)':
 		'prefix': 'getObj'
-		'body': 'getObj(${1:int object}, ${2:form key})'
-	'JFormMap.getStr':
+		'body': 'getObj(${1:int object}, ${2:form key}, ${3:int default})'
+	'JFormMap.getStr (JContainers)':
 		'prefix': 'getStr'
-		'body': 'getStr(${1:int object}, ${2:form key})'
-	'JFormMap.hasKey':
+		'body': 'getStr(${1:int object}, ${2:form key}, ${3:string default})'
+	'JFormMap.hasKey (JContainers)':
 		'prefix': 'hasKey'
 		'body': 'hasKey(${1:int object}, ${2:form key})'
-	'JFormMap.object':
+	'JFormMap.nextKey (JContainers)':
+		'prefix': 'nextKey'
+		'body': 'nextKey(${1:int object}, ${2:form previousKey}, ${3:form endKey})'
+	'JFormMap.object (JContainers)':
 		'prefix': 'object'
 		'body': 'object()'
-	'JFormMap.removeKey':
+	'JFormMap.removeKey (JContainers)':
 		'prefix': 'removeKey'
 		'body': 'removeKey(${1:int object}, ${2:form key})'
-	'JFormMap.setFlt':
+	'JFormMap.setFlt (JContainers)':
 		'prefix': 'setFlt'
 		'body': 'setFlt(${1:int object}, ${2:form key}, ${3:float value})'
-	'JFormMap.setForm':
+	'JFormMap.setForm (JContainers)':
 		'prefix': 'setForm'
 		'body': 'setForm(${1:int object}, ${2:form key}, ${3:form value})'
-	'JFormMap.setInt':
+	'JFormMap.setInt (JContainers)':
 		'prefix': 'setInt'
 		'body': 'setInt(${1:int object}, ${2:form key}, ${3:int value})'
-	'JFormMap.setObj':
+	'JFormMap.setObj (JContainers)':
 		'prefix': 'setObj'
 		'body': 'setObj(${1:int object}, ${2:form key}, ${3:int container})'
-	'JFormMap.setStr':
+	'JFormMap.setStr (JContainers)':
 		'prefix': 'setStr'
 		'body': 'setStr(${1:int object}, ${2:form key}, ${3:string value})'
-	'JMap.allKeys':
+	'JFormMap.valueType (JContainers)':
+		'prefix': 'valueType'
+		'body': 'valueType(${1:int object}, ${2:form key})'
+	'JIntMap.addPairs (JContainers)':
+		'prefix': 'addPairs'
+		'body': 'addPairs(${1:int object}, ${2:int source}, ${3:bool overrideDuplicates})'
+	'JIntMap.allKeys (JContainers)':
 		'prefix': 'allKeys'
 		'body': 'allKeys(${1:int object})'
-	'JMap.allValues':
+	'JIntMap.allValues (JContainers)':
 		'prefix': 'allValues'
 		'body': 'allValues(${1:int object})'
-	'JMap.clear':
+	'JIntMap.clear (JContainers)':
 		'prefix': 'clear'
 		'body': 'clear(${1:int object})'
-	'JMap.count':
+	'JIntMap.count (JContainers)':
 		'prefix': 'count'
 		'body': 'count(${1:int object})'
-	'JMap.getFlt':
+	'JIntMap.getFlt (JContainers)':
 		'prefix': 'getFlt'
-		'body': 'getFlt(${1:int object}, ${2:string key})'
-	'JMap.getForm':
+		'body': 'getFlt(${1:int object}, ${2:int key}, ${3:float default})'
+	'JIntMap.getForm (JContainers)':
 		'prefix': 'getForm'
-		'body': 'getForm(${1:int object}, ${2:string key})'
-	'JMap.getInt':
+		'body': 'getForm(${1:int object}, ${2:int key}, ${3:form default})'
+	'JIntMap.getInt (JContainers)':
 		'prefix': 'getInt'
-		'body': 'getInt(${1:int object}, ${2:string key})'
-	'JMap.getObj':
+		'body': 'getInt(${1:int object}, ${2:int key}, ${3:int default})'
+	'JIntMap.getNthKey (JContainers)':
+		'prefix': 'getNthKey'
+		'body': 'getNthKey(${1:int object}, ${2:int keyIndex})'
+	'JIntMap.getObj (JContainers)':
 		'prefix': 'getObj'
-		'body': 'getObj(${1:int object}, ${2:string key})'
-	'JMap.getStr':
+		'body': 'getObj(${1:int object}, ${2:int key}, ${3:int default})'
+	'JIntMap.getStr (JContainers)':
 		'prefix': 'getStr'
-		'body': 'getStr(${1:int object}, ${2:string key})'
-	'JMap.hasKey':
+		'body': 'getStr(${1:int object}, ${2:int key}, ${3:string default})'
+	'JIntMap.hasKey (JContainers)':
 		'prefix': 'hasKey'
-		'body': 'hasKey(${1:int object}, ${2:string key})'
-	'JMap.object':
+		'body': 'hasKey(${1:int object}, ${2:int key})'
+	'JIntMap.nextKey (JContainers)':
+		'prefix': 'nextKey'
+		'body': 'nextKey(${1:int object}, ${2:int previousKey}, ${3:int endKey})'
+	'JIntMap.object (JContainers)':
 		'prefix': 'object'
 		'body': 'object()'
-	'JMap.removeKey':
+	'JIntMap.removeKey (JContainers)':
 		'prefix': 'removeKey'
-		'body': 'removeKey(${1:int object}, ${2:string key})'
-	'JMap.setFlt':
+		'body': 'removeKey(${1:int object}, ${2:int key})'
+	'JIntMap.setFlt (JContainers)':
 		'prefix': 'setFlt'
-		'body': 'setFlt(${1:int object}, ${2:string key}, ${3:float value})'
-	'JMap.setForm':
+		'body': 'setFlt(${1:int object}, ${2:int key}, ${3:float value})'
+	'JIntMap.setForm (JContainers)':
 		'prefix': 'setForm'
-		'body': 'setForm(${1:int object}, ${2:string key}, ${3:form value})'
-	'JMap.setInt':
+		'body': 'setForm(${1:int object}, ${2:int key}, ${3:form value})'
+	'JIntMap.setInt (JContainers)':
 		'prefix': 'setInt'
-		'body': 'setInt(${1:int object}, ${2:string key}, ${3:int value})'
-	'JMap.setObj':
+		'body': 'setInt(${1:int object}, ${2:int key}, ${3:int value})'
+	'JIntMap.setObj (JContainers)':
 		'prefix': 'setObj'
-		'body': 'setObj(${1:int object}, ${2:string key}, ${3:int container})'
-	'JMap.setStr':
+		'body': 'setObj(${1:int object}, ${2:int key}, ${3:int container})'
+	'JIntMap.setStr (JContainers)':
 		'prefix': 'setStr'
-		'body': 'setStr(${1:int object}, ${2:string key}, ${3:string value})'
-	'JString.wrap':
-		'prefix': 'wrap'
-		'body': 'wrap(${1:string sourceText}, ${2:int charactersPerLine})'
-	'JValue.clear':
+		'body': 'setStr(${1:int object}, ${2:int key}, ${3:string value})'
+	'JIntMap.valueType (JContainers)':
+		'prefix': 'valueType'
+		'body': 'valueType(${1:int object}, ${2:int key})'
+	'JMap.addPairs (JContainers)':
+		'prefix': 'addPairs'
+		'body': 'addPairs(${1:int object}, ${2:int source}, ${3:bool overrideDuplicates})'
+	'JMap.allKeys (JContainers)':
+		'prefix': 'allKeys'
+		'body': 'allKeys(${1:int object})'
+	'JMap.allValues (JContainers)':
+		'prefix': 'allValues'
+		'body': 'allValues(${1:int object})'
+	'JMap.clear (JContainers)':
 		'prefix': 'clear'
 		'body': 'clear(${1:int object})'
-	'JValue.count':
+	'JMap.count (JContainers)':
 		'prefix': 'count'
 		'body': 'count(${1:int object})'
-	'JValue.empty':
+	'JMap.getFlt (JContainers)':
+		'prefix': 'getFlt'
+		'body': 'getFlt(${1:int object}, ${2:string key}, ${3:float default})'
+	'JMap.getForm (JContainers)':
+		'prefix': 'getForm'
+		'body': 'getForm(${1:int object}, ${2:string key}, ${3:form default})'
+	'JMap.getInt (JContainers)':
+		'prefix': 'getInt'
+		'body': 'getInt(${1:int object}, ${2:string key}, ${3:int default})'
+	'JMap.getNthKey (JContainers)':
+		'prefix': 'getNthKey'
+		'body': 'getNthKey(${1:int object}, ${2:int keyIndex})'
+	'JMap.getObj (JContainers)':
+		'prefix': 'getObj'
+		'body': 'getObj(${1:int object}, ${2:string key}, ${3:int default})'
+	'JMap.getStr (JContainers)':
+		'prefix': 'getStr'
+		'body': 'getStr(${1:int object}, ${2:string key}, ${3:string default})'
+	'JMap.hasKey (JContainers)':
+		'prefix': 'hasKey'
+		'body': 'hasKey(${1:int object}, ${2:string key})'
+	'JMap.nextKey (JContainers)':
+		'prefix': 'nextKey'
+		'body': 'nextKey(${1:int object}, ${2:string previousKey}, ${3:string endKey})'
+	'JMap.object (JContainers)':
+		'prefix': 'object'
+		'body': 'object()'
+	'JMap.removeKey (JContainers)':
+		'prefix': 'removeKey'
+		'body': 'removeKey(${1:int object}, ${2:string key})'
+	'JMap.setFlt (JContainers)':
+		'prefix': 'setFlt'
+		'body': 'setFlt(${1:int object}, ${2:string key}, ${3:float value})'
+	'JMap.setForm (JContainers)':
+		'prefix': 'setForm'
+		'body': 'setForm(${1:int object}, ${2:string key}, ${3:form value})'
+	'JMap.setInt (JContainers)':
+		'prefix': 'setInt'
+		'body': 'setInt(${1:int object}, ${2:string key}, ${3:int value})'
+	'JMap.setObj (JContainers)':
+		'prefix': 'setObj'
+		'body': 'setObj(${1:int object}, ${2:string key}, ${3:int container})'
+	'JMap.setStr (JContainers)':
+		'prefix': 'setStr'
+		'body': 'setStr(${1:int object}, ${2:string key}, ${3:string value})'
+	'JMap.valueType (JContainers)':
+		'prefix': 'valueType'
+		'body': 'valueType(${1:int object}, ${2:string key})'
+	'JString.wrap (JContainers)':
+		'prefix': 'wrap'
+		'body': 'wrap(${1:string sourceText}, ${2:int charactersPerLine})'
+	'JValue.addToPool (JContainers)':
+		'prefix': 'addToPool'
+		'body': 'addToPool(${1:int object}, ${2:string poolName})'
+	'JValue.cleanPool (JContainers)':
+		'prefix': 'cleanPool'
+		'body': 'cleanPool(${1:string poolName})'
+	'JValue.clear (JContainers)':
+		'prefix': 'clear'
+		'body': 'clear(${1:int object})'
+	'JValue.count (JContainers)':
+		'prefix': 'count'
+		'body': 'count(${1:int object})'
+	'JValue.deepCopy (JContainers)':
+		'prefix': 'deepCopy'
+		'body': 'deepCopy(${1:int object})'
+	'JValue.empty (JContainers)':
 		'prefix': 'empty'
 		'body': 'empty(${1:int object})'
-	'JValue.hasPath':
+	'JValue.evalLuaFlt (JContainers)':
+		'prefix': 'evalLuaFlt'
+		'body': 'evalLuaFlt(${1:int object}, ${2:string luaCode}, ${3:float default})'
+	'JValue.evalLuaForm (JContainers)':
+		'prefix': 'evalLuaForm'
+		'body': 'evalLuaForm(${1:int object}, ${2:string luaCode}, ${3:form default})'
+	'JValue.evalLuaInt (JContainers)':
+		'prefix': 'evalLuaInt'
+		'body': 'evalLuaInt(${1:int object}, ${2:string luaCode}, ${3:int default})'
+	'JValue.evalLuaObj (JContainers)':
+		'prefix': 'evalLuaObj'
+		'body': 'evalLuaObj(${1:int object}, ${2:string luaCode}, ${3:int default})'
+	'JValue.evalLuaStr (JContainers)':
+		'prefix': 'evalLuaStr'
+		'body': 'evalLuaStr(${1:int object}, ${2:string luaCode}, ${3:string default})'
+	'JValue.hasPath (JContainers)':
 		'prefix': 'hasPath'
 		'body': 'hasPath(${1:int object}, ${2:string path})'
-	'JValue.isArray':
+	'JValue.isArray (JContainers)':
 		'prefix': 'isArray'
 		'body': 'isArray(${1:int object})'
-	'JValue.isFormMap':
+	'JValue.isExists (JContainers)':
+		'prefix': 'isExists'
+		'body': 'isExists(${1:int object})'
+	'JValue.isFormMap (JContainers)':
 		'prefix': 'isFormMap'
 		'body': 'isFormMap(${1:int object})'
-	'JValue.isMap':
+	'JValue.isIntegerMap (JContainers)':
+		'prefix': 'isIntegerMap'
+		'body': 'isIntegerMap(${1:int object})'
+	'JValue.isMap (JContainers)':
 		'prefix': 'isMap'
 		'body': 'isMap(${1:int object})'
-	'JValue.objectFromPrototype':
+	'JValue.objectFromPrototype (JContainers)':
 		'prefix': 'objectFromPrototype'
 		'body': 'objectFromPrototype(${1:string prototype})'
-	'JValue.readFromDirectory':
+	'JValue.readFromDirectory (JContainers)':
 		'prefix': 'readFromDirectory'
 		'body': 'readFromDirectory(${1:string directoryPath}, ${2:string extension})'
-	'JValue.readFromFile':
+	'JValue.readFromFile (JContainers)':
 		'prefix': 'readFromFile'
 		'body': 'readFromFile(${1:string filePath})'
-	'JValue.release':
+	'JValue.release (JContainers)':
 		'prefix': 'release'
 		'body': 'release(${1:int object})'
-	'JValue.releaseAndRetain':
+	'JValue.releaseAndRetain (JContainers)':
 		'prefix': 'releaseAndRetain'
-		'body': 'releaseAndRetain(${1:int previousObject}, ${2:int newObject})'
-	'JValue.retain':
+		'body': 'releaseAndRetain(${1:int previousObject}, ${2:int newObject}, ${3:string tag})'
+	'JValue.releaseObjectsWithTag (JContainers)':
+		'prefix': 'releaseObjectsWithTag'
+		'body': 'releaseObjectsWithTag(${1:string tag})'
+	'JValue.retain (JContainers)':
 		'prefix': 'retain'
-		'body': 'retain(${1:int object})'
-	'JValue.solveFlt':
+		'body': 'retain(${1:int object}, ${2:string tag})'
+	'JValue.shallowCopy (JContainers)':
+		'prefix': 'shallowCopy'
+		'body': 'shallowCopy(${1:int object})'
+	'JValue.solvedValueType (JContainers)':
+		'prefix': 'solvedValueType'
+		'body': 'solvedValueType(${1:int object}, ${2:string path})'
+	'JValue.solveFlt (JContainers)':
 		'prefix': 'solveFlt'
-		'body': 'solveFlt(${1:int object}, ${2:string path})'
-	'JValue.solveFltSetter':
+		'body': 'solveFlt(${1:int object}, ${2:string path}, ${3:float default})'
+	'JValue.solveFltSetter (JContainers)':
 		'prefix': 'solveFltSetter'
-		'body': 'solveFltSetter(${1:int object}, ${2:string path}, ${3:float value})'
-	'JValue.solveForm':
+		'body': 'solveFltSetter(${1:int object}, ${2:string path}, ${3:float value}, ${4:bool createMissingKeys})'
+	'JValue.solveForm (JContainers)':
 		'prefix': 'solveForm'
-		'body': 'solveForm(${1:int object}, ${2:string path})'
-	'JValue.solveFormSetter':
+		'body': 'solveForm(${1:int object}, ${2:string path}, ${3:form default})'
+	'JValue.solveFormSetter (JContainers)':
 		'prefix': 'solveFormSetter'
-		'body': 'solveFormSetter(${1:int object}, ${2:string path}, ${3:form value})'
-	'JValue.solveInt':
+		'body': 'solveFormSetter(${1:int object}, ${2:string path}, ${3:form value}, ${4:bool createMissingKeys})'
+	'JValue.solveInt (JContainers)':
 		'prefix': 'solveInt'
-		'body': 'solveInt(${1:int object}, ${2:string path})'
-	'JValue.solveIntSetter':
+		'body': 'solveInt(${1:int object}, ${2:string path}, ${3:int default})'
+	'JValue.solveIntSetter (JContainers)':
 		'prefix': 'solveIntSetter'
-		'body': 'solveIntSetter(${1:int object}, ${2:string path}, ${3:int value})'
-	'JValue.solveObj':
+		'body': 'solveIntSetter(${1:int object}, ${2:string path}, ${3:int value}, ${4:bool createMissingKeys})'
+	'JValue.solveObj (JContainers)':
 		'prefix': 'solveObj'
-		'body': 'solveObj(${1:int object}, ${2:string path})'
-	'JValue.solveObjSetter':
+		'body': 'solveObj(${1:int object}, ${2:string path}, ${3:int default})'
+	'JValue.solveObjSetter (JContainers)':
 		'prefix': 'solveObjSetter'
-		'body': 'solveObjSetter(${1:int object}, ${2:string path}, ${3:int value})'
-	'JValue.solveStr':
+		'body': 'solveObjSetter(${1:int object}, ${2:string path}, ${3:int value}, ${4:bool createMissingKeys})'
+	'JValue.solveStr (JContainers)':
 		'prefix': 'solveStr'
-		'body': 'solveStr(${1:int object}, ${2:string path})'
-	'JValue.solveStrSetter':
+		'body': 'solveStr(${1:int object}, ${2:string path}, ${3:string default})'
+	'JValue.solveStrSetter (JContainers)':
 		'prefix': 'solveStrSetter'
-		'body': 'solveStrSetter(${1:int object}, ${2:string path}, ${3:string value})'
-	'JValue.writeToFile':
+		'body': 'solveStrSetter(${1:int object}, ${2:string path}, ${3:string value}, ${4:bool createMissingKeys})'
+	'JValue.writeToFile (JContainers)':
 		'prefix': 'writeToFile'
 		'body': 'writeToFile(${1:int object}, ${2:string filePath})'
+	'JValue.zeroLifetime (JContainers)':
+		'prefix': 'zeroLifetime'
+		'body': 'zeroLifetime(${1:int object})'

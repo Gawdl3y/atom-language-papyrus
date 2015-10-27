@@ -1,82 +1,82 @@
 '.source.papyrus':
-	'FISSFactory.getFISS':
+	'FISSFactory.getFISS (FISS)':
 		'prefix': 'getFISS'
 		'body': 'getFISS()'
-	'FISSInterface.beginLoad':
+	'FISSInterface.beginLoad (FISS)':
 		'prefix': 'beginLoad'
 		'body': 'beginLoad(${1:string filename})'
-	'FISSInterface.beginSave':
+	'FISSInterface.beginSave (FISS)':
 		'prefix': 'beginSave'
 		'body': 'beginSave(${1:string filename}, ${2:string modname})'
-	'FISSInterface.blockInput':
+	'FISSInterface.blockInput (FISS)':
 		'prefix': 'blockInput'
 		'body': 'blockInput(${1:bool block})'
-	'FISSInterface.endLoad':
+	'FISSInterface.endLoad (FISS)':
 		'prefix': 'endLoad'
 		'body': 'endLoad()'
-	'FISSInterface.endSave':
+	'FISSInterface.endSave (FISS)':
 		'prefix': 'endSave'
 		'body': 'endSave()'
-	'FISSInterface.forceClose':
+	'FISSInterface.forceClose (FISS)':
 		'prefix': 'forceClose'
 		'body': 'forceClose()'
-	'FISSInterface.getAllFilenamesInFolder':
+	'FISSInterface.getAllFilenamesInFolder (FISS)':
 		'prefix': 'getAllFilenamesInFolder'
 		'body': 'getAllFilenamesInFolder(${1:string path})'
-	'FISSInterface.getInterfaceVersion':
+	'FISSInterface.getInterfaceVersion (FISS)':
 		'prefix': 'getInterfaceVersion'
 		'body': 'getInterfaceVersion()'
-	'FISSInterface.getModName':
+	'FISSInterface.getModName (FISS)':
 		'prefix': 'getModName'
 		'body': 'getModName()'
-	'FISSInterface.getVersion':
+	'FISSInterface.getVersion (FISS)':
 		'prefix': 'getVersion'
 		'body': 'getVersion()'
-	'FISSInterface.hideInfoText':
+	'FISSInterface.hideInfoText (FISS)':
 		'prefix': 'hideInfoText'
 		'body': 'hideInfoText(${1:bool hide})'
-	'FISSInterface.loadBool':
+	'FISSInterface.loadBool (FISS)':
 		'prefix': 'loadBool'
 		'body': 'loadBool(${1:string name})'
-	'FISSInterface.loadFloat':
+	'FISSInterface.loadFloat (FISS)':
 		'prefix': 'loadFloat'
 		'body': 'loadFloat(${1:string name})'
-	'FISSInterface.loadInt':
+	'FISSInterface.loadInt (FISS)':
 		'prefix': 'loadInt'
 		'body': 'loadInt(${1:string name})'
-	'FISSInterface.loadString':
+	'FISSInterface.loadString (FISS)':
 		'prefix': 'loadString'
 		'body': 'loadString(${1:string name})'
-	'FISSInterface.requestFilename':
+	'FISSInterface.requestFilename (FISS)':
 		'prefix': 'requestFilename'
 		'body': 'requestFilename()'
-	'FISSInterface.requestUserInput':
+	'FISSInterface.requestUserInput (FISS)':
 		'prefix': 'requestUserInput'
 		'body': 'requestUserInput(${1:string titleMessage})'
-	'FISSInterface.saveBool':
+	'FISSInterface.saveBool (FISS)':
 		'prefix': 'saveBool'
 		'body': 'saveBool(${1:string name}, ${2:bool b})'
-	'FISSInterface.saveFloat':
+	'FISSInterface.saveFloat (FISS)':
 		'prefix': 'saveFloat'
 		'body': 'saveFloat(${1:string name}, ${2:float f})'
-	'FISSInterface.saveInt':
+	'FISSInterface.saveInt (FISS)':
 		'prefix': 'saveInt'
 		'body': 'saveInt(${1:string name}, ${2:int i})'
-	'FISSInterface.saveString':
+	'FISSInterface.saveString (FISS)':
 		'prefix': 'saveString'
 		'body': 'saveString(${1:string name}, ${2:string s})'
-	'FISSInterface.saveTextToTxtFile':
+	'FISSInterface.saveTextToTxtFile (FISS)':
 		'prefix': 'saveTextToTxtFile'
 		'body': 'saveTextToTxtFile(${1:string filename}, ${2:string text})'
-	'FISSInterface.setInfoText':
+	'FISSInterface.setInfoText (FISS)':
 		'prefix': 'setInfoText'
 		'body': 'setInfoText(${1:string text})'
-	'FISSInterface.setText':
+	'FISSInterface.setText (FISS)':
 		'prefix': 'setText'
 		'body': 'setText(${1:string text})'
-	'FISSInterface.setTheme':
+	'FISSInterface.setTheme (FISS)':
 		'prefix': 'setTheme'
 		'body': 'setTheme(${1:string fissInputTheme}, ${2:float fissInputScale}, ${3:float fissInputAplha})'
-	'FISSInterface.setTitle':
+	'FISSInterface.setTitle (FISS)':
 		'prefix': 'setTitle'
 		'body': 'setTitle(${1:string title})'

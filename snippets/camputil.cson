@@ -1,0 +1,103 @@
+'.source.papyrus':
+	'CampUtil.GetAPIVersion (CampUtil)':
+		'prefix': 'GetAPIVersion'
+		'body': 'GetAPIVersion()'
+	'CampUtil.GetAreaCampingFaction (CampUtil)':
+		'prefix': 'GetAreaCampingFaction'
+		'body': 'GetAreaCampingFaction(${1:ObjectReference akCenter})'
+	'CampUtil.GetCampfireSettingBool (CampUtil)':
+		'prefix': 'GetCampfireSettingBool'
+		'body': 'GetCampfireSettingBool(${1:string setting})'
+	'CampUtil.GetCampfireSettingInt (CampUtil)':
+		'prefix': 'GetCampfireSettingInt'
+		'body': 'GetCampfireSettingInt(${1:string setting})'
+	'CampUtil.GetCampfireVersion (CampUtil)':
+		'prefix': 'GetCampfireVersion'
+		'body': 'GetCampfireVersion()'
+	'CampUtil.GetCurrentTent (CampUtil)':
+		'prefix': 'GetCurrentTent'
+		'body': 'GetCurrentTent()'
+	'CampUtil.GetLastUsedCampfire (CampUtil)':
+		'prefix': 'GetLastUsedCampfire'
+		'body': 'GetLastUsedCampfire()'
+	'CampUtil.GetPlayerEquippedAmmo (CampUtil)':
+		'prefix': 'GetPlayerEquippedAmmo'
+		'body': 'GetPlayerEquippedAmmo()'
+	'CampUtil.GetPlayerEquippedBackpack (CampUtil)':
+		'prefix': 'GetPlayerEquippedBackpack'
+		'body': 'GetPlayerEquippedBackpack()'
+	'CampUtil.GetPlayerEquippedBody (CampUtil)':
+		'prefix': 'GetPlayerEquippedBody'
+		'body': 'GetPlayerEquippedBody()'
+	'CampUtil.GetPlayerEquippedFeet (CampUtil)':
+		'prefix': 'GetPlayerEquippedFeet'
+		'body': 'GetPlayerEquippedFeet()'
+	'CampUtil.GetPlayerEquippedHands (CampUtil)':
+		'prefix': 'GetPlayerEquippedHands'
+		'body': 'GetPlayerEquippedHands()'
+	'CampUtil.GetPlayerEquippedHead (CampUtil)':
+		'prefix': 'GetPlayerEquippedHead'
+		'body': 'GetPlayerEquippedHead()'
+	'CampUtil.GetTrackedAnimal (CampUtil)':
+		'prefix': 'GetTrackedAnimal'
+		'body': 'GetTrackedAnimal()'
+	'CampUtil.GetTrackedAnimalCount (CampUtil)':
+		'prefix': 'GetTrackedAnimalCount'
+		'body': 'GetTrackedAnimalCount()'
+	'CampUtil.GetTrackedFollower (CampUtil)':
+		'prefix': 'GetTrackedFollower'
+		'body': 'GetTrackedFollower(${1:int aiIndex})'
+	'CampUtil.GetTrackedFollowerCount (CampUtil)':
+		'prefix': 'GetTrackedFollowerCount'
+		'body': 'GetTrackedFollowerCount()'
+	'CampUtil.IsCrimeToPlaceInTowns (CampUtil)':
+		'prefix': 'IsCrimeToPlaceInTowns'
+		'body': 'IsCrimeToPlaceInTowns(${1:Form akBaseObject})'
+	'CampUtil.IsCurrentTentWarm (CampUtil)':
+		'prefix': 'IsCurrentTentWarm'
+		'body': 'IsCurrentTentWarm()'
+	'CampUtil.IsCurrentTentWaterproof (CampUtil)':
+		'prefix': 'IsCurrentTentWaterproof'
+		'body': 'IsCurrentTentWaterproof()'
+	'CampUtil.IsPlaceableObjectTemporary (CampUtil)':
+		'prefix': 'IsPlaceableObjectTemporary'
+		'body': 'IsPlaceableObjectTemporary(${1:Form akBaseObject})'
+	'CampUtil.IsPlayerPlacingObject (CampUtil)':
+		'prefix': 'IsPlayerPlacingObject'
+		'body': 'IsPlayerPlacingObject()'
+	'CampUtil.IsRefInInterior (CampUtil)':
+		'prefix': 'IsRefInInterior'
+		'body': 'IsRefInInterior(${1:ObjectReference akReference})'
+	'CampUtil.IsTentWarm (CampUtil)':
+		'prefix': 'IsTentWarm'
+		'body': 'IsTentWarm(${1:ObjectReference akTent})'
+	'CampUtil.IsTentWaterproof (CampUtil)':
+		'prefix': 'IsTentWaterproof'
+		'body': 'IsTentWaterproof(${1:ObjectReference akTent})'
+	'CampUtil.IsTrackedAnimal (CampUtil)':
+		'prefix': 'IsTrackedAnimal'
+		'body': 'IsTrackedAnimal(${1:Actor akActor})'
+	'CampUtil.IsTrackedFollower (CampUtil)':
+		'prefix': 'IsTrackedFollower'
+		'body': 'IsTrackedFollower(${1:Actor akActor})'
+	'CampUtil.LegalToCampHere (CampUtil)':
+		'prefix': 'LegalToCampHere'
+		'body': 'LegalToCampHere(${1:bool abIgnoreSetting = false})'
+	'CampUtil.OnBedrollSitLay (CampUtil)':
+		'prefix': 'OnBedrollSitLay'
+		'body': 'Event Campfire_OnBedrollSitLay(${1:Form akTent}, ${2:bool abGettingUp})\n\t${0}\nEndEvent'
+	'CampUtil.OnObjectPlaced (CampUtil)':
+		'prefix': 'OnObjectPlaced'
+		'body': 'Event Campfire_OnObjectPlaced(${1:Form akPlacedObject}, ${2:float afPositionX}, ${3:float afPositionY}, ${4:float afPositionZ}, ${5:float afAngleX}, ${6:float afAngleY}, ${7:float afAngleZ}, ${8:bool abIsTent})\n\t${0}\nEndEvent'
+	'CampUtil.OnObjectRemoved (CampUtil)':
+		'prefix': 'OnObjectRemoved'
+		'body': 'Event Campfire_OnObjectRemoved(${1:Form akPlacedObject}, ${2:float afPositionX}, ${3:float afPositionY}, ${4:float afPositionZ}, ${5:float afAngleX}, ${6:float afAngleY}, ${7:float afAngleZ}, ${8:bool abIsTent})\n\t${0}\nEndEvent'
+	'CampUtil.OnTentEnter (CampUtil)':
+		'prefix': 'OnTentEnter'
+		'body': 'Event Campfire_OnTentEnter(${1:Form akTent}, ${2:bool abHasShelter})\n\t${0}\nEndEvent'
+	'CampUtil.OnTentLeave (CampUtil)':
+		'prefix': 'OnTentLeave'
+		'body': 'Event Campfire_OnTentLeave()\n\t${0}\nEndEvent'
+	'CampUtil.PlayerCanPlaceObjects (CampUtil)':
+		'prefix': 'PlayerCanPlaceObjects'
+		'body': 'PlayerCanPlaceObjects(${1:bool abShowMessage = true}, ${2:bool abPlayerBusyCheck = true})'

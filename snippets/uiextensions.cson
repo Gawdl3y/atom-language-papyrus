@@ -1,0 +1,511 @@
+'.source.papyrus':
+	'cosmeticmenu.On3DLoaded (UIExtensions)':
+		'prefix': 'On3DLoaded'
+		'body': 'Event On3DLoaded(${1:ObjectReference akRef})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnGameReload (UIExtensions)':
+		'prefix': 'OnGameReload'
+		'body': 'Event OnGameReload()\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnMenuClose (UIExtensions)':
+		'prefix': 'OnMenuClose'
+		'body': 'Event OnMenuClose(${1:string menuName})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnMenuInitialized (UIExtensions)':
+		'prefix': 'OnMenuInitialized'
+		'body': 'Event OnMenuInitialized(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnMenuOpen (UIExtensions)':
+		'prefix': 'OnMenuOpen'
+		'body': 'Event OnMenuOpen(${1:string menuName})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnMenuReinitialized (UIExtensions)':
+		'prefix': 'OnMenuReinitialized'
+		'body': 'Event OnMenuReinitialized(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnReceiveDataRequest (UIExtensions)':
+		'prefix': 'OnReceiveDataRequest'
+		'body': 'Event OnReceiveDataRequest(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnReceivePrefix (UIExtensions)':
+		'prefix': 'OnReceivePrefix'
+		'body': 'Event OnReceivePrefix(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'cosmeticmenu.OnStartup (UIExtensions)':
+		'prefix': 'OnStartup'
+		'body': 'OnStartup()'
+	'cosmeticmenu.RegisterDynamicEvents (UIExtensions)':
+		'prefix': 'RegisterDynamicEvents'
+		'body': 'RegisterDynamicEvents(${1:string type})'
+	'cosmeticmenu.RegisterEvents (UIExtensions)':
+		'prefix': 'RegisterEvents'
+		'body': 'RegisterEvents()'
+	'cosmeticmenu.UnregisterDynamicEvents (UIExtensions)':
+		'prefix': 'UnregisterDynamicEvents'
+		'body': 'UnregisterDynamicEvents(${1:string type})'
+	'cosmeticmenu.UnregisterEvents (UIExtensions)':
+		'prefix': 'UnregisterEvents'
+		'body': 'UnregisterEvents()'
+	'cosmeticmenu.UpdateTints (UIExtensions)':
+		'prefix': 'UpdateTints'
+		'body': 'UpdateTints()'
+	'uicosmeticmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uicosmeticmenu.OnFailedLoadMenu (UIExtensions)':
+		'prefix': 'OnFailedLoadMenu'
+		'body': 'Event OnFailedLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uicosmeticmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uicosmeticmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uicosmeticmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form aForm = None}, ${2:Form aReceiver = None})'
+	'uicosmeticmenu.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uidyemenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uidyemenu.OnConsumeItem (UIExtensions)':
+		'prefix': 'OnConsumeItem'
+		'body': 'Event OnConsumeItem(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uidyemenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uidyemenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uidyemenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form inForm = None}, ${2:Form akReceiver = None})'
+	'uidyemenu.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uidyemenu.SetPropertyBool (UIExtensions)':
+		'prefix': 'SetPropertyBool'
+		'body': 'SetPropertyBool(${1:string propertyName}, ${2:bool value})'
+	'uidyemenu.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uidyemenu.UpdateConsumeItems (UIExtensions)':
+		'prefix': 'UpdateConsumeItems'
+		'body': 'UpdateConsumeItems()'
+	'uidyemenu.UpdateDyeSourceForm (UIExtensions)':
+		'prefix': 'UpdateDyeSourceForm'
+		'body': 'UpdateDyeSourceForm()'
+	'uidyemenu.UpdateItemSourceForm (UIExtensions)':
+		'prefix': 'UpdateItemSourceForm'
+		'body': 'UpdateItemSourceForm()'
+	'uidyemenu.UpdateMaxBlending (UIExtensions)':
+		'prefix': 'UpdateMaxBlending'
+		'body': 'UpdateMaxBlending()'
+	'uiextensions.GetMenu (UIExtensions)':
+		'prefix': 'GetMenu'
+		'body': 'GetMenu(${1:string menuName}, ${2:bool reset = true})'
+	'uiextensions.GetMenuPropertyAlias (UIExtensions)':
+		'prefix': 'GetMenuPropertyAlias'
+		'body': 'GetMenuPropertyAlias(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuPropertyBool (UIExtensions)':
+		'prefix': 'GetMenuPropertyBool'
+		'body': 'GetMenuPropertyBool(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuPropertyFloat (UIExtensions)':
+		'prefix': 'GetMenuPropertyFloat'
+		'body': 'GetMenuPropertyFloat(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuPropertyForm (UIExtensions)':
+		'prefix': 'GetMenuPropertyForm'
+		'body': 'GetMenuPropertyForm(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuPropertyInt (UIExtensions)':
+		'prefix': 'GetMenuPropertyInt'
+		'body': 'GetMenuPropertyInt(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuPropertyString (UIExtensions)':
+		'prefix': 'GetMenuPropertyString'
+		'body': 'GetMenuPropertyString(${1:string menuName}, ${2:string propertyName})'
+	'uiextensions.GetMenuResultFloat (UIExtensions)':
+		'prefix': 'GetMenuResultFloat'
+		'body': 'GetMenuResultFloat(${1:string menuName})'
+	'uiextensions.GetMenuResultForm (UIExtensions)':
+		'prefix': 'GetMenuResultForm'
+		'body': 'GetMenuResultForm(${1:string menuName})'
+	'uiextensions.GetMenuResultInt (UIExtensions)':
+		'prefix': 'GetMenuResultInt'
+		'body': 'GetMenuResultInt(${1:string menuName})'
+	'uiextensions.GetMenuResultString (UIExtensions)':
+		'prefix': 'GetMenuResultString'
+		'body': 'GetMenuResultString(${1:string menuName})'
+	'uiextensions.InitMenu (UIExtensions)':
+		'prefix': 'InitMenu'
+		'body': 'InitMenu(${1:string menuName})'
+	'uiextensions.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:string menuName}, ${2:Form akForm = None}, ${3:Form akReceiver = None})'
+	'uiextensions.SetMenuPropertyAlias (UIExtensions)':
+		'prefix': 'SetMenuPropertyAlias'
+		'body': 'SetMenuPropertyAlias(${1:string menuName}, ${2:string propertyName}, ${3:Alias value})'
+	'uiextensions.SetMenuPropertyAliasA (UIExtensions)':
+		'prefix': 'SetMenuPropertyAliasA'
+		'body': 'SetMenuPropertyAliasA(${1:string menuName}, ${2:string propertyName}, ${3:Alias[] value})'
+	'uiextensions.SetMenuPropertyBool (UIExtensions)':
+		'prefix': 'SetMenuPropertyBool'
+		'body': 'SetMenuPropertyBool(${1:string menuName}, ${2:string propertyName}, ${3:bool value})'
+	'uiextensions.SetMenuPropertyBoolA (UIExtensions)':
+		'prefix': 'SetMenuPropertyBoolA'
+		'body': 'SetMenuPropertyBoolA(${1:string menuName}, ${2:string propertyName}, ${3:bool[] value})'
+	'uiextensions.SetMenuPropertyFloat (UIExtensions)':
+		'prefix': 'SetMenuPropertyFloat'
+		'body': 'SetMenuPropertyFloat(${1:string menuName}, ${2:string propertyName}, ${3:float value})'
+	'uiextensions.SetMenuPropertyFloatA (UIExtensions)':
+		'prefix': 'SetMenuPropertyFloatA'
+		'body': 'SetMenuPropertyFloatA(${1:string menuName}, ${2:string propertyName}, ${3:float[] value})'
+	'uiextensions.SetMenuPropertyForm (UIExtensions)':
+		'prefix': 'SetMenuPropertyForm'
+		'body': 'SetMenuPropertyForm(${1:string menuName}, ${2:string propertyName}, ${3:Form value})'
+	'uiextensions.SetMenuPropertyFormA (UIExtensions)':
+		'prefix': 'SetMenuPropertyFormA'
+		'body': 'SetMenuPropertyFormA(${1:string menuName}, ${2:string propertyName}, ${3:Form[] value})'
+	'uiextensions.SetMenuPropertyIndexAlias (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexAlias'
+		'body': 'SetMenuPropertyIndexAlias(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:Alias value})'
+	'uiextensions.SetMenuPropertyIndexBool (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexBool'
+		'body': 'SetMenuPropertyIndexBool(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:bool value})'
+	'uiextensions.SetMenuPropertyIndexFloat (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexFloat'
+		'body': 'SetMenuPropertyIndexFloat(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:float value})'
+	'uiextensions.SetMenuPropertyIndexForm (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexForm'
+		'body': 'SetMenuPropertyIndexForm(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:Form value})'
+	'uiextensions.SetMenuPropertyIndexInt (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexInt'
+		'body': 'SetMenuPropertyIndexInt(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:int value})'
+	'uiextensions.SetMenuPropertyIndexString (UIExtensions)':
+		'prefix': 'SetMenuPropertyIndexString'
+		'body': 'SetMenuPropertyIndexString(${1:string menuName}, ${2:string propertyName}, ${3:int index}, ${4:string value})'
+	'uiextensions.SetMenuPropertyInt (UIExtensions)':
+		'prefix': 'SetMenuPropertyInt'
+		'body': 'SetMenuPropertyInt(${1:string menuName}, ${2:string propertyName}, ${3:int value})'
+	'uiextensions.SetMenuPropertyIntA (UIExtensions)':
+		'prefix': 'SetMenuPropertyIntA'
+		'body': 'SetMenuPropertyIntA(${1:string menuName}, ${2:string propertyName}, ${3:int[] value})'
+	'uiextensions.SetMenuPropertyString (UIExtensions)':
+		'prefix': 'SetMenuPropertyString'
+		'body': 'SetMenuPropertyString(${1:string menuName}, ${2:string propertyName}, ${3:string value})'
+	'uiextensions.SetMenuPropertyStringA (UIExtensions)':
+		'prefix': 'SetMenuPropertyStringA'
+		'body': 'SetMenuPropertyStringA(${1:string menuName}, ${2:string propertyName}, ${3:string[] value})'
+	'uilistmenu.AddEntryItem (UIExtensions)':
+		'prefix': 'AddEntryItem'
+		'body': 'AddEntryItem(${1:string entryName}, ${2:int entryParent}, ${3:int entryCallback}, ${4:bool entryHasChildren = false})'
+	'uilistmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uilistmenu.GetPropertyInt (UIExtensions)':
+		'prefix': 'GetPropertyInt'
+		'body': 'GetPropertyInt(${1:string propertyName})'
+	'uilistmenu.GetResultFloat (UIExtensions)':
+		'prefix': 'GetResultFloat'
+		'body': 'GetResultFloat()'
+	'uilistmenu.GetResultInt (UIExtensions)':
+		'prefix': 'GetResultInt'
+		'body': 'GetResultInt()'
+	'uilistmenu.GetResultString (UIExtensions)':
+		'prefix': 'GetResultString'
+		'body': 'GetResultString()'
+	'uilistmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uilistmenu.OnSelect (UIExtensions)':
+		'prefix': 'OnSelect'
+		'body': 'Event OnSelect(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uilistmenu.OnSelectText (UIExtensions)':
+		'prefix': 'OnSelectText'
+		'body': 'Event OnSelectText(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uilistmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uilistmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form aForm = None}, ${2:Form aReceiver = None})'
+	'uilistmenu.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uilistmenu.SetPropertyBool (UIExtensions)':
+		'prefix': 'SetPropertyBool'
+		'body': 'SetPropertyBool(${1:string propertyName}, ${2:bool value})'
+	'uilistmenu.SetPropertyIndexBool (UIExtensions)':
+		'prefix': 'SetPropertyIndexBool'
+		'body': 'SetPropertyIndexBool(${1:string propertyName}, ${2:int index}, ${3:bool value})'
+	'uilistmenu.SetPropertyIndexInt (UIExtensions)':
+		'prefix': 'SetPropertyIndexInt'
+		'body': 'SetPropertyIndexInt(${1:string propertyName}, ${2:int index}, ${3:int value})'
+	'uilistmenu.SetPropertyIndexString (UIExtensions)':
+		'prefix': 'SetPropertyIndexString'
+		'body': 'SetPropertyIndexString(${1:string propertyName}, ${2:int index}, ${3:string value})'
+	'uilistmenu.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uilistmenu.SetPropertyStringA (UIExtensions)':
+		'prefix': 'SetPropertyStringA'
+		'body': 'SetPropertyStringA(${1:string propertyName}, ${2:string[] value})'
+	'uimagicmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uimagicmenu.OnAddRemoveSpell (UIExtensions)':
+		'prefix': 'OnAddRemoveSpell'
+		'body': 'Event OnAddRemoveSpell(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uimagicmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uimagicmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uimagicmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form akForm = None}, ${2:Form akReceiver = None})'
+	'uimagicmenu.SetPropertyBool (UIExtensions)':
+		'prefix': 'SetPropertyBool'
+		'body': 'SetPropertyBool(${1:string propertyName}, ${2:bool value})'
+	'uimagicmenu.SetPropertyForm (UIExtensions)':
+		'prefix': 'SetPropertyForm'
+		'body': 'SetPropertyForm(${1:string propertyName}, ${2:Form value})'
+	'uimagicmenu.SetPropertyString (UIExtensions)':
+		'prefix': 'SetPropertyString'
+		'body': 'SetPropertyString(${1:string propertyName}, ${2:String value})'
+	'uimenubase.BlockUntilClosed (UIExtensions)':
+		'prefix': 'BlockUntilClosed'
+		'body': 'BlockUntilClosed()'
+	'uimenubase.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uimenubase.GetPropertyAlias (UIExtensions)':
+		'prefix': 'GetPropertyAlias'
+		'body': 'GetPropertyAlias(${1:string propertyName})'
+	'uimenubase.GetPropertyBool (UIExtensions)':
+		'prefix': 'GetPropertyBool'
+		'body': 'GetPropertyBool(${1:string propertyName})'
+	'uimenubase.GetPropertyFloat (UIExtensions)':
+		'prefix': 'GetPropertyFloat'
+		'body': 'GetPropertyFloat(${1:string propertyName})'
+	'uimenubase.GetPropertyForm (UIExtensions)':
+		'prefix': 'GetPropertyForm'
+		'body': 'GetPropertyForm(${1:string propertyName})'
+	'uimenubase.GetPropertyInt (UIExtensions)':
+		'prefix': 'GetPropertyInt'
+		'body': 'GetPropertyInt(${1:string propertyName})'
+	'uimenubase.GetPropertyString (UIExtensions)':
+		'prefix': 'GetPropertyString'
+		'body': 'GetPropertyString(${1:string propertyName})'
+	'uimenubase.GetResultFloat (UIExtensions)':
+		'prefix': 'GetResultFloat'
+		'body': 'GetResultFloat()'
+	'uimenubase.GetResultForm (UIExtensions)':
+		'prefix': 'GetResultForm'
+		'body': 'GetResultForm()'
+	'uimenubase.GetResultInt (UIExtensions)':
+		'prefix': 'GetResultInt'
+		'body': 'GetResultInt()'
+	'uimenubase.GetResultString (UIExtensions)':
+		'prefix': 'GetResultString'
+		'body': 'GetResultString()'
+	'uimenubase.Lock (UIExtensions)':
+		'prefix': 'Lock'
+		'body': 'Lock()'
+	'uimenubase.OnGameReload (UIExtensions)':
+		'prefix': 'OnGameReload'
+		'body': 'Event OnGameReload()\n\t${0}\nEndEvent'
+	'uimenubase.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form akForm = None}, ${2:Form akReceiver = None})'
+	'uimenubase.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uimenubase.SetPropertyAlias (UIExtensions)':
+		'prefix': 'SetPropertyAlias'
+		'body': 'SetPropertyAlias(${1:string propertyName}, ${2:Alias value})'
+	'uimenubase.SetPropertyAliasA (UIExtensions)':
+		'prefix': 'SetPropertyAliasA'
+		'body': 'SetPropertyAliasA(${1:string propertyName}, ${2:Alias[] value})'
+	'uimenubase.SetPropertyBool (UIExtensions)':
+		'prefix': 'SetPropertyBool'
+		'body': 'SetPropertyBool(${1:string propertyName}, ${2:bool value})'
+	'uimenubase.SetPropertyBoolA (UIExtensions)':
+		'prefix': 'SetPropertyBoolA'
+		'body': 'SetPropertyBoolA(${1:string propertyName}, ${2:bool[] value})'
+	'uimenubase.SetPropertyFloat (UIExtensions)':
+		'prefix': 'SetPropertyFloat'
+		'body': 'SetPropertyFloat(${1:string propertyName}, ${2:float value})'
+	'uimenubase.SetPropertyFloatA (UIExtensions)':
+		'prefix': 'SetPropertyFloatA'
+		'body': 'SetPropertyFloatA(${1:string propertyName}, ${2:float[] value})'
+	'uimenubase.SetPropertyForm (UIExtensions)':
+		'prefix': 'SetPropertyForm'
+		'body': 'SetPropertyForm(${1:string propertyName}, ${2:Form value})'
+	'uimenubase.SetPropertyFormA (UIExtensions)':
+		'prefix': 'SetPropertyFormA'
+		'body': 'SetPropertyFormA(${1:string propertyName}, ${2:Form[] value})'
+	'uimenubase.SetPropertyIndexAlias (UIExtensions)':
+		'prefix': 'SetPropertyIndexAlias'
+		'body': 'SetPropertyIndexAlias(${1:string propertyName}, ${2:int index}, ${3:Alias value})'
+	'uimenubase.SetPropertyIndexBool (UIExtensions)':
+		'prefix': 'SetPropertyIndexBool'
+		'body': 'SetPropertyIndexBool(${1:string propertyName}, ${2:int index}, ${3:bool value})'
+	'uimenubase.SetPropertyIndexFloat (UIExtensions)':
+		'prefix': 'SetPropertyIndexFloat'
+		'body': 'SetPropertyIndexFloat(${1:string propertyName}, ${2:int index}, ${3:float value})'
+	'uimenubase.SetPropertyIndexForm (UIExtensions)':
+		'prefix': 'SetPropertyIndexForm'
+		'body': 'SetPropertyIndexForm(${1:string propertyName}, ${2:int index}, ${3:Form value})'
+	'uimenubase.SetPropertyIndexInt (UIExtensions)':
+		'prefix': 'SetPropertyIndexInt'
+		'body': 'SetPropertyIndexInt(${1:string propertyName}, ${2:int index}, ${3:int value})'
+	'uimenubase.SetPropertyIndexString (UIExtensions)':
+		'prefix': 'SetPropertyIndexString'
+		'body': 'SetPropertyIndexString(${1:string propertyName}, ${2:int index}, ${3:string value})'
+	'uimenubase.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uimenubase.SetPropertyIntA (UIExtensions)':
+		'prefix': 'SetPropertyIntA'
+		'body': 'SetPropertyIntA(${1:string propertyName}, ${2:int[] value})'
+	'uimenubase.SetPropertyString (UIExtensions)':
+		'prefix': 'SetPropertyString'
+		'body': 'SetPropertyString(${1:string propertyName}, ${2:string value})'
+	'uimenubase.SetPropertyStringA (UIExtensions)':
+		'prefix': 'SetPropertyStringA'
+		'body': 'SetPropertyStringA(${1:string propertyName}, ${2:string[] value})'
+	'uimenubase.Unlock (UIExtensions)':
+		'prefix': 'Unlock'
+		'body': 'Unlock()'
+	'uimenubase.WaitForReset (UIExtensions)':
+		'prefix': 'WaitForReset'
+		'body': 'WaitForReset()'
+	'uimenubase.WaitLock (UIExtensions)':
+		'prefix': 'WaitLock'
+		'body': 'WaitLock()'
+	'uimenuload.OnPlayerLoadGame (UIExtensions)':
+		'prefix': 'OnPlayerLoadGame'
+		'body': 'Event OnPlayerLoadGame()\n\t${0}\nEndEvent'
+	'uiselectionmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uiselectionmenu.GetResultForm (UIExtensions)':
+		'prefix': 'GetResultForm'
+		'body': 'GetResultForm()'
+	'uiselectionmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiselectionmenu.OnSelect (UIExtensions)':
+		'prefix': 'OnSelect'
+		'body': 'Event OnSelect(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiselectionmenu.OnSelectForm (UIExtensions)':
+		'prefix': 'OnSelectForm'
+		'body': 'Event OnSelectForm(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiselectionmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiselectionmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form aForm = None}, ${2:Form aReceiver = None})'
+	'uiselectionmenu.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uiselectionmenu.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uistatsmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uistatsmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uistatsmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uistatsmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form inForm = None}, ${2:Form akReceiver = None})'
+	'uistatsmenu.UpdateStatsForm (UIExtensions)':
+		'prefix': 'UpdateStatsForm'
+		'body': 'UpdateStatsForm()'
+	'uitextentrymenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uitextentrymenu.GetResultString (UIExtensions)':
+		'prefix': 'GetResultString'
+		'body': 'GetResultString()'
+	'uitextentrymenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uitextentrymenu.OnTextChanged (UIExtensions)':
+		'prefix': 'OnTextChanged'
+		'body': 'Event OnTextChanged(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uitextentrymenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uitextentrymenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form inForm = None}, ${2:Form akReceiver = None})'
+	'uitextentrymenu.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uitextentrymenu.SetPropertyString (UIExtensions)':
+		'prefix': 'SetPropertyString'
+		'body': 'SetPropertyString(${1:string propertyName}, ${2:string value})'
+	'uitextentrymenu.UpdateTextEntryString (UIExtensions)':
+		'prefix': 'UpdateTextEntryString'
+		'body': 'UpdateTextEntryString()'
+	'uiwheelmenu.GetMenuName (UIExtensions)':
+		'prefix': 'GetMenuName'
+		'body': 'GetMenuName()'
+	'uiwheelmenu.OnChooseOption (UIExtensions)':
+		'prefix': 'OnChooseOption'
+		'body': 'Event OnChooseOption(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiwheelmenu.OnLoadMenu (UIExtensions)':
+		'prefix': 'OnLoadMenu'
+		'body': 'Event OnLoadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiwheelmenu.OnSelectOption (UIExtensions)':
+		'prefix': 'OnSelectOption'
+		'body': 'Event OnSelectOption(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiwheelmenu.OnUnloadMenu (UIExtensions)':
+		'prefix': 'OnUnloadMenu'
+		'body': 'Event OnUnloadMenu(${1:string eventName}, ${2:string strArg}, ${3:float numArg}, ${4:Form formArg})\n\t${0}\nEndEvent'
+	'uiwheelmenu.OpenMenu (UIExtensions)':
+		'prefix': 'OpenMenu'
+		'body': 'OpenMenu(${1:Form akForm = None}, ${2:Form akReceiver = None})'
+	'uiwheelmenu.ResetMenu (UIExtensions)':
+		'prefix': 'ResetMenu'
+		'body': 'ResetMenu()'
+	'uiwheelmenu.SetPropertyIndexBool (UIExtensions)':
+		'prefix': 'SetPropertyIndexBool'
+		'body': 'SetPropertyIndexBool(${1:string propertyName}, ${2:int index}, ${3:bool value})'
+	'uiwheelmenu.SetPropertyIndexInt (UIExtensions)':
+		'prefix': 'SetPropertyIndexInt'
+		'body': 'SetPropertyIndexInt(${1:string propertyName}, ${2:int index}, ${3:int value})'
+	'uiwheelmenu.SetPropertyIndexString (UIExtensions)':
+		'prefix': 'SetPropertyIndexString'
+		'body': 'SetPropertyIndexString(${1:string propertyName}, ${2:int index}, ${3:string value})'
+	'uiwheelmenu.SetPropertyInt (UIExtensions)':
+		'prefix': 'SetPropertyInt'
+		'body': 'SetPropertyInt(${1:string propertyName}, ${2:int value})'
+	'uiwheelmenu.UpdateWheelEnabledOptions (UIExtensions)':
+		'prefix': 'UpdateWheelEnabledOptions'
+		'body': 'UpdateWheelEnabledOptions()'
+	'uiwheelmenu.UpdateWheelForm (UIExtensions)':
+		'prefix': 'UpdateWheelForm'
+		'body': 'UpdateWheelForm()'
+	'uiwheelmenu.UpdateWheelIconColors (UIExtensions)':
+		'prefix': 'UpdateWheelIconColors'
+		'body': 'UpdateWheelIconColors()'
+	'uiwheelmenu.UpdateWheelIcons (UIExtensions)':
+		'prefix': 'UpdateWheelIcons'
+		'body': 'UpdateWheelIcons()'
+	'uiwheelmenu.UpdateWheelOptionLabels (UIExtensions)':
+		'prefix': 'UpdateWheelOptionLabels'
+		'body': 'UpdateWheelOptionLabels()'
+	'uiwheelmenu.UpdateWheelOptions (UIExtensions)':
+		'prefix': 'UpdateWheelOptions'
+		'body': 'UpdateWheelOptions()'
+	'uiwheelmenu.UpdateWheelSelection (UIExtensions)':
+		'prefix': 'UpdateWheelSelection'
+		'body': 'UpdateWheelSelection()'
+	'uiwheelmenu.UpdateWheelTextColors (UIExtensions)':
+		'prefix': 'UpdateWheelTextColors'
+		'body': 'UpdateWheelTextColors()'
+	'uiwheelmenu.UpdateWheelVisibility (UIExtensions)':
+		'prefix': 'UpdateWheelVisibility'
+		'body': 'UpdateWheelVisibility()'

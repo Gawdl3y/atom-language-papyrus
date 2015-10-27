@@ -1,10 +1,10 @@
 '.source.papyrus':
-	'DienesToolsPluginScript.GetAllCOBJThatYieldForm':
+	'DienesToolsPluginScript.GetAllCOBJThatYieldForm (DienesTools)':
 		'prefix': 'GetAllCOBJThatYieldForm'
 		'body': 'GetAllCOBJThatYieldForm(${1:Form akForm}, ${2:FormList akList})'
-	'DienesToolsPluginScript.ReplaceKYWD':
+	'DienesToolsPluginScript.ReplaceKYWD (DienesTools)':
 		'prefix': 'ReplaceKYWD'
 		'body': 'ReplaceKYWD(${1:Form akForm}, ${2:Keyword akToReplace}, ${3:Keyword akToAdd})'
-	'DienesToolsPluginScript.TempCOBJ':
+	'DienesToolsPluginScript.TempCOBJ (DienesTools)':
 		'prefix': 'TempCOBJ'
 		'body': 'TempCOBJ(${1:ConstructibleObject akToCopy})'

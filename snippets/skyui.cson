@@ -1,232 +1,277 @@
 '.source.papyrus':
-	'SKI_ConfigBase.AddColorOption':
+	'Color State Option Template (SkyUI)':
+		'prefix': 'ColorStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnColorOpenST()\n				SetColorDialogStartColor(${2:Variable})\n				SetColorDialogDefaultColor(${3:Default})\n		EndEvent\n\n		Event OnColorAcceptST(Int aiColor)\n				${2:Variable} = aiColor\n				SetColorOptionValueST(${2:Variable})\n		EndEvent\n\n		Event OnDefaultST()\n				${2:Variable} = ${3:Default}\n				SetColorOptionValueST(${2:Variable})\n		EndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${4:Info})\n\tEndEvent\nEndState'
+	'Key Mapping State Option Template (SkyUI)':
+		'prefix': 'KeyMapStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnKeyMapChangeST(Int aiNewKeyCode, String asConflictControl, String asConflictName)\n				Bool bContinue = True\n				If(asConflictControl != "")\n						String sMessage\n						If(asConflictName != "")\n								sMessage = "This key is already mapped to:\n\\"" + asConflictControl + "\\"\\n(" + asConflictName + ")\\n\\nAre you sure you want to continue?"\n						Else\n								sMessage = "This key is already mapped to:\\n\\"" + asConflictControl + "\\"\\n\\nAre you sure you want to continue?"\n						EndIf\n						bContinue = ShowMessage(sMessage, True, "\\$Yes", "\\$No")\n				EndIf\n				If(bContinue)\n						${2:Variable} = aiNewKeyCode\n						SetKeyMapOptionValueST(${2:Variable})\n				EndIf\n		EndEvent\n\n		Event OnDefaultST()\n				${2:Variable} = ${3:Default}\n				SetKeyMapOptionValueST(${2:Variable})\n		EndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${4:Info})\n\tEndEvent\nEndState'
+	'Menu State Option Template (SkyUI)':
+		'prefix': 'MenuStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnMenuOpenST()\n				SetMenuDialogStartIndex(${2:Index})\n				SetMenuDialogDefaultIndex(${3:DefaultIndex})\n				SetMenuDialogOptions(${4:Array})\n		EndEvent\n\n		Event OnMenuAcceptST(Int aiIndex)\n				${2:Index} = aiIndex\n				SetMenuOptionValueST(${4:Array}[${2:Index}])\n		EndEvent\n\n		Event OnDefaultST()\n				${2:Index} = ${3:DefaultIndex}\n				SetMenuOptionValueST(${4:Array}[${2:Index}])\n		EndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${5:Info})\n\tEndEvent\nEndState'
+	'SKI_ConfigBase.AddColorOption (SkyUI)':
 		'prefix': 'AddColorOption'
 		'body': 'AddColorOption(${1:string a_text}, ${2:int a_color}, ${3:int a_flags = 0})'
-	'SKI_ConfigBase.AddColorOptionST':
+	'SKI_ConfigBase.AddColorOptionST (SkyUI)':
 		'prefix': 'AddColorOptionST'
 		'body': 'AddColorOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:int a_color}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.AddEmptyOption':
+	'SKI_ConfigBase.AddEmptyOption (SkyUI)':
 		'prefix': 'AddEmptyOption'
 		'body': 'AddEmptyOption()'
-	'SKI_ConfigBase.AddHeaderOption':
+	'SKI_ConfigBase.AddHeaderOption (SkyUI)':
 		'prefix': 'AddHeaderOption'
 		'body': 'AddHeaderOption(${1:string a_text}, ${2:int a_flags = 0})'
-	'SKI_ConfigBase.AddKeyMapOption':
+	'SKI_ConfigBase.AddInputOption (SkyUI)':
+		'prefix': 'AddInputOption'
+		'body': 'AddInputOption(${1:string a_text}, ${2:string a_value}, ${3:int a_flags = 0})'
+	'SKI_ConfigBase.AddInputOptionST (SkyUI)':
+		'prefix': 'AddInputOptionST'
+		'body': 'AddInputOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:string a_value}, ${4:int a_flags = 0})'
+	'SKI_ConfigBase.AddKeyMapOption (SkyUI)':
 		'prefix': 'AddKeyMapOption'
 		'body': 'AddKeyMapOption(${1:string a_text}, ${2:int a_keyCode}, ${3:int a_flags = 0})'
-	'SKI_ConfigBase.AddKeyMapOptionST':
+	'SKI_ConfigBase.AddKeyMapOptionST (SkyUI)':
 		'prefix': 'AddKeyMapOptionST'
 		'body': 'AddKeyMapOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:int a_keyCode}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.AddMenuOption':
+	'SKI_ConfigBase.AddMenuOption (SkyUI)':
 		'prefix': 'AddMenuOption'
 		'body': 'AddMenuOption(${1:string a_text}, ${2:string a_value}, ${3:int a_flags = 0})'
-	'SKI_ConfigBase.AddMenuOptionST':
+	'SKI_ConfigBase.AddMenuOptionST (SkyUI)':
 		'prefix': 'AddMenuOptionST'
 		'body': 'AddMenuOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:string a_value}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.AddSliderOption':
+	'SKI_ConfigBase.AddSliderOption (SkyUI)':
 		'prefix': 'AddSliderOption'
 		'body': 'AddSliderOption(${1:string a_text}, ${2:float a_value}, ${3:string a_formatString}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.AddSliderOptionST':
+	'SKI_ConfigBase.AddSliderOptionST (SkyUI)':
 		'prefix': 'AddSliderOptionST'
 		'body': 'AddSliderOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:float a_value}, ${4:string a_formatString}, ${5:int a_flags = 0})'
-	'SKI_ConfigBase.AddTextOption':
+	'SKI_ConfigBase.AddTextOption (SkyUI)':
 		'prefix': 'AddTextOption'
 		'body': 'AddTextOption(${1:string a_text}, ${2:string a_value}, ${3:int a_flags = 0})'
-	'SKI_ConfigBase.AddTextOptionST':
+	'SKI_ConfigBase.AddTextOptionST (SkyUI)':
 		'prefix': 'AddTextOptionST'
 		'body': 'AddTextOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:string a_value}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.AddToggleOption':
+	'SKI_ConfigBase.AddToggleOption (SkyUI)':
 		'prefix': 'AddToggleOption'
 		'body': 'AddToggleOption(${1:string a_text}, ${2:bool a_checked}, ${3:int a_flags = 0})'
-	'SKI_ConfigBase.AddToggleOptionST':
+	'SKI_ConfigBase.AddToggleOptionST (SkyUI)':
 		'prefix': 'AddToggleOptionST'
 		'body': 'AddToggleOptionST(${1:string a_stateName}, ${2:string a_text}, ${3:bool a_checked}, ${4:int a_flags = 0})'
-	'SKI_ConfigBase.ForcePageReset':
+	'SKI_ConfigBase.ForcePageReset (SkyUI)':
 		'prefix': 'ForcePageReset'
 		'body': 'ForcePageReset()'
-	'SKI_ConfigBase.GetCustomControl':
+	'SKI_ConfigBase.GetCustomControl (SkyUI)':
 		'prefix': 'GetCustomControl'
 		'body': 'GetCustomControl(${1:int a_keyCode})'
-	'SKI_ConfigBase.GetVersion':
+	'SKI_ConfigBase.GetVersion (SkyUI)':
 		'prefix': 'GetVersion'
 		'body': 'GetVersion()'
-	'SKI_ConfigBase.LoadCustomContent':
+	'SKI_ConfigBase.LoadCustomContent (SkyUI)':
 		'prefix': 'LoadCustomContent'
 		'body': 'LoadCustomContent(${1:string a_source}, ${2:float a_x = 0}, ${3:float a_y = 0})'
-	'SKI_ConfigBase.OnColorAcceptST':
+	'SKI_ConfigBase.OnColorAcceptST (SkyUI)':
 		'prefix': 'OnColorAcceptST'
-		'body': 'Event OnColorAcceptST(${1:int a_color})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnColorOpenST':
+		'body': 'Event OnColorAcceptST(${1:int a_color})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnColorOpenST (SkyUI)':
 		'prefix': 'OnColorOpenST'
-		'body': 'Event OnColorOpenST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnConfigClose':
+		'body': 'Event OnColorOpenST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigClose (SkyUI)':
 		'prefix': 'OnConfigClose'
-		'body': 'Event OnConfigClose()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnConfigInit':
+		'body': 'Event OnConfigClose()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigInit (SkyUI)':
 		'prefix': 'OnConfigInit'
-		'body': 'Event OnConfigInit()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnConfigOpen':
+		'body': 'Event OnConfigInit()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigOpen (SkyUI)':
 		'prefix': 'OnConfigOpen'
-		'body': 'Event OnConfigOpen()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnConfigRegister':
+		'body': 'Event OnConfigOpen()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnConfigRegister (SkyUI)':
 		'prefix': 'OnConfigRegister'
-		'body': 'Event OnConfigRegister()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnDefaultST':
+		'body': 'Event OnConfigRegister()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnDefaultST (SkyUI)':
 		'prefix': 'OnDefaultST'
-		'body': 'Event OnDefaultST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnHighlightST':
+		'body': 'Event OnDefaultST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnHighlightST (SkyUI)':
 		'prefix': 'OnHighlightST'
-		'body': 'Event OnHighlightST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnKeyMapChangeST':
+		'body': 'Event OnHighlightST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnInputAcceptST (SkyUI)':
+		'prefix': 'OnInputAcceptST'
+		'body': 'Event OnInputAcceptST(${1:string a_input})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnInputOpenST (SkyUI)':
+		'prefix': 'OnInputOpenST'
+		'body': 'Event OnInputOpenST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnKeyMapChangeST (SkyUI)':
 		'prefix': 'OnKeyMapChangeST'
-		'body': 'Event OnKeyMapChangeST(${1:int a_keyCode}, ${2:string a_conflictControl}, ${3:string a_conflictName})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnMenuAcceptST':
+		'body': 'Event OnKeyMapChangeST(${1:int a_keyCode}, ${2:string a_conflictControl}, ${3:string a_conflictName})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnMenuAcceptST (SkyUI)':
 		'prefix': 'OnMenuAcceptST'
-		'body': 'Event OnMenuAcceptST(${1:int a_index})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnMenuOpenST':
+		'body': 'Event OnMenuAcceptST(${1:int a_index})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnMenuOpenST (SkyUI)':
 		'prefix': 'OnMenuOpenST'
-		'body': 'Event OnMenuOpenST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionColorAccept':
+		'body': 'Event OnMenuOpenST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionColorAccept (SkyUI)':
 		'prefix': 'OnOptionColorAccept'
-		'body': 'Event OnOptionColorAccept(${1:int a_option}, ${2:int a_color})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionColorOpen':
+		'body': 'Event OnOptionColorAccept(${1:int a_option}, ${2:int a_color})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionColorOpen (SkyUI)':
 		'prefix': 'OnOptionColorOpen'
-		'body': 'Event OnOptionColorOpen(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionDefault':
+		'body': 'Event OnOptionColorOpen(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionDefault (SkyUI)':
 		'prefix': 'OnOptionDefault'
-		'body': 'Event OnOptionDefault(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionHighlight':
+		'body': 'Event OnOptionDefault(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionHighlight (SkyUI)':
 		'prefix': 'OnOptionHighlight'
-		'body': 'Event OnOptionHighlight(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionKeyMapChange':
+		'body': 'Event OnOptionHighlight(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionInputAccept (SkyUI)':
+		'prefix': 'OnOptionInputAccept'
+		'body': 'Event OnOptionInputAccept(${1:int a_option}, ${2:string a_input})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionInputOpen (SkyUI)':
+		'prefix': 'OnOptionInputOpen'
+		'body': 'Event OnOptionInputOpen(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionKeyMapChange (SkyUI)':
 		'prefix': 'OnOptionKeyMapChange'
-		'body': 'Event OnOptionKeyMapChange(${1:int a_option}, ${2:int a_keyCode}, ${3:string a_conflictControl}, ${4:string a_conflictName})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionMenuAccept':
+		'body': 'Event OnOptionKeyMapChange(${1:int a_option}, ${2:int a_keyCode}, ${3:string a_conflictControl}, ${4:string a_conflictName})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionMenuAccept (SkyUI)':
 		'prefix': 'OnOptionMenuAccept'
-		'body': 'Event OnOptionMenuAccept(${1:int a_option}, ${2:int a_index})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionMenuOpen':
+		'body': 'Event OnOptionMenuAccept(${1:int a_option}, ${2:int a_index})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionMenuOpen (SkyUI)':
 		'prefix': 'OnOptionMenuOpen'
-		'body': 'Event OnOptionMenuOpen(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionSelect':
+		'body': 'Event OnOptionMenuOpen(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSelect (SkyUI)':
 		'prefix': 'OnOptionSelect'
-		'body': 'Event OnOptionSelect(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionSliderAccept':
+		'body': 'Event OnOptionSelect(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSliderAccept (SkyUI)':
 		'prefix': 'OnOptionSliderAccept'
-		'body': 'Event OnOptionSliderAccept(${1:int a_option}, ${2:float a_value})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnOptionSliderOpen':
+		'body': 'Event OnOptionSliderAccept(${1:int a_option}, ${2:float a_value})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnOptionSliderOpen (SkyUI)':
 		'prefix': 'OnOptionSliderOpen'
-		'body': 'Event OnOptionSliderOpen(${1:int a_option})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnPageReset':
+		'body': 'Event OnOptionSliderOpen(${1:int a_option})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnPageReset (SkyUI)':
 		'prefix': 'OnPageReset'
-		'body': 'Event OnPageReset(${1:string a_page})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnSelectST':
+		'body': 'Event OnPageReset(${1:string a_page})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnSelectST (SkyUI)':
 		'prefix': 'OnSelectST'
-		'body': 'Event OnSelectST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnSliderAcceptST':
+		'body': 'Event OnSelectST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnSliderAcceptST (SkyUI)':
 		'prefix': 'OnSliderAcceptST'
-		'body': 'Event OnSliderAcceptST(${1:float a_value})\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnSliderOpenST':
+		'body': 'Event OnSliderAcceptST(${1:float a_value})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnSliderOpenST (SkyUI)':
 		'prefix': 'OnSliderOpenST'
-		'body': 'Event OnSliderOpenST()\n${0}\nEndEvent'
-	'SKI_ConfigBase.OnVersionUpdate':
+		'body': 'Event OnSliderOpenST()\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.OnVersionUpdate (SkyUI)':
 		'prefix': 'OnVersionUpdate'
-		'body': 'Event OnVersionUpdate(${1:int a_version})\n${0}\nEndEvent'
-	'SKI_ConfigBase.SetColorDialogDefaultColor':
+		'body': 'Event OnVersionUpdate(${1:int a_version})\n\t${0}\nEndEvent'
+	'SKI_ConfigBase.SetColorDialogDefaultColor (SkyUI)':
 		'prefix': 'SetColorDialogDefaultColor'
 		'body': 'SetColorDialogDefaultColor(${1:int a_color})'
-	'SKI_ConfigBase.SetColorDialogStartColor':
+	'SKI_ConfigBase.SetColorDialogStartColor (SkyUI)':
 		'prefix': 'SetColorDialogStartColor'
 		'body': 'SetColorDialogStartColor(${1:int a_color})'
-	'SKI_ConfigBase.SetColorOptionValue':
+	'SKI_ConfigBase.SetColorOptionValue (SkyUI)':
 		'prefix': 'SetColorOptionValue'
 		'body': 'SetColorOptionValue(${1:int a_option}, ${2:int a_color}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetColorOptionValueST':
+	'SKI_ConfigBase.SetColorOptionValueST (SkyUI)':
 		'prefix': 'SetColorOptionValueST'
 		'body': 'SetColorOptionValueST(${1:int a_color}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.SetCursorFillMode':
+	'SKI_ConfigBase.SetCursorFillMode (SkyUI)':
 		'prefix': 'SetCursorFillMode'
 		'body': 'SetCursorFillMode(${1:int a_fillMode})'
-	'SKI_ConfigBase.SetCursorPosition':
+	'SKI_ConfigBase.SetCursorPosition (SkyUI)':
 		'prefix': 'SetCursorPosition'
 		'body': 'SetCursorPosition(${1:int a_position})'
-	'SKI_ConfigBase.SetInfoText':
+	'SKI_ConfigBase.SetInfoText (SkyUI)':
 		'prefix': 'SetInfoText'
 		'body': 'SetInfoText(${1:string a_text})'
-	'SKI_ConfigBase.SetKeyMapOptionValue':
+	'SKI_ConfigBase.SetInputDialogStartText (SkyUI)':
+		'prefix': 'SetInputDialogStartText'
+		'body': 'SetInputDialogStartText(${1:string a_text})'
+	'SKI_ConfigBase.SetInputOptionValue (SkyUI)':
+		'prefix': 'SetInputOptionValue'
+		'body': 'SetInputOptionValue(${1:int a_option}, ${2:string a_value}, ${3:bool a_noUpdate = false})'
+	'SKI_ConfigBase.SetInputOptionValueST (SkyUI)':
+		'prefix': 'SetInputOptionValueST'
+		'body': 'SetInputOptionValueST(${1:string a_value}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
+	'SKI_ConfigBase.SetKeyMapOptionValue (SkyUI)':
 		'prefix': 'SetKeyMapOptionValue'
 		'body': 'SetKeyMapOptionValue(${1:int a_option}, ${2:int a_keyCode}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetKeyMapOptionValueST':
+	'SKI_ConfigBase.SetKeyMapOptionValueST (SkyUI)':
 		'prefix': 'SetKeyMapOptionValueST'
 		'body': 'SetKeyMapOptionValueST(${1:int a_keyCode}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.SetMenuDialogDefaultIndex':
+	'SKI_ConfigBase.SetMenuDialogDefaultIndex (SkyUI)':
 		'prefix': 'SetMenuDialogDefaultIndex'
 		'body': 'SetMenuDialogDefaultIndex(${1:int a_value})'
-	'SKI_ConfigBase.SetMenuDialogOptions':
+	'SKI_ConfigBase.SetMenuDialogOptions (SkyUI)':
 		'prefix': 'SetMenuDialogOptions'
 		'body': 'SetMenuDialogOptions(${1:string[] a_options})'
-	'SKI_ConfigBase.SetMenuDialogStartIndex':
+	'SKI_ConfigBase.SetMenuDialogStartIndex (SkyUI)':
 		'prefix': 'SetMenuDialogStartIndex'
 		'body': 'SetMenuDialogStartIndex(${1:int a_value})'
-	'SKI_ConfigBase.SetMenuOptionValue':
+	'SKI_ConfigBase.SetMenuOptionValue (SkyUI)':
 		'prefix': 'SetMenuOptionValue'
 		'body': 'SetMenuOptionValue(${1:int a_option}, ${2:string a_value}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetMenuOptionValueST':
+	'SKI_ConfigBase.SetMenuOptionValueST (SkyUI)':
 		'prefix': 'SetMenuOptionValueST'
 		'body': 'SetMenuOptionValueST(${1:string a_value}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.SetOptionFlags':
+	'SKI_ConfigBase.SetOptionFlags (SkyUI)':
 		'prefix': 'SetOptionFlags'
 		'body': 'SetOptionFlags(${1:int a_option}, ${2:int a_flags}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetOptionFlagsST':
+	'SKI_ConfigBase.SetOptionFlagsST (SkyUI)':
 		'prefix': 'SetOptionFlagsST'
 		'body': 'SetOptionFlagsST(${1:int a_flags}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.SetSliderDialogDefaultValue':
+	'SKI_ConfigBase.SetSliderDialogDefaultValue (SkyUI)':
 		'prefix': 'SetSliderDialogDefaultValue'
 		'body': 'SetSliderDialogDefaultValue(${1:float a_value})'
-	'SKI_ConfigBase.SetSliderDialogInterval':
+	'SKI_ConfigBase.SetSliderDialogInterval (SkyUI)':
 		'prefix': 'SetSliderDialogInterval'
 		'body': 'SetSliderDialogInterval(${1:float a_value})'
-	'SKI_ConfigBase.SetSliderDialogRange':
+	'SKI_ConfigBase.SetSliderDialogRange (SkyUI)':
 		'prefix': 'SetSliderDialogRange'
 		'body': 'SetSliderDialogRange(${1:float a_minValue}, ${2:float a_maxValue})'
-	'SKI_ConfigBase.SetSliderDialogStartValue':
+	'SKI_ConfigBase.SetSliderDialogStartValue (SkyUI)':
 		'prefix': 'SetSliderDialogStartValue'
 		'body': 'SetSliderDialogStartValue(${1:float a_value})'
-	'SKI_ConfigBase.SetSliderOptionValue':
+	'SKI_ConfigBase.SetSliderOptionValue (SkyUI)':
 		'prefix': 'SetSliderOptionValue'
 		'body': 'SetSliderOptionValue(${1:int a_option}, ${2:float a_value}, ${3:string a_formatString}, ${4:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetSliderOptionValueST':
+	'SKI_ConfigBase.SetSliderOptionValueST (SkyUI)':
 		'prefix': 'SetSliderOptionValueST'
 		'body': 'SetSliderOptionValueST(${1:float a_value}, ${2:string a_formatString}, ${3:bool a_noUpdate = false}, ${4:string a_stateName})'
-	'SKI_ConfigBase.SetTextOptionValue':
+	'SKI_ConfigBase.SetTextOptionValue (SkyUI)':
 		'prefix': 'SetTextOptionValue'
 		'body': 'SetTextOptionValue(${1:int a_option}, ${2:string a_value}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetTextOptionValueST':
+	'SKI_ConfigBase.SetTextOptionValueST (SkyUI)':
 		'prefix': 'SetTextOptionValueST'
 		'body': 'SetTextOptionValueST(${1:string a_value}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.SetTitleText':
+	'SKI_ConfigBase.SetTitleText (SkyUI)':
 		'prefix': 'SetTitleText'
 		'body': 'SetTitleText(${1:string a_text})'
-	'SKI_ConfigBase.SetToggleOptionValue':
+	'SKI_ConfigBase.SetToggleOptionValue (SkyUI)':
 		'prefix': 'SetToggleOptionValue'
 		'body': 'SetToggleOptionValue(${1:int a_option}, ${2:bool a_checked}, ${3:bool a_noUpdate = false})'
-	'SKI_ConfigBase.SetToggleOptionValueST':
+	'SKI_ConfigBase.SetToggleOptionValueST (SkyUI)':
 		'prefix': 'SetToggleOptionValueST'
 		'body': 'SetToggleOptionValueST(${1:bool a_checked}, ${2:bool a_noUpdate = false}, ${3:string a_stateName})'
-	'SKI_ConfigBase.ShowMessage':
+	'SKI_ConfigBase.ShowMessage (SkyUI)':
 		'prefix': 'ShowMessage'
 		'body': 'ShowMessage(${1:string a_message}, ${2:bool a_withCancel = true}, ${3:string a_acceptLabel}, ${4:string a_cancelLabel})'
-	'SKI_ConfigBase.UnloadCustomContent':
+	'SKI_ConfigBase.UnloadCustomContent (SkyUI)':
 		'prefix': 'UnloadCustomContent'
 		'body': 'UnloadCustomContent()'
-	'SKI_QuestBase.CheckVersion':
+	'SKI_QuestBase.CheckVersion (SkyUI)':
 		'prefix': 'CheckVersion'
 		'body': 'CheckVersion()'
-	'SKI_QuestBase.GetVersion':
+	'SKI_QuestBase.GetVersion (SkyUI)':
 		'prefix': 'GetVersion'
 		'body': 'GetVersion()'
-	'SKI_QuestBase.OnGameReload':
+	'SKI_QuestBase.OnGameReload (SkyUI)':
 		'prefix': 'OnGameReload'
-		'body': 'Event OnGameReload()\n${0}\nEndEvent'
-	'SKI_QuestBase.OnVersionUpdate':
+		'body': 'Event OnGameReload()\n\t${0}\nEndEvent'
+	'SKI_QuestBase.OnVersionUpdate (SkyUI)':
 		'prefix': 'OnVersionUpdate'
-		'body': 'Event OnVersionUpdate(${1:int a_version})\n${0}\nEndEvent'
+		'body': 'Event OnVersionUpdate(${1:int a_version})\n\t${0}\nEndEvent'
+	'Slider State Option Template (SkyUI)':
+		'prefix': 'SliderStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnSliderOpenST()\n				SetSliderDialogStartValue(${2:Variable})\n				SetSliderDialogDefaultValue(${3:Default})\n				SetSliderDialogRange(${4:Minimum}, ${5:Maximum})\n				SetSliderDialogInterval(${6:Interval})\n		EndEvent\n\n		Event OnSliderAcceptST(Float afValue)\n				${2:Variable} = afValue as Int\n				SetSliderOptionValueST(${2:Variable})\n		EndEvent\n\n		Event OnDefaultST()\n				${2:Variable} = ${3:Default}\n				SetSliderOptionValueST(${2:Variable})\n		EndEvent\n\n		Event OnHighlightST()\n				SetInfoText(${7:Info})\n		EndEvent\nEndState'
+	'Text State Option Template (SkyUI)':
+		'prefix': 'TextStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnSelectST()\n\t\t${2:Variable} = ${3:NewValue}\n\t\tSetTextOptionValueST(${2:Variable})\n\tEndEvent\n\n\tEvent OnDefaultST()\n\t\t${2:Variable} = ${4:Default}\n\t\tSetTextOptionValueST(${2:Variable})\n\tEndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${5:Info})\n\tEndEvent\nEndState'
+	'Toggle State Option Template (SkyUI)':
+		'prefix': 'ToggleStateOption'
+		'body': 'State ${1:StateName}\n\tEvent OnSelectST()\n				${2:Variable} = !${2:Variable}\n				SetToggleOptionValueST(${2:Variable})\n		EndEvent\n\n		Event OnDefaultST()\n				${2:Variable} = ${3:Default}\n				SetToggleOptionValueST(${2:Variable})\n		EndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${4:Info})\n\tEndEvent\nEndState'

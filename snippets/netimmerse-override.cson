@@ -1,256 +1,478 @@
 '.source.papyrus':
-	'NiOverride.AddNodeOverrideBool':
+	'NiOverride.AddNodeOverrideBool (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideBool'
 		'body': 'AddNodeOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:bool value}, ${7:bool persist})'
-	'NiOverride.AddNodeOverrideFloat':
+	'NiOverride.AddNodeOverrideFloat (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideFloat'
 		'body': 'AddNodeOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:float value}, ${7:bool persist})'
-	'NiOverride.AddNodeOverrideInt':
+	'NiOverride.AddNodeOverrideInt (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideInt'
 		'body': 'AddNodeOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:int value}, ${7:bool persist})'
-	'NiOverride.AddNodeOverrideString':
+	'NiOverride.AddNodeOverrideString (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideString'
 		'body': 'AddNodeOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:string value}, ${7:bool persist})'
-	'NiOverride.AddNodeOverrideTextureSet':
+	'NiOverride.AddNodeOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideTextureSet'
 		'body': 'AddNodeOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:TextureSet value}, ${7:bool persist})'
-	'NiOverride.AddOverlays':
+	'NiOverride.AddNodeTransformPosition (NetImmerse Override)':
+		'prefix': 'AddNodeTransformPosition'
+		'body': 'AddNodeTransformPosition(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key}, ${6:float[] pos})'
+	'NiOverride.AddNodeTransformRotation (NetImmerse Override)':
+		'prefix': 'AddNodeTransformRotation'
+		'body': 'AddNodeTransformRotation(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key}, ${6:float[] rotation})'
+	'NiOverride.AddNodeTransformScale (NetImmerse Override)':
+		'prefix': 'AddNodeTransformScale'
+		'body': 'AddNodeTransformScale(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key}, ${6:float scale})'
+	'NiOverride.AddOverlays (NetImmerse Override)':
 		'prefix': 'AddOverlays'
 		'body': 'AddOverlays(${1:ObjectReference ref})'
-	'NiOverride.AddOverrideBool':
+	'NiOverride.AddOverrideBool (NetImmerse Override)':
 		'prefix': 'AddOverrideBool'
 		'body': 'AddOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:bool value}, ${9:bool persist})'
-	'NiOverride.AddOverrideFloat':
+	'NiOverride.AddOverrideFloat (NetImmerse Override)':
 		'prefix': 'AddOverrideFloat'
 		'body': 'AddOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:float value}, ${9:bool persist})'
-	'NiOverride.AddOverrideInt':
+	'NiOverride.AddOverrideInt (NetImmerse Override)':
 		'prefix': 'AddOverrideInt'
 		'body': 'AddOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:int value}, ${9:bool persist})'
-	'NiOverride.AddOverrideString':
+	'NiOverride.AddOverrideString (NetImmerse Override)':
 		'prefix': 'AddOverrideString'
 		'body': 'AddOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:string value}, ${9:bool persist})'
-	'NiOverride.AddOverrideTextureSet':
+	'NiOverride.AddOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'AddOverrideTextureSet'
 		'body': 'AddOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:TextureSet value}, ${9:bool persist})'
-	'NiOverride.AddWeaponOverrideBool':
+	'NiOverride.AddSkinOverrideBool (NetImmerse Override)':
+		'prefix': 'AddSkinOverrideBool'
+		'body': 'AddSkinOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index}, ${7:bool value}, ${8:bool persist})'
+	'NiOverride.AddSkinOverrideFloat (NetImmerse Override)':
+		'prefix': 'AddSkinOverrideFloat'
+		'body': 'AddSkinOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index}, ${7:float value}, ${8:bool persist})'
+	'NiOverride.AddSkinOverrideInt (NetImmerse Override)':
+		'prefix': 'AddSkinOverrideInt'
+		'body': 'AddSkinOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index}, ${7:int value}, ${8:bool persist})'
+	'NiOverride.AddSkinOverrideString (NetImmerse Override)':
+		'prefix': 'AddSkinOverrideString'
+		'body': 'AddSkinOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index}, ${7:string value}, ${8:bool persist})'
+	'NiOverride.AddSkinOverrideTextureSet (NetImmerse Override)':
+		'prefix': 'AddSkinOverrideTextureSet'
+		'body': 'AddSkinOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index}, ${7:TextureSet value}, ${8:bool persist})'
+	'NiOverride.AddWeaponOverrideBool (NetImmerse Override)':
 		'prefix': 'AddWeaponOverrideBool'
 		'body': 'AddWeaponOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:bool value}, ${9:bool persist})'
-	'NiOverride.AddWeaponOverrideFloat':
+	'NiOverride.AddWeaponOverrideFloat (NetImmerse Override)':
 		'prefix': 'AddWeaponOverrideFloat'
 		'body': 'AddWeaponOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:float value}, ${9:bool persist})'
-	'NiOverride.AddWeaponOverrideInt':
+	'NiOverride.AddWeaponOverrideInt (NetImmerse Override)':
 		'prefix': 'AddWeaponOverrideInt'
 		'body': 'AddWeaponOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:int value}, ${9:bool persist})'
-	'NiOverride.AddWeaponOverrideString':
+	'NiOverride.AddWeaponOverrideString (NetImmerse Override)':
 		'prefix': 'AddWeaponOverrideString'
 		'body': 'AddWeaponOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:string value}, ${9:bool persist})'
-	'NiOverride.AddWeaponOverrideTextureSet':
+	'NiOverride.AddWeaponOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'AddWeaponOverrideTextureSet'
 		'body': 'AddWeaponOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index}, ${8:TextureSet value}, ${9:bool persist})'
-	'NiOverride.ApplyNodeOverrides':
+	'NiOverride.ApplyNodeOverrides (NetImmerse Override)':
 		'prefix': 'ApplyNodeOverrides'
 		'body': 'ApplyNodeOverrides(${1:ObjectReference ref})'
-	'NiOverride.ApplyOverrides':
+	'NiOverride.ApplyOverrides (NetImmerse Override)':
 		'prefix': 'ApplyOverrides'
 		'body': 'ApplyOverrides(${1:ObjectReference ref})'
-	'NiOverride.ApplyWeaponOverrides':
+	'NiOverride.ApplySkinOverrides (NetImmerse Override)':
+		'prefix': 'ApplySkinOverrides'
+		'body': 'ApplySkinOverrides(${1:ObjectReference ref})'
+	'NiOverride.ApplyWeaponOverrides (NetImmerse Override)':
 		'prefix': 'ApplyWeaponOverrides'
 		'body': 'ApplyWeaponOverrides(${1:ObjectReference ref})'
-	'NiOverride.ClearMorphs':
+	'NiOverride.ClearBodyMorph (NetImmerse Override)':
+		'prefix': 'ClearBodyMorph'
+		'body': 'ClearBodyMorph(${1:ObjectReference ref}, ${2:string morphName}, ${3:string keyName})'
+	'NiOverride.ClearBodyMorphKeys (NetImmerse Override)':
+		'prefix': 'ClearBodyMorphKeys'
+		'body': 'ClearBodyMorphKeys(${1:ObjectReference ref}, ${2:string keyName})'
+	'NiOverride.ClearBodyMorphNames (NetImmerse Override)':
+		'prefix': 'ClearBodyMorphNames'
+		'body': 'ClearBodyMorphNames(${1:ObjectReference ref}, ${2:string morphName})'
+	'NiOverride.ClearItemDyeColor (NetImmerse Override)':
+		'prefix': 'ClearItemDyeColor'
+		'body': 'ClearItemDyeColor(${1:int uniqudId}, ${2:int maskIndex})'
+	'NiOverride.ClearMorphs (NetImmerse Override)':
 		'prefix': 'ClearMorphs'
 		'body': 'ClearMorphs(${1:ObjectReference ref})'
-	'NiOverride.ClearMorphValue':
+	'NiOverride.ClearMorphValue (NetImmerse Override)':
 		'prefix': 'ClearMorphValue'
 		'body': 'ClearMorphValue(${1:ObjectReference ref}, ${2:string morphName})'
-	'NiOverride.GetMorphValue':
+	'NiOverride.EnableTintTextureCache (NetImmerse Override)':
+		'prefix': 'EnableTintTextureCache'
+		'body': 'EnableTintTextureCache()'
+	'NiOverride.GetBodyMorph (NetImmerse Override)':
+		'prefix': 'GetBodyMorph'
+		'body': 'GetBodyMorph(${1:ObjectReference ref}, ${2:string morphName}, ${3:string keyName})'
+	'NiOverride.GetBooleanExtraData (NetImmerse Override)':
+		'prefix': 'GetBooleanExtraData'
+		'body': 'GetBooleanExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetFloatExtraData (NetImmerse Override)':
+		'prefix': 'GetFloatExtraData'
+		'body': 'GetFloatExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetFloatsExtraData (NetImmerse Override)':
+		'prefix': 'GetFloatsExtraData'
+		'body': 'GetFloatsExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetFormDyeColor (NetImmerse Override)':
+		'prefix': 'GetFormDyeColor'
+		'body': 'GetFormDyeColor(${1:Form akForm})'
+	'NiOverride.GetFormFromUniqueID (NetImmerse Override)':
+		'prefix': 'GetFormFromUniqueID'
+		'body': 'GetFormFromUniqueID(${1:int uniqueId})'
+	'NiOverride.GetIntegerExtraData (NetImmerse Override)':
+		'prefix': 'GetIntegerExtraData'
+		'body': 'GetIntegerExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetIntegersExtraData (NetImmerse Override)':
+		'prefix': 'GetIntegersExtraData'
+		'body': 'GetIntegersExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetInverseTransform (NetImmerse Override)':
+		'prefix': 'GetInverseTransform'
+		'body': 'GetInverseTransform(${1:float[] in_out_pos}, ${2:float[] in_out_rotation}, ${3:float in_scale = 1})'
+	'NiOverride.GetItemDyeColor (NetImmerse Override)':
+		'prefix': 'GetItemDyeColor'
+		'body': 'GetItemDyeColor(${1:int uniqueId}, ${2:int maskIndex})'
+	'NiOverride.GetItemUniqueID (NetImmerse Override)':
+		'prefix': 'GetItemUniqueID'
+		'body': 'GetItemUniqueID(${1:ObjectReference akActor}, ${2:int weaponSlot}, ${3:int slotMask}, ${4:bool makeUnique = true})'
+	'NiOverride.GetMorphKeys (NetImmerse Override)':
+		'prefix': 'GetMorphKeys'
+		'body': 'GetMorphKeys(${1:ObjectReference ref})'
+	'NiOverride.GetMorphNames (NetImmerse Override)':
+		'prefix': 'GetMorphNames'
+		'body': 'GetMorphNames(${1:ObjectReference ref})'
+	'NiOverride.GetMorphValue (NetImmerse Override)':
 		'prefix': 'GetMorphValue'
 		'body': 'GetMorphValue(${1:ObjectReference ref}, ${2:string morphName})'
-	'NiOverride.GetNodeOverrideBool':
+	'NiOverride.GetNodeDestination (NetImmerse Override)':
+		'prefix': 'GetNodeDestination'
+		'body': 'GetNodeDestination(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName})'
+	'NiOverride.GetNodeOverrideBool (NetImmerse Override)':
 		'prefix': 'GetNodeOverrideBool'
 		'body': 'GetNodeOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodeOverrideFloat':
+	'NiOverride.GetNodeOverrideFloat (NetImmerse Override)':
 		'prefix': 'GetNodeOverrideFloat'
 		'body': 'GetNodeOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodeOverrideInt':
+	'NiOverride.GetNodeOverrideInt (NetImmerse Override)':
 		'prefix': 'GetNodeOverrideInt'
 		'body': 'GetNodeOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodeOverrideString':
+	'NiOverride.GetNodeOverrideString (NetImmerse Override)':
 		'prefix': 'GetNodeOverrideString'
 		'body': 'GetNodeOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodeOverrideTextureSet':
+	'NiOverride.GetNodeOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'GetNodeOverrideTextureSet'
 		'body': 'GetNodeOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodePropertyBool':
+	'NiOverride.GetNodePropertyBool (NetImmerse Override)':
 		'prefix': 'GetNodePropertyBool'
 		'body': 'GetNodePropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodePropertyFloat':
+	'NiOverride.GetNodePropertyFloat (NetImmerse Override)':
 		'prefix': 'GetNodePropertyFloat'
 		'body': 'GetNodePropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodePropertyInt':
+	'NiOverride.GetNodePropertyInt (NetImmerse Override)':
 		'prefix': 'GetNodePropertyInt'
 		'body': 'GetNodePropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNodePropertyString':
+	'NiOverride.GetNodePropertyString (NetImmerse Override)':
 		'prefix': 'GetNodePropertyString'
 		'body': 'GetNodePropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.GetNumBodyOverlays':
+	'NiOverride.GetNodeTransformKeys (NetImmerse Override)':
+		'prefix': 'GetNodeTransformKeys'
+		'body': 'GetNodeTransformKeys(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName})'
+	'NiOverride.GetNodeTransformNames (NetImmerse Override)':
+		'prefix': 'GetNodeTransformNames'
+		'body': 'GetNodeTransformNames(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale})'
+	'NiOverride.GetNodeTransformPosition (NetImmerse Override)':
+		'prefix': 'GetNodeTransformPosition'
+		'body': 'GetNodeTransformPosition(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.GetNodeTransformRotation (NetImmerse Override)':
+		'prefix': 'GetNodeTransformRotation'
+		'body': 'GetNodeTransformRotation(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key}, ${6:int type = 0})'
+	'NiOverride.GetNodeTransformScale (NetImmerse Override)':
+		'prefix': 'GetNodeTransformScale'
+		'body': 'GetNodeTransformScale(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.GetNumBodyOverlays (NetImmerse Override)':
 		'prefix': 'GetNumBodyOverlays'
 		'body': 'GetNumBodyOverlays()'
-	'NiOverride.GetNumFaceOverlays':
+	'NiOverride.GetNumFaceOverlays (NetImmerse Override)':
 		'prefix': 'GetNumFaceOverlays'
 		'body': 'GetNumFaceOverlays()'
-	'NiOverride.GetNumFeetOverlays':
+	'NiOverride.GetNumFeetOverlays (NetImmerse Override)':
 		'prefix': 'GetNumFeetOverlays'
 		'body': 'GetNumFeetOverlays()'
-	'NiOverride.GetNumHandOverlays':
+	'NiOverride.GetNumHandOverlays (NetImmerse Override)':
 		'prefix': 'GetNumHandOverlays'
 		'body': 'GetNumHandOverlays()'
-	'NiOverride.GetNumSpellBodyOverlays':
+	'NiOverride.GetNumSpellBodyOverlays (NetImmerse Override)':
 		'prefix': 'GetNumSpellBodyOverlays'
 		'body': 'GetNumSpellBodyOverlays()'
-	'NiOverride.GetNumSpellFaceOverlays':
+	'NiOverride.GetNumSpellFaceOverlays (NetImmerse Override)':
 		'prefix': 'GetNumSpellFaceOverlays'
 		'body': 'GetNumSpellFaceOverlays()'
-	'NiOverride.GetNumSpellFeetOverlays':
+	'NiOverride.GetNumSpellFeetOverlays (NetImmerse Override)':
 		'prefix': 'GetNumSpellFeetOverlays'
 		'body': 'GetNumSpellFeetOverlays()'
-	'NiOverride.GetNumSpellHandOverlays':
+	'NiOverride.GetNumSpellHandOverlays (NetImmerse Override)':
 		'prefix': 'GetNumSpellHandOverlays'
 		'body': 'GetNumSpellHandOverlays()'
-	'NiOverride.GetOverrideBool':
+	'NiOverride.GetObjectUniqueID (NetImmerse Override)':
+		'prefix': 'GetObjectUniqueID'
+		'body': 'GetObjectUniqueID(${1:ObjectReference akObject}, ${2:bool makeUnique = true})'
+	'NiOverride.GetOverrideBool (NetImmerse Override)':
 		'prefix': 'GetOverrideBool'
 		'body': 'GetOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetOverrideFloat':
+	'NiOverride.GetOverrideFloat (NetImmerse Override)':
 		'prefix': 'GetOverrideFloat'
 		'body': 'GetOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetOverrideInt':
+	'NiOverride.GetOverrideInt (NetImmerse Override)':
 		'prefix': 'GetOverrideInt'
 		'body': 'GetOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetOverrideString':
+	'NiOverride.GetOverrideString (NetImmerse Override)':
 		'prefix': 'GetOverrideString'
 		'body': 'GetOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetOverrideTextureSet':
+	'NiOverride.GetOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'GetOverrideTextureSet'
 		'body': 'GetOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetPropertyBool':
+	'NiOverride.GetOwnerOfUniqueID (NetImmerse Override)':
+		'prefix': 'GetOwnerOfUniqueID'
+		'body': 'GetOwnerOfUniqueID(${1:int uniqueId})'
+	'NiOverride.GetPropertyBool (NetImmerse Override)':
 		'prefix': 'GetPropertyBool'
 		'body': 'GetPropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetPropertyFloat':
+	'NiOverride.GetPropertyFloat (NetImmerse Override)':
 		'prefix': 'GetPropertyFloat'
 		'body': 'GetPropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetPropertyInt':
+	'NiOverride.GetPropertyInt (NetImmerse Override)':
 		'prefix': 'GetPropertyInt'
 		'body': 'GetPropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetPropertyString':
+	'NiOverride.GetPropertyString (NetImmerse Override)':
 		'prefix': 'GetPropertyString'
 		'body': 'GetPropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponOverrideBool':
+	'NiOverride.GetScriptVersion (NetImmerse Override)':
+		'prefix': 'GetScriptVersion'
+		'body': 'GetScriptVersion()'
+	'NiOverride.GetSkinOverrideBool (NetImmerse Override)':
+		'prefix': 'GetSkinOverrideBool'
+		'body': 'GetSkinOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetSkinOverrideFloat (NetImmerse Override)':
+		'prefix': 'GetSkinOverrideFloat'
+		'body': 'GetSkinOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetSkinOverrideInt (NetImmerse Override)':
+		'prefix': 'GetSkinOverrideInt'
+		'body': 'GetSkinOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetSkinOverrideString (NetImmerse Override)':
+		'prefix': 'GetSkinOverrideString'
+		'body': 'GetSkinOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetSkinOverrideTextureSet (NetImmerse Override)':
+		'prefix': 'GetSkinOverrideTextureSet'
+		'body': 'GetSkinOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.GetSkinPropertyBool (NetImmerse Override)':
+		'prefix': 'GetSkinPropertyBool'
+		'body': 'GetSkinPropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:int slotMask}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetSkinPropertyFloat (NetImmerse Override)':
+		'prefix': 'GetSkinPropertyFloat'
+		'body': 'GetSkinPropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:int slotMask}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetSkinPropertyInt (NetImmerse Override)':
+		'prefix': 'GetSkinPropertyInt'
+		'body': 'GetSkinPropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:int slotMask}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetSkinPropertyString (NetImmerse Override)':
+		'prefix': 'GetSkinPropertyString'
+		'body': 'GetSkinPropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:int slotMask}, ${4:int key}, ${5:int index})'
+	'NiOverride.GetStringExtraData (NetImmerse Override)':
+		'prefix': 'GetStringExtraData'
+		'body': 'GetStringExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetStringsExtraData (NetImmerse Override)':
+		'prefix': 'GetStringsExtraData'
+		'body': 'GetStringsExtraData(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:string nodeName}, ${4:string dataName})'
+	'NiOverride.GetWeaponOverrideBool (NetImmerse Override)':
 		'prefix': 'GetWeaponOverrideBool'
 		'body': 'GetWeaponOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponOverrideFloat':
+	'NiOverride.GetWeaponOverrideFloat (NetImmerse Override)':
 		'prefix': 'GetWeaponOverrideFloat'
 		'body': 'GetWeaponOverrideFloat(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponOverrideInt':
+	'NiOverride.GetWeaponOverrideInt (NetImmerse Override)':
 		'prefix': 'GetWeaponOverrideInt'
 		'body': 'GetWeaponOverrideInt(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponOverrideString':
+	'NiOverride.GetWeaponOverrideString (NetImmerse Override)':
 		'prefix': 'GetWeaponOverrideString'
 		'body': 'GetWeaponOverrideString(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponOverrideTextureSet':
+	'NiOverride.GetWeaponOverrideTextureSet (NetImmerse Override)':
 		'prefix': 'GetWeaponOverrideTextureSet'
 		'body': 'GetWeaponOverrideTextureSet(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.GetWeaponPropertyBool':
+	'NiOverride.GetWeaponPropertyBool (NetImmerse Override)':
 		'prefix': 'GetWeaponPropertyBool'
 		'body': 'GetWeaponPropertyBool(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
-	'NiOverride.GetWeaponPropertyFloat':
+	'NiOverride.GetWeaponPropertyFloat (NetImmerse Override)':
 		'prefix': 'GetWeaponPropertyFloat'
 		'body': 'GetWeaponPropertyFloat(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
-	'NiOverride.GetWeaponPropertyInt':
+	'NiOverride.GetWeaponPropertyInt (NetImmerse Override)':
 		'prefix': 'GetWeaponPropertyInt'
 		'body': 'GetWeaponPropertyInt(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
-	'NiOverride.GetWeaponPropertyString':
+	'NiOverride.GetWeaponPropertyString (NetImmerse Override)':
 		'prefix': 'GetWeaponPropertyString'
 		'body': 'GetWeaponPropertyString(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:int key}, ${6:int index})'
-	'NiOverride.HasArmorAddonNode':
+	'NiOverride.HasArmorAddonNode (NetImmerse Override)':
 		'prefix': 'HasArmorAddonNode'
 		'body': 'HasArmorAddonNode(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:bool debug = false})'
-	'NiOverride.HasNodeOverride':
+	'NiOverride.HasBodyMorph (NetImmerse Override)':
+		'prefix': 'HasBodyMorph'
+		'body': 'HasBodyMorph(${1:ObjectReference ref}, ${2:string morphName}, ${3:string keyName})'
+	'NiOverride.HasBodyMorphKey (NetImmerse Override)':
+		'prefix': 'HasBodyMorphKey'
+		'body': 'HasBodyMorphKey(${1:ObjectReference ref}, ${2:string keyName})'
+	'NiOverride.HasBodyMorphName (NetImmerse Override)':
+		'prefix': 'HasBodyMorphName'
+		'body': 'HasBodyMorphName(${1:ObjectReference ref}, ${2:string keyName})'
+	'NiOverride.HasNodeOverride (NetImmerse Override)':
 		'prefix': 'HasNodeOverride'
 		'body': 'HasNodeOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.HasOverlays':
+	'NiOverride.HasNodeTransformPosition (NetImmerse Override)':
+		'prefix': 'HasNodeTransformPosition'
+		'body': 'HasNodeTransformPosition(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.HasNodeTransformRotation (NetImmerse Override)':
+		'prefix': 'HasNodeTransformRotation'
+		'body': 'HasNodeTransformRotation(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.HasNodeTransformScale (NetImmerse Override)':
+		'prefix': 'HasNodeTransformScale'
+		'body': 'HasNodeTransformScale(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.HasOverlays (NetImmerse Override)':
 		'prefix': 'HasOverlays'
 		'body': 'HasOverlays(${1:ObjectReference ref})'
-	'NiOverride.HasOverride':
+	'NiOverride.HasOverride (NetImmerse Override)':
 		'prefix': 'HasOverride'
 		'body': 'HasOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.HasWeaponNode':
+	'NiOverride.HasSkinOverride (NetImmerse Override)':
+		'prefix': 'HasSkinOverride'
+		'body': 'HasSkinOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.HasWeaponNode (NetImmerse Override)':
 		'prefix': 'HasWeaponNode'
 		'body': 'HasWeaponNode(${1:ObjectReference ref}, ${2:bool firstPerson}, ${3:Weapon weap}, ${4:string node}, ${5:bool debug = false})'
-	'NiOverride.HasWeaponOverride':
+	'NiOverride.HasWeaponOverride (NetImmerse Override)':
 		'prefix': 'HasWeaponOverride'
 		'body': 'HasWeaponOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.RemoveAllArmorAddonNodeOverrides':
+	'NiOverride.IsFormDye (NetImmerse Override)':
+		'prefix': 'IsFormDye'
+		'body': 'IsFormDye(${1:Form akForm})'
+	'NiOverride.RegisterFormDyeColor (NetImmerse Override)':
+		'prefix': 'RegisterFormDyeColor'
+		'body': 'RegisterFormDyeColor(${1:Form akForm}, ${2:int color})'
+	'NiOverride.ReleaseTintTextureCache (NetImmerse Override)':
+		'prefix': 'ReleaseTintTextureCache'
+		'body': 'ReleaseTintTextureCache()'
+	'NiOverride.RemoveAllArmorAddonNodeOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllArmorAddonNodeOverrides'
 		'body': 'RemoveAllArmorAddonNodeOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node})'
-	'NiOverride.RemoveAllArmorAddonOverrides':
+	'NiOverride.RemoveAllArmorAddonOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllArmorAddonOverrides'
 		'body': 'RemoveAllArmorAddonOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon})'
-	'NiOverride.RemoveAllArmorOverrides':
+	'NiOverride.RemoveAllArmorOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllArmorOverrides'
 		'body': 'RemoveAllArmorOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm})'
-	'NiOverride.RemoveAllNodeNameOverrides':
+	'NiOverride.RemoveAllNodeNameOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllNodeNameOverrides'
 		'body': 'RemoveAllNodeNameOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node})'
-	'NiOverride.RemoveAllNodeOverrides':
+	'NiOverride.RemoveAllNodeOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllNodeOverrides'
 		'body': 'RemoveAllNodeOverrides()'
-	'NiOverride.RemoveAllOverrides':
+	'NiOverride.RemoveAllOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllOverrides'
 		'body': 'RemoveAllOverrides()'
-	'NiOverride.RemoveAllReferenceNodeOverrides':
+	'NiOverride.RemoveAllReferenceNodeOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllReferenceNodeOverrides'
 		'body': 'RemoveAllReferenceNodeOverrides(${1:ObjectReference ref})'
-	'NiOverride.RemoveAllReferenceOverrides':
+	'NiOverride.RemoveAllReferenceOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllReferenceOverrides'
 		'body': 'RemoveAllReferenceOverrides(${1:ObjectReference ref})'
-	'NiOverride.RemoveAllReferenceWeaponOverrides':
+	'NiOverride.RemoveAllReferenceSkinOverrides (NetImmerse Override)':
+		'prefix': 'RemoveAllReferenceSkinOverrides'
+		'body': 'RemoveAllReferenceSkinOverrides(${1:ObjectReference ref})'
+	'NiOverride.RemoveAllReferenceTransforms (NetImmerse Override)':
+		'prefix': 'RemoveAllReferenceTransforms'
+		'body': 'RemoveAllReferenceTransforms(${1:ObjectReference akRef})'
+	'NiOverride.RemoveAllReferenceWeaponOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllReferenceWeaponOverrides'
 		'body': 'RemoveAllReferenceWeaponOverrides(${1:ObjectReference ref})'
-	'NiOverride.RemoveAllWeaponBasedOverrides':
+	'NiOverride.RemoveAllSkinBasedOverrides (NetImmerse Override)':
+		'prefix': 'RemoveAllSkinBasedOverrides'
+		'body': 'RemoveAllSkinBasedOverrides()'
+	'NiOverride.RemoveAllSkinOverrides (NetImmerse Override)':
+		'prefix': 'RemoveAllSkinOverrides'
+		'body': 'RemoveAllSkinOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask})'
+	'NiOverride.RemoveAllTransforms (NetImmerse Override)':
+		'prefix': 'RemoveAllTransforms'
+		'body': 'RemoveAllTransforms()'
+	'NiOverride.RemoveAllWeaponBasedOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllWeaponBasedOverrides'
 		'body': 'RemoveAllWeaponBasedOverrides()'
-	'NiOverride.RemoveAllWeaponNodeOverrides':
+	'NiOverride.RemoveAllWeaponNodeOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllWeaponNodeOverrides'
 		'body': 'RemoveAllWeaponNodeOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node})'
-	'NiOverride.RemoveAllWeaponOverrides':
+	'NiOverride.RemoveAllWeaponOverrides (NetImmerse Override)':
 		'prefix': 'RemoveAllWeaponOverrides'
 		'body': 'RemoveAllWeaponOverrides(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap})'
-	'NiOverride.RemoveNodeOverride':
+	'NiOverride.RemoveNodeDestination (NetImmerse Override)':
+		'prefix': 'RemoveNodeDestination'
+		'body': 'RemoveNodeDestination(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName})'
+	'NiOverride.RemoveNodeOverride (NetImmerse Override)':
 		'prefix': 'RemoveNodeOverride'
 		'body': 'RemoveNodeOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index})'
-	'NiOverride.RemoveOverlays':
+	'NiOverride.RemoveNodeTransformPosition (NetImmerse Override)':
+		'prefix': 'RemoveNodeTransformPosition'
+		'body': 'RemoveNodeTransformPosition(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.RemoveNodeTransformRotation (NetImmerse Override)':
+		'prefix': 'RemoveNodeTransformRotation'
+		'body': 'RemoveNodeTransformRotation(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.RemoveNodeTransformScale (NetImmerse Override)':
+		'prefix': 'RemoveNodeTransformScale'
+		'body': 'RemoveNodeTransformScale(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string key})'
+	'NiOverride.RemoveOverlays (NetImmerse Override)':
 		'prefix': 'RemoveOverlays'
 		'body': 'RemoveOverlays(${1:ObjectReference ref})'
-	'NiOverride.RemoveOverride':
+	'NiOverride.RemoveOverride (NetImmerse Override)':
 		'prefix': 'RemoveOverride'
 		'body': 'RemoveOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:Armor arm}, ${4:ArmorAddon addon}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.RemoveWeaponOverride':
+	'NiOverride.RemoveSkinOverride (NetImmerse Override)':
+		'prefix': 'RemoveSkinOverride'
+		'body': 'RemoveSkinOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:int slotMask}, ${5:int key}, ${6:int index})'
+	'NiOverride.RemoveWeaponOverride (NetImmerse Override)':
 		'prefix': 'RemoveWeaponOverride'
 		'body': 'RemoveWeaponOverride(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:bool firstPerson}, ${4:Weapon weap}, ${5:string node}, ${6:int key}, ${7:int index})'
-	'NiOverride.RevertHeadOverlay':
+	'NiOverride.RevertHeadOverlay (NetImmerse Override)':
 		'prefix': 'RevertHeadOverlay'
 		'body': 'RevertHeadOverlay(${1:ObjectReference ref}, ${2:string nodeName}, ${3:int partType}, ${4:int shaderType})'
-	'NiOverride.RevertHeadOverlays':
+	'NiOverride.RevertHeadOverlays (NetImmerse Override)':
 		'prefix': 'RevertHeadOverlays'
 		'body': 'RevertHeadOverlays(${1:ObjectReference ref})'
-	'NiOverride.RevertOverlay':
+	'NiOverride.RevertOverlay (NetImmerse Override)':
 		'prefix': 'RevertOverlay'
 		'body': 'RevertOverlay(${1:ObjectReference ref}, ${2:string nodeName}, ${3:int armorMask}, ${4:int addonMask})'
-	'NiOverride.RevertOverlays':
+	'NiOverride.RevertOverlays (NetImmerse Override)':
 		'prefix': 'RevertOverlays'
 		'body': 'RevertOverlays(${1:ObjectReference ref})'
-	'NiOverride.SetMorphValue':
+	'NiOverride.SetBodyMorph (NetImmerse Override)':
+		'prefix': 'SetBodyMorph'
+		'body': 'SetBodyMorph(${1:ObjectReference ref}, ${2:string morphName}, ${3:string keyName}, ${4:float value})'
+	'NiOverride.SetItemDyeColor (NetImmerse Override)':
+		'prefix': 'SetItemDyeColor'
+		'body': 'SetItemDyeColor(${1:int uniqueId}, ${2:int maskIndex}, ${3:int color})'
+	'NiOverride.SetMorphValue (NetImmerse Override)':
 		'prefix': 'SetMorphValue'
 		'body': 'SetMorphValue(${1:ObjectReference ref}, ${2:string morphName}, ${3:float value})'
-	'NiOverride.UpdateModelWeight':
+	'NiOverride.SetNodeDestination (NetImmerse Override)':
+		'prefix': 'SetNodeDestination'
+		'body': 'SetNodeDestination(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName}, ${5:string destination})'
+	'NiOverride.UnregisterFormDyeColor (NetImmerse Override)':
+		'prefix': 'UnregisterFormDyeColor'
+		'body': 'UnregisterFormDyeColor(${1:Form akForm})'
+	'NiOverride.UpdateAllReferenceTransforms (NetImmerse Override)':
+		'prefix': 'UpdateAllReferenceTransforms'
+		'body': 'UpdateAllReferenceTransforms(${1:ObjectReference akRef})'
+	'NiOverride.UpdateItemDyeColor (NetImmerse Override)':
+		'prefix': 'UpdateItemDyeColor'
+		'body': 'UpdateItemDyeColor(${1:ObjectReference akActor}, ${2:int uniqueId})'
+	'NiOverride.UpdateModelWeight (NetImmerse Override)':
 		'prefix': 'UpdateModelWeight'
 		'body': 'UpdateModelWeight(${1:ObjectReference ref})'
+	'NiOverride.UpdateNodeTransform (NetImmerse Override)':
+		'prefix': 'UpdateNodeTransform'
+		'body': 'UpdateNodeTransform(${1:ObjectReference akRef}, ${2:bool firstPerson}, ${3:bool isFemale}, ${4:string nodeName})'

@@ -1,0 +1,46 @@
+'.source.papyrus':
+	'UILIB_1.ListMenu_Open (SkyUILib)':
+		'prefix': 'ListMenu_Open'
+		'body': 'ListMenu_Open(${1:Form akClient})'
+	'UILIB_1.ListMenu_Release (SkyUILib)':
+		'prefix': 'ListMenu_Release'
+		'body': 'ListMenu_Release(${1:Form akClient})'
+	'UILIB_1.ListMenu_SetData (SkyUILib)':
+		'prefix': 'ListMenu_SetData'
+		'body': 'ListMenu_SetData(${1:String asTitle}, ${2:String[] asOptions}, ${3:Int aiStartIndex}, ${4:Int aiDefaultIndex})'
+	'UILIB_1.NotificationMenu_PrepareArea (SkyUILib)':
+		'prefix': 'NotificationMenu_PrepareArea'
+		'body': 'NotificationMenu_PrepareArea()'
+	'UILIB_1.OnListMenuClose (SkyUILib)':
+		'prefix': 'OnListMenuClose'
+		'body': 'Event OnListMenuClose(${1:String asEventName}, ${2:String asStringArg}, ${3:Float afInput}, ${4:Form akSender})\n\t${0}\nEndEvent'
+	'UILIB_1.OnListMenuOpen (SkyUILib)':
+		'prefix': 'OnListMenuOpen'
+		'body': 'Event OnListMenuOpen(${1:String asEventName}, ${2:String asStringArg}, ${3:Float afNumArg}, ${4:Form akSender})\n\t${0}\nEndEvent'
+	'UILIB_1.OnTextInputClose (SkyUILib)':
+		'prefix': 'OnTextInputClose'
+		'body': 'Event OnTextInputClose(${1:String asEventName}, ${2:String asInput}, ${3:Float afCancelled}, ${4:Form akSender})\n\t${0}\nEndEvent'
+	'UILIB_1.OnTextInputOpen (SkyUILib)':
+		'prefix': 'OnTextInputOpen'
+		'body': 'Event OnTextInputOpen(${1:String asEventName}, ${2:String asStringArg}, ${3:Float afNumArg}, ${4:Form akSender})\n\t${0}\nEndEvent'
+	'UILIB_1.ShowList (SkyUILib)':
+		'prefix': 'ShowList'
+		'body': 'ShowList(${1:String asTitle}, ${2:String[] asOptions}, ${3:Int aiStartIndex}, ${4:Int aiDefaultIndex})'
+	'UILIB_1.ShowNotification (SkyUILib)':
+		'prefix': 'ShowNotification'
+		'body': 'ShowNotification(${1:String asMessage}, ${2:String asColor})'
+	'UILIB_1.ShowNotificationIcon (SkyUILib)':
+		'prefix': 'ShowNotificationIcon'
+		'body': 'ShowNotificationIcon(${1:String asMessage}, ${2:String asIconPath}, ${3:Int aiIconFrame = 0}, ${4:String asColor})'
+	'UILIB_1.ShowTextInput (SkyUILib)':
+		'prefix': 'ShowTextInput'
+		'body': 'ShowTextInput(${1:String asTitle}, ${2:String asInitialText})'
+	'UILIB_1.TextInputMenu_Open (SkyUILib)':
+		'prefix': 'TextInputMenu_Open'
+		'body': 'TextInputMenu_Open(${1:Form akClient})'
+	'UILIB_1.TextInputMenu_Release (SkyUILib)':
+		'prefix': 'TextInputMenu_Release'
+		'body': 'TextInputMenu_Release(${1:Form akClient})'
+	'UILIB_1.TextInputMenu_SetData (SkyUILib)':
+		'prefix': 'TextInputMenu_SetData'
+		'body': 'TextInputMenu_SetData(${1:String asTitle}, ${2:String asInitialText})'

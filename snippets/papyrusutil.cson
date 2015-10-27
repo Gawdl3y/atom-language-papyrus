@@ -1,0 +1,1333 @@
+'.source.papyrus':
+	'ActorUtil.AddPackageOverride (PapyrusUtil)':
+		'prefix': 'AddPackageOverride'
+		'body': 'AddPackageOverride(${1:Actor targetActor}, ${2:Package targetPackage}, ${3:int priority = 30}, ${4:int flags = 0})'
+	'ActorUtil.ClearPackageOverride (PapyrusUtil)':
+		'prefix': 'ClearPackageOverride'
+		'body': 'ClearPackageOverride(${1:Actor targetActor})'
+	'ActorUtil.CountPackageOverride (PapyrusUtil)':
+		'prefix': 'CountPackageOverride'
+		'body': 'CountPackageOverride(${1:Actor targetActor})'
+	'ActorUtil.RemoveAllPackageOverride (PapyrusUtil)':
+		'prefix': 'RemoveAllPackageOverride'
+		'body': 'RemoveAllPackageOverride(${1:Package targetPackage})'
+	'ActorUtil.RemovePackageOverride (PapyrusUtil)':
+		'prefix': 'RemovePackageOverride'
+		'body': 'RemovePackageOverride(${1:Actor targetActor}, ${2:Package targetPackage})'
+	'JsonUtil.AdjustFloatValue (PapyrusUtil)':
+		'prefix': 'AdjustFloatValue'
+		'body': 'AdjustFloatValue(${1:string FileName}, ${2:string KeyName}, ${3:float amount})'
+	'JsonUtil.AdjustIntValue (PapyrusUtil)':
+		'prefix': 'AdjustIntValue'
+		'body': 'AdjustIntValue(${1:string FileName}, ${2:string KeyName}, ${3:int amount})'
+	'JsonUtil.ClearAll (PapyrusUtil)':
+		'prefix': 'ClearAll'
+		'body': 'ClearAll(${1:string FileName})'
+	'JsonUtil.CountAllPrefix (PapyrusUtil)':
+		'prefix': 'CountAllPrefix'
+		'body': 'CountAllPrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountFloatListPrefix (PapyrusUtil)':
+		'prefix': 'CountFloatListPrefix'
+		'body': 'CountFloatListPrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountFloatValuePrefix (PapyrusUtil)':
+		'prefix': 'CountFloatValuePrefix'
+		'body': 'CountFloatValuePrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountFormListPrefix (PapyrusUtil)':
+		'prefix': 'CountFormListPrefix'
+		'body': 'CountFormListPrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountFormValuePrefix (PapyrusUtil)':
+		'prefix': 'CountFormValuePrefix'
+		'body': 'CountFormValuePrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountIntListPrefix (PapyrusUtil)':
+		'prefix': 'CountIntListPrefix'
+		'body': 'CountIntListPrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountIntValuePrefix (PapyrusUtil)':
+		'prefix': 'CountIntValuePrefix'
+		'body': 'CountIntValuePrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountStringListPrefix (PapyrusUtil)':
+		'prefix': 'CountStringListPrefix'
+		'body': 'CountStringListPrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.CountStringValuePrefix (PapyrusUtil)':
+		'prefix': 'CountStringValuePrefix'
+		'body': 'CountStringValuePrefix(${1:string FileName}, ${2:string PrefixKey})'
+	'JsonUtil.FloatListAdd (PapyrusUtil)':
+		'prefix': 'FloatListAdd'
+		'body': 'FloatListAdd(${1:string FileName}, ${2:string KeyName}, ${3:float value}, ${4:bool allowDuplicate = true})'
+	'JsonUtil.FloatListAdjust (PapyrusUtil)':
+		'prefix': 'FloatListAdjust'
+		'body': 'FloatListAdjust(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:float amount})'
+	'JsonUtil.FloatListClear (PapyrusUtil)':
+		'prefix': 'FloatListClear'
+		'body': 'FloatListClear(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.FloatListCopy (PapyrusUtil)':
+		'prefix': 'FloatListCopy'
+		'body': 'FloatListCopy(${1:string FileName}, ${2:string KeyName}, ${3:float[] copy})'
+	'JsonUtil.FloatListCount (PapyrusUtil)':
+		'prefix': 'FloatListCount'
+		'body': 'FloatListCount(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.FloatListCountValue (PapyrusUtil)':
+		'prefix': 'FloatListCountValue'
+		'body': 'FloatListCountValue(${1:string FileName}, ${2:string KeyName}, ${3:float value}, ${4:bool exclude = false})'
+	'JsonUtil.FloatListFind (PapyrusUtil)':
+		'prefix': 'FloatListFind'
+		'body': 'FloatListFind(${1:string FileName}, ${2:string KeyName}, ${3:float value})'
+	'JsonUtil.FloatListGet (PapyrusUtil)':
+		'prefix': 'FloatListGet'
+		'body': 'FloatListGet(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.FloatListHas (PapyrusUtil)':
+		'prefix': 'FloatListHas'
+		'body': 'FloatListHas(${1:string FileName}, ${2:string KeyName}, ${3:float value})'
+	'JsonUtil.FloatListInsertAt (PapyrusUtil)':
+		'prefix': 'FloatListInsertAt'
+		'body': 'FloatListInsertAt(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:float value})'
+	'JsonUtil.FloatListRemove (PapyrusUtil)':
+		'prefix': 'FloatListRemove'
+		'body': 'FloatListRemove(${1:string FileName}, ${2:string KeyName}, ${3:float value}, ${4:bool allInstances = true})'
+	'JsonUtil.FloatListRemoveAt (PapyrusUtil)':
+		'prefix': 'FloatListRemoveAt'
+		'body': 'FloatListRemoveAt(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.FloatListResize (PapyrusUtil)':
+		'prefix': 'FloatListResize'
+		'body': 'FloatListResize(${1:string FileName}, ${2:string KeyName}, ${3:int toLength}, ${4:float filler = 0})'
+	'JsonUtil.FloatListSet (PapyrusUtil)':
+		'prefix': 'FloatListSet'
+		'body': 'FloatListSet(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:float value})'
+	'JsonUtil.FloatListSlice (PapyrusUtil)':
+		'prefix': 'FloatListSlice'
+		'body': 'FloatListSlice(${1:string FileName}, ${2:string KeyName}, ${3:float[] slice}, ${4:int startIndex = 0})'
+	'JsonUtil.FloatListToArray (PapyrusUtil)':
+		'prefix': 'FloatListToArray'
+		'body': 'FloatListToArray(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.FormListAdd (PapyrusUtil)':
+		'prefix': 'FormListAdd'
+		'body': 'FormListAdd(${1:string FileName}, ${2:string KeyName}, ${3:Form value}, ${4:bool allowDuplicate = true})'
+	'JsonUtil.FormListClear (PapyrusUtil)':
+		'prefix': 'FormListClear'
+		'body': 'FormListClear(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.FormListCopy (PapyrusUtil)':
+		'prefix': 'FormListCopy'
+		'body': 'FormListCopy(${1:string FileName}, ${2:string KeyName}, ${3:Form[] copy})'
+	'JsonUtil.FormListCount (PapyrusUtil)':
+		'prefix': 'FormListCount'
+		'body': 'FormListCount(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.FormListCountValue (PapyrusUtil)':
+		'prefix': 'FormListCountValue'
+		'body': 'FormListCountValue(${1:string FileName}, ${2:string KeyName}, ${3:Form value}, ${4:bool exclude = false})'
+	'JsonUtil.FormListFind (PapyrusUtil)':
+		'prefix': 'FormListFind'
+		'body': 'FormListFind(${1:string FileName}, ${2:string KeyName}, ${3:Form value})'
+	'JsonUtil.FormListGet (PapyrusUtil)':
+		'prefix': 'FormListGet'
+		'body': 'FormListGet(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.FormListHas (PapyrusUtil)':
+		'prefix': 'FormListHas'
+		'body': 'FormListHas(${1:string FileName}, ${2:string KeyName}, ${3:Form value})'
+	'JsonUtil.FormListInsertAt (PapyrusUtil)':
+		'prefix': 'FormListInsertAt'
+		'body': 'FormListInsertAt(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:Form value})'
+	'JsonUtil.FormListRemove (PapyrusUtil)':
+		'prefix': 'FormListRemove'
+		'body': 'FormListRemove(${1:string FileName}, ${2:string KeyName}, ${3:Form value}, ${4:bool allInstances = true})'
+	'JsonUtil.FormListRemoveAt (PapyrusUtil)':
+		'prefix': 'FormListRemoveAt'
+		'body': 'FormListRemoveAt(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.FormListResize (PapyrusUtil)':
+		'prefix': 'FormListResize'
+		'body': 'FormListResize(${1:string FileName}, ${2:string KeyName}, ${3:int toLength}, ${4:Form filler = none})'
+	'JsonUtil.FormListSet (PapyrusUtil)':
+		'prefix': 'FormListSet'
+		'body': 'FormListSet(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:Form value})'
+	'JsonUtil.FormListSlice (PapyrusUtil)':
+		'prefix': 'FormListSlice'
+		'body': 'FormListSlice(${1:string FileName}, ${2:string KeyName}, ${3:Form[] slice}, ${4:int startIndex = 0})'
+	'JsonUtil.FormListToArray (PapyrusUtil)':
+		'prefix': 'FormListToArray'
+		'body': 'FormListToArray(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.GetFloatValue (PapyrusUtil)':
+		'prefix': 'GetFloatValue'
+		'body': 'GetFloatValue(${1:string FileName}, ${2:string KeyName}, ${3:float missing = 0})'
+	'JsonUtil.GetFormValue (PapyrusUtil)':
+		'prefix': 'GetFormValue'
+		'body': 'GetFormValue(${1:string FileName}, ${2:string KeyName}, ${3:form missing = none})'
+	'JsonUtil.GetIntValue (PapyrusUtil)':
+		'prefix': 'GetIntValue'
+		'body': 'GetIntValue(${1:string FileName}, ${2:string KeyName}, ${3:int missing = 0})'
+	'JsonUtil.GetStringValue (PapyrusUtil)':
+		'prefix': 'GetStringValue'
+		'body': 'GetStringValue(${1:string FileName}, ${2:string KeyName}, ${3:string missing})'
+	'JsonUtil.HasFloatValue (PapyrusUtil)':
+		'prefix': 'HasFloatValue'
+		'body': 'HasFloatValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.HasFormValue (PapyrusUtil)':
+		'prefix': 'HasFormValue'
+		'body': 'HasFormValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.HasIntValue (PapyrusUtil)':
+		'prefix': 'HasIntValue'
+		'body': 'HasIntValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.HasStringValue (PapyrusUtil)':
+		'prefix': 'HasStringValue'
+		'body': 'HasStringValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.IntListAdd (PapyrusUtil)':
+		'prefix': 'IntListAdd'
+		'body': 'IntListAdd(${1:string FileName}, ${2:string KeyName}, ${3:int value}, ${4:bool allowDuplicate = true})'
+	'JsonUtil.IntListAdjust (PapyrusUtil)':
+		'prefix': 'IntListAdjust'
+		'body': 'IntListAdjust(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:Int amount})'
+	'JsonUtil.IntListClear (PapyrusUtil)':
+		'prefix': 'IntListClear'
+		'body': 'IntListClear(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.IntListCopy (PapyrusUtil)':
+		'prefix': 'IntListCopy'
+		'body': 'IntListCopy(${1:string FileName}, ${2:string KeyName}, ${3:int[] copy})'
+	'JsonUtil.IntListCount (PapyrusUtil)':
+		'prefix': 'IntListCount'
+		'body': 'IntListCount(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.IntListCountValue (PapyrusUtil)':
+		'prefix': 'IntListCountValue'
+		'body': 'IntListCountValue(${1:string FileName}, ${2:string KeyName}, ${3:int value}, ${4:bool exclude = false})'
+	'JsonUtil.IntListFind (PapyrusUtil)':
+		'prefix': 'IntListFind'
+		'body': 'IntListFind(${1:string FileName}, ${2:string KeyName}, ${3:int value})'
+	'JsonUtil.IntListGet (PapyrusUtil)':
+		'prefix': 'IntListGet'
+		'body': 'IntListGet(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.IntListHas (PapyrusUtil)':
+		'prefix': 'IntListHas'
+		'body': 'IntListHas(${1:string FileName}, ${2:string KeyName}, ${3:int value})'
+	'JsonUtil.IntListInsertAt (PapyrusUtil)':
+		'prefix': 'IntListInsertAt'
+		'body': 'IntListInsertAt(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:int value})'
+	'JsonUtil.IntListRemove (PapyrusUtil)':
+		'prefix': 'IntListRemove'
+		'body': 'IntListRemove(${1:string FileName}, ${2:string KeyName}, ${3:int value}, ${4:bool allInstances = true})'
+	'JsonUtil.IntListRemoveAt (PapyrusUtil)':
+		'prefix': 'IntListRemoveAt'
+		'body': 'IntListRemoveAt(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.IntListResize (PapyrusUtil)':
+		'prefix': 'IntListResize'
+		'body': 'IntListResize(${1:string FileName}, ${2:string KeyName}, ${3:int toLength}, ${4:int filler = 0})'
+	'JsonUtil.IntListSet (PapyrusUtil)':
+		'prefix': 'IntListSet'
+		'body': 'IntListSet(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:int value})'
+	'JsonUtil.IntListSlice (PapyrusUtil)':
+		'prefix': 'IntListSlice'
+		'body': 'IntListSlice(${1:string FileName}, ${2:string KeyName}, ${3:int[] slice}, ${4:int startIndex = 0})'
+	'JsonUtil.IntListToArray (PapyrusUtil)':
+		'prefix': 'IntListToArray'
+		'body': 'IntListToArray(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.Load (PapyrusUtil)':
+		'prefix': 'Load'
+		'body': 'Load(${1:string FileName})'
+	'JsonUtil.Save (PapyrusUtil)':
+		'prefix': 'Save'
+		'body': 'Save(${1:string FileName}, ${2:bool minify = false})'
+	'JsonUtil.SetFloatValue (PapyrusUtil)':
+		'prefix': 'SetFloatValue'
+		'body': 'SetFloatValue(${1:string FileName}, ${2:string KeyName}, ${3:float value})'
+	'JsonUtil.SetFormValue (PapyrusUtil)':
+		'prefix': 'SetFormValue'
+		'body': 'SetFormValue(${1:string FileName}, ${2:string KeyName}, ${3:form value})'
+	'JsonUtil.SetIntValue (PapyrusUtil)':
+		'prefix': 'SetIntValue'
+		'body': 'SetIntValue(${1:string FileName}, ${2:string KeyName}, ${3:int value})'
+	'JsonUtil.SetStringValue (PapyrusUtil)':
+		'prefix': 'SetStringValue'
+		'body': 'SetStringValue(${1:string FileName}, ${2:string KeyName}, ${3:string value})'
+	'JsonUtil.StringListAdd (PapyrusUtil)':
+		'prefix': 'StringListAdd'
+		'body': 'StringListAdd(${1:string FileName}, ${2:string KeyName}, ${3:String value}, ${4:bool allowDuplicate = true})'
+	'JsonUtil.StringListClear (PapyrusUtil)':
+		'prefix': 'StringListClear'
+		'body': 'StringListClear(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.StringListCopy (PapyrusUtil)':
+		'prefix': 'StringListCopy'
+		'body': 'StringListCopy(${1:string FileName}, ${2:string KeyName}, ${3:string[] copy})'
+	'JsonUtil.StringListCount (PapyrusUtil)':
+		'prefix': 'StringListCount'
+		'body': 'StringListCount(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.StringListCountValue (PapyrusUtil)':
+		'prefix': 'StringListCountValue'
+		'body': 'StringListCountValue(${1:string FileName}, ${2:string KeyName}, ${3:String value}, ${4:bool exclude = false})'
+	'JsonUtil.StringListFind (PapyrusUtil)':
+		'prefix': 'StringListFind'
+		'body': 'StringListFind(${1:string FileName}, ${2:string KeyName}, ${3:String value})'
+	'JsonUtil.StringListGet (PapyrusUtil)':
+		'prefix': 'StringListGet'
+		'body': 'StringListGet(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.StringListHas (PapyrusUtil)':
+		'prefix': 'StringListHas'
+		'body': 'StringListHas(${1:string FileName}, ${2:string KeyName}, ${3:String value})'
+	'JsonUtil.StringListInsertAt (PapyrusUtil)':
+		'prefix': 'StringListInsertAt'
+		'body': 'StringListInsertAt(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:String value})'
+	'JsonUtil.StringListRemove (PapyrusUtil)':
+		'prefix': 'StringListRemove'
+		'body': 'StringListRemove(${1:string FileName}, ${2:string KeyName}, ${3:String value}, ${4:bool allInstances = true})'
+	'JsonUtil.StringListRemoveAt (PapyrusUtil)':
+		'prefix': 'StringListRemoveAt'
+		'body': 'StringListRemoveAt(${1:string FileName}, ${2:string KeyName}, ${3:int index})'
+	'JsonUtil.StringListResize (PapyrusUtil)':
+		'prefix': 'StringListResize'
+		'body': 'StringListResize(${1:string FileName}, ${2:string KeyName}, ${3:int toLength}, ${4:string filler})'
+	'JsonUtil.StringListSet (PapyrusUtil)':
+		'prefix': 'StringListSet'
+		'body': 'StringListSet(${1:string FileName}, ${2:string KeyName}, ${3:int index}, ${4:String value})'
+	'JsonUtil.StringListSlice (PapyrusUtil)':
+		'prefix': 'StringListSlice'
+		'body': 'StringListSlice(${1:string FileName}, ${2:string KeyName}, ${3:string[] slice}, ${4:int startIndex = 0})'
+	'JsonUtil.StringListToArray (PapyrusUtil)':
+		'prefix': 'StringListToArray'
+		'body': 'StringListToArray(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.UnsetFloatValue (PapyrusUtil)':
+		'prefix': 'UnsetFloatValue'
+		'body': 'UnsetFloatValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.UnsetFormValue (PapyrusUtil)':
+		'prefix': 'UnsetFormValue'
+		'body': 'UnsetFormValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.UnsetIntValue (PapyrusUtil)':
+		'prefix': 'UnsetIntValue'
+		'body': 'UnsetIntValue(${1:string FileName}, ${2:string KeyName})'
+	'JsonUtil.UnsetStringValue (PapyrusUtil)':
+		'prefix': 'UnsetStringValue'
+		'body': 'UnsetStringValue(${1:string FileName}, ${2:string KeyName})'
+	'MiscUtil.ExecuteBat (PapyrusUtil)':
+		'prefix': 'ExecuteBat'
+		'body': 'ExecuteBat(${1:string fileName})'
+	'MiscUtil.GetActorRaceEditorID (PapyrusUtil)':
+		'prefix': 'GetActorRaceEditorID'
+		'body': 'GetActorRaceEditorID(${1:Actor actorRef})'
+	'MiscUtil.GetNodeRotation (PapyrusUtil)':
+		'prefix': 'GetNodeRotation'
+		'body': 'GetNodeRotation(${1:ObjectReference obj}, ${2:string nodeName}, ${3:bool firstPerson}, ${4:int rotationIndex})'
+	'MiscUtil.GetRaceEditorID (PapyrusUtil)':
+		'prefix': 'GetRaceEditorID'
+		'body': 'GetRaceEditorID(${1:Race raceForm})'
+	'MiscUtil.PrintConsole (PapyrusUtil)':
+		'prefix': 'PrintConsole'
+		'body': 'PrintConsole(${1:string text})'
+	'MiscUtil.ReadFromFile (PapyrusUtil)':
+		'prefix': 'ReadFromFile'
+		'body': 'ReadFromFile(${1:string fileName})'
+	'MiscUtil.SetFreeCameraSpeed (PapyrusUtil)':
+		'prefix': 'SetFreeCameraSpeed'
+		'body': 'SetFreeCameraSpeed(${1:float speed})'
+	'MiscUtil.SetFreeCameraState (PapyrusUtil)':
+		'prefix': 'SetFreeCameraState'
+		'body': 'SetFreeCameraState(${1:bool enable}, ${2:float speed = 10})'
+	'MiscUtil.SetMenus (PapyrusUtil)':
+		'prefix': 'SetMenus'
+		'body': 'SetMenus(${1:bool enabled})'
+	'MiscUtil.ToggleFreeCamera (PapyrusUtil)':
+		'prefix': 'ToggleFreeCamera'
+		'body': 'ToggleFreeCamera(${1:bool stopTime = false})'
+	'MiscUtil.WriteToFile (PapyrusUtil)':
+		'prefix': 'WriteToFile'
+		'body': 'WriteToFile(${1:string fileName}, ${2:string text}, ${3:bool append = true}, ${4:bool timestamp = false})'
+	'ObjectUtil.ClearReplaceAnimation (PapyrusUtil)':
+		'prefix': 'ClearReplaceAnimation'
+		'body': 'ClearReplaceAnimation(${1:ObjectReference obj})'
+	'ObjectUtil.CountReplaceAnimation (PapyrusUtil)':
+		'prefix': 'CountReplaceAnimation'
+		'body': 'CountReplaceAnimation(${1:ObjectReference obj})'
+	'ObjectUtil.GetKeyReplaceAnimation (PapyrusUtil)':
+		'prefix': 'GetKeyReplaceAnimation'
+		'body': 'GetKeyReplaceAnimation(${1:ObjectReference obj}, ${2:int index})'
+	'ObjectUtil.GetValueReplaceAnimation (PapyrusUtil)':
+		'prefix': 'GetValueReplaceAnimation'
+		'body': 'GetValueReplaceAnimation(${1:ObjectReference obj}, ${2:string oldAnim})'
+	'ObjectUtil.RemoveReplaceAnimation (PapyrusUtil)':
+		'prefix': 'RemoveReplaceAnimation'
+		'body': 'RemoveReplaceAnimation(${1:ObjectReference obj}, ${2:string oldAnimEvent})'
+	'ObjectUtil.SetReplaceAnimation (PapyrusUtil)':
+		'prefix': 'SetReplaceAnimation'
+		'body': 'SetReplaceAnimation(${1:ObjectReference obj}, ${2:string oldAnimEvent}, ${3:Idle newAnim})'
+	'PapyrusUtil.ActorArray (PapyrusUtil)':
+		'prefix': 'ActorArray'
+		'body': 'ActorArray(${1:int size}, ${2:Actor filler = none})'
+	'PapyrusUtil.AddFloatValues (PapyrusUtil)':
+		'prefix': 'AddFloatValues'
+		'body': 'AddFloatValues(${1:float[] Values})'
+	'PapyrusUtil.AddIntValues (PapyrusUtil)':
+		'prefix': 'AddIntValues'
+		'body': 'AddIntValues(${1:int[] Values})'
+	'PapyrusUtil.AliasArray (PapyrusUtil)':
+		'prefix': 'AliasArray'
+		'body': 'AliasArray(${1:int size}, ${2:Alias filler = none})'
+	'PapyrusUtil.BoolArray (PapyrusUtil)':
+		'prefix': 'BoolArray'
+		'body': 'BoolArray(${1:int size}, ${2:bool filler = false})'
+	'PapyrusUtil.ClampFloat (PapyrusUtil)':
+		'prefix': 'ClampFloat'
+		'body': 'ClampFloat(${1:float value}, ${2:float min}, ${3:float max})'
+	'PapyrusUtil.ClampInt (PapyrusUtil)':
+		'prefix': 'ClampInt'
+		'body': 'ClampInt(${1:int value}, ${2:int min}, ${3:int max})'
+	'PapyrusUtil.ClearEmpty (PapyrusUtil)':
+		'prefix': 'ClearEmpty'
+		'body': 'ClearEmpty(${1:string[] ArrayValues})'
+	'PapyrusUtil.ClearNone (PapyrusUtil)':
+		'prefix': 'ClearNone'
+		'body': 'ClearNone(${1:Form[] ArrayValues})'
+	'PapyrusUtil.CountActor (PapyrusUtil)':
+		'prefix': 'CountActor'
+		'body': 'CountActor(${1:Actor[] ArrayValues}, ${2:Actor EqualTo})'
+	'PapyrusUtil.CountAlias (PapyrusUtil)':
+		'prefix': 'CountAlias'
+		'body': 'CountAlias(${1:Alias[] ArrayValues}, ${2:Alias EqualTo})'
+	'PapyrusUtil.CountBool (PapyrusUtil)':
+		'prefix': 'CountBool'
+		'body': 'CountBool(${1:bool[] ArrayValues}, ${2:bool EqualTo})'
+	'PapyrusUtil.CountFalse (PapyrusUtil)':
+		'prefix': 'CountFalse'
+		'body': 'CountFalse(${1:bool[] ArrayValues})'
+	'PapyrusUtil.CountFloat (PapyrusUtil)':
+		'prefix': 'CountFloat'
+		'body': 'CountFloat(${1:float[] ArrayValues}, ${2:float EqualTo})'
+	'PapyrusUtil.CountForm (PapyrusUtil)':
+		'prefix': 'CountForm'
+		'body': 'CountForm(${1:Form[] ArrayValues}, ${2:Form EqualTo})'
+	'PapyrusUtil.CountInt (PapyrusUtil)':
+		'prefix': 'CountInt'
+		'body': 'CountInt(${1:int[] ArrayValues}, ${2:int EqualTo})'
+	'PapyrusUtil.CountNone (PapyrusUtil)':
+		'prefix': 'CountNone'
+		'body': 'CountNone(${1:Form[] ArrayValues})'
+	'PapyrusUtil.CountObjRef (PapyrusUtil)':
+		'prefix': 'CountObjRef'
+		'body': 'CountObjRef(${1:ObjectReference[] ArrayValues}, ${2:ObjectReference EqualTo})'
+	'PapyrusUtil.CountString (PapyrusUtil)':
+		'prefix': 'CountString'
+		'body': 'CountString(${1:string[] ArrayValues}, ${2:string EqualTo})'
+	'PapyrusUtil.CountTrue (PapyrusUtil)':
+		'prefix': 'CountTrue'
+		'body': 'CountTrue(${1:bool[] ArrayValues})'
+	'PapyrusUtil.FloatArray (PapyrusUtil)':
+		'prefix': 'FloatArray'
+		'body': 'FloatArray(${1:int size}, ${2:float filler = 0})'
+	'PapyrusUtil.FormArray (PapyrusUtil)':
+		'prefix': 'FormArray'
+		'body': 'FormArray(${1:int size}, ${2:Form filler = none})'
+	'PapyrusUtil.GetVersion (PapyrusUtil)':
+		'prefix': 'GetVersion'
+		'body': 'GetVersion()'
+	'PapyrusUtil.IntArray (PapyrusUtil)':
+		'prefix': 'IntArray'
+		'body': 'IntArray(${1:int size}, ${2:int filler = 0})'
+	'PapyrusUtil.MergeActorArray (PapyrusUtil)':
+		'prefix': 'MergeActorArray'
+		'body': 'MergeActorArray(${1:Actor[] ArrayValues1}, ${2:Actor[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeAliasArray (PapyrusUtil)':
+		'prefix': 'MergeAliasArray'
+		'body': 'MergeAliasArray(${1:Alias[] ArrayValues1}, ${2:Alias[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeBoolArray (PapyrusUtil)':
+		'prefix': 'MergeBoolArray'
+		'body': 'MergeBoolArray(${1:bool[] ArrayValues1}, ${2:bool[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeFloatArray (PapyrusUtil)':
+		'prefix': 'MergeFloatArray'
+		'body': 'MergeFloatArray(${1:float[] ArrayValues1}, ${2:float[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeFormArray (PapyrusUtil)':
+		'prefix': 'MergeFormArray'
+		'body': 'MergeFormArray(${1:Form[] ArrayValues1}, ${2:Form[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeIntArray (PapyrusUtil)':
+		'prefix': 'MergeIntArray'
+		'body': 'MergeIntArray(${1:int[] ArrayValues1}, ${2:int[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeObjRefArray (PapyrusUtil)':
+		'prefix': 'MergeObjRefArray'
+		'body': 'MergeObjRefArray(${1:ObjectReference[] ArrayValues1}, ${2:ObjectReference[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.MergeStringArray (PapyrusUtil)':
+		'prefix': 'MergeStringArray'
+		'body': 'MergeStringArray(${1:string[] ArrayValues1}, ${2:string[] ArrayValues2}, ${3:bool RemoveDupes = false})'
+	'PapyrusUtil.ObjRefArray (PapyrusUtil)':
+		'prefix': 'ObjRefArray'
+		'body': 'ObjRefArray(${1:int size}, ${2:ObjectReference filler = none})'
+	'PapyrusUtil.PushActor (PapyrusUtil)':
+		'prefix': 'PushActor'
+		'body': 'PushActor(${1:Actor[] ArrayValues}, ${2:Actor push})'
+	'PapyrusUtil.PushAlias (PapyrusUtil)':
+		'prefix': 'PushAlias'
+		'body': 'PushAlias(${1:Alias[] ArrayValues}, ${2:Alias push})'
+	'PapyrusUtil.PushBool (PapyrusUtil)':
+		'prefix': 'PushBool'
+		'body': 'PushBool(${1:bool[] ArrayValues}, ${2:bool push})'
+	'PapyrusUtil.PushFloat (PapyrusUtil)':
+		'prefix': 'PushFloat'
+		'body': 'PushFloat(${1:float[] ArrayValues}, ${2:float push})'
+	'PapyrusUtil.PushForm (PapyrusUtil)':
+		'prefix': 'PushForm'
+		'body': 'PushForm(${1:Form[] ArrayValues}, ${2:Form push})'
+	'PapyrusUtil.PushInt (PapyrusUtil)':
+		'prefix': 'PushInt'
+		'body': 'PushInt(${1:int[] ArrayValues}, ${2:int push})'
+	'PapyrusUtil.PushObjRef (PapyrusUtil)':
+		'prefix': 'PushObjRef'
+		'body': 'PushObjRef(${1:ObjectReference[] ArrayValues}, ${2:ObjectReference push})'
+	'PapyrusUtil.PushString (PapyrusUtil)':
+		'prefix': 'PushString'
+		'body': 'PushString(${1:string[] ArrayValues}, ${2:string push})'
+	'PapyrusUtil.RemoveActor (PapyrusUtil)':
+		'prefix': 'RemoveActor'
+		'body': 'RemoveActor(${1:Actor[] ArrayValues}, ${2:Actor ToRemove})'
+	'PapyrusUtil.RemoveAlias (PapyrusUtil)':
+		'prefix': 'RemoveAlias'
+		'body': 'RemoveAlias(${1:Alias[] ArrayValues}, ${2:Alias ToRemove})'
+	'PapyrusUtil.RemoveBool (PapyrusUtil)':
+		'prefix': 'RemoveBool'
+		'body': 'RemoveBool(${1:bool[] ArrayValues}, ${2:bool ToRemove})'
+	'PapyrusUtil.RemoveFloat (PapyrusUtil)':
+		'prefix': 'RemoveFloat'
+		'body': 'RemoveFloat(${1:float[] ArrayValues}, ${2:float ToRemove})'
+	'PapyrusUtil.RemoveForm (PapyrusUtil)':
+		'prefix': 'RemoveForm'
+		'body': 'RemoveForm(${1:Form[] ArrayValues}, ${2:Form ToRemove})'
+	'PapyrusUtil.RemoveInt (PapyrusUtil)':
+		'prefix': 'RemoveInt'
+		'body': 'RemoveInt(${1:int[] ArrayValues}, ${2:int ToRemove})'
+	'PapyrusUtil.RemoveObjRef (PapyrusUtil)':
+		'prefix': 'RemoveObjRef'
+		'body': 'RemoveObjRef(${1:ObjectReference[] ArrayValues}, ${2:ObjectReference ToRemove})'
+	'PapyrusUtil.RemoveString (PapyrusUtil)':
+		'prefix': 'RemoveString'
+		'body': 'RemoveString(${1:string[] ArrayValues}, ${2:string ToRemove})'
+	'PapyrusUtil.ResizeActorArray (PapyrusUtil)':
+		'prefix': 'ResizeActorArray'
+		'body': 'ResizeActorArray(${1:Actor[] ArrayValues}, ${2:int toSize}, ${3:Actor filler = none})'
+	'PapyrusUtil.ResizeAliasArray (PapyrusUtil)':
+		'prefix': 'ResizeAliasArray'
+		'body': 'ResizeAliasArray(${1:Alias[] ArrayValues}, ${2:int toSize}, ${3:Alias filler = none})'
+	'PapyrusUtil.ResizeBoolArray (PapyrusUtil)':
+		'prefix': 'ResizeBoolArray'
+		'body': 'ResizeBoolArray(${1:bool[] ArrayValues}, ${2:int toSize}, ${3:bool filler = false})'
+	'PapyrusUtil.ResizeFloatArray (PapyrusUtil)':
+		'prefix': 'ResizeFloatArray'
+		'body': 'ResizeFloatArray(${1:float[] ArrayValues}, ${2:int toSize}, ${3:float filler = 0})'
+	'PapyrusUtil.ResizeFormArray (PapyrusUtil)':
+		'prefix': 'ResizeFormArray'
+		'body': 'ResizeFormArray(${1:Form[] ArrayValues}, ${2:int toSize}, ${3:Form filler = none})'
+	'PapyrusUtil.ResizeIntArray (PapyrusUtil)':
+		'prefix': 'ResizeIntArray'
+		'body': 'ResizeIntArray(${1:int[] ArrayValues}, ${2:int toSize}, ${3:int filler = 0})'
+	'PapyrusUtil.ResizeObjRefArray (PapyrusUtil)':
+		'prefix': 'ResizeObjRefArray'
+		'body': 'ResizeObjRefArray(${1:ObjectReference[] ArrayValues}, ${2:int toSize}, ${3:ObjectReference filler = none})'
+	'PapyrusUtil.ResizeStringArray (PapyrusUtil)':
+		'prefix': 'ResizeStringArray'
+		'body': 'ResizeStringArray(${1:string[] ArrayValues}, ${2:int toSize}, ${3:string filler})'
+	'PapyrusUtil.SignFloat (PapyrusUtil)':
+		'prefix': 'SignFloat'
+		'body': 'SignFloat(${1:bool doSign}, ${2:float value})'
+	'PapyrusUtil.SignInt (PapyrusUtil)':
+		'prefix': 'SignInt'
+		'body': 'SignInt(${1:bool doSign}, ${2:int value})'
+	'PapyrusUtil.SliceActorArray (PapyrusUtil)':
+		'prefix': 'SliceActorArray'
+		'body': 'SliceActorArray(${1:Actor[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceAliasArray (PapyrusUtil)':
+		'prefix': 'SliceAliasArray'
+		'body': 'SliceAliasArray(${1:Alias[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceBoolArray (PapyrusUtil)':
+		'prefix': 'SliceBoolArray'
+		'body': 'SliceBoolArray(${1:bool[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceFloatArray (PapyrusUtil)':
+		'prefix': 'SliceFloatArray'
+		'body': 'SliceFloatArray(${1:float[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceFormArray (PapyrusUtil)':
+		'prefix': 'SliceFormArray'
+		'body': 'SliceFormArray(${1:Form[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceIntArray (PapyrusUtil)':
+		'prefix': 'SliceIntArray'
+		'body': 'SliceIntArray(${1:int[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceObjRefArray (PapyrusUtil)':
+		'prefix': 'SliceObjRefArray'
+		'body': 'SliceObjRefArray(${1:ObjectReference[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.SliceStringArray (PapyrusUtil)':
+		'prefix': 'SliceStringArray'
+		'body': 'SliceStringArray(${1:string[] ArrayValues}, ${2:int StartIndex}, ${3:int EndIndex})'
+	'PapyrusUtil.StringArray (PapyrusUtil)':
+		'prefix': 'StringArray'
+		'body': 'StringArray(${1:int size}, ${2:string filler})'
+	'PapyrusUtil.StringJoin (PapyrusUtil)':
+		'prefix': 'StringJoin'
+		'body': 'StringJoin(${1:string[] Values}, ${2:string Delimiter})'
+	'PapyrusUtil.StringSplit (PapyrusUtil)':
+		'prefix': 'StringSplit'
+		'body': 'StringSplit(${1:string ArgString}, ${2:string Delimiter})'
+	'PapyrusUtil.WrapFloat (PapyrusUtil)':
+		'prefix': 'WrapFloat'
+		'body': 'WrapFloat(${1:float value}, ${2:float end}, ${3:float start = 0})'
+	'PapyrusUtil.WrapInt (PapyrusUtil)':
+		'prefix': 'WrapInt'
+		'body': 'WrapInt(${1:int value}, ${2:int end}, ${3:int start = 0})'
+	'StorageUtil.AdjustFloatValue (PapyrusUtil)':
+		'prefix': 'AdjustFloatValue'
+		'body': 'AdjustFloatValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:float amount})'
+	'StorageUtil.AdjustIntValue (PapyrusUtil)':
+		'prefix': 'AdjustIntValue'
+		'body': 'AdjustIntValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:int amount})'
+	'StorageUtil.ClearAllPrefix (PapyrusUtil)':
+		'prefix': 'ClearAllPrefix'
+		'body': 'ClearAllPrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearFloatListPrefix (PapyrusUtil)':
+		'prefix': 'ClearFloatListPrefix'
+		'body': 'ClearFloatListPrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearFloatValuePrefix (PapyrusUtil)':
+		'prefix': 'ClearFloatValuePrefix'
+		'body': 'ClearFloatValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearFormListPrefix (PapyrusUtil)':
+		'prefix': 'ClearFormListPrefix'
+		'body': 'ClearFormListPrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearFormValuePrefix (PapyrusUtil)':
+		'prefix': 'ClearFormValuePrefix'
+		'body': 'ClearFormValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearIntListPrefix (PapyrusUtil)':
+		'prefix': 'ClearIntListPrefix'
+		'body': 'ClearIntListPrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearIntValuePrefix (PapyrusUtil)':
+		'prefix': 'ClearIntValuePrefix'
+		'body': 'ClearIntValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearStringListPrefix (PapyrusUtil)':
+		'prefix': 'ClearStringListPrefix'
+		'body': 'ClearStringListPrefix(${1:string PrefixKey})'
+	'StorageUtil.ClearStringValuePrefix (PapyrusUtil)':
+		'prefix': 'ClearStringValuePrefix'
+		'body': 'ClearStringValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.CountAllPrefix (PapyrusUtil)':
+		'prefix': 'CountAllPrefix'
+		'body': 'CountAllPrefix(${1:string PrefixKey})'
+	'StorageUtil.CountFloatListPrefix (PapyrusUtil)':
+		'prefix': 'CountFloatListPrefix'
+		'body': 'CountFloatListPrefix(${1:string PrefixKey})'
+	'StorageUtil.CountFloatValuePrefix (PapyrusUtil)':
+		'prefix': 'CountFloatValuePrefix'
+		'body': 'CountFloatValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.CountFormListPrefix (PapyrusUtil)':
+		'prefix': 'CountFormListPrefix'
+		'body': 'CountFormListPrefix(${1:string PrefixKey})'
+	'StorageUtil.CountFormValuePrefix (PapyrusUtil)':
+		'prefix': 'CountFormValuePrefix'
+		'body': 'CountFormValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.CountIntListPrefix (PapyrusUtil)':
+		'prefix': 'CountIntListPrefix'
+		'body': 'CountIntListPrefix(${1:string PrefixKey})'
+	'StorageUtil.CountIntValuePrefix (PapyrusUtil)':
+		'prefix': 'CountIntValuePrefix'
+		'body': 'CountIntValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.CountStringListPrefix (PapyrusUtil)':
+		'prefix': 'CountStringListPrefix'
+		'body': 'CountStringListPrefix(${1:string PrefixKey})'
+	'StorageUtil.CountStringValuePrefix (PapyrusUtil)':
+		'prefix': 'CountStringValuePrefix'
+		'body': 'CountStringValuePrefix(${1:string PrefixKey})'
+	'StorageUtil.debug_AllFloatListObjs (PapyrusUtil)':
+		'prefix': 'debug_AllFloatListObjs'
+		'body': 'debug_AllFloatListObjs()'
+	'StorageUtil.debug_AllFloatObjs (PapyrusUtil)':
+		'prefix': 'debug_AllFloatObjs'
+		'body': 'debug_AllFloatObjs()'
+	'StorageUtil.debug_AllFormListObjs (PapyrusUtil)':
+		'prefix': 'debug_AllFormListObjs'
+		'body': 'debug_AllFormListObjs()'
+	'StorageUtil.debug_AllFormObjs (PapyrusUtil)':
+		'prefix': 'debug_AllFormObjs'
+		'body': 'debug_AllFormObjs()'
+	'StorageUtil.debug_AllIntListObjs (PapyrusUtil)':
+		'prefix': 'debug_AllIntListObjs'
+		'body': 'debug_AllIntListObjs()'
+	'StorageUtil.debug_AllIntObjs (PapyrusUtil)':
+		'prefix': 'debug_AllIntObjs'
+		'body': 'debug_AllIntObjs()'
+	'StorageUtil.debug_AllObjFloatKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjFloatKeys'
+		'body': 'debug_AllObjFloatKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjFloatListKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjFloatListKeys'
+		'body': 'debug_AllObjFloatListKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjFormKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjFormKeys'
+		'body': 'debug_AllObjFormKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjFormListKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjFormListKeys'
+		'body': 'debug_AllObjFormListKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjIntKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjIntKeys'
+		'body': 'debug_AllObjIntKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjIntListKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjIntListKeys'
+		'body': 'debug_AllObjIntListKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjStringKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjStringKeys'
+		'body': 'debug_AllObjStringKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllObjStringListKeys (PapyrusUtil)':
+		'prefix': 'debug_AllObjStringListKeys'
+		'body': 'debug_AllObjStringListKeys(${1:Form ObjKey})'
+	'StorageUtil.debug_AllStringListObjs (PapyrusUtil)':
+		'prefix': 'debug_AllStringListObjs'
+		'body': 'debug_AllStringListObjs()'
+	'StorageUtil.debug_AllStringObjs (PapyrusUtil)':
+		'prefix': 'debug_AllStringObjs'
+		'body': 'debug_AllStringObjs()'
+	'StorageUtil.debug_Cleanup (PapyrusUtil)':
+		'prefix': 'debug_Cleanup'
+		'body': 'debug_Cleanup()'
+	'StorageUtil.debug_DeleteAllValues (PapyrusUtil)':
+		'prefix': 'debug_DeleteAllValues'
+		'body': 'debug_DeleteAllValues()'
+	'StorageUtil.debug_DeleteValues (PapyrusUtil)':
+		'prefix': 'debug_DeleteValues'
+		'body': 'debug_DeleteValues(${1:Form ObjKey})'
+	'StorageUtil.debug_FileDeleteAllValues (PapyrusUtil)':
+		'prefix': 'debug_FileDeleteAllValues'
+		'body': 'debug_FileDeleteAllValues()'
+	'StorageUtil.debug_FileGetFloatKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetFloatKey'
+		'body': 'debug_FileGetFloatKey(${1:int index})'
+	'StorageUtil.debug_FileGetFloatKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetFloatKeysCount'
+		'body': 'debug_FileGetFloatKeysCount()'
+	'StorageUtil.debug_FileGetFloatListKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetFloatListKey'
+		'body': 'debug_FileGetFloatListKey(${1:int index})'
+	'StorageUtil.debug_FileGetFloatListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetFloatListKeysCount'
+		'body': 'debug_FileGetFloatListKeysCount()'
+	'StorageUtil.debug_FileGetIntKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetIntKey'
+		'body': 'debug_FileGetIntKey(${1:int index})'
+	'StorageUtil.debug_FileGetIntKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetIntKeysCount'
+		'body': 'debug_FileGetIntKeysCount()'
+	'StorageUtil.debug_FileGetIntListKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetIntListKey'
+		'body': 'debug_FileGetIntListKey(${1:int index})'
+	'StorageUtil.debug_FileGetIntListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetIntListKeysCount'
+		'body': 'debug_FileGetIntListKeysCount()'
+	'StorageUtil.debug_FileGetStringKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetStringKey'
+		'body': 'debug_FileGetStringKey(${1:int index})'
+	'StorageUtil.debug_FileGetStringKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetStringKeysCount'
+		'body': 'debug_FileGetStringKeysCount()'
+	'StorageUtil.debug_FileGetStringListKey (PapyrusUtil)':
+		'prefix': 'debug_FileGetStringListKey'
+		'body': 'debug_FileGetStringListKey(${1:int index})'
+	'StorageUtil.debug_FileGetStringListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_FileGetStringListKeysCount'
+		'body': 'debug_FileGetStringListKeysCount()'
+	'StorageUtil.debug_GetFloatKey (PapyrusUtil)':
+		'prefix': 'debug_GetFloatKey'
+		'body': 'debug_GetFloatKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetFloatKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetFloatKeysCount'
+		'body': 'debug_GetFloatKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetFloatListKey (PapyrusUtil)':
+		'prefix': 'debug_GetFloatListKey'
+		'body': 'debug_GetFloatListKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetFloatListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetFloatListKeysCount'
+		'body': 'debug_GetFloatListKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetFloatListObject (PapyrusUtil)':
+		'prefix': 'debug_GetFloatListObject'
+		'body': 'debug_GetFloatListObject(${1:int index})'
+	'StorageUtil.debug_GetFloatListObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetFloatListObjectCount'
+		'body': 'debug_GetFloatListObjectCount()'
+	'StorageUtil.debug_GetFloatObject (PapyrusUtil)':
+		'prefix': 'debug_GetFloatObject'
+		'body': 'debug_GetFloatObject(${1:int index})'
+	'StorageUtil.debug_GetFloatObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetFloatObjectCount'
+		'body': 'debug_GetFloatObjectCount()'
+	'StorageUtil.debug_GetFormKey (PapyrusUtil)':
+		'prefix': 'debug_GetFormKey'
+		'body': 'debug_GetFormKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetFormKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetFormKeysCount'
+		'body': 'debug_GetFormKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetFormListKey (PapyrusUtil)':
+		'prefix': 'debug_GetFormListKey'
+		'body': 'debug_GetFormListKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetFormListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetFormListKeysCount'
+		'body': 'debug_GetFormListKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetFormListObject (PapyrusUtil)':
+		'prefix': 'debug_GetFormListObject'
+		'body': 'debug_GetFormListObject(${1:int index})'
+	'StorageUtil.debug_GetFormListObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetFormListObjectCount'
+		'body': 'debug_GetFormListObjectCount()'
+	'StorageUtil.debug_GetFormObject (PapyrusUtil)':
+		'prefix': 'debug_GetFormObject'
+		'body': 'debug_GetFormObject(${1:int index})'
+	'StorageUtil.debug_GetFormObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetFormObjectCount'
+		'body': 'debug_GetFormObjectCount()'
+	'StorageUtil.debug_GetIntKey (PapyrusUtil)':
+		'prefix': 'debug_GetIntKey'
+		'body': 'debug_GetIntKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetIntKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetIntKeysCount'
+		'body': 'debug_GetIntKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetIntListKey (PapyrusUtil)':
+		'prefix': 'debug_GetIntListKey'
+		'body': 'debug_GetIntListKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetIntListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetIntListKeysCount'
+		'body': 'debug_GetIntListKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetIntListObject (PapyrusUtil)':
+		'prefix': 'debug_GetIntListObject'
+		'body': 'debug_GetIntListObject(${1:int index})'
+	'StorageUtil.debug_GetIntListObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetIntListObjectCount'
+		'body': 'debug_GetIntListObjectCount()'
+	'StorageUtil.debug_GetIntObject (PapyrusUtil)':
+		'prefix': 'debug_GetIntObject'
+		'body': 'debug_GetIntObject(${1:int index})'
+	'StorageUtil.debug_GetIntObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetIntObjectCount'
+		'body': 'debug_GetIntObjectCount()'
+	'StorageUtil.debug_GetStringKey (PapyrusUtil)':
+		'prefix': 'debug_GetStringKey'
+		'body': 'debug_GetStringKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetStringKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetStringKeysCount'
+		'body': 'debug_GetStringKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetStringListKey (PapyrusUtil)':
+		'prefix': 'debug_GetStringListKey'
+		'body': 'debug_GetStringListKey(${1:Form ObjKey}, ${2:int index})'
+	'StorageUtil.debug_GetStringListKeysCount (PapyrusUtil)':
+		'prefix': 'debug_GetStringListKeysCount'
+		'body': 'debug_GetStringListKeysCount(${1:Form ObjKey})'
+	'StorageUtil.debug_GetStringListObject (PapyrusUtil)':
+		'prefix': 'debug_GetStringListObject'
+		'body': 'debug_GetStringListObject(${1:int index})'
+	'StorageUtil.debug_GetStringListObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetStringListObjectCount'
+		'body': 'debug_GetStringListObjectCount()'
+	'StorageUtil.debug_GetStringObject (PapyrusUtil)':
+		'prefix': 'debug_GetStringObject'
+		'body': 'debug_GetStringObject(${1:int index})'
+	'StorageUtil.debug_GetStringObjectCount (PapyrusUtil)':
+		'prefix': 'debug_GetStringObjectCount'
+		'body': 'debug_GetStringObjectCount()'
+	'StorageUtil.debug_SaveFile (PapyrusUtil)':
+		'prefix': 'debug_SaveFile'
+		'body': 'debug_SaveFile()'
+	'StorageUtil.debug_SetDebugMode (PapyrusUtil)':
+		'prefix': 'debug_SetDebugMode'
+		'body': 'debug_SetDebugMode(${1:bool enabled})'
+	'StorageUtil.ExportFile (PapyrusUtil)':
+		'prefix': 'ExportFile'
+		'body': 'ExportFile(${1:string fileName}, ${2:string restrictKey}, ${3:int restrictType}, ${4:Form restrictForm = none}, ${5:bool restrictGlobal = false}, ${6:bool keyContains = false}, ${7:bool append = true})'
+	'StorageUtil.FileAdjustFloatValue (PapyrusUtil)':
+		'prefix': 'FileAdjustFloatValue'
+		'body': 'FileAdjustFloatValue(${1:string KeyName}, ${2:float amount})'
+	'StorageUtil.FileAdjustIntValue (PapyrusUtil)':
+		'prefix': 'FileAdjustIntValue'
+		'body': 'FileAdjustIntValue(${1:string KeyName}, ${2:int amount})'
+	'StorageUtil.FileFloatListAdd (PapyrusUtil)':
+		'prefix': 'FileFloatListAdd'
+		'body': 'FileFloatListAdd(${1:string KeyName}, ${2:float value}, ${3:bool allowDuplicate = true})'
+	'StorageUtil.FileFloatListAdjust (PapyrusUtil)':
+		'prefix': 'FileFloatListAdjust'
+		'body': 'FileFloatListAdjust(${1:string KeyName}, ${2:int index}, ${3:float amount})'
+	'StorageUtil.FileFloatListClear (PapyrusUtil)':
+		'prefix': 'FileFloatListClear'
+		'body': 'FileFloatListClear(${1:string KeyName})'
+	'StorageUtil.FileFloatListCopy (PapyrusUtil)':
+		'prefix': 'FileFloatListCopy'
+		'body': 'FileFloatListCopy(${1:string KeyName}, ${2:float[] copy})'
+	'StorageUtil.FileFloatListCount (PapyrusUtil)':
+		'prefix': 'FileFloatListCount'
+		'body': 'FileFloatListCount(${1:string KeyName})'
+	'StorageUtil.FileFloatListFind (PapyrusUtil)':
+		'prefix': 'FileFloatListFind'
+		'body': 'FileFloatListFind(${1:string KeyName}, ${2:float value})'
+	'StorageUtil.FileFloatListGet (PapyrusUtil)':
+		'prefix': 'FileFloatListGet'
+		'body': 'FileFloatListGet(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileFloatListHas (PapyrusUtil)':
+		'prefix': 'FileFloatListHas'
+		'body': 'FileFloatListHas(${1:string KeyName}, ${2:float value})'
+	'StorageUtil.FileFloatListInsert (PapyrusUtil)':
+		'prefix': 'FileFloatListInsert'
+		'body': 'FileFloatListInsert(${1:string KeyName}, ${2:int index}, ${3:float value})'
+	'StorageUtil.FileFloatListRemove (PapyrusUtil)':
+		'prefix': 'FileFloatListRemove'
+		'body': 'FileFloatListRemove(${1:string KeyName}, ${2:float value}, ${3:bool allInstances = false})'
+	'StorageUtil.FileFloatListRemoveAt (PapyrusUtil)':
+		'prefix': 'FileFloatListRemoveAt'
+		'body': 'FileFloatListRemoveAt(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileFloatListResize (PapyrusUtil)':
+		'prefix': 'FileFloatListResize'
+		'body': 'FileFloatListResize(${1:string KeyName}, ${2:int toLength}, ${3:float filler = 0})'
+	'StorageUtil.FileFloatListSet (PapyrusUtil)':
+		'prefix': 'FileFloatListSet'
+		'body': 'FileFloatListSet(${1:string KeyName}, ${2:int index}, ${3:float value})'
+	'StorageUtil.FileFloatListSlice (PapyrusUtil)':
+		'prefix': 'FileFloatListSlice'
+		'body': 'FileFloatListSlice(${1:string KeyName}, ${2:float[] slice}, ${3:int startIndex = 0})'
+	'StorageUtil.FileFormListAdd (PapyrusUtil)':
+		'prefix': 'FileFormListAdd'
+		'body': 'FileFormListAdd(${1:string KeyName}, ${2:Form value}, ${3:bool allowDuplicate = true})'
+	'StorageUtil.FileFormListClear (PapyrusUtil)':
+		'prefix': 'FileFormListClear'
+		'body': 'FileFormListClear(${1:string KeyName})'
+	'StorageUtil.FileFormListCopy (PapyrusUtil)':
+		'prefix': 'FileFormListCopy'
+		'body': 'FileFormListCopy(${1:string KeyName}, ${2:Form[] copy})'
+	'StorageUtil.FileFormListCount (PapyrusUtil)':
+		'prefix': 'FileFormListCount'
+		'body': 'FileFormListCount(${1:string KeyName})'
+	'StorageUtil.FileFormListFind (PapyrusUtil)':
+		'prefix': 'FileFormListFind'
+		'body': 'FileFormListFind(${1:string KeyName}, ${2:Form value})'
+	'StorageUtil.FileFormListGet (PapyrusUtil)':
+		'prefix': 'FileFormListGet'
+		'body': 'FileFormListGet(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileFormListHas (PapyrusUtil)':
+		'prefix': 'FileFormListHas'
+		'body': 'FileFormListHas(${1:string KeyName}, ${2:Form value})'
+	'StorageUtil.FileFormListInsert (PapyrusUtil)':
+		'prefix': 'FileFormListInsert'
+		'body': 'FileFormListInsert(${1:string KeyName}, ${2:int index}, ${3:Form value})'
+	'StorageUtil.FileFormListRemove (PapyrusUtil)':
+		'prefix': 'FileFormListRemove'
+		'body': 'FileFormListRemove(${1:string KeyName}, ${2:Form value}, ${3:bool allInstances = false})'
+	'StorageUtil.FileFormListRemoveAt (PapyrusUtil)':
+		'prefix': 'FileFormListRemoveAt'
+		'body': 'FileFormListRemoveAt(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileFormListResize (PapyrusUtil)':
+		'prefix': 'FileFormListResize'
+		'body': 'FileFormListResize(${1:string KeyName}, ${2:int toLength}, ${3:Form filler = none})'
+	'StorageUtil.FileFormListSet (PapyrusUtil)':
+		'prefix': 'FileFormListSet'
+		'body': 'FileFormListSet(${1:string KeyName}, ${2:int index}, ${3:Form value})'
+	'StorageUtil.FileFormListSlice (PapyrusUtil)':
+		'prefix': 'FileFormListSlice'
+		'body': 'FileFormListSlice(${1:string KeyName}, ${2:Form[] slice}, ${3:int startIndex = 0})'
+	'StorageUtil.FileGetFloatValue (PapyrusUtil)':
+		'prefix': 'FileGetFloatValue'
+		'body': 'FileGetFloatValue(${1:string KeyName}, ${2:float missing = 0})'
+	'StorageUtil.FileGetFormValue (PapyrusUtil)':
+		'prefix': 'FileGetFormValue'
+		'body': 'FileGetFormValue(${1:string KeyName}, ${2:Form missing = none})'
+	'StorageUtil.FileGetIntValue (PapyrusUtil)':
+		'prefix': 'FileGetIntValue'
+		'body': 'FileGetIntValue(${1:string KeyName}, ${2:int missing = 0})'
+	'StorageUtil.FileGetStringValue (PapyrusUtil)':
+		'prefix': 'FileGetStringValue'
+		'body': 'FileGetStringValue(${1:string KeyName}, ${2:string missing})'
+	'StorageUtil.FileHasFloatValue (PapyrusUtil)':
+		'prefix': 'FileHasFloatValue'
+		'body': 'FileHasFloatValue(${1:string KeyName})'
+	'StorageUtil.FileHasFormValue (PapyrusUtil)':
+		'prefix': 'FileHasFormValue'
+		'body': 'FileHasFormValue(${1:string KeyName})'
+	'StorageUtil.FileHasIntValue (PapyrusUtil)':
+		'prefix': 'FileHasIntValue'
+		'body': 'FileHasIntValue(${1:string KeyName})'
+	'StorageUtil.FileHasStringValue (PapyrusUtil)':
+		'prefix': 'FileHasStringValue'
+		'body': 'FileHasStringValue(${1:string KeyName})'
+	'StorageUtil.FileIntListAdd (PapyrusUtil)':
+		'prefix': 'FileIntListAdd'
+		'body': 'FileIntListAdd(${1:string KeyName}, ${2:int value}, ${3:bool allowDuplicate = true})'
+	'StorageUtil.FileIntListAdjust (PapyrusUtil)':
+		'prefix': 'FileIntListAdjust'
+		'body': 'FileIntListAdjust(${1:string KeyName}, ${2:int index}, ${3:int amount})'
+	'StorageUtil.FileIntListClear (PapyrusUtil)':
+		'prefix': 'FileIntListClear'
+		'body': 'FileIntListClear(${1:string KeyName})'
+	'StorageUtil.FileIntListCopy (PapyrusUtil)':
+		'prefix': 'FileIntListCopy'
+		'body': 'FileIntListCopy(${1:string KeyName}, ${2:int[] copy})'
+	'StorageUtil.FileIntListCount (PapyrusUtil)':
+		'prefix': 'FileIntListCount'
+		'body': 'FileIntListCount(${1:string KeyName})'
+	'StorageUtil.FileIntListFind (PapyrusUtil)':
+		'prefix': 'FileIntListFind'
+		'body': 'FileIntListFind(${1:string KeyName}, ${2:int value})'
+	'StorageUtil.FileIntListGet (PapyrusUtil)':
+		'prefix': 'FileIntListGet'
+		'body': 'FileIntListGet(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileIntListHas (PapyrusUtil)':
+		'prefix': 'FileIntListHas'
+		'body': 'FileIntListHas(${1:string KeyName}, ${2:int value})'
+	'StorageUtil.FileIntListInsert (PapyrusUtil)':
+		'prefix': 'FileIntListInsert'
+		'body': 'FileIntListInsert(${1:string KeyName}, ${2:int index}, ${3:int value})'
+	'StorageUtil.FileIntListRemove (PapyrusUtil)':
+		'prefix': 'FileIntListRemove'
+		'body': 'FileIntListRemove(${1:string KeyName}, ${2:int value}, ${3:bool allInstances = false})'
+	'StorageUtil.FileIntListRemoveAt (PapyrusUtil)':
+		'prefix': 'FileIntListRemoveAt'
+		'body': 'FileIntListRemoveAt(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileIntListResize (PapyrusUtil)':
+		'prefix': 'FileIntListResize'
+		'body': 'FileIntListResize(${1:string KeyName}, ${2:int toLength}, ${3:int filler = 0})'
+	'StorageUtil.FileIntListSet (PapyrusUtil)':
+		'prefix': 'FileIntListSet'
+		'body': 'FileIntListSet(${1:string KeyName}, ${2:int index}, ${3:int value})'
+	'StorageUtil.FileIntListSlice (PapyrusUtil)':
+		'prefix': 'FileIntListSlice'
+		'body': 'FileIntListSlice(${1:string KeyName}, ${2:int[] slice}, ${3:int startIndex = 0})'
+	'StorageUtil.FileSetFloatValue (PapyrusUtil)':
+		'prefix': 'FileSetFloatValue'
+		'body': 'FileSetFloatValue(${1:string KeyName}, ${2:float value})'
+	'StorageUtil.FileSetFormValue (PapyrusUtil)':
+		'prefix': 'FileSetFormValue'
+		'body': 'FileSetFormValue(${1:string KeyName}, ${2:Form value})'
+	'StorageUtil.FileSetIntValue (PapyrusUtil)':
+		'prefix': 'FileSetIntValue'
+		'body': 'FileSetIntValue(${1:string KeyName}, ${2:int value})'
+	'StorageUtil.FileSetStringValue (PapyrusUtil)':
+		'prefix': 'FileSetStringValue'
+		'body': 'FileSetStringValue(${1:string KeyName}, ${2:string value})'
+	'StorageUtil.FileStringListAdd (PapyrusUtil)':
+		'prefix': 'FileStringListAdd'
+		'body': 'FileStringListAdd(${1:string KeyName}, ${2:string value}, ${3:bool allowDuplicate = true})'
+	'StorageUtil.FileStringListClear (PapyrusUtil)':
+		'prefix': 'FileStringListClear'
+		'body': 'FileStringListClear(${1:string KeyName})'
+	'StorageUtil.FileStringListCopy (PapyrusUtil)':
+		'prefix': 'FileStringListCopy'
+		'body': 'FileStringListCopy(${1:string KeyName}, ${2:string[] copy})'
+	'StorageUtil.FileStringListCount (PapyrusUtil)':
+		'prefix': 'FileStringListCount'
+		'body': 'FileStringListCount(${1:string KeyName})'
+	'StorageUtil.FileStringListFind (PapyrusUtil)':
+		'prefix': 'FileStringListFind'
+		'body': 'FileStringListFind(${1:string KeyName}, ${2:string value})'
+	'StorageUtil.FileStringListGet (PapyrusUtil)':
+		'prefix': 'FileStringListGet'
+		'body': 'FileStringListGet(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileStringListHas (PapyrusUtil)':
+		'prefix': 'FileStringListHas'
+		'body': 'FileStringListHas(${1:string KeyName}, ${2:string value})'
+	'StorageUtil.FileStringListInsert (PapyrusUtil)':
+		'prefix': 'FileStringListInsert'
+		'body': 'FileStringListInsert(${1:string KeyName}, ${2:int index}, ${3:string value})'
+	'StorageUtil.FileStringListRemove (PapyrusUtil)':
+		'prefix': 'FileStringListRemove'
+		'body': 'FileStringListRemove(${1:string KeyName}, ${2:string value}, ${3:bool allInstances = false})'
+	'StorageUtil.FileStringListRemoveAt (PapyrusUtil)':
+		'prefix': 'FileStringListRemoveAt'
+		'body': 'FileStringListRemoveAt(${1:string KeyName}, ${2:int index})'
+	'StorageUtil.FileStringListResize (PapyrusUtil)':
+		'prefix': 'FileStringListResize'
+		'body': 'FileStringListResize(${1:string KeyName}, ${2:int toLength}, ${3:string filler})'
+	'StorageUtil.FileStringListSet (PapyrusUtil)':
+		'prefix': 'FileStringListSet'
+		'body': 'FileStringListSet(${1:string KeyName}, ${2:int index}, ${3:string value})'
+	'StorageUtil.FileStringListSlice (PapyrusUtil)':
+		'prefix': 'FileStringListSlice'
+		'body': 'FileStringListSlice(${1:string KeyName}, ${2:string[] slice}, ${3:int startIndex = 0})'
+	'StorageUtil.FileUnsetFloatValue (PapyrusUtil)':
+		'prefix': 'FileUnsetFloatValue'
+		'body': 'FileUnsetFloatValue(${1:string KeyName})'
+	'StorageUtil.FileUnsetFormValue (PapyrusUtil)':
+		'prefix': 'FileUnsetFormValue'
+		'body': 'FileUnsetFormValue(${1:string KeyName})'
+	'StorageUtil.FileUnsetIntValue (PapyrusUtil)':
+		'prefix': 'FileUnsetIntValue'
+		'body': 'FileUnsetIntValue(${1:string KeyName})'
+	'StorageUtil.FileUnsetStringValue (PapyrusUtil)':
+		'prefix': 'FileUnsetStringValue'
+		'body': 'FileUnsetStringValue(${1:string KeyName})'
+	'StorageUtil.FloatListAdd (PapyrusUtil)':
+		'prefix': 'FloatListAdd'
+		'body': 'FloatListAdd(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value}, ${4:bool allowDuplicate = true})'
+	'StorageUtil.FloatListAdjust (PapyrusUtil)':
+		'prefix': 'FloatListAdjust'
+		'body': 'FloatListAdjust(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:float amount})'
+	'StorageUtil.FloatListClear (PapyrusUtil)':
+		'prefix': 'FloatListClear'
+		'body': 'FloatListClear(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FloatListCopy (PapyrusUtil)':
+		'prefix': 'FloatListCopy'
+		'body': 'FloatListCopy(${1:Form ObjKey}, ${2:string KeyName}, ${3:float[] copy})'
+	'StorageUtil.FloatListCount (PapyrusUtil)':
+		'prefix': 'FloatListCount'
+		'body': 'FloatListCount(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FloatListCountValue (PapyrusUtil)':
+		'prefix': 'FloatListCountValue'
+		'body': 'FloatListCountValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value}, ${4:bool exclude = false})'
+	'StorageUtil.FloatListFind (PapyrusUtil)':
+		'prefix': 'FloatListFind'
+		'body': 'FloatListFind(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value})'
+	'StorageUtil.FloatListGet (PapyrusUtil)':
+		'prefix': 'FloatListGet'
+		'body': 'FloatListGet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.FloatListHas (PapyrusUtil)':
+		'prefix': 'FloatListHas'
+		'body': 'FloatListHas(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value})'
+	'StorageUtil.FloatListInsert (PapyrusUtil)':
+		'prefix': 'FloatListInsert'
+		'body': 'FloatListInsert(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:float value})'
+	'StorageUtil.FloatListPluck (PapyrusUtil)':
+		'prefix': 'FloatListPluck'
+		'body': 'FloatListPluck(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:float missing})'
+	'StorageUtil.FloatListPop (PapyrusUtil)':
+		'prefix': 'FloatListPop'
+		'body': 'FloatListPop(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FloatListRemove (PapyrusUtil)':
+		'prefix': 'FloatListRemove'
+		'body': 'FloatListRemove(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value}, ${4:bool allInstances = false})'
+	'StorageUtil.FloatListRemoveAt (PapyrusUtil)':
+		'prefix': 'FloatListRemoveAt'
+		'body': 'FloatListRemoveAt(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.FloatListResize (PapyrusUtil)':
+		'prefix': 'FloatListResize'
+		'body': 'FloatListResize(${1:Form ObjKey}, ${2:string KeyName}, ${3:int toLength}, ${4:float filler = 0})'
+	'StorageUtil.FloatListSet (PapyrusUtil)':
+		'prefix': 'FloatListSet'
+		'body': 'FloatListSet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:float value})'
+	'StorageUtil.FloatListShift (PapyrusUtil)':
+		'prefix': 'FloatListShift'
+		'body': 'FloatListShift(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FloatListSlice (PapyrusUtil)':
+		'prefix': 'FloatListSlice'
+		'body': 'FloatListSlice(${1:Form ObjKey}, ${2:string KeyName}, ${3:float[] slice}, ${4:int startIndex = 0})'
+	'StorageUtil.FloatListSort (PapyrusUtil)':
+		'prefix': 'FloatListSort'
+		'body': 'FloatListSort(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FloatListToArray (PapyrusUtil)':
+		'prefix': 'FloatListToArray'
+		'body': 'FloatListToArray(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListAdd (PapyrusUtil)':
+		'prefix': 'FormListAdd'
+		'body': 'FormListAdd(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value}, ${4:bool allowDuplicate = true})'
+	'StorageUtil.FormListClear (PapyrusUtil)':
+		'prefix': 'FormListClear'
+		'body': 'FormListClear(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListCopy (PapyrusUtil)':
+		'prefix': 'FormListCopy'
+		'body': 'FormListCopy(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form[] copy})'
+	'StorageUtil.FormListCount (PapyrusUtil)':
+		'prefix': 'FormListCount'
+		'body': 'FormListCount(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListCountValue (PapyrusUtil)':
+		'prefix': 'FormListCountValue'
+		'body': 'FormListCountValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value}, ${4:bool exclude = false})'
+	'StorageUtil.FormListFind (PapyrusUtil)':
+		'prefix': 'FormListFind'
+		'body': 'FormListFind(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value})'
+	'StorageUtil.FormListGet (PapyrusUtil)':
+		'prefix': 'FormListGet'
+		'body': 'FormListGet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.FormListHas (PapyrusUtil)':
+		'prefix': 'FormListHas'
+		'body': 'FormListHas(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value})'
+	'StorageUtil.FormListInsert (PapyrusUtil)':
+		'prefix': 'FormListInsert'
+		'body': 'FormListInsert(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:Form value})'
+	'StorageUtil.FormListPluck (PapyrusUtil)':
+		'prefix': 'FormListPluck'
+		'body': 'FormListPluck(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:Form missing})'
+	'StorageUtil.FormListPop (PapyrusUtil)':
+		'prefix': 'FormListPop'
+		'body': 'FormListPop(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListRemove (PapyrusUtil)':
+		'prefix': 'FormListRemove'
+		'body': 'FormListRemove(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value}, ${4:bool allInstances = false})'
+	'StorageUtil.FormListRemoveAt (PapyrusUtil)':
+		'prefix': 'FormListRemoveAt'
+		'body': 'FormListRemoveAt(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.FormListResize (PapyrusUtil)':
+		'prefix': 'FormListResize'
+		'body': 'FormListResize(${1:Form ObjKey}, ${2:string KeyName}, ${3:int toLength}, ${4:Form filler = none})'
+	'StorageUtil.FormListSet (PapyrusUtil)':
+		'prefix': 'FormListSet'
+		'body': 'FormListSet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:Form value})'
+	'StorageUtil.FormListShift (PapyrusUtil)':
+		'prefix': 'FormListShift'
+		'body': 'FormListShift(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListSlice (PapyrusUtil)':
+		'prefix': 'FormListSlice'
+		'body': 'FormListSlice(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form[] slice}, ${4:int startIndex = 0})'
+	'StorageUtil.FormListSort (PapyrusUtil)':
+		'prefix': 'FormListSort'
+		'body': 'FormListSort(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.FormListToArray (PapyrusUtil)':
+		'prefix': 'FormListToArray'
+		'body': 'FormListToArray(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.GetFloatValue (PapyrusUtil)':
+		'prefix': 'GetFloatValue'
+		'body': 'GetFloatValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:float missing = 0})'
+	'StorageUtil.GetFormValue (PapyrusUtil)':
+		'prefix': 'GetFormValue'
+		'body': 'GetFormValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form missing = none})'
+	'StorageUtil.GetIntValue (PapyrusUtil)':
+		'prefix': 'GetIntValue'
+		'body': 'GetIntValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:int missing = 0})'
+	'StorageUtil.GetStringValue (PapyrusUtil)':
+		'prefix': 'GetStringValue'
+		'body': 'GetStringValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:string missing})'
+	'StorageUtil.HasFloatValue (PapyrusUtil)':
+		'prefix': 'HasFloatValue'
+		'body': 'HasFloatValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.HasFormValue (PapyrusUtil)':
+		'prefix': 'HasFormValue'
+		'body': 'HasFormValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.HasIntValue (PapyrusUtil)':
+		'prefix': 'HasIntValue'
+		'body': 'HasIntValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.HasStringValue (PapyrusUtil)':
+		'prefix': 'HasStringValue'
+		'body': 'HasStringValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.ImportFile (PapyrusUtil)':
+		'prefix': 'ImportFile'
+		'body': 'ImportFile(${1:string fileName}, ${2:string restrictKey}, ${3:int restrictType}, ${4:Form restrictForm = none}, ${5:bool restrictGlobal = false}, ${6:bool keyContains = false})'
+	'StorageUtil.IntListAdd (PapyrusUtil)':
+		'prefix': 'IntListAdd'
+		'body': 'IntListAdd(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value}, ${4:bool allowDuplicate = true})'
+	'StorageUtil.IntListAdjust (PapyrusUtil)':
+		'prefix': 'IntListAdjust'
+		'body': 'IntListAdjust(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:int amount})'
+	'StorageUtil.IntListClear (PapyrusUtil)':
+		'prefix': 'IntListClear'
+		'body': 'IntListClear(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.IntListCopy (PapyrusUtil)':
+		'prefix': 'IntListCopy'
+		'body': 'IntListCopy(${1:Form ObjKey}, ${2:string KeyName}, ${3:int[] copy})'
+	'StorageUtil.IntListCount (PapyrusUtil)':
+		'prefix': 'IntListCount'
+		'body': 'IntListCount(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.IntListCountValue (PapyrusUtil)':
+		'prefix': 'IntListCountValue'
+		'body': 'IntListCountValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value}, ${4:bool exclude = false})'
+	'StorageUtil.IntListFind (PapyrusUtil)':
+		'prefix': 'IntListFind'
+		'body': 'IntListFind(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value})'
+	'StorageUtil.IntListGet (PapyrusUtil)':
+		'prefix': 'IntListGet'
+		'body': 'IntListGet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.IntListHas (PapyrusUtil)':
+		'prefix': 'IntListHas'
+		'body': 'IntListHas(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value})'
+	'StorageUtil.IntListInsert (PapyrusUtil)':
+		'prefix': 'IntListInsert'
+		'body': 'IntListInsert(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:int value})'
+	'StorageUtil.IntListPluck (PapyrusUtil)':
+		'prefix': 'IntListPluck'
+		'body': 'IntListPluck(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:int missing})'
+	'StorageUtil.IntListPop (PapyrusUtil)':
+		'prefix': 'IntListPop'
+		'body': 'IntListPop(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.IntListRemove (PapyrusUtil)':
+		'prefix': 'IntListRemove'
+		'body': 'IntListRemove(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value}, ${4:bool allInstances = false})'
+	'StorageUtil.IntListRemoveAt (PapyrusUtil)':
+		'prefix': 'IntListRemoveAt'
+		'body': 'IntListRemoveAt(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.IntListResize (PapyrusUtil)':
+		'prefix': 'IntListResize'
+		'body': 'IntListResize(${1:Form ObjKey}, ${2:string KeyName}, ${3:int toLength}, ${4:int filler = 0})'
+	'StorageUtil.IntListSet (PapyrusUtil)':
+		'prefix': 'IntListSet'
+		'body': 'IntListSet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:int value})'
+	'StorageUtil.IntListShift (PapyrusUtil)':
+		'prefix': 'IntListShift'
+		'body': 'IntListShift(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.IntListSlice (PapyrusUtil)':
+		'prefix': 'IntListSlice'
+		'body': 'IntListSlice(${1:Form ObjKey}, ${2:string KeyName}, ${3:int[] slice}, ${4:int startIndex = 0})'
+	'StorageUtil.IntListSort (PapyrusUtil)':
+		'prefix': 'IntListSort'
+		'body': 'IntListSort(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.IntListToArray (PapyrusUtil)':
+		'prefix': 'IntListToArray'
+		'body': 'IntListToArray(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.PluckFloatValue (PapyrusUtil)':
+		'prefix': 'PluckFloatValue'
+		'body': 'PluckFloatValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:float missing = 0})'
+	'StorageUtil.PluckFormValue (PapyrusUtil)':
+		'prefix': 'PluckFormValue'
+		'body': 'PluckFormValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form missing = none})'
+	'StorageUtil.PluckIntValue (PapyrusUtil)':
+		'prefix': 'PluckIntValue'
+		'body': 'PluckIntValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:int missing = 0})'
+	'StorageUtil.PluckStringValue (PapyrusUtil)':
+		'prefix': 'PluckStringValue'
+		'body': 'PluckStringValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:string missing})'
+	'StorageUtil.SetFloatValue (PapyrusUtil)':
+		'prefix': 'SetFloatValue'
+		'body': 'SetFloatValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:float value})'
+	'StorageUtil.SetFormValue (PapyrusUtil)':
+		'prefix': 'SetFormValue'
+		'body': 'SetFormValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:Form value})'
+	'StorageUtil.SetIntValue (PapyrusUtil)':
+		'prefix': 'SetIntValue'
+		'body': 'SetIntValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:int value})'
+	'StorageUtil.SetStringValue (PapyrusUtil)':
+		'prefix': 'SetStringValue'
+		'body': 'SetStringValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value})'
+	'StorageUtil.StringListAdd (PapyrusUtil)':
+		'prefix': 'StringListAdd'
+		'body': 'StringListAdd(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value}, ${4:bool allowDuplicate = true})'
+	'StorageUtil.StringListClear (PapyrusUtil)':
+		'prefix': 'StringListClear'
+		'body': 'StringListClear(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.StringListCopy (PapyrusUtil)':
+		'prefix': 'StringListCopy'
+		'body': 'StringListCopy(${1:Form ObjKey}, ${2:string KeyName}, ${3:string[] copy})'
+	'StorageUtil.StringListCount (PapyrusUtil)':
+		'prefix': 'StringListCount'
+		'body': 'StringListCount(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.StringListCountValue (PapyrusUtil)':
+		'prefix': 'StringListCountValue'
+		'body': 'StringListCountValue(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value}, ${4:bool exclude = false})'
+	'StorageUtil.StringListFind (PapyrusUtil)':
+		'prefix': 'StringListFind'
+		'body': 'StringListFind(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value})'
+	'StorageUtil.StringListGet (PapyrusUtil)':
+		'prefix': 'StringListGet'
+		'body': 'StringListGet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.StringListHas (PapyrusUtil)':
+		'prefix': 'StringListHas'
+		'body': 'StringListHas(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value})'
+	'StorageUtil.StringListInsert (PapyrusUtil)':
+		'prefix': 'StringListInsert'
+		'body': 'StringListInsert(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:string value})'
+	'StorageUtil.StringListPluck (PapyrusUtil)':
+		'prefix': 'StringListPluck'
+		'body': 'StringListPluck(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:string missing})'
+	'StorageUtil.StringListPop (PapyrusUtil)':
+		'prefix': 'StringListPop'
+		'body': 'StringListPop(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.StringListRemove (PapyrusUtil)':
+		'prefix': 'StringListRemove'
+		'body': 'StringListRemove(${1:Form ObjKey}, ${2:string KeyName}, ${3:string value}, ${4:bool allInstances = false})'
+	'StorageUtil.StringListRemoveAt (PapyrusUtil)':
+		'prefix': 'StringListRemoveAt'
+		'body': 'StringListRemoveAt(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index})'
+	'StorageUtil.StringListResize (PapyrusUtil)':
+		'prefix': 'StringListResize'
+		'body': 'StringListResize(${1:Form ObjKey}, ${2:string KeyName}, ${3:int toLength}, ${4:string filler})'
+	'StorageUtil.StringListSet (PapyrusUtil)':
+		'prefix': 'StringListSet'
+		'body': 'StringListSet(${1:Form ObjKey}, ${2:string KeyName}, ${3:int index}, ${4:string value})'
+	'StorageUtil.StringListShift (PapyrusUtil)':
+		'prefix': 'StringListShift'
+		'body': 'StringListShift(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.StringListSlice (PapyrusUtil)':
+		'prefix': 'StringListSlice'
+		'body': 'StringListSlice(${1:Form ObjKey}, ${2:string KeyName}, ${3:string[] slice}, ${4:int startIndex = 0})'
+	'StorageUtil.StringListSort (PapyrusUtil)':
+		'prefix': 'StringListSort'
+		'body': 'StringListSort(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.StringListToArray (PapyrusUtil)':
+		'prefix': 'StringListToArray'
+		'body': 'StringListToArray(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.UnsetFloatValue (PapyrusUtil)':
+		'prefix': 'UnsetFloatValue'
+		'body': 'UnsetFloatValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.UnsetFormValue (PapyrusUtil)':
+		'prefix': 'UnsetFormValue'
+		'body': 'UnsetFormValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.UnsetIntValue (PapyrusUtil)':
+		'prefix': 'UnsetIntValue'
+		'body': 'UnsetIntValue(${1:Form ObjKey}, ${2:string KeyName})'
+	'StorageUtil.UnsetStringValue (PapyrusUtil)':
+		'prefix': 'UnsetStringValue'
+		'body': 'UnsetStringValue(${1:Form ObjKey}, ${2:string KeyName})'
