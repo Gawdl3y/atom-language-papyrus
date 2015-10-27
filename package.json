@@ -1,6 +1,6 @@
 {
   "name": "language-papyrus",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Papyrus language support in Atom",
   "license": "GPL-3.0+",
   "repository": {
