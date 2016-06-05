@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'DienesToolsPluginScript.GetAllCOBJThatYieldForm (DienesTools)':
 		'prefix': 'GetAllCOBJThatYieldForm'
 		'body': 'GetAllCOBJThatYieldForm(${1:Form akForm}, ${2:FormList akList})'

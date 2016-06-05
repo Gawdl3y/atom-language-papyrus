@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'cosmeticmenu.On3DLoaded (UIExtensions)':
 		'prefix': 'On3DLoaded'
 		'body': 'Event On3DLoaded(${1:ObjectReference akRef})\n\t${0}\nEndEvent'

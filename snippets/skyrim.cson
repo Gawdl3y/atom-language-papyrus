@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'ActiveMagicEffect.AddInventoryEventFilter':
 		'prefix': 'AddInventoryEventFilter'
 		'body': 'AddInventoryEventFilter(${1:Form akFilter})'

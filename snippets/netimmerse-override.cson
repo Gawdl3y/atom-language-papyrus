@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'NiOverride.AddNodeOverrideBool (NetImmerse Override)':
 		'prefix': 'AddNodeOverrideBool'
 		'body': 'AddNodeOverrideBool(${1:ObjectReference ref}, ${2:bool isFemale}, ${3:string node}, ${4:int key}, ${5:int index}, ${6:bool value}, ${7:bool persist})'

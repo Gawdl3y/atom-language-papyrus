@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'UILIB_1.ListMenu_Open (SkyUILib)':
 		'prefix': 'ListMenu_Open'
 		'body': 'ListMenu_Open(${1:Form akClient})'

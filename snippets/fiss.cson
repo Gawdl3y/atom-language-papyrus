@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'FISSFactory.getFISS (FISS)':
 		'prefix': 'getFISS'
 		'body': 'getFISS()'

@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'Color State Option Template (SkyUI)':
 		'prefix': 'ColorStateOption'
 		'body': 'State ${1:StateName}\n\tEvent OnColorOpenST()\n\t\tSetColorDialogStartColor(${2:Variable})\n\t\tSetColorDialogDefaultColor(${3:Default})\n\tEndEvent\n\n\tEvent OnColorAcceptST(Int aiColor)\n\t\t${2:Variable} = aiColor\n\t\tSetColorOptionValueST(${2:Variable})\n\tEndEvent\n\n\tEvent OnDefaultST()\n\t\t${2:Variable} = ${3:Default}\n\t\tSetColorOptionValueST(${2:Variable})\n\tEndEvent\n\n\tEvent OnHighlightST()\n\t\tSetInfoText(${4:Info})\n\tEndEvent\nEndState'

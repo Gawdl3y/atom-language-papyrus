@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'ActiveMagicEffect.GetDuration (SKSE)':
 		'prefix': 'GetDuration'
 		'body': 'GetDuration()'

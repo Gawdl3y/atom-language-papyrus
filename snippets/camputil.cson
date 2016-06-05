@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'CampUtil.GetAPIVersion (CampUtil)':
 		'prefix': 'GetAPIVersion'
 		'body': 'GetAPIVersion()'

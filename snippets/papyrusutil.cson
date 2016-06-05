@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'ActorUtil.AddPackageOverride (PapyrusUtil)':
 		'prefix': 'AddPackageOverride'
 		'body': 'AddPackageOverride(${1:Actor targetActor}, ${2:Package targetPackage}, ${3:int priority = 30}, ${4:int flags = 0})'

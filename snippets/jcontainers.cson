@@ -1,4 +1,4 @@
-'.source.papyrus':
+'.source.papyrus.skyrim':
 	'JArray.addFlt (JContainers)':
 		'prefix': 'addFlt'
 		'body': 'addFlt(${1:int object}, ${2:float value}, ${3:int addToIndex})'
