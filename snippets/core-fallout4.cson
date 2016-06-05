@@ -1,0 +1,7 @@
+'.source.papyrus.fallout4':
+	Group:
+		prefix: 'Group'
+		body: 'Group ${1:GroupName}\n\t${0}\nEndGroup'
+	Struct:
+		prefix: 'Struct'
+		body: 'Struct ${1:StructName}\n\t${0}\nEndStruct'

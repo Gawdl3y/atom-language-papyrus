@@ -1,46 +1,49 @@
 '.source.papyrus':
 	'Auto State':
-		'prefix': 'AutoState'
-		'body': 'Auto State ${1:state}\n\t${0}\nEndState'
+		prefix: 'AutoState'
+		body: 'Auto State ${1:state}\n\t${0}\nEndState'
 	'ElseIf Condition':
-		'prefix': 'ElseIf'
-		'body': 'ElseIf(${1:$SELECTION})\n\t${0}'
+		prefix: 'ElseIf'
+		body: 'ElseIf(${1:$SELECTION})\n\t${0}'
 	'Event':
-		'prefix': 'Event'
-		'body': 'Event ${1:EventName}(${2:Parameters})\n\t${0}\nEndEvent'
+		prefix: 'Event'
+		body: 'Event ${1:EventName}(${2:Parameters})\n\t${0}\nEndEvent'
 	'Pseudo For Loop':
-		'prefix': 'For'
-		'body': 'Int ${1:iCount} = 0\nWhile(${1:iCount} < ${2:maxSize})\n\t${0}\n\t${1:iCount} += 1\nEndWhile'
+		prefix: 'For'
+		body: 'Int ${1:iCount} = 0\nWhile(${1:iCount} < ${2:maxSize})\n\t${0}\n\t${1:iCount} += 1\nEndWhile'
 	'Function':
-		'prefix': 'Function'
-		'body': '${1:Type} Function ${2:FunctionName}(${3:Parameters})\n\t${0}\nEndFunction'
+		prefix: 'Function'
+		body: '${1:Type} Function ${2:FunctionName}(${3:Parameters})\n\t${0}\nEndFunction'
 	'GetState()':
-		'prefix': 'GetState'
-		'body': 'GetState()'
+		prefix: 'GetState'
+		body: 'GetState()'
 	'GoToState()':
-		'prefix': 'GoToState'
-		'body': 'GoToState(${1:String asState})'
+		prefix: 'GoToState'
+		body: 'GoToState(${1:String asState})'
 	'If Condition':
-		'prefix': 'If'
-		'body': 'If(${1:$SELECTION})\n\t${0}\nEndIf'
+		prefix: 'If'
+		body: 'If(${1:$SELECTION})\n\t${0}\nEndIf'
 	'OnBeginState':
-		'prefix': 'OnBeginState'
-		'body': 'Event OnBeginState()\n\t${0}\nEndEvent'
+		prefix: 'OnBeginState'
+		body: 'Event OnBeginState()\n\t${0}\nEndEvent'
 	'OnEndState':
-		'prefix': 'OnEndState'
-		'body': 'Event OnEndState()\n\t${0}\nEndEvent'
+		prefix: 'OnEndState'
+		body: 'Event OnEndState()\n\t${0}\nEndEvent'
 	'OnInit':
-		'prefix': 'OnInit'
-		'body': 'Event OnInit()\n\t${0}\nEndEvent'
+		prefix: 'OnInit'
+		body: 'Event OnInit()\n\t${0}\nEndEvent'
 	'Property':
-		'prefix': 'Property'
-		'body': '${1:Type} Property ${2:PropertyName} ${3:Auto}'
+		prefix: 'Property'
+		body: '${1:Type} Property ${2:PropertyName} ${3:Auto}'
+	'Property (with get and set)':
+		prefix: 'PropertyFull'
+		body: '${1:type} ${2:PropertyName}_var${0}\n${1:type} Property ${2:PropertyName}\n\t${1:type} Function Get()\n\t\treturn ${2:PropertyName}_var\n\tEndFunction\n\tFunction Set(${1:type} aValue)\n\t\t${2:PropertyName}_var = aValue\n\tEndFunction\nEndProperty'
 	'Script definition':
-		'prefix': 'ScriptName'
-		'body': 'ScriptName ${1:Name} ${2:Extends} ${3:Parent}'
+		prefix: 'ScriptName'
+		body: 'ScriptName ${1:Name} ${2:Extends} ${3:Parent}'
 	'State':
-		'prefix': 'State'
-		'body': 'State ${1:$SELECTION}\n\t${0}\nEndState'
+		prefix: 'State'
+		body: 'State ${1:$SELECTION}\n\t${0}\nEndState'
 	'While Loop':
-		'prefix': 'While'
-		'body': 'While(${1:$SELECTION})\n\t${0}\nEndWhile'
+		prefix: 'While'
+		body: 'While(${1:$SELECTION})\n\t${0}\nEndWhile'
