@@ -1,5 +1,10 @@
-'.source.papyrus-assembly':
-	'editor':
-		'commentStart': '; '
-		'foldStartPattern': '^\\s*\\.(info|userFlagsRef)'
-		'foldEndPattern': '^\\s*\\.(endInfo|endUserFlagsRef)'
+'.source.papyrus-assembly.skyrim':
+	editor:
+		commentStart: '; '
+		foldStartPattern: '^\\s*\\.(info|userFlagsRef)'
+		foldEndPattern: '^\\s*\\.(endInfo|endUserFlagsRef)'
+'.source.papyrus-assembly.fallout4':
+	editor:
+		commentStart: '; '
+		foldStartPattern: '^\\s*\\.(info|userFlagsRef)'
+		foldEndPattern: '^\\s*\\.(endInfo|endUserFlagsRef)'

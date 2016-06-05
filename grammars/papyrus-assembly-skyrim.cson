@@ -1,6 +1,8 @@
 'scopeName': 'source.papyrus-assembly'
+'name': 'Papyrus Assembly - Skyrim'
 'fileTypes': ['pas']
-'name': 'Papyrus Assembly'
+'foldingStartMarker': '^\\s*\\.(info|userFlagsRef)'
+'foldingStopMarker': '^\\s*\\.(endInfo|endUserFlagsRef)'
 'patterns': [
 	{
 		'include': '#string'

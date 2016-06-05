@@ -1,0 +1,659 @@
+scopeName: "source.papyrus-assembly.fallout4"
+name: "Papyrus Assembly - Fallout 4"
+fileTypes: ["pas"]
+foldingStartMarker: '^\\s*\\.(info|userFlagsRef)'
+foldingStopMarker: '^\\s*\\.(endInfo|endUserFlagsRef)'
+patterns: [
+	{
+		include: "#literalsAndComments"
+	}
+	{
+		include: "#info"
+	}
+	{
+		include: "#userFlagsRef"
+	}
+	{
+		include: "#objectTable"
+	}
+]
+repository:
+	initialValue:
+		match: "(?i)^\\s*(\\.)(initialValue)\\b"
+		captures:
+			"2":
+				name: "keyword.other.initialvalue.papyrus-assembly.fallout4"
+	structTable:
+		end: "(?i)^\\s*(\\.)(endStructTable)\\b"
+		begin: "(?i)^\\s*(\\.)(structTable)\\b"
+		patterns: [
+			{
+				include: "#struct"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endstructtable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.structtable.papyrus-assembly.fallout4"
+	docString:
+		match: "(?i)^\\s*(\\.)(docstring)\\b"
+		captures:
+			"2":
+				name: "keyword.other.docstring.papyrus-assembly.fallout4"
+	literalsAndComments:
+		patterns: [
+			{
+				include: "#string"
+			}
+			{
+				include: "#numeric"
+			}
+			{
+				include: "#boolean"
+			}
+			{
+				include: "#noneLiteral"
+			}
+			{
+				include: "#semicolonComment"
+			}
+		]
+	propertyGroupTable:
+		end: "(?i)^\\s*(\\.)(endPropertyGroupTable)\\b"
+		begin: "(?i)^\\s*(\\.)(propertyGroupTable)\\b"
+		patterns: [
+			{
+				include: "#propertyGroup"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endpropertygrouptable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.propertygrouptable.papyrus-assembly.fallout4"
+	propertyGroup:
+		end: "(?i)^\\s*(\\.)(endPropertyGroup)\\b"
+		begin: "(?i)^\\s*(\\.)(propertyGroup)\\b(\\s+(\\w+))?"
+		patterns: [
+			{
+				include: "#userFlags"
+			}
+			{
+				include: "#docString"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(property)\\s+(\\w+)"
+				captures:
+					"2":
+						name: "keyword.other.property.papyrus-assembly.fallout4"
+					"3":
+						name: "entity.name.property.papyrus-assembly.fallout4"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endpropertygroup.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.propertygroup.papyrus-assembly.fallout4"
+			"4":
+				name: "entity.name.propertygroup.papyrus-assembly.fallout4"
+	variable:
+		end: "(?i)^\\s*(\\.)(endVariable)\\b"
+		begin: "(?i)^\\s*(\\.)(variable)\\s+((::\\w+)|(\\w+))\\s+([:#\\w\\[\\]]+)(\\s+(const)\\b)?"
+		patterns: [
+			{
+				include: "#userFlags"
+			}
+			{
+				include: "#docString"
+			}
+			{
+				include: "#initialValue"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endvariable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.variable.papyrus-assembly.fallout4"
+			"3":
+				name: "entity.name.variable.papyrus-assembly.fallout4"
+			"6":
+				name: "storage.type.papyrus-assembly.fallout4"
+			"8":
+				name: "keyword.other.modifier.papyrus-assembly.fallout4"
+	userFlagsRef:
+		end: "(?i)^\\s*(\\.)(endUserFlagsRef)\\b"
+		begin: "(?i)^\\s*(\\.)(userFlagsRef)\\b"
+		patterns: [
+			{
+				match: "(?i)^\\s*(\\.)(flag)\\s+(\\w+)\\b"
+				captures:
+					"2":
+						name: "keyword.other.flag.papyrus-assembly.fallout4"
+					"3":
+						name: "entity.name.flag.papyrus-assembly.fallout4"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.enduserflagsref.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.userflagsref.papyrus-assembly.fallout4"
+	propertyTable:
+		end: "(?i)^\\s*(\\.)(endPropertyTable)\\b"
+		begin: "(?i)^\\s*(\\.)(propertyTable)\\b"
+		patterns: [
+			{
+				include: "#property"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endpropertytable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.propertytable.papyrus-assembly.fallout4"
+	variableTable:
+		end: "(?i)^\\s*(\\.)(endVariableTable)\\b"
+		begin: "(?i)^\\s*(\\.)(variableTable)\\b"
+		patterns: [
+			{
+				include: "#variable"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endvariabletable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.variabletable.papyrus-assembly.fallout4"
+	paramTable:
+		end: "(?i)^\\s*(\\.)(endParamTable)\\b"
+		begin: "(?i)^\\s*(\\.)(paramTable)\\b"
+		patterns: [
+			{
+				include: "#param"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endparamtable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.paramtable.papyrus-assembly.fallout4"
+	numeric:
+		match: "\\b[\\d.]+\\b"
+		name: "constant.numeric.papyrus-assembly.fallout4"
+	localTable:
+		end: "(?i)^\\s*(\\.)(endLocalTable)\\b"
+		begin: "(?i)^\\s*(\\.)(localTable)\\b"
+		patterns: [
+			{
+				include: "#local"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endlocaltable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.localtable.papyrus-assembly.fallout4"
+	semicolonComment:
+		match: ";.*$"
+		name: "comment.line.semicolon.code.papyrus-assembly.fallout4"
+	object:
+		end: "(?i)^\\s*(\\.)(endObject)\\b"
+		begin: "(?i)^\\s*(\\.)(object)\\s+(\\w+)\\b(\\s+([:\\w]+))?(\\s+(const)\\b)?"
+		patterns: [
+			{
+				include: "#userFlags"
+			}
+			{
+				include: "#docString"
+			}
+			{
+				include: "#autoState"
+			}
+			{
+				include: "#structTable"
+			}
+			{
+				include: "#variableTable"
+			}
+			{
+				include: "#propertyTable"
+			}
+			{
+				include: "#propertyGroupTable"
+			}
+			{
+				include: "#stateTable"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endobject.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.object.papyrus-assembly.fallout4"
+			"3":
+				name: "entity.name.object.papyrus-assembly.fallout4"
+			"5":
+				name: "storage.type.papyrus-assembly.fallout4"
+			"7":
+				name: "keyword.other.modifier.papyrus-assembly.fallout4"
+	stateTable:
+		end: "(?i)^\\s*(\\.)(endStateTable)\\b"
+		begin: "(?i)^\\s*(\\.)(stateTable)\\b"
+		patterns: [
+			{
+				include: "#state"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endstatetable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.statetable.papyrus-assembly.fallout4"
+	struct:
+		end: "(?i)^\\s*(\\.)(endStruct)\\b"
+		begin: "(?i)^\\s*(\\.)(struct)\\s+(\\w+)"
+		patterns: [
+			{
+				include: "#variable"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endstruct.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.struct.papyrus-assembly.fallout4"
+			"3":
+				name: "entity.name.struct.papyrus-assembly.fallout4"
+	property:
+		end: "(?i)^\\s*(\\.)(endProperty)\\b"
+		begin: "(?i)^\\s*(\\.)(property)\\s+(\\w+)\\s+([:#\\w\\[\\]]+)(\\s+(auto)\\b)?"
+		patterns: [
+			{
+				include: "#userFlags"
+			}
+			{
+				include: "#docString"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(autoVar)\\s+(::\\w+)"
+				captures:
+					"2":
+						name: "keyword.other.autovar.papyrus-assembly.fallout4"
+					"3":
+						name: "entity.name.variable.papyrus-assembly.fallout4"
+			}
+			{
+				include: "#function"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endproperty.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.property.papyrus-assembly.fallout4"
+			"3":
+				name: "entity.name.property.papyrus-assembly.fallout4"
+			"4":
+				name: "storage.type.papyrus-assembly.fallout4"
+			"6":
+				name: "keyword.other.modifier.papyrus-assembly.fallout4"
+	return:
+		match: "(?i)^\\s*(\\.)(return)\\s+(\\w+)"
+		captures:
+			"2":
+				name: "keyword.other.return.papyrus-assembly.fallout4"
+			"3":
+				name: "storage.type.papyrus-assembly.fallout4"
+	string:
+		end: "\""
+		begin: "\""
+		name: "string.quoted.double.papyrus-assembly.fallout4"
+		patterns: [
+			{
+				match: "\\\\."
+				name: "constant.character.escape.papyrus-assembly.fallout4"
+			}
+		]
+	info:
+		end: "(?i)^\\s*(\\.)(endInfo)\\b"
+		begin: "(?i)^\\s*(\\.)(info)\\b"
+		patterns: [
+			{
+				match: "(?i)^\\s*(\\.)(source)\\b"
+				captures:
+					"2":
+						name: "keyword.other.source.papyrus-assembly.fallout4"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(modifyTime)\\b"
+				captures:
+					"2":
+						name: "keyword.other.modifytime.papyrus-assembly.fallout4"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(compileTime)\\b"
+				captures:
+					"2":
+						name: "keyword.other.compiletime.papyrus-assembly.fallout4"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(user)\\b"
+				captures:
+					"2":
+						name: "keyword.other.user.papyrus-assembly.fallout4"
+			}
+			{
+				match: "(?i)^\\s*(\\.)(computer)\\b"
+				captures:
+					"2":
+						name: "keyword.other.computer.papyrus-assembly.fallout4"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endinfo.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.info.papyrus-assembly.fallout4"
+	userFlags:
+		match: "(?i)^\\s*(\\.)(userflags)\\b"
+		captures:
+			"2":
+				name: "keyword.other.userflags.papyrus-assembly.fallout4"
+	code:
+		end: "(?i)^\\s*(\\.)(endCode)\\b"
+		begin: "(?i)^\\s*(\\.)(code)\\b"
+		patterns: [
+			{
+				patterns: [
+					{
+						include: "#literalsAndComments"
+					}
+					{
+						match: "(?i)(::(state|NoneVar|temp\\d+)|\\bself)\\b"
+						name: "variable.language.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(NOOP)\\b"
+						captures:
+							"1":
+								name: "keyword.other.noop.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(RETURN)\\b"
+						captures:
+							"1":
+								name: "keyword.control.return.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(CALLMETHOD)\\s+(\\w+)"
+						captures:
+							"1":
+								name: "keyword.operator.callmethod.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(CALLSTATIC)\\s+(\\w+)\\s+(\\w+)"
+						captures:
+							"1":
+								name: "keyword.operator.callmethod.code.papyrus-assembly.fallout4"
+							"2":
+								name: "storage.type.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(CALLPARENT)\\s+(\\w+)"
+						captures:
+							"1":
+								name: "keyword.operator.callparent.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(PROPGET|PROPSET)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(CAST)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.cast.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(IS)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.is.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*((I|F)ADD|(I|F)SUBTRACT|(I|F)NEGATE|(I|F)MULTIPLY|(I|F)DIVIDE|IMOD)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.arithmetic.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(COMPAREEQ|COMPAREGT(E)?|COMPARELT(E)?|NOT)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.logical.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(STRCAT)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.string.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(ASSIGN)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.assignment.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(ARRAYCREATE|ARRAYLENGTH|ARRAYGETELEMENT|ARRAYSETELEMENT|ARRAYFINDELEMENT|ARRAYRFINDELEMENT|ARRAYFINDSTRUCT|ARRAYRFINDSTRUCT|ARRAYADDELEMENTS|ARRAYINSERTELEMENT|ARRAYREMOVELASTELEMENT|ARRAYREMOVEELEMENTS|ARRAYCLEARELEMENTS)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.array.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(STRUCTCREATE|STRUCTGET|STRUCTSET)\\b"
+						captures:
+							"1":
+								name: "keyword.operator.struct.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(JUMP)\\s+(\\w+)"
+						captures:
+							"1":
+								name: "keyword.control.jump.code.papyrus-assembly.fallout4"
+							"2":
+								name: "entity.name.tag.label.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(JUMP(F|T))\\s+(\\S+)\\s+(\\w+)"
+						captures:
+							"1":
+								name: "keyword.control.jump.code.papyrus-assembly.fallout4"
+							"4":
+								name: "entity.name.tag.label.code.papyrus-assembly.fallout4"
+					}
+					{
+						match: "(?i)^\\s*(\\w+)(:)"
+						captures:
+							"1":
+								name: "entity.name.tag.label.code.papyrus-assembly.fallout4"
+							"2":
+								name: "keyword.control.label.code.papyrus-assembly.fallout4"
+					}
+				]
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endcode.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.code.papyrus-assembly.fallout4"
+	param:
+		match: "(?i)^\\s*(\\.)(param)\\s+((::\\w+)|(\\w+))\\s+([:#\\w\\[\\]]+)"
+		captures:
+			"2":
+				name: "keyword.other.param.papyrus-assembly.fallout4"
+			"4":
+				name: "variable.parameter.temp.papyrus-assembly.fallout4"
+			"5":
+				name: "variable.parameter.papyrus-assembly.fallout4"
+			"6":
+				name: "storage.type.papyrus-assembly.fallout4"
+	boolean:
+		match: "(?i)\\b(true|false)\\b"
+		name: "constant.language.bool.papyrus-assembly.fallout4"
+	noneLiteral:
+		match: "(?i)\\b(none)\\b"
+		name: "constant.language.none.papyrus-assembly.fallout4"
+	local:
+		match: "(?i)^\\s*(\\.)(local)\\s+((::\\w+)|(\\w+))\\s+([:#\\w\\[\\]]+)"
+		captures:
+			"2":
+				name: "keyword.other.local.papyrus-assembly.fallout4"
+			"4":
+				name: "variable.other.temp.papyrus-assembly.fallout4"
+			"5":
+				name: "variable.other.papyrus-assembly.fallout4"
+			"6":
+				name: "storage.type.papyrus-assembly.fallout4"
+	state:
+		end: "(?i)^\\s*(\\.)(endState)\\b"
+		begin: "(?i)^\\s*(\\.)(state)\\b(\\s+(\\w+))?"
+		patterns: [
+			{
+				include: "#function"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endstate.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.state.papyrus-assembly.fallout4"
+			"4":
+				name: "entity.name.state.papyrus-assembly.fallout4"
+	objectTable:
+		end: "(?i)^\\s*(\\.)(endObjectTable)\\b"
+		begin: "(?i)^\\s*(\\.)(objectTable)\\b"
+		patterns: [
+			{
+				include: "#object"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endobjecttable.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.objecttable.papyrus-assembly.fallout4"
+	autoState:
+		match: "(?i)^\\s*(\\.)(autostate)\\b(\\s+(\\w+))?"
+		captures:
+			"2":
+				name: "keyword.other.autostate.papyrus-assembly.fallout4"
+			"4":
+				name: "entity.name.state.papyrus-assembly.fallout4"
+	function:
+		end: "(?i)^\\s*(\\.)(endFunction)\\b"
+		begin: "(?i)^\\s*(\\.)(function)\\s+((::\\w+)|(\\w+))((\\s+\\w+)*)"
+		patterns: [
+			{
+				include: "#return"
+			}
+			{
+				include: "#userFlags"
+			}
+			{
+				include: "#docString"
+			}
+			{
+				include: "#paramTable"
+			}
+			{
+				include: "#localTable"
+			}
+			{
+				include: "#code"
+			}
+			{
+				include: "#literalsAndComments"
+			}
+		]
+		endCaptures:
+			"2":
+				name: "keyword.other.endfunction.papyrus-assembly.fallout4"
+		beginCaptures:
+			"2":
+				name: "keyword.other.function.papyrus-assembly.fallout4"
+			"3":
+				name: "entity.name.function.papyrus-assembly.fallout4"
+			"6":
+				name: "storage.modifier.papyrus-assembly.fallout4"
