@@ -1,6 +1,7 @@
 # language-papyrus package for Atom
 
-Adds support for the Papyrus language and its assembly to Atom.
+Adds support for the Papyrus language and its assembly to Atom.  
+For Papyrus compilation, use the [build](https://atom.io/packages/build) and [build-papyrus](https://atom.io/packages/build-papyrus) packages.
 
 Papyrus is a scripting language for the Creation Engine, the game engine that *The Elder Scrolls V: Skyrim* and *Fallout 4* run on.
 Mods for Skyrim and Fallout 4 use this language to make things happen in the game.
