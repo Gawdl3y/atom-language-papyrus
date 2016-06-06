@@ -1,3 +1,6 @@
+## 1.2.0
+* Added Fallout 4 support
+
 ## 1.1.0
 * Added SkyUILib, UIExtensions, and CampUtil snippets and highlighting
 * Updated existing snippets and grammar to the latest versions
