@@ -1,4 +1,4 @@
-## 1.2.0
+## 2.0.0
 * Added Fallout 4 support
 
 ## 1.1.0
