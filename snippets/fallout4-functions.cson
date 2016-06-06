@@ -1,0 +1,2923 @@
+".source.papyrus.fallout4":
+	"ObjectReference.makeradioreceiver":
+		prefix: "makeradioreceiver"
+		body: "MakeRadioReceiver(${1:float afFrequency}, ${2:float afVolume = 1.0}, ${3:OutputModel aOverrideModel = None}, ${4:bool abActive = true}, ${5:bool abNoStatic = false})${0}"
+	"Actor.startsneaking":
+		prefix: "startsneaking"
+		body: "StartSneaking()${0}"
+	"Utility.setinistring":
+		prefix: "setinistring"
+		body: "Utility.SetINIString(${1:string ini}, ${2:string value})${0}"
+	"Actor.dismember":
+		prefix: "dismember"
+		body: "Dismember(${1:string asBodyPart}, ${2:bool abForceExplode = false}, ${3:bool abForceDismember = false}, ${4:bool abForceBloodyMess = false})${0}"
+	"RefCollectionAlias.resetall":
+		prefix: "resetall"
+		body: "ResetAll()${0}"
+	"ObjectReference.isignoringfriendlyhits":
+		prefix: "isignoringfriendlyhits"
+		body: "IsIgnoringFriendlyHits()${0}"
+	"ObjectReference.splinetranslateto":
+		prefix: "splinetranslateto"
+		body: "SplineTranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afAngleX}, ${5:float afAngleY}, ${6:float afAngleZ}, ${7:float afTangentMagnitude}, ${8:float afSpeed}, ${9:float afMaxRotationSpeed = 0.0})${0}"
+	"Keyword.sendstoryeventandwait":
+		prefix: "sendstoryeventandwait"
+		body: "SendStoryEventAndWait(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}"
+	"InputEnableLayer.issprintingenabled":
+		prefix: "issprintingenabled"
+		body: "IsSprintingEnabled()${0}"
+	"Spell.remotecast":
+		prefix: "remotecast"
+		body: "RemoteCast(${1:ObjectReference akSource}, ${2:Actor akBlameActor}, ${3:ObjectReference akTarget = None})${0}"
+	"ObjectReference.isdestroyed":
+		prefix: "isdestroyed"
+		body: "IsDestroyed()${0}"
+	"Game.removeplayercaps":
+		prefix: "removeplayercaps"
+		body: "Game.RemovePlayerCaps(${1:int nCaps})${0}"
+	"Actor.sethaschargenskeleton":
+		prefix: "sethaschargenskeleton"
+		body: "SetHasCharGenSkeleton(${1:bool abCharGen = true})${0}"
+	"Faction.getcrimegoldviolent":
+		prefix: "getcrimegoldviolent"
+		body: "GetCrimeGoldViolent()${0}"
+	"Quest.isrunning":
+		prefix: "isrunning"
+		body: "IsRunning()${0}"
+	"Actor.getcombattarget":
+		prefix: "getcombattarget"
+		body: "GetCombatTarget()${0}"
+	"ScriptObject.removeallinventoryeventfilters":
+		prefix: "removeallinventoryeventfilters"
+		body: "RemoveAllInventoryEventFilters()${0}"
+	"Quest.setactive":
+		prefix: "setactive"
+		body: "SetActive(${1:bool abActive = true})${0}"
+	"ObjectReference.haskeywordinformlist":
+		prefix: "haskeywordinformlist"
+		body: "HasKeywordInFormList(${1:FormList akKeywordList})${0}"
+	"ObjectReference.removeitem":
+		prefix: "removeitem"
+		body: "RemoveItem(${1:Form akItemToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}"
+	"Debug.stopscriptprofiling":
+		prefix: "stopscriptprofiling"
+		body: "Debug.StopScriptProfiling(${1:string asScriptName})${0}"
+	"Math.asin":
+		prefix: "asin"
+		body: "Math.asin(${1:float afValue})${0}"
+	"Game.findclosestreferenceofanytypeinlist":
+		prefix: "findclosestreferenceofanytypeinlist"
+		body: "Game.FindClosestReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}"
+	"Game.getgamesettingstring":
+		prefix: "getgamesettingstring"
+		body: "Game.GetGameSettingString(${1:string asGameSetting})${0}"
+	"ReferenceAlias.forcerefto":
+		prefix: "forcerefto"
+		body: "ForceRefTo(${1:ObjectReference akNewRef})${0}"
+	"ReferenceAlias.trytoenable":
+		prefix: "trytoenable"
+		body: "TryToEnable()${0}"
+	"Utility.callglobalfunctionnowait":
+		prefix: "callglobalfunctionnowait"
+		body: "Utility.CallGlobalFunctionNoWait(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}"
+	"SoundCategory.unpause":
+		prefix: "unpause"
+		body: "UnPause()${0}"
+	"Debug.setgodmode":
+		prefix: "setgodmode"
+		body: "Debug.SetGodMode(${1:bool abGodMode})${0}"
+	"ScriptObject.unregisterforplayerwait":
+		prefix: "unregisterforplayerwait"
+		body: "UnregisterForPlayerWait()${0}"
+	"ScriptObject.registerfordirectloslost":
+		prefix: "registerfordirectloslost"
+		body: "RegisterForDirectLOSLost(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget}, ${3:string asViewerNode = \\\"\\\"}, ${4:string asTargetNode = \\\"\\\"})${0}"
+	"ActiveMagicEffect.gettargetactor":
+		prefix: "gettargetactor"
+		body: "GetTargetActor()${0}"
+	"ActorBase.getclass":
+		prefix: "getclass"
+		body: "GetClass()${0}"
+	"ObjectReference.setanimationvariableint":
+		prefix: "setanimationvariableint"
+		body: "SetAnimationVariableInt(${1:string asVariableName}, ${2:int aiNewValue})${0}"
+	"ObjectReference.addkeyword":
+		prefix: "addkeyword"
+		body: "AddKeyword(${1:Keyword akKeyword})${0}"
+	"ReferenceAlias.trytodisablenowait":
+		prefix: "trytodisablenowait"
+		body: "TryToDisableNoWait()${0}"
+	"ObjectReference.setconveyorbeltvelocity":
+		prefix: "setconveyorbeltvelocity"
+		body: "SetConveyorBeltVelocity(${1:float afLinVelX}, ${2:float afLinVelY}, ${3:float afLinVelZ})${0}"
+	"Game.getformfromfile":
+		prefix: "getformfromfile"
+		body: "Game.GetFormFromFile(${1:int aiFormID}, ${2:string asFilename})${0}"
+	"CommonArrayFunctions.findinreferencealiasarray":
+		prefix: "findinreferencealiasarray"
+		body: "CommonArrayFunctions.FindInReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck})${0}"
+	"Form.haskeywordinformlist":
+		prefix: "haskeywordinformlist"
+		body: "HasKeywordInFormList(${1:FormList akKeywordList})${0}"
+	"ScriptObject.registerforremoteevent":
+		prefix: "registerforremoteevent"
+		body: "RegisterForRemoteEvent(${1:ScriptObject akEventSource}, ${2:ScriptEventName asEventName})${0}"
+	"LeveledItem.addform":
+		prefix: "addform"
+		body: "AddForm(${1:Form apForm}, ${2:int auiLevel}, ${3:int auiCount})${0}"
+	"Actor.setanimarchetypedepressed":
+		prefix: "setanimarchetypedepressed"
+		body: "SetAnimArchetypeDepressed()${0}"
+	"ObjectReference.movetonode":
+		prefix: "movetonode"
+		body: "MoveToNode(${1:ObjectReference akTarget}, ${2:string asNodeName}, ${3:string asMatchNodeName = \\\"\\\"})${0}"
+	"ObjectReference.restorevalue":
+		prefix: "restorevalue"
+		body: "RestoreValue(${1:ActorValue akAV}, ${2:float afAmount})${0}"
+	"ObjectReference.tethertohorse":
+		prefix: "tethertohorse"
+		body: "TetherToHorse(${1:ObjectReference akHorse})${0}"
+	"Game.getdifficulty":
+		prefix: "getdifficulty"
+		body: "Game.GetDifficulty()${0}"
+	"ReferenceAlias.forcerefifempty":
+		prefix: "forcerefifempty"
+		body: "ForceRefIfEmpty(${1:ObjectReference akNewRef})${0}"
+	"Actor.setalpha":
+		prefix: "setalpha"
+		body: "SetAlpha(${1:float afTargetAlpha}, ${2:bool abFade = false})${0}"
+	"ObjectReference.haslocreftype":
+		prefix: "haslocreftype"
+		body: "HasLocRefType(${1:LocationRefType akRefType})${0}"
+	"RefCollectionAlias.removeref":
+		prefix: "removeref"
+		body: "RemoveRef(${1:ObjectReference akRefToRemove})${0}"
+	"ObjectReference.hasowner":
+		prefix: "hasowner"
+		body: "HasOwner()${0}"
+	"Math.tan":
+		prefix: "tan"
+		body: "Math.tan(${1:float afValue})${0}"
+	"ObjectReference.modvalue":
+		prefix: "modvalue"
+		body: "ModValue(${1:ActorValue akAV}, ${2:float afAmount})${0}"
+	"Cell.enablefasttravel":
+		prefix: "enablefasttravel"
+		body: "EnableFastTravel(${1:bool abEnable = True})${0}"
+	"Game.isplayerlistening":
+		prefix: "isplayerlistening"
+		body: "Game.IsPlayerListening(${1:float afFrequency})${0}"
+	"Game.advanceskill":
+		prefix: "advanceskill"
+		body: "Game.AdvanceSkill(${1:string asSkillName}, ${2:float afMagnitude})${0}"
+	"ObjectReference.disablelinkchain":
+		prefix: "disablelinkchain"
+		body: "DisableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeOut = false})${0}"
+	"Faction.setcrimegoldviolent":
+		prefix: "setcrimegoldviolent"
+		body: "SetCrimeGoldViolent(${1:int aiGold})${0}"
+	"Debug.centeroncell":
+		prefix: "centeroncell"
+		body: "Debug.CenterOnCell(${1:string asCellName})${0}"
+	"Message.resethelpmessage":
+		prefix: "resethelpmessage"
+		body: "Message.ResetHelpMessage(${1:string asEvent})${0}"
+	"ObjectReference.getangley":
+		prefix: "getangley"
+		body: "GetAngleY()${0}"
+	"ObjectReference.countrefslinkedtome":
+		prefix: "countrefslinkedtome"
+		body: "CountRefsLinkedToMe(${1:Keyword apLinkKeyword = None}, ${2:Keyword apExcludeKeyword = None})${0}"
+	"LocationAlias.forcelocationto":
+		prefix: "forcelocationto"
+		body: "ForceLocationTo(${1:Location akNewLocation})${0}"
+	"Game.getplayer":
+		prefix: "getplayer"
+		body: "Game.GetPlayer()${0}"
+	"ObjectReference.forceremoveragdollfromworld":
+		prefix: "forceremoveragdollfromworld"
+		body: "ForceRemoveRagdollFromWorld()${0}"
+	"Utility.wait":
+		prefix: "wait"
+		body: "Utility.Wait(${1:float afSeconds})${0}"
+	"ObjectReference.getinventoryvalue":
+		prefix: "getinventoryvalue"
+		body: "GetInventoryValue()${0}"
+	"Actor.openinventory":
+		prefix: "openinventory"
+		body: "OpenInventory(${1:bool abForceOpen = false})${0}"
+	"ObjectReference.getvalue":
+		prefix: "getvalue"
+		body: "GetValue(${1:ActorValue akAV})${0}"
+	"ObjectReference.attachto":
+		prefix: "attachto"
+		body: "AttachTo(${1:ObjectReference akParent})${0}"
+	"Actor.seteyetexture":
+		prefix: "seteyetexture"
+		body: "SetEyeTexture(${1:TextureSet akTexture})${0}"
+	"ObjectReference.dropfirstobject":
+		prefix: "dropfirstobject"
+		body: "DropFirstObject(${1:bool abInitiallyDisabled=false})${0}"
+	"Faction.setplayerenemy":
+		prefix: "setplayerenemy"
+		body: "SetPlayerEnemy(${1:bool abIsEnemy = true})${0}"
+	"ObjectReference.setharvested":
+		prefix: "setharvested"
+		body: "SetHarvested(${1:bool abHarvested})${0}"
+	"Actor.setrelationshiprank":
+		prefix: "setrelationshiprank"
+		body: "SetRelationshipRank(${1:Actor akOther}, ${2:int aiRank})${0}"
+	"ObjectReference.drop":
+		prefix: "drop"
+		body: "Drop(${1:bool abSilent = false})${0}"
+	"Cell.setfactionowner":
+		prefix: "setfactionowner"
+		body: "SetFactionOwner(${1:Faction akFaction})${0}"
+	"Quest.iscompleted":
+		prefix: "iscompleted"
+		body: "IsCompleted()${0}"
+	"ObjectReference.getitemcount":
+		prefix: "getitemcount"
+		body: "GetItemCount(${1:Form akItem})${0}"
+	"Actor.setcommandstate":
+		prefix: "setcommandstate"
+		body: "SetCommandState(${1:bool abStartCommandMode})${0}"
+	"ScriptObject.unregisterforanimationevent":
+		prefix: "unregisterforanimationevent"
+		body: "UnregisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})${0}"
+	"LocationAlias.getlocation":
+		prefix: "getlocation"
+		body: "GetLocation()${0}"
+	"ReferenceAlias.clear":
+		prefix: "clear"
+		body: "Clear()${0}"
+	"Game.stopdialoguecamera":
+		prefix: "stopdialoguecamera"
+		body: "Game.StopDialogueCamera(${1:bool abConsiderResume = false}, ${2:bool abSwitchingTo1stP = false})${0}"
+	"RefCollectionAlias.blockactivation":
+		prefix: "blockactivation"
+		body: "BlockActivation(${1:bool abBlocked = true}, ${2:bool abHideActivateText = false})${0}"
+	"Actor.changeanimfacearchetype":
+		prefix: "changeanimfacearchetype"
+		body: "ChangeAnimFaceArchetype(${1:keyword apKeyword = none})${0}"
+	"Quest.stop":
+		prefix: "stop"
+		body: "Stop()${0}"
+	"Game.showfatiguewarningonhud":
+		prefix: "showfatiguewarningonhud"
+		body: "Game.ShowFatigueWarningOnHUD()${0}"
+	"ActorBase.setoutfit":
+		prefix: "setoutfit"
+		body: "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}"
+	"Actor.addtofaction":
+		prefix: "addtofaction"
+		body: "AddToFaction(${1:Faction akFaction})${0}"
+	"Debug.traceuser":
+		prefix: "traceuser"
+		body: "Debug.TraceUser(${1:string asUserLog}, ${2:string asTextToPrint}, ${3:int aiSeverity = 0})${0}"
+	"Quest.isstopping":
+		prefix: "isstopping"
+		body: "IsStopping()${0}"
+	"ActorBase.getsex":
+		prefix: "getsex"
+		body: "GetSex()${0}"
+	"Debug.playermovetoandwait":
+		prefix: "playermovetoandwait"
+		body: "Debug.PlayerMoveToAndWait(${1:string asDestRef})${0}"
+	"CommonArrayFunctions.getfirstfoundkeywordinarrayforlocation":
+		prefix: "getfirstfoundkeywordinarrayforlocation"
+		body: "CommonArrayFunctions.GetFirstFoundKeywordInArrayForLocation(${1:Location LocationToCheck}, ${2:Keyword[] ArrayToCheck})${0}"
+	"FormList.find":
+		prefix: "find"
+		body: "Find(${1:Form apForm})${0}"
+	"RefCollectionAlias.removefromallfactions":
+		prefix: "removefromallfactions"
+		body: "RemoveFromAllFactions()${0}"
+	"ScriptObject.unregisterforallcustomevents":
+		prefix: "unregisterforallcustomevents"
+		body: "UnregisterForAllCustomEvents()${0}"
+	"ObjectReference.setlocreftype":
+		prefix: "setlocreftype"
+		body: "SetLocRefType(${1:Location akLoc}, ${2:LocationRefType akRefType})${0}"
+	"ImageSpaceModifier.apply":
+		prefix: "apply"
+		body: "Apply(${1:float afStrength = 1.0})${0}"
+	"Debug.traceconditional":
+		prefix: "traceconditional"
+		body: "Debug.TraceConditional(${1:string TextToPrint}, ${2:bool ShowTrace}, ${3:int Severity = 0})${0}"
+	"ObjectReference.deletewhenable":
+		prefix: "deletewhenable"
+		body: "DeleteWhenAble()${0}"
+	"ScriptObject.getstate":
+		prefix: "getstate"
+		body: "GetState()${0}"
+	"Cell.isloaded":
+		prefix: "isloaded"
+		body: "IsLoaded()${0}"
+	"ImageSpaceModifier.popto":
+		prefix: "popto"
+		body: "PopTo(${1:ImageSpaceModifier akNewModifier}, ${2:float afStrength = 1.0})${0}"
+	"Actor.setbribed":
+		prefix: "setbribed"
+		body: "SetBribed(${1:bool abBribe = true})${0}"
+	"Actor.setunconscious":
+		prefix: "setunconscious"
+		body: "SetUnconscious(${1:bool abUnconscious = true})${0}"
+	"Actor.getcrimefaction":
+		prefix: "getcrimefaction"
+		body: "GetCrimeFaction()${0}"
+	"Message.show":
+		prefix: "show"
+		body: "Show(${1:float afArg1 = 0.0}, ${2:float afArg2 = 0.0}, ${3:float afArg3 = 0.0}, ${4:float afArg4 = 0.0}, ${5:float afArg5 = 0.0}, ${6:float afArg6 = 0.0}, ${7:float afArg7 = 0.0}, ${8:float afArg8 = 0.0}, ${9:float afArg9 = 0.0})${0}"
+	"Actor.setdoganimarchetypealert":
+		prefix: "setdoganimarchetypealert"
+		body: "SetDogAnimArchetypeAlert()${0}"
+	"Game.addachievement":
+		prefix: "addachievement"
+		body: "Game.AddAchievement(${1:int aiAchievementID})${0}"
+	"Actor.getcurrentpackage":
+		prefix: "getcurrentpackage"
+		body: "GetCurrentPackage()${0}"
+	"ObjectReference.maketransmitterrepeater":
+		prefix: "maketransmitterrepeater"
+		body: "MakeTransmitterRepeater(${1:ObjectReference akTransmitterToRepeat}, ${2:float afInnerRadius}, ${3:float afOuterRadius}, ${4:bool abUnlimitedRange = false})${0}"
+	"ObjectReference.setscale":
+		prefix: "setscale"
+		body: "SetScale(${1:float afScale})${0}"
+	"Game.getform":
+		prefix: "getform"
+		body: "Game.GetForm(${1:int aiFormID})${0}"
+	"ObjectReference.iscreated":
+		prefix: "iscreated"
+		body: "IsCreated()${0}"
+	"ObjectReference.pauseaudio":
+		prefix: "pauseaudio"
+		body: "PauseAudio()${0}"
+	"ObjectReference.getanglez":
+		prefix: "getanglez"
+		body: "GetAngleZ()${0}"
+	"Actor.setanimarchetypeelderly":
+		prefix: "setanimarchetypeelderly"
+		body: "SetAnimArchetypeElderly()${0}"
+	"Actor.isowner":
+		prefix: "isowner"
+		body: "IsOwner(${1:ObjectReference akObject})${0}"
+	"Math.radianstodegrees":
+		prefix: "radianstodegrees"
+		body: "Math.RadiansToDegrees(${1:float afRadians})${0}"
+	"Game.getstrengthav":
+		prefix: "getstrengthav"
+		body: "Game.GetStrengthAV()${0}"
+	"ReferenceAlias.trytoaddtofaction":
+		prefix: "trytoaddtofaction"
+		body: "TryToAddToFaction(${1:Faction FactionToAddTo})${0}"
+	"Game.getagilityav":
+		prefix: "getagilityav"
+		body: "Game.GetAgilityAV()${0}"
+	"Debug.quitgame":
+		prefix: "quitgame"
+		body: "Debug.QuitGame()${0}"
+	"ObjectReference.setdirectattarget":
+		prefix: "setdirectattarget"
+		body: "SetDirectAtTarget(${1:ObjectReference akTarget})${0}"
+	"Actor.hasperk":
+		prefix: "hasperk"
+		body: "HasPerk(${1:Perk akPerk})${0}"
+	"ObjectReference.setnofavorallowed":
+		prefix: "setnofavorallowed"
+		body: "SetNoFavorAllowed(${1:bool abNoFavor = true})${0}"
+	"ObjectReference.setlinkedref":
+		prefix: "setlinkedref"
+		body: "SetLinkedRef(${1:ObjectReference apRef}, ${2:Keyword apKeyword = None})${0}"
+	"Game.findclosestreferenceofanytypeinlistfromref":
+		prefix: "findclosestreferenceofanytypeinlistfromref"
+		body: "Game.FindClosestReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}"
+	"Actor.followerwait":
+		prefix: "followerwait"
+		body: "FollowerWait()${0}"
+	"ObjectReference.sellitem":
+		prefix: "sellitem"
+		body: "SellItem(${1:Form Item}, ${2:int Value}, ${3:int amountToSell = -1}, ${4:bool silent = false}, ${5:form paymentItem = none}, ${6:objectReference PaymentContainer = None})${0}"
+	"ObjectReference.removekeyword":
+		prefix: "removekeyword"
+		body: "RemoveKeyword(${1:Keyword akKeyword})${0}"
+	"Actor.iscommandedactor":
+		prefix: "iscommandedactor"
+		body: "IsCommandedActor()${0}"
+	"Game.setinchargen":
+		prefix: "setinchargen"
+		body: "Game.SetInChargen(${1:bool abDisableSaving}, ${2:bool abDisableWaiting}, ${3:bool abShowControlsDisabledMessage})${0}"
+	"InputEnableLayer.enablevats":
+		prefix: "enablevats"
+		body: "EnableVATS(${1:abEnable = true})${0}"
+	"ObjectReference.reverseconveyorbelt":
+		prefix: "reverseconveyorbelt"
+		body: "ReverseConveyorBelt(${1:bool abReverse = true})${0}"
+	"ObjectReference.openworkshopsettlementmenu":
+		prefix: "openworkshopsettlementmenu"
+		body: "OpenWorkshopSettlementMenu(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None})${0}"
+	"Actor.setalert":
+		prefix: "setalert"
+		body: "SetAlert(${1:bool abAlerted = true})${0}"
+	"LeveledSpell.revert":
+		prefix: "revert"
+		body: "Revert()${0}"
+	"ObjectReference.isactivatechild":
+		prefix: "isactivatechild"
+		body: "IsActivateChild(${1:ObjectReference akChild})${0}"
+	"ObjectReference.enablenowait":
+		prefix: "enablenowait"
+		body: "EnableNoWait(${1:bool abFadeIn = false})${0}"
+	"Actor.isghost":
+		prefix: "isghost"
+		body: "IsGhost()${0}"
+	"Actor.startcannibal":
+		prefix: "startcannibal"
+		body: "StartCannibal(${1:Actor akTarget})${0}"
+	"Actor.setallowflying":
+		prefix: "setallowflying"
+		body: "SetAllowFlying(${1:bool abAllowed = true}, ${2:bool abAllowCrash = true}, ${3:bool abAllowSearch = false})${0}"
+	"Actor.getflyingstate":
+		prefix: "getflyingstate"
+		body: "GetFlyingState()${0}"
+	"Actor.startdeferredkill":
+		prefix: "startdeferredkill"
+		body: "StartDeferredKill()${0}"
+	"Game.getgamesettingint":
+		prefix: "getgamesettingint"
+		body: "Game.GetGameSettingInt(${1:string asGameSetting})${0}"
+	"Actor.willintimidatesucceed":
+		prefix: "willintimidatesucceed"
+		body: "WillIntimidateSucceed()${0}"
+	"RefCollectionAlias.removefromfaction":
+		prefix: "removefromfaction"
+		body: "RemoveFromFaction(${1:faction akFaction})${0}"
+	"ObjectReference.findallreferenceswithkeyword":
+		prefix: "findallreferenceswithkeyword"
+		body: "FindAllReferencesWithKeyword(${1:Form arKeywordOrList}, ${2:float afRadius})${0}"
+	"Actor.isequipped":
+		prefix: "isequipped"
+		body: "IsEquipped(${1:Form akItem})${0}"
+	"Actor.changeanimflavor":
+		prefix: "changeanimflavor"
+		body: "ChangeAnimFlavor(${1:keyword apKeyword = none})${0}"
+	"Actor.issprinting":
+		prefix: "issprinting"
+		body: "IsSprinting()${0}"
+	"ObjectReference.setvalue":
+		prefix: "setvalue"
+		body: "SetValue(${1:ActorValue akAV}, ${2:float afValue})${0}"
+	"ObjectReference.islockbroken":
+		prefix: "islockbroken"
+		body: "IsLockBroken()${0}"
+	"Furniture.getassociatedform":
+		prefix: "getassociatedform"
+		body: "GetAssociatedForm()${0}"
+	"Actor.setanimarchetypenervous":
+		prefix: "setanimarchetypenervous"
+		body: "SetAnimArchetypeNervous()${0}"
+	"ScriptObject.unregisterforallremoteevents":
+		prefix: "unregisterforallremoteevents"
+		body: "UnregisterForAllRemoteEvents()${0}"
+	"Actor.setdoganimarchetypeplayful":
+		prefix: "setdoganimarchetypeplayful"
+		body: "SetDogAnimArchetypePlayful()${0}"
+	"InputEnableLayer.enablefavorites":
+		prefix: "enablefavorites"
+		body: "EnableFavorites(${1:bool abEnable = true})${0}"
+	"ObjectReference.geteditorlocation":
+		prefix: "geteditorlocation"
+		body: "GetEditorLocation()${0}"
+	"Actor.wouldrefusecommand":
+		prefix: "wouldrefusecommand"
+		body: "WouldRefuseCommand(${1:ObjectReference akTarget})${0}"
+	"Game.triggerscreenblood":
+		prefix: "triggerscreenblood"
+		body: "Game.TriggerScreenBlood(${1:int aiValue})${0}"
+	"ReferenceAlias.getactorreference":
+		prefix: "getactorreference"
+		body: "GetActorReference()${0}"
+	"Game.passtime":
+		prefix: "passtime"
+		body: "Game.PassTime(${1:int aiHours})${0}"
+	"SoundCategorySnapshot.push":
+		prefix: "push"
+		body: "Push(${1:float afTransitionSecs = 1.0})${0}"
+	"Actor.ischild":
+		prefix: "ischild"
+		body: "IsChild()${0}"
+	"Game.getperceptionav":
+		prefix: "getperceptionav"
+		body: "Game.GetPerceptionAV()${0}"
+	"ScriptObject.unregisterforallmagiceffectapplyevents":
+		prefix: "unregisterforallmagiceffectapplyevents"
+		body: "UnregisterForAllMagicEffectApplyEvents(${1:ScriptObject akTarget = None})${0}"
+	"Actor.clearextraarrows":
+		prefix: "clearextraarrows"
+		body: "ClearExtraArrows()${0}"
+	"Actor.isdetectedby":
+		prefix: "isdetectedby"
+		body: "IsDetectedBy(${1:Actor akOther})${0}"
+	"Actor.isbleedingout":
+		prefix: "isbleedingout"
+		body: "IsBleedingOut()${0}"
+	"Weather.getoutgoingweather":
+		prefix: "getoutgoingweather"
+		body: "Weather.GetOutgoingWeather()${0}"
+	"Actor.getnobleedoutrecovery":
+		prefix: "getnobleedoutrecovery"
+		body: "GetNoBleedoutRecovery()${0}"
+	"ActorBase.isessential":
+		prefix: "isessential"
+		body: "IsEssential()${0}"
+	"Debug.enablecollisions":
+		prefix: "enablecollisions"
+		body: "Debug.EnableCollisions(${1:bool abEnable = true})${0}"
+	"ScriptObject.isboundgameobjectavailable":
+		prefix: "isboundgameobjectavailable"
+		body: "IsBoundGameObjectAvailable()${0}"
+	"ObjectReference.damageobject":
+		prefix: "damageobject"
+		body: "DamageObject(${1:float afDamage})${0}"
+	"Actor.wouldbestealing":
+		prefix: "wouldbestealing"
+		body: "WouldBeStealing(${1:ObjectReference akTarget})${0}"
+	"ObjectReference.ismapmarkervisible":
+		prefix: "ismapmarkervisible"
+		body: "IsMapMarkerVisible()${0}"
+	"Cell.getfactionowner":
+		prefix: "getfactionowner"
+		body: "GetFactionOwner()${0}"
+	"Game.findrandomactor":
+		prefix: "findrandomactor"
+		body: "Game.FindRandomActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}"
+	"InputEnableLayer.issneakingenabled":
+		prefix: "issneakingenabled"
+		body: "IsSneakingEnabled()${0}"
+	"Location.issamelocation":
+		prefix: "issamelocation"
+		body: "IsSameLocation(${1:Location akOtherLocation}, ${2:Keyword akKeyword = None})${0}"
+	"Actor.setrestrained":
+		prefix: "setrestrained"
+		body: "SetRestrained(${1:bool abRestrained = true})${0}"
+	"Actor.isrunning":
+		prefix: "isrunning"
+		body: "IsRunning()${0}"
+	"InputEnableLayer.enablefighting":
+		prefix: "enablefighting"
+		body: "EnableFighting(${1:abEnable = true})${0}"
+	"ObjectReference.reset":
+		prefix: "reset"
+		body: "Reset(${1:ObjectReference akTarget = None})${0}"
+	"Location.iscleared":
+		prefix: "iscleared"
+		body: "IsCleared()${0}"
+	"Game.findclosestactor":
+		prefix: "findclosestactor"
+		body: "Game.FindClosestActor(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afRadius})${0}"
+	"Actor.setessential":
+		prefix: "setessential"
+		body: "SetEssential(${1:bool abEssential})${0}"
+	"Ingredient.ishostile":
+		prefix: "ishostile"
+		body: "IsHostile()${0}"
+	"Game.gethealthav":
+		prefix: "gethealthav"
+		body: "Game.GetHealthAV()${0}"
+	"ScriptObject.castas":
+		prefix: "castas"
+		body: "CastAs(${1:string asScriptName})${0}"
+	"ObjectReference.placeactoratme":
+		prefix: "placeactoratme"
+		body: "PlaceActorAtMe(${1:ActorBase akActorToPlace}, ${2:int aiLevelMod = 4}, ${3:EncounterZone akZone = None})${0}"
+	"Actor.isarrested":
+		prefix: "isarrested"
+		body: "IsArrested()${0}"
+	"Game.getcaps":
+		prefix: "getcaps"
+		body: "Game.GetCaps()${0}"
+	"Quest.isstopped":
+		prefix: "isstopped"
+		body: "IsStopped()${0}"
+	"RefCollectionAlias.linkcollectionto":
+		prefix: "linkcollectionto"
+		body: "LinkCollectionTo(${1:RefCollectionAlias LinkedRefCollectionAlias}, ${2:keyword LinkKeyword = none}, ${3:bool WrapLinks = false})${0}"
+	"FormList.removeaddedform":
+		prefix: "removeaddedform"
+		body: "RemoveAddedForm(${1:Form apForm})${0}"
+	"Game.setinsidememoryhudmode":
+		prefix: "setinsidememoryhudmode"
+		body: "Game.SetInsideMemoryHUDMode(${1:bool aInsideMemory})${0}"
+	"Activator.isradio":
+		prefix: "isradio"
+		body: "IsRadio()${0}"
+	"Sound.stopinstance":
+		prefix: "stopinstance"
+		body: "Sound.StopInstance(${1:int aiPlaybackInstance})${0}"
+	"Location.addlinkedlocation":
+		prefix: "addlinkedlocation"
+		body: "AddLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}"
+	"LeveledItem.revert":
+		prefix: "revert"
+		body: "Revert()${0}"
+	"Game.enablepipboyhdrmask":
+		prefix: "enablepipboyhdrmask"
+		body: "Game.EnablePipboyHDRMask(${1:bool abEnable = true})${0}"
+	"ObjectReference.setfactionowner":
+		prefix: "setfactionowner"
+		body: "SetFactionOwner(${1:Faction akFaction}, ${2:bool abNoCrime = false})${0}"
+	"VisualEffect.play":
+		prefix: "play"
+		body: "Play(${1:ObjectReference akObject}, ${2:float afTime = -1.0}, ${3:ObjectReference akFacingObject = None})${0}"
+	"ReferenceAlias.trytodisable":
+		prefix: "trytodisable"
+		body: "TryToDisable()${0}"
+	"Actor.setcrimefaction":
+		prefix: "setcrimefaction"
+		body: "SetCrimeFaction(${1:Faction akFaction})${0}"
+	"RefCollectionAlias.evaluateall":
+		prefix: "evaluateall"
+		body: "EvaluateAll()${0}"
+	"Actor.isincombat":
+		prefix: "isincombat"
+		body: "IsInCombat()${0}"
+	"Actor.setcriticalstage":
+		prefix: "setcriticalstage"
+		body: "SetCriticalStage(${1:int aiStage})${0}"
+	"ObjectReference.getvaluepercentage":
+		prefix: "getvaluepercentage"
+		body: "GetValuePercentage(${1:ActorValue akAV})${0}"
+	"ImageSpaceModifier.removecrossfade":
+		prefix: "removecrossfade"
+		body: "ImageSpaceModifier.RemoveCrossFade(${1:float afFadeDuration = 1.0})${0}"
+	"Actor.sendassaultalarm":
+		prefix: "sendassaultalarm"
+		body: "SendAssaultAlarm()${0}"
+	"Actor.istalking":
+		prefix: "istalking"
+		body: "IsTalking()${0}"
+	"Game.fasttravel":
+		prefix: "fasttravel"
+		body: "Game.FastTravel(${1:ObjectReference akDestination})${0}"
+	"Actor.hasmagiceffect":
+		prefix: "hasmagiceffect"
+		body: "HasMagicEffect(${1:MagicEffect akEffect})${0}"
+	"Game.findclosestactorfromref":
+		prefix: "findclosestactorfromref"
+		body: "Game.FindClosestActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}"
+	"FormList.revert":
+		prefix: "revert"
+		body: "Revert()${0}"
+	"ScriptObject.unregisterforallevents":
+		prefix: "unregisterforallevents"
+		body: "UnregisterForAllEvents()${0}"
+	"Actor.docombatspellapply":
+		prefix: "docombatspellapply"
+		body: "DoCombatSpellApply(${1:Spell akSpell}, ${2:ObjectReference akTarget})${0}"
+	"ObjectReference.processtraphit":
+		prefix: "processtraphit"
+		body: "ProcessTrapHit(${1:ObjectReference akTrap}, ${2:float afDamage}, ${3:float afPushback}, ${4:float afXVel}, ${5:float afYVel}, ${6:float afZVel}, ${7:float afXPos}, ${8:float afYPos}, ${9:float afZPos}, ${10:int aeMaterial}, ${11:float afStagger})${0}"
+	"Game.incrementskill":
+		prefix: "incrementskill"
+		body: "Game.IncrementSkill(${1:ActorValue akActorValue}, ${2:int aiCount = 1})${0}"
+	"Actor.stopcombat":
+		prefix: "stopcombat"
+		body: "StopCombat()${0}"
+	"ObjectReference.getlength":
+		prefix: "getlength"
+		body: "GetLength()${0}"
+	"ObjectReference.addtextreplacementdata":
+		prefix: "addtextreplacementdata"
+		body: "AddTextReplacementData(${1:string asTokenLabel}, ${2:Form akForm})${0}"
+	"ObjectReference.setmotiontype":
+		prefix: "setmotiontype"
+		body: "SetMotionType(${1:int aiMotionType}, ${2:bool abAllowActivate = true})${0}"
+	"InputEnableLayer.reset":
+		prefix: "reset"
+		body: "Reset()${0}"
+	"Game.showtitlesequencemenu":
+		prefix: "showtitlesequencemenu"
+		body: "Game.ShowTitleSequenceMenu()${0}"
+	"Spell.cast":
+		prefix: "cast"
+		body: "Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget = None})${0}"
+	"RefCollectionAlias.removeall":
+		prefix: "removeall"
+		body: "RemoveAll()${0}"
+	"Sound.playandwait":
+		prefix: "playandwait"
+		body: "PlayAndWait(${1:ObjectReference akSource})${0}"
+	"ObjectReference.getactorowner":
+		prefix: "getactorowner"
+		body: "GetActorOwner()${0}"
+	"ObjectReference.getworldspace":
+		prefix: "getworldspace"
+		body: "GetWorldSpace()${0}"
+	"SoundCategory.pause":
+		prefix: "pause"
+		body: "Pause()${0}"
+	"InputEnableLayer.enablejournal":
+		prefix: "enablejournal"
+		body: "EnableJournal(${1:abEnable = true})${0}"
+	"Faction.getcrimegold":
+		prefix: "getcrimegold"
+		body: "GetCrimeGold()${0}"
+	"ObjectReference.getpositionx":
+		prefix: "getpositionx"
+		body: "GetPositionX()${0}"
+	"ObjectReference.isdeleted":
+		prefix: "isdeleted"
+		body: "IsDeleted()${0}"
+	"ScriptObject.unregisterforcustomevent":
+		prefix: "unregisterforcustomevent"
+		body: "UnregisterForCustomEvent(${1:ScriptObject akEventSource}, ${2:CustomEventName asEventName})${0}"
+	"ObjectReference.placeatnode":
+		prefix: "placeatnode"
+		body: "PlaceAtNode(${1:string asNodeName}, ${2:Form akFormToPlace}, ${3:int aiCount = 1}, ${4:bool abForcePersist = false}, ${5:bool abInitiallyDisabled = false}, ${6:bool abDeleteWhenAble = true}, ${7:bool abAttach = false})${0}"
+	"Actor.allowbleedoutdialogue":
+		prefix: "allowbleedoutdialogue"
+		body: "AllowBleedoutDialogue(${1:bool abCanTalk})${0}"
+	"ObjectReference.enablefasttravel":
+		prefix: "enablefasttravel"
+		body: "EnableFastTravel(${1:bool abEnable = true})${0}"
+	"Array.rfind":
+		prefix: "rfind"
+		body: "RFind(${1:elementType akElement}, ${2:int aiStartIndex = -1})${0}"
+	"ObjectReference.openworkshopsettlementmenuex":
+		prefix: "openworkshopsettlementmenuex"
+		body: "OpenWorkshopSettlementMenuEx(${1:Keyword akActionKW}, ${2:Message astrConfirm = None}, ${3:Location aLocToHighlight = None}, ${4:FormList akIncludeKeywordList = None}, ${5:FormList akExcludeKeywordList = None}, ${6:bool abExcludeZeroPopulation = false}, ${7:bool abOnlyOwnedWorkshops= true}, ${8:bool abTurnOffHeader= false}, ${9:bool abOnlyPotentialVassalSettlements= false})${0}"
+	"Ingredient.learnnexteffect":
+		prefix: "learnnexteffect"
+		body: "LearnNextEffect()${0}"
+	"ObjectReference.getanimationvariablebool":
+		prefix: "getanimationvariablebool"
+		body: "GetAnimationVariableBool(${1:string asVariableName})${0}"
+	"RefCollectionAlias.find":
+		prefix: "find"
+		body: "Find(${1:ObjectReference akFindRef})${0}"
+	"Game.issneakingcontrolsenabled":
+		prefix: "issneakingcontrolsenabled"
+		body: "Game.IsSneakingControlsEnabled()${0}"
+	"ReferenceAlias.trytostopcombat":
+		prefix: "trytostopcombat"
+		body: "TryToStopCombat()${0}"
+	"EffectShader.stop":
+		prefix: "stop"
+		body: "Stop(${1:ObjectReference akObject})${0}"
+	"Actor.setdoganimarchetypeneutral":
+		prefix: "setdoganimarchetypeneutral"
+		body: "SetDogAnimArchetypeNeutral()${0}"
+	"Debug.notification":
+		prefix: "notification"
+		body: "Debug.Notification(${1:string asNotificationText})${0}"
+	"ObjectReference.removeallmodsfrominventoryitem":
+		prefix: "removeallmodsfrominventoryitem"
+		body: "RemoveAllModsFromInventoryItem(${1:Form akItem})${0}"
+	"ObjectReference.translatetoref":
+		prefix: "translatetoref"
+		body: "TranslateToRef(${1:ObjectReference arTarget}, ${2:float afSpeed}, ${3:float afMaxRotationSpeed = 0.0})${0}"
+	"ObjectReference.getitemhealthpercent":
+		prefix: "getitemhealthpercent"
+		body: "GetItemHealthPercent()${0}"
+	"ScriptObject.callfunctionnowait":
+		prefix: "callfunctionnowait"
+		body: "CallFunctionNoWait(${1:string asFuncName}, ${2:Var[] aParams})${0}"
+	"Array.find":
+		prefix: "find"
+		body: "Find(${1:elementType akElement}, ${2:int aiStartIndex = 0})${0}"
+	"Game.isplayerinradiorange":
+		prefix: "isplayerinradiorange"
+		body: "Game.IsPlayerInRadioRange(${1:float afFrequency})${0}"
+	"ObjectReference.repair":
+		prefix: "repair"
+		body: "Repair()${0}"
+	"Utility.randomfloat":
+		prefix: "randomfloat"
+		body: "Utility.RandomFloat(${1:float afMin = 0.0}, ${2:float afMax = 1.0})${0}"
+	"ObjectReference.getrefslinkedtome":
+		prefix: "getrefslinkedtome"
+		body: "GetRefsLinkedToMe(${1:Keyword apLinkKeyword = None}, ${2:Keyword apExcludeKeyword = None})${0}"
+	"ObjectReference.removeitembycomponent":
+		prefix: "removeitembycomponent"
+		body: "RemoveItemByComponent(${1:Form akComponentToRemove}, ${2:int aiCount = 1}, ${3:bool abSilent = false}, ${4:ObjectReference akOtherContainer = None})${0}"
+	"Game.setsittingrotation":
+		prefix: "setsittingrotation"
+		body: "Game.SetSittingRotation(${1:float afValue})${0}"
+	"Actor.setprotected":
+		prefix: "setprotected"
+		body: "SetProtected(${1:bool abProtected = true})${0}"
+	"Actor.getrelationshiprank":
+		prefix: "getrelationshiprank"
+		body: "GetRelationshipRank(${1:Actor akOther})${0}"
+	"Actor.setrace":
+		prefix: "setrace"
+		body: "SetRace(${1:Race akRace = None})${0}"
+	"InputEnableLayer.ismenuenabled":
+		prefix: "ismenuenabled"
+		body: "IsMenuEnabled()${0}"
+	"Quest.setstage":
+		prefix: "setstage"
+		body: "SetStage(${1:int aiStage})${0}"
+	"Actor.getcombatstate":
+		prefix: "getcombatstate"
+		body: "GetCombatState()${0}"
+	"Array.clear":
+		prefix: "clear"
+		body: "Clear()${0}"
+	"Game.findclosestreferenceoftype":
+		prefix: "findclosestreferenceoftype"
+		body: "Game.FindClosestReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}"
+	"ObjectReference.translateto":
+		prefix: "translateto"
+		body: "TranslateTo(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afAngleX}, ${5:float afAngleY}, ${6:float afAngleZ}, ${7:float afSpeed}, ${8:float afMaxRotationSpeed = 0.0})${0}"
+	"Math.sin":
+		prefix: "sin"
+		body: "Math.sin(${1:float afValue})${0}"
+	"Actor.clearlookat":
+		prefix: "clearlookat"
+		body: "ClearLookAt()${0}"
+	"Game.incrementstat":
+		prefix: "incrementstat"
+		body: "Game.IncrementStat(${1:string asStatName}, ${2:int aiModAmount = 1})${0}"
+	"ObjectReference.haseffectkeyword":
+		prefix: "haseffectkeyword"
+		body: "HasEffectKeyword(${1:Keyword akKeyword})${0}"
+	"Actor.isdoingfavor":
+		prefix: "isdoingfavor"
+		body: "IsDoingFavor()${0}"
+	"Game.ismenucontrolsenabled":
+		prefix: "ismenucontrolsenabled"
+		body: "Game.IsMenuControlsEnabled()${0}"
+	"Game.findrandomreferenceofanytypeinlist":
+		prefix: "findrandomreferenceofanytypeinlist"
+		body: "Game.FindRandomReferenceOfAnyTypeInList(${1:FormList arBaseObjectsA}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}"
+	"Quest.getqueststagedone":
+		prefix: "getqueststagedone"
+		body: "Quest.GetQuestStageDone(${1:QuestStage questStageToCheck})${0}"
+	"Actor.attemptanimationsetswitch":
+		prefix: "attemptanimationsetswitch"
+		body: "AttemptAnimationSetSwitch()${0}"
+	"InputEnableLayer.enablesneaking":
+		prefix: "enablesneaking"
+		body: "EnableSneaking(${1:abEnable = true})${0}"
+	"Scene.isactioncomplete":
+		prefix: "isactioncomplete"
+		body: "IsActionComplete(${1:int aiActionID})${0}"
+	"ObjectReference.addkeyifneeded":
+		prefix: "addkeyifneeded"
+		body: "AddKeyIfNeeded(${1:ObjectReference ObjectWithNeededKey})${0}"
+	"ActorBase.getgiftfilter":
+		prefix: "getgiftfilter"
+		body: "GetGiftFilter()${0}"
+	"Actor.getdialoguetarget":
+		prefix: "getdialoguetarget"
+		body: "GetDialogueTarget()${0}"
+	"Debug.startscriptprofiling":
+		prefix: "startscriptprofiling"
+		body: "Debug.StartScriptProfiling(${1:string asScriptName})${0}"
+	"Actor.allowpcdialogue":
+		prefix: "allowpcdialogue"
+		body: "AllowPCDialogue(${1:bool abTalk})${0}"
+	"Actor.getforcedlandingmarker":
+		prefix: "getforcedlandingmarker"
+		body: "GetForcedLandingMarker()${0}"
+	"ObjectReference.unlock":
+		prefix: "unlock"
+		body: "Unlock(${1:bool abAsOwner = false})${0}"
+	"ObjectReference.isnearplayer":
+		prefix: "isnearplayer"
+		body: "IsNearPlayer()${0}"
+	"ObjectReference.isquestitem":
+		prefix: "isquestitem"
+		body: "IsQuestItem()${0}"
+	"Game.setplayeronelevator":
+		prefix: "setplayeronelevator"
+		body: "Game.SetPlayerOnElevator(${1:bool abOnElevator= true})${0}"
+	"InputEnableLayer.delete":
+		prefix: "delete"
+		body: "Delete()${0}"
+	"Game.error":
+		prefix: "error"
+		body: "Game.Error(${1:string asMessage})${0}"
+	"Math.min":
+		prefix: "min"
+		body: "Math.Min(${1:float afValue1}, ${2:float afValue2})${0}"
+	"Actor.getequippedweapon":
+		prefix: "getequippedweapon"
+		body: "GetEquippedWeapon(${1:int aiEquipIndex = 0})${0}"
+	"GlobalVariable.mod":
+		prefix: "mod"
+		body: "Mod(${1:float afHowMuch})${0}"
+	"InputEnableLayer.enablerunning":
+		prefix: "enablerunning"
+		body: "EnableRunning(${1:abEnable = true})${0}"
+	"Scene.isplaying":
+		prefix: "isplaying"
+		body: "IsPlaying()${0}"
+	"Game.getgamesettingfloat":
+		prefix: "getgamesettingfloat"
+		body: "Game.GetGameSettingFloat(${1:string asGameSetting})${0}"
+	"RefCollectionAlias.startcombatall":
+		prefix: "startcombatall"
+		body: "StartCombatAll(${1:Actor akCombatTarget})${0}"
+	"ActorBase.getlevelexact":
+		prefix: "getlevelexact"
+		body: "GetLevelExact()${0}"
+	"ScriptObject.unregisterfortrackedstatsevent":
+		prefix: "unregisterfortrackedstatsevent"
+		body: "UnregisterForTrackedStatsEvent(${1:string asStat})${0}"
+	"ObjectReference.delete":
+		prefix: "delete"
+		body: "Delete()${0}"
+	"ObjectReference.getanimationvariableint":
+		prefix: "getanimationvariableint"
+		body: "GetAnimationVariableInt(${1:string asVariableName})${0}"
+	"ObjectReference.isininterior":
+		prefix: "isininterior"
+		body: "IsInInterior()${0}"
+	"Game.giveplayercaps":
+		prefix: "giveplayercaps"
+		body: "Game.GivePlayerCaps(${1:int nCaps})${0}"
+	"ObjectReference.createdetectionevent":
+		prefix: "createdetectionevent"
+		body: "CreateDetectionEvent(${1:Actor akOwner}, ${2:int aiSoundLevel = 0})${0}"
+	"Game.clearprison":
+		prefix: "clearprison"
+		body: "Game.ClearPrison()${0}"
+	"InputEnableLayer.islookingenabled":
+		prefix: "islookingenabled"
+		body: "IsLookingEnabled()${0}"
+	"Game.forcefirstperson":
+		prefix: "forcefirstperson"
+		body: "Game.ForceFirstPerson()${0}"
+	"ShaderParticleGeometry.remove":
+		prefix: "remove"
+		body: "Remove(${1:float afFadeOutTime = 0.0})${0}"
+	"Debug.dumpaliasdata":
+		prefix: "dumpaliasdata"
+		body: "Debug.DumpAliasData(${1:Quest akQuest})${0}"
+	"ObjectReference.recalculateresources":
+		prefix: "recalculateresources"
+		body: "RecalculateResources()${0}"
+	"InputEnableLayer.enablecamswitch":
+		prefix: "enablecamswitch"
+		body: "EnableCamSwitch(${1:abEnable = true})${0}"
+	"Game.quittomainmenu":
+		prefix: "quittomainmenu"
+		body: "Game.QuitToMainMenu()${0}"
+	"ScriptObject.removeinventoryeventfilter":
+		prefix: "removeinventoryeventfilter"
+		body: "RemoveInventoryEventFilter(${1:Form akFilter})${0}"
+	"Game.getrealhourspassed":
+		prefix: "getrealhourspassed"
+		body: "Game.GetRealHoursPassed()${0}"
+	"Actor.isintimidated":
+		prefix: "isintimidated"
+		body: "IsIntimidated()${0}"
+	"ScriptObject.registerforhitevent":
+		prefix: "registerforhitevent"
+		body: "RegisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}"
+	"RefCollectionAlias.isownedobjectinlist":
+		prefix: "isownedobjectinlist"
+		body: "IsOwnedObjectInList(${1:Actor actorOwner})${0}"
+	"ObjectReference.getlinkedrefchildren":
+		prefix: "getlinkedrefchildren"
+		body: "GetLinkedRefChildren(${1:keyword apKeyword})${0}"
+	"Quest.modobjectiveglobal":
+		prefix: "modobjectiveglobal"
+		body: "ModObjectiveGlobal(${1:float afModValue}, ${2:GlobalVariable aModGlobal}, ${3:int aiObjectiveID = -1}, ${4:float afTargetValue = -1.0}, ${5:bool abCountingUp = true}, ${6:bool abCompleteObjective = true}, ${7:bool abRedisplayObjective = true}, ${8:bool abAllowRollbackObjective = false})${0}"
+	"Actor.setavoidplayer":
+		prefix: "setavoidplayer"
+		body: "SetAvoidPlayer(${1:bool abAvoid = true})${0}"
+	"Location.reset":
+		prefix: "reset"
+		body: "Reset()${0}"
+	"Actor.dismount":
+		prefix: "dismount"
+		body: "Dismount()${0}"
+	"Form.getformid":
+		prefix: "getformid"
+		body: "GetFormID()${0}"
+	"Package.getowningquest":
+		prefix: "getowningquest"
+		body: "GetOwningQuest()${0}"
+	"ObjectReference.addtomap":
+		prefix: "addtomap"
+		body: "AddToMap(${1:bool abFastTravel = False})${0}"
+	"Quest.start":
+		prefix: "start"
+		body: "Start()${0}"
+	"ObjectReference.isfurnitureinuse":
+		prefix: "isfurnitureinuse"
+		body: "IsFurnitureInUse(${1:bool abIgnoreReserved = false})${0}"
+	"Math.atan":
+		prefix: "atan"
+		body: "Math.atan(${1:float afValue})${0}"
+	"Actor.isinfaction":
+		prefix: "isinfaction"
+		body: "IsInFaction(${1:Faction akFaction})${0}"
+	"Debug.traceconditionalglobal":
+		prefix: "traceconditionalglobal"
+		body: "Debug.TraceConditionalGlobal(${1:string TextToPrint}, ${2:GlobalVariable ShowTrace})${0}"
+	"InputEnableLayer.isjournalenabled":
+		prefix: "isjournalenabled"
+		body: "IsJournalEnabled()${0}"
+	"SoundCategory.setvolume":
+		prefix: "setvolume"
+		body: "SetVolume(${1:float afVolume})${0}"
+	"ObjectReference.getcurrentlocation":
+		prefix: "getcurrentlocation"
+		body: "GetCurrentLocation()${0}"
+	"Math.max":
+		prefix: "max"
+		body: "Math.Max(${1:float afValue1}, ${2:float afValue2})${0}"
+	"Actor.unequipall":
+		prefix: "unequipall"
+		body: "UnequipAll()${0}"
+	"Debug.enabledetection":
+		prefix: "enabledetection"
+		body: "Debug.EnableDetection(${1:bool abEnable = true})${0}"
+	"Actor.startcombat":
+		prefix: "startcombat"
+		body: "StartCombat(${1:Actor akTarget}, ${2:bool abPreferredTarget = false})${0}"
+	"ObjectReference.getcontainer":
+		prefix: "getcontainer"
+		body: "GetContainer()${0}"
+	"Actor.resethealthandlimbs":
+		prefix: "resethealthandlimbs"
+		body: "ResetHealthAndLimbs()${0}"
+	"ObjectReference.getworkshopresourceobjects":
+		prefix: "getworkshopresourceobjects"
+		body: "GetWorkshopResourceObjects(${1:ActorValue akAV = None}, ${2:int aiOption=0})${0}"
+	"Location.getkeyworddata":
+		prefix: "getkeyworddata"
+		body: "GetKeywordData(${1:Keyword akKeyword})${0}"
+	"Actor.setnobleedoutrecovery":
+		prefix: "setnobleedoutrecovery"
+		body: "SetNoBleedoutRecovery(${1:bool abAllowed})${0}"
+	"Weather.enableambientparticles":
+		prefix: "enableambientparticles"
+		body: "Weather.EnableAmbientParticles(${1:bool abEnable = true})${0}"
+	"Location.ischild":
+		prefix: "ischild"
+		body: "IsChild(${1:Location akOther})${0}"
+	"Actor.clearforcedlandingmarker":
+		prefix: "clearforcedlandingmarker"
+		body: "ClearForcedLandingMarker()${0}"
+	"Message.clearhelpmessages":
+		prefix: "clearhelpmessages"
+		body: "Message.ClearHelpMessages()${0}"
+	"ScriptObject.unregisterforallhitevents":
+		prefix: "unregisterforallhitevents"
+		body: "UnregisterForAllHitEvents(${1:ScriptObject akTarget = None})${0}"
+	"ObjectReference.conveyorbelton":
+		prefix: "conveyorbelton"
+		body: "ConveyorBeltOn(${1:bool abOn = true})${0}"
+	"Game.querystat":
+		prefix: "querystat"
+		body: "Game.QueryStat(${1:string asStat})${0}"
+	"ScriptObject.sendcustomevent":
+		prefix: "sendcustomevent"
+		body: "SendCustomEvent(${1:CustomEventName asEventName}, ${2:Var[] akArgs = None})${0}"
+	"Game.showpipboyplugin":
+		prefix: "showpipboyplugin"
+		body: "Game.ShowPipboyPlugin()${0}"
+	"Actor.unequipitemslot":
+		prefix: "unequipitemslot"
+		body: "UnequipItemSlot(${1:int aiSlot})${0}"
+	"ObjectReference.getlinkedref":
+		prefix: "getlinkedref"
+		body: "GetLinkedRef(${1:Keyword apKeyword = None})${0}"
+	"ObjectReference.getfactionowner":
+		prefix: "getfactionowner"
+		body: "GetFactionOwner()${0}"
+	"ObjectReference.waitfor3dload":
+		prefix: "waitfor3dload"
+		body: "WaitFor3DLoad()${0}"
+	"Game.showracemenu":
+		prefix: "showracemenu"
+		body: "Game.ShowRaceMenu(${1:ObjectReference akMenuTarget = None}, ${2:int uiMode = 0}, ${3:ObjectReference akMenuSpouseFemale = None}, ${4:ObjectReference akMenuSpouseMale = None}, ${5:ObjectReference akVendor = None})${0}"
+	"Actor.hasfamilyrelationship":
+		prefix: "hasfamilyrelationship"
+		body: "HasFamilyRelationship(${1:Actor akOther = None})${0}"
+	"Game.shakecamera":
+		prefix: "shakecamera"
+		body: "Game.ShakeCamera(${1:ObjectReference akSource = None}, ${2:float afStrength = 0.5}, ${3:float afDuration = 0.0})${0}"
+	"Scene.start":
+		prefix: "start"
+		body: "Start()${0}"
+	"Cell.setfogcolor":
+		prefix: "setfogcolor"
+		body: "SetFogColor(${1:int aiNearRed}, ${2:int aiNearGreen}, ${3:int aiNearBlue}, ${4:int aiFarRed}, ${5:int aiFarGreen}, ${6:int aiFarBlue})${0}"
+	"Weapon.fire":
+		prefix: "fire"
+		body: "Fire(${1:ObjectReference akSource}, ${2:Ammo akAmmo = None})${0}"
+	"Actor.getbribeamount":
+		prefix: "getbribeamount"
+		body: "GetBribeAmount()${0}"
+	"ObjectReference.additem":
+		prefix: "additem"
+		body: "AddItem(${1:Form akItemToAdd}, ${2:int aiCount = 1}, ${3:bool abSilent = false})${0}"
+	"Game.iscamswitchcontrolsenabled":
+		prefix: "iscamswitchcontrolsenabled"
+		body: "Game.IsCamSwitchControlsEnabled()${0}"
+	"ObjectReference.getscale":
+		prefix: "getscale"
+		body: "GetScale()${0}"
+	"Spell.ishostile":
+		prefix: "ishostile"
+		body: "IsHostile()${0}"
+	"Actor.getgoldamount":
+		prefix: "getgoldamount"
+		body: "GetGoldAmount()${0}"
+	"ObjectReference.isradioon":
+		prefix: "isradioon"
+		body: "IsRadioOn()${0}"
+	"ScriptObject.unregisterforradiationdamageevent":
+		prefix: "unregisterforradiationdamageevent"
+		body: "UnregisterForRadiationDamageEvent(${1:ScriptObject akTarget})${0}"
+	"Faction.getstolenitemvaluecrime":
+		prefix: "getstolenitemvaluecrime"
+		body: "GetStolenItemValueCrime()${0}"
+	"FormList.getsize":
+		prefix: "getsize"
+		body: "GetSize()${0}"
+	"ObjectReference.playsyncedanimationss":
+		prefix: "playsyncedanimationss"
+		body: "PlaySyncedAnimationSS(${1:string asAnimation1}, ${2:ObjectReference akObj2}, ${3:string asAnimation2})${0}"
+	"Location.setkeyworddata":
+		prefix: "setkeyworddata"
+		body: "SetKeywordData(${1:Keyword akKeyword}, ${2:float afData})${0}"
+	"Actor.setplayerteammate":
+		prefix: "setplayerteammate"
+		body: "SetPlayerTeammate(${1:bool abTeammate = true}, ${2:bool abCanDoFavor = true}, ${3:bool abGivePlayerXP = false})${0}"
+	"EffectShader.play":
+		prefix: "play"
+		body: "Play(${1:ObjectReference akObject}, ${2:float afDuration = -1.0})${0}"
+	"Actor.addperk":
+		prefix: "addperk"
+		body: "AddPerk(${1:Perk akPerk}, ${2:bool abNotify = false})${0}"
+	"RefCollectionAlias.disableall":
+		prefix: "disableall"
+		body: "DisableAll(${1:bool bFadeOut = false})${0}"
+	"Actor.setanimarchetypeconfident":
+		prefix: "setanimarchetypeconfident"
+		body: "SetAnimArchetypeConfident()${0}"
+	"Actor.drawweapon":
+		prefix: "drawweapon"
+		body: "DrawWeapon()${0}"
+	"Actor.trapsoul":
+		prefix: "trapsoul"
+		body: "TrapSoul(${1:Actor akTarget})${0}"
+	"Game.showtrainingmenu":
+		prefix: "showtrainingmenu"
+		body: "Game.ShowTrainingMenu(${1:Actor aActor})${0}"
+	"Game.ismovementcontrolsenabled":
+		prefix: "ismovementcontrolsenabled"
+		body: "Game.IsMovementControlsEnabled()${0}"
+	"Actor.issneaking":
+		prefix: "issneaking"
+		body: "IsSneaking()${0}"
+	"LeveledActor.revert":
+		prefix: "revert"
+		body: "Revert()${0}"
+	"ObjectReference.ramprumble":
+		prefix: "ramprumble"
+		body: "RampRumble(${1:float power = 0.5}, ${2:float duration = 0.25}, ${3:float falloff = 1600.0})${0}"
+	"ObjectReference.setactorrefowner":
+		prefix: "setactorrefowner"
+		body: "SetActorRefOwner(${1:Actor akActor}, ${2:bool abNoCrime = false})${0}"
+	"Actor.isbribed":
+		prefix: "isbribed"
+		body: "IsBribed()${0}"
+	"Enchantment.ishostile":
+		prefix: "ishostile"
+		body: "IsHostile()${0}"
+	"Ingredient.learnalleffects":
+		prefix: "learnalleffects"
+		body: "LearnAllEffects()${0}"
+	"InputEnableLayer.isactivateenabled":
+		prefix: "isactivateenabled"
+		body: "IsActivateEnabled()${0}"
+	"Actor.clearexpressionoverride":
+		prefix: "clearexpressionoverride"
+		body: "ClearExpressionOverride()${0}"
+	"InputEnableLayer.iscamswitchenabled":
+		prefix: "iscamswitchenabled"
+		body: "IsCamSwitchEnabled()${0}"
+	"ObjectReference.attachmod":
+		prefix: "attachmod"
+		body: "AttachMod(${1:ObjectMod akMod}, ${2:int aiAttachIndex = 1})${0}"
+	"Array.rfindstruct":
+		prefix: "rfindstruct"
+		body: "RFindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = -1})${0}"
+	"ActorBase.setinvulnerable":
+		prefix: "setinvulnerable"
+		body: "SetInvulnerable(${1:bool abInvulnerable = true})${0}"
+	"InputEnableLayer.enablemenu":
+		prefix: "enablemenu"
+		body: "EnableMenu(${1:abEnable = true})${0}"
+	"ScriptObject.unregisterforallmenuopencloseevents":
+		prefix: "unregisterforallmenuopencloseevents"
+		body: "UnregisterForAllMenuOpenCloseEvents()${0}"
+	"ObjectReference.canproduceforworkshop":
+		prefix: "canproduceforworkshop"
+		body: "CanProduceForWorkshop()${0}"
+	"ObjectReference.countactorslinkedtome":
+		prefix: "countactorslinkedtome"
+		body: "CountActorsLinkedToMe(${1:apLinkKeyword = None}, ${2:apExcludeKeyword = None})${0}"
+	"Form.startobjectprofiling":
+		prefix: "startobjectprofiling"
+		body: "StartObjectProfiling()${0}"
+	"RefCollectionAlias.addrefcollection":
+		prefix: "addrefcollection"
+		body: "AddRefCollection(${1:RefCollectionAlias refCollectionAliasToAdd})${0}"
+	"Weather.getcurrentweathertransition":
+		prefix: "getcurrentweathertransition"
+		body: "Weather.GetCurrentWeatherTransition()${0}"
+	"Actor.isinscene":
+		prefix: "isinscene"
+		body: "IsInScene()${0}"
+	"Faction.getinfamynonviolent":
+		prefix: "getinfamynonviolent"
+		body: "GetInfamyNonViolent()${0}"
+	"ObjectReference.getvoicetype":
+		prefix: "getvoicetype"
+		body: "GetVoiceType()${0}"
+	"Form.getgoldvalue":
+		prefix: "getgoldvalue"
+		body: "GetGoldValue()${0}"
+	"ObjectReference.pushactoraway":
+		prefix: "pushactoraway"
+		body: "PushActorAway(${1:Actor akActorToPush}, ${2:float afKnockbackForce})${0}"
+	"FormList.hasform":
+		prefix: "hasform"
+		body: "HasForm(${1:Form akForm})${0}"
+	"Actor.unlockowneddoorsincell":
+		prefix: "unlockowneddoorsincell"
+		body: "UnlockOwnedDoorsInCell()${0}"
+	"Game.findrandomreferenceoftype":
+		prefix: "findrandomreferenceoftype"
+		body: "Game.FindRandomReferenceOfType(${1:Form arBaseObject}, ${2:float afX}, ${3:float afY}, ${4:float afZ}, ${5:float afRadius})${0}"
+	"Message.showashelpmessage":
+		prefix: "showashelpmessage"
+		body: "ShowAsHelpMessage(${1:string asEvent}, ${2:float afDuration}, ${3:float afInterval}, ${4:int aiMaxTimes}, ${5:string asContext=\\\"\\\"}, ${6:int aiPriority=0})${0}"
+	"Debug.stopstackrootprofiling":
+		prefix: "stopstackrootprofiling"
+		body: "Debug.StopStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}"
+	"Game.isvatscontrolsenabled":
+		prefix: "isvatscontrolsenabled"
+		body: "Game.IsVATSControlsEnabled()${0}"
+	"Game.getplayerslastriddenhorse":
+		prefix: "getplayerslastriddenhorse"
+		body: "Game.GetPlayersLastRiddenHorse()${0}"
+	"ObjectReference.startworkshop":
+		prefix: "startworkshop"
+		body: "StartWorkshop(${1:bool abStart = true})${0}"
+	"ObjectReference.getactorrefowner":
+		prefix: "getactorrefowner"
+		body: "GetActorRefOwner()${0}"
+	"Actor.dogdropitems":
+		prefix: "dogdropitems"
+		body: "DogDropItems()${0}"
+	"Game.getluckav":
+		prefix: "getluckav"
+		body: "Game.GetLuckAV()${0}"
+	"ObjectReference.gettransmitterdistance":
+		prefix: "gettransmitterdistance"
+		body: "GetTransmitterDistance()${0}"
+	"Faction.getfactionreaction":
+		prefix: "getfactionreaction"
+		body: "GetFactionReaction(${1:Actor akOther})${0}"
+	"Actor.playidleaction":
+		prefix: "playidleaction"
+		body: "PlayIdleAction(${1:Action aAction}, ${2:ObjectReference aTarget = None})${0}"
+	"Game.getconfidenceav":
+		prefix: "getconfidenceav"
+		body: "Game.GetConfidenceAV()${0}"
+	"Actor.setforcedlandingmarker":
+		prefix: "setforcedlandingmarker"
+		body: "SetForcedLandingMarker(${1:ObjectReference aMarker})${0}"
+	"Array.removelast":
+		prefix: "removelast"
+		body: "RemoveLast()${0}"
+	"ObjectReference.isinlocation":
+		prefix: "isinlocation"
+		body: "IsInLocation(${1:Location akLocation})${0}"
+	"ObjectReference.getteleportcell":
+		prefix: "getteleportcell"
+		body: "GetTeleportCell()${0}"
+	"RefCollectionAlias.killall":
+		prefix: "killall"
+		body: "KillAll(${1:actor akKiller = NONE})${0}"
+	"ScriptObject.unregisterforlos":
+		prefix: "unregisterforlos"
+		body: "UnregisterForLOS(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget})${0}"
+	"ObjectReference.enable":
+		prefix: "enable"
+		body: "Enable(${1:bool abFadeIn = false})${0}"
+	"Game.findclosestreferenceoftypefromref":
+		prefix: "findclosestreferenceoftypefromref"
+		body: "Game.FindClosestReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}"
+	"Game.isfightingcontrolsenabled":
+		prefix: "isfightingcontrolsenabled"
+		body: "Game.IsFightingControlsEnabled()${0}"
+	"InstanceNamingRules.mergewith":
+		prefix: "mergewith"
+		body: "MergeWith(${1:InstanceNamingRules aSource})${0}"
+	"Faction.sendassaultalarm":
+		prefix: "sendassaultalarm"
+		body: "SendAssaultAlarm()${0}"
+	"Game.rewardplayerxp":
+		prefix: "rewardplayerxp"
+		body: "Game.RewardPlayerXP(${1:int auiXPAmount}, ${2:bool abDirect = false})${0}"
+	"Faction.sendplayertojail":
+		prefix: "sendplayertojail"
+		body: "SendPlayerToJail(${1:bool abRemoveInventory = True}, ${2:bool abRealJail = True})${0}"
+	"ScriptObject.canceltimergametime":
+		prefix: "canceltimergametime"
+		body: "CancelTimerGameTime(${1:int aiTimerID = 0})${0}"
+	"InputEnableLayer.enablezkey":
+		prefix: "enablezkey"
+		body: "EnableZKey(${1:abEnable = true})${0}"
+	"Actor.setintimidated":
+		prefix: "setintimidated"
+		body: "SetIntimidated(${1:bool abIntimidate = true})${0}"
+	"ObjectReference.playanimationandwait":
+		prefix: "playanimationandwait"
+		body: "PlayAnimationAndWait(${1:string asAnimation}, ${2:string asEventName})${0}"
+	"Sound.setinstancevolume":
+		prefix: "setinstancevolume"
+		body: "Sound.SetInstanceVolume(${1:int aiPlaybackInstance}, ${2:float afVolume})${0}"
+	"ObjectReference.findallreferencesoftype":
+		prefix: "findallreferencesoftype"
+		body: "FindAllReferencesOfType(${1:Form arObjectOrList}, ${2:float afRadius})${0}"
+	"RefCollectionAlias.addtofaction":
+		prefix: "addtofaction"
+		body: "AddToFaction(${1:faction akFaction})${0}"
+	"ObjectReference.removemod":
+		prefix: "removemod"
+		body: "RemoveMod(${1:ObjectMod akMod})${0}"
+	"ActorBase.isinvulnerable":
+		prefix: "isinvulnerable"
+		body: "IsInvulnerable()${0}"
+	"ScriptObject.registerforplayerteleport":
+		prefix: "registerforplayerteleport"
+		body: "RegisterForPlayerTeleport()${0}"
+	"Utility.getcurrentstackid":
+		prefix: "getcurrentstackid"
+		body: "Utility.GetCurrentStackID()${0}"
+	"ObjectReference.applyhavokimpulse":
+		prefix: "applyhavokimpulse"
+		body: "ApplyHavokImpulse(${1:float afX}, ${2:float afY}, ${3:float afZ}, ${4:float afMagnitude})${0}"
+	"Actor.isweapondrawn":
+		prefix: "isweapondrawn"
+		body: "IsWeaponDrawn()${0}"
+	"ObjectReference.movetoifunloaded":
+		prefix: "movetoifunloaded"
+		body: "MoveToIfUnloaded(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0})${0}"
+	"ScriptObject.unregisterformagiceffectapplyevent":
+		prefix: "unregisterformagiceffectapplyevent"
+		body: "UnregisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}"
+	"Actor.removefromallfactions":
+		prefix: "removefromallfactions"
+		body: "RemoveFromAllFactions()${0}"
+	"GlobalVariable.getvalueint":
+		prefix: "getvalueint"
+		body: "GetValueInt()${0}"
+	"Actor.getleveledactorbase":
+		prefix: "getleveledactorbase"
+		body: "GetLeveledActorBase()${0}"
+	"Actor.isflying":
+		prefix: "isflying"
+		body: "IsFlying()${0}"
+	"Faction.isplayerexpelled":
+		prefix: "isplayerexpelled"
+		body: "IsPlayerExpelled()${0}"
+	"ScriptObject.setpropertyvalue":
+		prefix: "setpropertyvalue"
+		body: "SetPropertyValue(${1:string asProperyName}, ${2:Var aValue})${0}"
+	"ObjectReference.getparentcell":
+		prefix: "getparentcell"
+		body: "GetParentCell()${0}"
+	"ScriptObject.registerforanimationevent":
+		prefix: "registerforanimationevent"
+		body: "RegisterForAnimationEvent(${1:ObjectReference akSender}, ${2:string asEventName})${0}"
+	"RefCollectionAlias.addarray":
+		prefix: "addarray"
+		body: "AddArray(${1:ObjectReference[] refArrayToAdd})${0}"
+	"Cell.setactorowner":
+		prefix: "setactorowner"
+		body: "SetActorOwner(${1:ActorBase akActorBase})${0}"
+	"ObjectReference.splinetranslatetoref":
+		prefix: "splinetranslatetoref"
+		body: "SplineTranslateToRef(${1:ObjectReference arTarget}, ${2:float afTangentMagnitude}, ${3:float afSpeed}, ${4:float afMaxRotationSpeed = 0.0})${0}"
+	"Keyword.sendstoryevent":
+		prefix: "sendstoryevent"
+		body: "SendStoryEvent(${1:Location akLoc = None}, ${2:ObjectReference akRef1 = None}, ${3:ObjectReference akRef2 = None}, ${4:int aiValue1 = 0}, ${5:int aiValue2 = 0})${0}"
+	"InputEnableLayer.isfightingenabled":
+		prefix: "isfightingenabled"
+		body: "IsFightingEnabled()${0}"
+	"Actor.playidlewithtarget":
+		prefix: "playidlewithtarget"
+		body: "PlayIdleWithTarget(${1:Idle akIdle}, ${2:ObjectReference akTarget})${0}"
+	"Actor.setanimarchetypefriendly":
+		prefix: "setanimarchetypefriendly"
+		body: "SetAnimArchetypeFriendly()${0}"
+	"ActiveMagicEffect.getbaseobject":
+		prefix: "getbaseobject"
+		body: "GetBaseObject()${0}"
+	"Quest.setcurrentstageid":
+		prefix: "setcurrentstageid"
+		body: "SetCurrentStageID(${1:int iStage})${0}"
+	"CommonArrayFunctions.checkobjectreferenceagainstarray":
+		prefix: "checkobjectreferenceagainstarray"
+		body: "CommonArrayFunctions.CheckObjectReferenceAgainstArray(${1:ObjectReference ObjectToCheck}, ${2:ObjectReference[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}"
+	"Game.getsuspiciousav":
+		prefix: "getsuspiciousav"
+		body: "Game.GetSuspiciousAV()${0}"
+	"ShaderParticleGeometry.apply":
+		prefix: "apply"
+		body: "Apply(${1:float afFadeInTime = 0.0})${0}"
+	"Game.turnplayerradioon":
+		prefix: "turnplayerradioon"
+		body: "Game.TurnPlayerRadioOn(${1:bool abRadioOn = true})${0}"
+	"ScriptObject.unregisterforalltrackedstatsevents":
+		prefix: "unregisterforalltrackedstatsevents"
+		body: "UnregisterForAllTrackedStatsEvents()${0}"
+	"Actor.kill":
+		prefix: "kill"
+		body: "Kill(${1:Actor akKiller = None})${0}"
+	"ActorBase.getlevel":
+		prefix: "getlevel"
+		body: "GetLevel()${0}"
+	"Actor.sendtrespassalarm":
+		prefix: "sendtrespassalarm"
+		body: "SendTrespassAlarm(${1:Actor akCriminal})${0}"
+	"Game.forcedisablessrgodraysdirlight":
+		prefix: "forcedisablessrgodraysdirlight"
+		body: "Game.ForceDisableSSRGodraysDirLight(${1:bool abDisableSSR}, ${2:bool abDisableGodrays}, ${3:bool abDisableDirLight})${0}"
+	"ObjectReference.isenabled":
+		prefix: "isenabled"
+		body: "IsEnabled()${0}"
+	"Location.modifykeyworddata":
+		prefix: "modifykeyworddata"
+		body: "ModifyKeywordData(${1:Keyword akKeyword}, ${2:float afData})${0}"
+	"ImageSpaceModifier.applycrossfade":
+		prefix: "applycrossfade"
+		body: "ApplyCrossFade(${1:float afFadeDuration = 1.0})${0}"
+	"Quest.setobjectiveskipped":
+		prefix: "setobjectiveskipped"
+		body: "SetObjectiveSkipped(${1:int aiObjective})${0}"
+	"Scene.pause":
+		prefix: "pause"
+		body: "Pause(${1:bool abPause})${0}"
+	"Actor.isarrestingtarget":
+		prefix: "isarrestingtarget"
+		body: "IsArrestingTarget()${0}"
+	"ReferenceAlias.trytoreset":
+		prefix: "trytoreset"
+		body: "TryToReset()${0}"
+	"Actor.hasmagiceffectwithkeyword":
+		prefix: "hasmagiceffectwithkeyword"
+		body: "HasMagicEffectWithKeyword(${1:Keyword akKeyword})${0}"
+	"ObjectReference.setpersistloc":
+		prefix: "setpersistloc"
+		body: "SetPersistLoc(${1:Location akLoc})${0}"
+	"Quest.getcurrentstageid":
+		prefix: "getcurrentstageid"
+		body: "GetCurrentStageID()${0}"
+	"Game.requestmodel":
+		prefix: "requestmodel"
+		body: "Game.RequestModel(${1:string asModelName})${0}"
+	"Game.addperkpoints":
+		prefix: "addperkpoints"
+		body: "Game.AddPerkPoints(${1:int aiPerkPoints})${0}"
+	"ActorBase.isprotected":
+		prefix: "isprotected"
+		body: "IsProtected()${0}"
+	"ObjectReference.waitforworkshopresourcerecalc":
+		prefix: "waitforworkshopresourcerecalc"
+		body: "WaitForWorkshopResourceRecalc()${0}"
+	"Debug.openuserlog":
+		prefix: "openuserlog"
+		body: "Debug.OpenUserLog(${1:string asLogName})${0}"
+	"ObjectReference.ignorefriendlyhits":
+		prefix: "ignorefriendlyhits"
+		body: "IgnoreFriendlyHits(${1:bool abIgnore = true})${0}"
+	"Actor.isseatoccupied":
+		prefix: "isseatoccupied"
+		body: "IsSeatOccupied(${1:keyword apKeyword})${0}"
+	"Game.getplayerradiofrequency":
+		prefix: "getplayerradiofrequency"
+		body: "Game.GetPlayerRadioFrequency()${0}"
+	"ScriptObject.registerforcustomevent":
+		prefix: "registerforcustomevent"
+		body: "RegisterForCustomEvent(${1:ScriptObject akEventSource}, ${2:CustomEventName asEventName})${0}"
+	"ScriptObject.registerfordetectionlosgain":
+		prefix: "registerfordetectionlosgain"
+		body: "RegisterForDetectionLOSGain(${1:Actor akViewer}, ${2:ObjectReference akTarget})${0}"
+	"ObjectReference.enablelinkchain":
+		prefix: "enablelinkchain"
+		body: "EnableLinkChain(${1:Keyword apKeyword = None}, ${2:bool abFadeIn = false})${0}"
+	"Actor.unequipitem":
+		prefix: "unequipitem"
+		body: "UnequipItem(${1:Form akItem}, ${2:bool abPreventEquip = false}, ${3:bool abSilent = false})${0}"
+	"Actor.getequippedspell":
+		prefix: "getequippedspell"
+		body: "GetEquippedSpell(${1:int aiSource})${0}"
+	"Actor.canflyhere":
+		prefix: "canflyhere"
+		body: "CanFlyHere()${0}"
+	"Scroll.cast":
+		prefix: "cast"
+		body: "Cast(${1:ObjectReference akSource}, ${2:ObjectReference akTarget = None})${0}"
+	"ObjectReference.sendstealalarm":
+		prefix: "sendstealalarm"
+		body: "SendStealAlarm(${1:Actor akThief})${0}"
+	"Actor.dispelspell":
+		prefix: "dispelspell"
+		body: "DispelSpell(${1:Spell akSpell})${0}"
+	"Faction.getcrimegoldnonviolent":
+		prefix: "getcrimegoldnonviolent"
+		body: "GetCrimeGoldNonViolent()${0}"
+	"ObjectReference.removeallitems":
+		prefix: "removeallitems"
+		body: "RemoveAllItems(${1:ObjectReference akTransferTo = None}, ${2:bool abKeepOwnership = false})${0}"
+	"Actor.setoverridevoicetype":
+		prefix: "setoverridevoicetype"
+		body: "SetOverrideVoiceType(${1:VoiceType akVoiceType})${0}"
+	"Quest.isobjectivecompleted":
+		prefix: "isobjectivecompleted"
+		body: "IsObjectiveCompleted(${1:int aiObjective})${0}"
+	"Actor.isoverencumbered":
+		prefix: "isoverencumbered"
+		body: "IsOverEncumbered()${0}"
+	"ImageSpaceModifier.remove":
+		prefix: "remove"
+		body: "Remove()${0}"
+	"ReferenceAlias.trytokill":
+		prefix: "trytokill"
+		body: "TryToKill()${0}"
+	"Game.isjournalcontrolsenabled":
+		prefix: "isjournalcontrolsenabled"
+		body: "Game.IsJournalControlsEnabled()${0}"
+	"ObjectReference.iswithinbuildablearea":
+		prefix: "iswithinbuildablearea"
+		body: "IsWithinBuildableArea(${1:ObjectReference akRef})${0}"
+	"Actor.setattackactoronsight":
+		prefix: "setattackactoronsight"
+		body: "SetAttackActorOnSight(${1:bool abAttackOnSight = true})${0}"
+	"Actor.hasdetectionlos":
+		prefix: "hasdetectionlos"
+		body: "HasDetectionLOS(${1:ObjectReference akOther})${0}"
+	"Game.getcharismaav":
+		prefix: "getcharismaav"
+		body: "Game.GetCharismaAV()${0}"
+	"Scene.forcestart":
+		prefix: "forcestart"
+		body: "ForceStart()${0}"
+	"Actor.getsitstate":
+		prefix: "getsitstate"
+		body: "GetSitState()${0}"
+	"ReferenceAlias.trytosetvalue":
+		prefix: "trytosetvalue"
+		body: "TryToSetValue(${1:ActorValue akAV}, ${2:float afValue})${0}"
+	"Game.starttitlesequence":
+		prefix: "starttitlesequence"
+		body: "Game.StartTitleSequence(${1:string asSequenceName})${0}"
+	"Quest.completeallobjectives":
+		prefix: "completeallobjectives"
+		body: "CompleteAllObjectives()${0}"
+	"Actor.isguard":
+		prefix: "isguard"
+		body: "IsGuard()${0}"
+	"Cell.reset":
+		prefix: "reset"
+		body: "Reset()${0}"
+	"GlobalVariable.setvalueint":
+		prefix: "setvalueint"
+		body: "SetValueInt(${1:int aiValue})${0}"
+	"Utility.isinmenumode":
+		prefix: "isinmenumode"
+		body: "Utility.IsInMenuMode()${0}"
+	"Actor.isalerted":
+		prefix: "isalerted"
+		body: "IsAlerted()${0}"
+	"ObjectReference.playgamebryoanimation":
+		prefix: "playgamebryoanimation"
+		body: "PlayGamebryoAnimation(${1:string asAnimation}, ${2:bool abStartOver = false}, ${3:float afEaseInTime = 0.0})${0}"
+	"InputEnableLayer.ismovementenabled":
+		prefix: "ismovementenabled"
+		body: "IsMovementEnabled()${0}"
+	"InputEnableLayer.create":
+		prefix: "create"
+		body: "InputEnableLayer.Create()${0}"
+	"Actor.isbeingridden":
+		prefix: "isbeingridden"
+		body: "IsBeingRidden()${0}"
+	"InputEnableLayer.isfavoritesenabled":
+		prefix: "isfavoritesenabled"
+		body: "IsFavoritesEnabled()${0}"
+	"Form.playerknows":
+		prefix: "playerknows"
+		body: "PlayerKnows()${0}"
+	"Debug.enablemenus":
+		prefix: "enablemenus"
+		body: "Debug.EnableMenus(${1:bool abEnable = true})${0}"
+	"Actor.getplayercontrols":
+		prefix: "getplayercontrols"
+		body: "GetPlayerControls()${0}"
+	"Actor.setoutfit":
+		prefix: "setoutfit"
+		body: "SetOutfit(${1:Outfit akOutfit}, ${2:bool abSleepOutfit = false})${0}"
+	"Weather.releaseoverride":
+		prefix: "releaseoverride"
+		body: "Weather.ReleaseOverride()${0}"
+	"Quest.completequest":
+		prefix: "completequest"
+		body: "CompleteQuest()${0}"
+	"ReferenceAlias.trytomoveto":
+		prefix: "trytomoveto"
+		body: "TryToMoveTo(${1:ObjectReference RefToMoveTo})${0}"
+	"Quest.getstage":
+		prefix: "getstage"
+		body: "GetStage()${0}"
+	"ObjectReference.say":
+		prefix: "say"
+		body: "Say(${1:Topic akTopicToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}"
+	"ObjectReference.getbaseobject":
+		prefix: "getbaseobject"
+		body: "GetBaseObject()${0}"
+	"ScriptObject.registerfortutorialevent":
+		prefix: "registerfortutorialevent"
+		body: "RegisterForTutorialEvent(${1:String asEventName})${0}"
+	"RefCollectionAlias.setprotected":
+		prefix: "setprotected"
+		body: "SetProtected(${1:bool bSetProtected = true})${0}"
+	"ObjectReference.activate":
+		prefix: "activate"
+		body: "Activate(${1:ObjectReference akActivator}, ${2:bool abDefaultProcessingOnly = false})${0}"
+	"EncounterZone.getactors":
+		prefix: "getactors"
+		body: "GetActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}"
+	"Terminal.showonpipboy":
+		prefix: "showonpipboy"
+		body: "ShowOnPipboy()${0}"
+	"ObjectReference.setactivatetextoverride":
+		prefix: "setactivatetextoverride"
+		body: "SetActivateTextOverride(${1:Message akText})${0}"
+	"Actor.getactorbase":
+		prefix: "getactorbase"
+		body: "GetActorBase()${0}"
+	"ObjectReference.getsafeposition":
+		prefix: "getsafeposition"
+		body: "GetSafePosition(${1:float aSearchRadius=-1}, ${2:float aSafeRadius=-1})${0}"
+	"Form.haskeyword":
+		prefix: "haskeyword"
+		body: "HasKeyword(${1:Keyword akKeyword})${0}"
+	"ObjectReference.removemodfrominventoryitem":
+		prefix: "removemodfrominventoryitem"
+		body: "RemoveModFromInventoryItem(${1:Form akItem}, ${2:ObjectMod akMod})${0}"
+	"ObjectReference.waitforanimationevent":
+		prefix: "waitforanimationevent"
+		body: "WaitForAnimationEvent(${1:string asEventName})${0}"
+	"ObjectReference.damagevalue":
+		prefix: "damagevalue"
+		body: "DamageValue(${1:ActorValue akAV}, ${2:float afDamage})${0}"
+	"ObjectReference.getdistance":
+		prefix: "getdistance"
+		body: "GetDistance(${1:ObjectReference akOther})${0}"
+	"Actor.startvampirefeed":
+		prefix: "startvampirefeed"
+		body: "StartVampireFeed(${1:Actor akTarget})${0}"
+	"ObjectReference.haskeyword":
+		prefix: "haskeyword"
+		body: "HasKeyword(${1:Keyword akKeyword})${0}"
+	"Actor.wornhaskeyword":
+		prefix: "wornhaskeyword"
+		body: "WornHasKeyword(${1:Keyword akKeyword})${0}"
+	"ObjectReference.getlocreftypes":
+		prefix: "getlocreftypes"
+		body: "GetLocRefTypes()${0}"
+	"Game.showperkvaultboyonhud":
+		prefix: "showperkvaultboyonhud"
+		body: "Game.ShowPerkVaultBoyOnHUD(${1:string aVaultBoySwf}, ${2:Sound aSoundDescriptor = None})${0}"
+	"ScriptObject.registerfordistancelessthanevent":
+		prefix: "registerfordistancelessthanevent"
+		body: "RegisterForDistanceLessThanEvent(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2}, ${3:float afDistance})${0}"
+	"Faction.isplayerenemy":
+		prefix: "isplayerenemy"
+		body: "IsPlayerEnemy()${0}"
+	"ScriptObject.registerfordirectlosgain":
+		prefix: "registerfordirectlosgain"
+		body: "RegisterForDirectLOSGain(${1:ObjectReference akViewer}, ${2:ObjectReference akTarget}, ${3:string asViewerNode = \\\"\\\"}, ${4:string asTargetNode = \\\"\\\"})${0}"
+	"ScriptObject.getpropertyvalue":
+		prefix: "getpropertyvalue"
+		body: "GetPropertyValue(${1:string asPropertyName})${0}"
+	"ScriptObject.unregisterformenuopencloseevent":
+		prefix: "unregisterformenuopencloseevent"
+		body: "UnregisterForMenuOpenCloseEvent(${1:string asMenuName})${0}"
+	"Actor.getallcombattargets":
+		prefix: "getallcombattargets"
+		body: "GetAllCombatTargets()${0}"
+	"Actor.setcandocommand":
+		prefix: "setcandocommand"
+		body: "SetCanDoCommand(${1:bool abCanDoCommand= true})${0}"
+	"ObjectReference.getpositionz":
+		prefix: "getpositionz"
+		body: "GetPositionZ()${0}"
+	"ObjectReference.saycustom":
+		prefix: "saycustom"
+		body: "SayCustom(${1:Keyword akKeywordToSay}, ${2:Actor akActorToSpeakAs = None}, ${3:bool abSpeakInPlayersHead = false}, ${4:ObjectReference akTarget = None})${0}"
+	"ReferenceAlias.applytoref":
+		prefix: "applytoref"
+		body: "ApplyToRef(${1:ObjectReference akRef})${0}"
+	"Actor.setcompanion":
+		prefix: "setcompanion"
+		body: "SetCompanion(${1:bool SetCompanion = true}, ${2:FillCompanionAlias = true})${0}"
+	"ScriptObject.gotostate":
+		prefix: "gotostate"
+		body: "GotoState(${1:string asNewState})${0}"
+	"ReferenceAlias.trytoremovefromfaction":
+		prefix: "trytoremovefromfaction"
+		body: "TryToRemoveFromFaction(${1:Faction FactionToRemoveFrom})${0}"
+	"ObjectReference.gettriggerobjectcount":
+		prefix: "gettriggerobjectcount"
+		body: "GetTriggerObjectCount()${0}"
+	"ObjectReference.playanimation":
+		prefix: "playanimation"
+		body: "PlayAnimation(${1:string asAnimation})${0}"
+	"Game.islookingcontrolsenabled":
+		prefix: "islookingcontrolsenabled"
+		body: "Game.IsLookingControlsEnabled()${0}"
+	"Actor.getlevel":
+		prefix: "getlevel"
+		body: "GetLevel()${0}"
+	"Actor.evaluatepackage":
+		prefix: "evaluatepackage"
+		body: "EvaluatePackage(${1:bool abResetAI=false})${0}"
+	"CommonArrayFunctions.checkactoragainstfactionarray":
+		prefix: "checkactoragainstfactionarray"
+		body: "CommonArrayFunctions.CheckActorAgainstFactionArray(${1:Actor ObjectToCheck}, ${2:Faction[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}"
+	"TopicInfo.hasbeensaid":
+		prefix: "hasbeensaid"
+		body: "HasBeenSaid()${0}"
+	"RefCollectionAlias.addref":
+		prefix: "addref"
+		body: "AddRef(${1:ObjectReference akNewRef})${0}"
+	"ObjectReference.splinetranslatetorefnode":
+		prefix: "splinetranslatetorefnode"
+		body: "SplineTranslateToRefNode(${1:ObjectReference arTarget}, ${2:string arNodeName}, ${3:float afTangentMagnitude}, ${4:float afSpeed}, ${5:float afMaxRotationSpeed = 0.0})${0}"
+	"Utility.setinibool":
+		prefix: "setinibool"
+		body: "Utility.SetINIBool(${1:string ini}, ${2:bool value})${0}"
+	"ScriptObject.starttimer":
+		prefix: "starttimer"
+		body: "StartTimer(${1:float afInterval}, ${2:int aiTimerID = 0})${0}"
+	"SoundCategory.unmute":
+		prefix: "unmute"
+		body: "UnMute()${0}"
+	"Actor.getfactionrank":
+		prefix: "getfactionrank"
+		body: "GetFactionRank(${1:Faction akFaction})${0}"
+	"Math.floor":
+		prefix: "floor"
+		body: "Math.Floor(${1:float afValue})${0}"
+	"Array.findstruct":
+		prefix: "findstruct"
+		body: "FindStruct(${1:StructVarName asVarName}, ${2:varType akElement}, ${3:int aiStartIndex = 0})${0}"
+	"ObjectReference.gettransitioncell":
+		prefix: "gettransitioncell"
+		body: "GetTransitionCell()${0}"
+	"Game.findrandomreferenceoftypefromref":
+		prefix: "findrandomreferenceoftypefromref"
+		body: "Game.FindRandomReferenceOfTypeFromRef(${1:Form arBaseObject}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}"
+	"Math.degreestoradians":
+		prefix: "degreestoradians"
+		body: "Math.DegreesToRadians(${1:float afDegrees})${0}"
+	"Actor.equipitem":
+		prefix: "equipitem"
+		body: "EquipItem(${1:Form akItem}, ${2:bool abPreventRemoval = false}, ${3:bool abSilent = false})${0}"
+	"Actor.setlookat":
+		prefix: "setlookat"
+		body: "SetLookAt(${1:ObjectReference akTarget}, ${2:bool abPathingLookAt = false})${0}"
+	"InputEnableLayer.enablelooking":
+		prefix: "enablelooking"
+		body: "EnableLooking(${1:abEnable = true})${0}"
+	"ObjectReference.getencounterzone":
+		prefix: "getencounterzone"
+		body: "GetEncounterZone()${0}"
+	"Game.setplayerradiofrequency":
+		prefix: "setplayerradiofrequency"
+		body: "Game.SetPlayerRadioFrequency(${1:float afFrequency})${0}"
+	"ObjectReference.applyfanmotor":
+		prefix: "applyfanmotor"
+		body: "ApplyFanMotor(${1:string aTarget}, ${2:float aAxisX}, ${3:float aAxisY}, ${4:float aAxisZ}, ${5:float aForce}, ${6:bool abOn = true})${0}"
+	"Actor.istrespassing":
+		prefix: "istrespassing"
+		body: "IsTrespassing()${0}"
+	"ScriptObject.starttimergametime":
+		prefix: "starttimergametime"
+		body: "StartTimerGameTime(${1:float afInterval}, ${2:int aiTimerID = 0})${0}"
+	"Debug.getconfigname":
+		prefix: "getconfigname"
+		body: "Debug.GetConfigName()${0}"
+	"Actor.isaienabled":
+		prefix: "isaienabled"
+		body: "IsAIEnabled()${0}"
+	"Quest.isstagedone":
+		prefix: "isstagedone"
+		body: "IsStageDone(${1:int aiStage})${0}"
+	"ObjectReference.getmass":
+		prefix: "getmass"
+		body: "GetMass()${0}"
+	"Game.isfasttravelenabled":
+		prefix: "isfasttravelenabled"
+		body: "Game.IsFastTravelEnabled()${0}"
+	"Game.setplayeraidriven":
+		prefix: "setplayeraidriven"
+		body: "Game.SetPlayerAIDriven(${1:bool abAIDriven = true})${0}"
+	"Actor.disallowcompanion":
+		prefix: "disallowcompanion"
+		body: "DisallowCompanion(${1:bool SuppressDismissMessage = false})${0}"
+	"Game.warning":
+		prefix: "warning"
+		body: "Game.Warning(${1:string asMessage})${0}"
+	"Actor.followerfollow":
+		prefix: "followerfollow"
+		body: "FollowerFollow()${0}"
+	"Utility.waitmenumode":
+		prefix: "waitmenumode"
+		body: "Utility.WaitMenuMode(${1:float afSeconds})${0}"
+	"RefCollectionAlias.getcount":
+		prefix: "getcount"
+		body: "GetCount()${0}"
+	"Location.getalllinkedlocations":
+		prefix: "getalllinkedlocations"
+		body: "GetAllLinkedLocations(${1:Keyword akKeyword})${0}"
+	"Location.hascommonparent":
+		prefix: "hascommonparent"
+		body: "HasCommonParent(${1:Location akOther}, ${2:Keyword akFilter = None})${0}"
+	"Actor.resurrect":
+		prefix: "resurrect"
+		body: "Resurrect()${0}"
+	"Cell.setfogplanes":
+		prefix: "setfogplanes"
+		body: "SetFogPlanes(${1:float afNear}, ${2:float afFar})${0}"
+	"ObjectReference.preloadtargetarea":
+		prefix: "preloadtargetarea"
+		body: "PreloadTargetArea()${0}"
+	"ObjectReference.disablenowait":
+		prefix: "disablenowait"
+		body: "DisableNoWait(${1:bool abFadeOut = False})${0}"
+	"ObjectReference.removeallmods":
+		prefix: "removeallmods"
+		body: "RemoveAllMods()${0}"
+	"Faction.getstolenitemvaluenocrime":
+		prefix: "getstolenitemvaluenocrime"
+		body: "GetStolenItemValueNoCrime()${0}"
+	"ScriptObject.unregisterfordistanceevents":
+		prefix: "unregisterfordistanceevents"
+		body: "UnregisterForDistanceEvents(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2})${0}"
+	"Actor.getlowestrelationshiprank":
+		prefix: "getlowestrelationshiprank"
+		body: "GetLowestRelationshipRank()${0}"
+	"ScriptObject.addinventoryeventfilter":
+		prefix: "addinventoryeventfilter"
+		body: "AddInventoryEventFilter(${1:Form akFilter})${0}"
+	"ObjectReference.getworkshopownedobjects":
+		prefix: "getworkshopownedobjects"
+		body: "GetWorkshopOwnedObjects(${1:Actor akActor})${0}"
+	"ObjectReference.setlocklevel":
+		prefix: "setlocklevel"
+		body: "SetLockLevel(${1:int aiLockLevel})${0}"
+	"Game.playbink":
+		prefix: "playbink"
+		body: "Game.PlayBink(${1:string asFileName}, ${2:bool abInterruptible = false}, ${3:bool abMuteAudio = true}, ${4:bool abMuteMusic = true}, ${5:bool abLetterbox = true}, ${6:bool abIsNewGameBink = false})${0}"
+	"Debug.closeuserlog":
+		prefix: "closeuserlog"
+		body: "Debug.CloseUserLog(${1:string asLogName})${0}"
+	"InputEnableLayer.enableplayercontrols":
+		prefix: "enableplayercontrols"
+		body: "EnablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = true}, ${4:bool abLooking = true}, ${5:bool abSneaking = true}, ${6:bool abMenu = true}, ${7:bool abActivate = true}, ${8:bool abJournalTabs = true}, ${9:bool abVATS = true}, ${10:bool abFavorites = true}, ${11:bool abRunning = true})${0}"
+	"Actor.movetopackagelocation":
+		prefix: "movetopackagelocation"
+		body: "MoveToPackageLocation()${0}"
+	"Actor.isplayerteammate":
+		prefix: "isplayerteammate"
+		body: "IsPlayerTeammate()${0}"
+	"Actor.ishostiletoactor":
+		prefix: "ishostiletoactor"
+		body: "IsHostileToActor(${1:Actor akActor})${0}"
+	"Debug.startstackprofiling":
+		prefix: "startstackprofiling"
+		body: "Debug.StartStackProfiling()${0}"
+	"ObjectReference.isdisabled":
+		prefix: "isdisabled"
+		body: "IsDisabled()${0}"
+	"ScriptObject.unregisterforplayersleep":
+		prefix: "unregisterforplayersleep"
+		body: "UnregisterForPlayerSleep()${0}"
+	"SoundCategorySnapshot.remove":
+		prefix: "remove"
+		body: "Remove()${0}"
+	"Game.fadeoutgame":
+		prefix: "fadeoutgame"
+		body: "Game.FadeOutGame(${1:bool abFadingOut}, ${2:bool abBlackFade}, ${3:float afSecsBeforeFade}, ${4:float afFadeDuration}, ${5:bool abStayFaded=false})${0}"
+	"MusicType.add":
+		prefix: "add"
+		body: "Add()${0}"
+	"ObjectReference.playterraineffect":
+		prefix: "playterraineffect"
+		body: "PlayTerrainEffect(${1:string asEffectModelName}, ${2:string asAttachBoneName})${0}"
+	"Topic.add":
+		prefix: "add"
+		body: "Add()${0}"
+	"Game.isvatsplaybackactive":
+		prefix: "isvatsplaybackactive"
+		body: "Game.IsVATSPlaybackActive()${0}"
+	"ObjectReference.isfanmotoron":
+		prefix: "isfanmotoron"
+		body: "IsFanMotorOn()${0}"
+	"ObjectReference.isrefintransitioncell":
+		prefix: "isrefintransitioncell"
+		body: "IsRefInTransitionCell(${1:ObjectReference akRef})${0}"
+	"ObjectReference.resetkeyword":
+		prefix: "resetkeyword"
+		body: "ResetKeyword(${1:Keyword akKeyword})${0}"
+	"ReferenceAlias.removefromref":
+		prefix: "removefromref"
+		body: "RemoveFromRef(${1:ObjectReference akRef})${0}"
+	"Debug.enableai":
+		prefix: "enableai"
+		body: "Debug.EnableAI(${1:bool abEnable = true})${0}"
+	"ObjectReference.storeinworkshop":
+		prefix: "storeinworkshop"
+		body: "StoreInWorkshop(${1:Form akBaseItem}, ${2:int aiCount = 1})${0}"
+	"Game.precachechargenclear":
+		prefix: "precachechargenclear"
+		body: "Game.PrecacheCharGenClear()${0}"
+	"Math.pow":
+		prefix: "pow"
+		body: "Math.pow(${1:float x}, ${2:float y})${0}"
+	"Debug.getversionnumber":
+		prefix: "getversionnumber"
+		body: "Debug.GetVersionNumber()${0}"
+	"Actor.enableai":
+		prefix: "enableai"
+		body: "EnableAI(${1:bool abEnable = true}, ${2:bool abPauseVoice = false})${0}"
+	"Potion.ishostile":
+		prefix: "ishostile"
+		body: "IsHostile()${0}"
+	"Game.initializemarkerdistances":
+		prefix: "initializemarkerdistances"
+		body: "Game.InitializeMarkerDistances()${0}"
+	"Faction.getinfamyviolent":
+		prefix: "getinfamyviolent"
+		body: "GetInfamyViolent()${0}"
+	"Game.requestautosave":
+		prefix: "requestautosave"
+		body: "Game.RequestAutoSave()${0}"
+	"Actor.changeanimarchetype":
+		prefix: "changeanimarchetype"
+		body: "ChangeAnimArchetype(${1:keyword apKeyword = none})${0}"
+	"ScriptObject.unregisterfortutorialevent":
+		prefix: "unregisterfortutorialevent"
+		body: "UnregisterForTutorialEvent(${1:String asEventName})${0}"
+	"ObjectReference.setattractionactive":
+		prefix: "setattractionactive"
+		body: "SetAttractionActive(${1:Keyword apKeyword}, ${2:bool abActive = true})${0}"
+	"ScriptObject.registerforradiationdamageevent":
+		prefix: "registerforradiationdamageevent"
+		body: "RegisterForRadiationDamageEvent(${1:ScriptObject akTarget})${0}"
+	"ObjectReference.isfurnituremarkerinuse":
+		prefix: "isfurnituremarkerinuse"
+		body: "IsFurnitureMarkerInUse(${1:int aiMarker}, ${2:bool abIgnoreReserved = false})${0}"
+	"Game.showpipboybootsequence":
+		prefix: "showpipboybootsequence"
+		body: "Game.ShowPipboyBootSequence(${1:string asAnimationName})${0}"
+	"Actor.isalarmed":
+		prefix: "isalarmed"
+		body: "IsAlarmed()${0}"
+	"ScriptObject.registerforplayersleep":
+		prefix: "registerforplayersleep"
+		body: "RegisterForPlayerSleep()${0}"
+	"Game.findrandomactorfromref":
+		prefix: "findrandomactorfromref"
+		body: "Game.FindRandomActorFromRef(${1:ObjectReference arCenter}, ${2:float afRadius})${0}"
+	"ObjectReference.interruptcast":
+		prefix: "interruptcast"
+		body: "InterruptCast()${0}"
+	"Actor.getfactionreaction":
+		prefix: "getfactionreaction"
+		body: "GetFactionReaction(${1:Actor akOther})${0}"
+	"Debug.startstackrootprofiling":
+		prefix: "startstackrootprofiling"
+		body: "Debug.StartStackRootProfiling(${1:string asScriptName}, ${2:ScriptObject akObj = None})${0}"
+	"Weather.findweather":
+		prefix: "findweather"
+		body: "Weather.FindWeather(${1:int auiType})${0}"
+	"Form.stopobjectprofiling":
+		prefix: "stopobjectprofiling"
+		body: "StopObjectProfiling()${0}"
+	"Actor.setdoingfavor":
+		prefix: "setdoingfavor"
+		body: "SetDoingFavor(${1:bool abDoingFavor = true}, ${2:bool abWorkShopMode = false})${0}"
+	"Actor.isonmount":
+		prefix: "isonmount"
+		body: "IsOnMount()${0}"
+	"ObjectReference.countlinkedrefchain":
+		prefix: "countlinkedrefchain"
+		body: "CountLinkedRefChain(${1:keyword apKeyword = None}, ${2:int maxExpectedLinkedRefs = 100})${0}"
+	"ActorBase.getdeadcount":
+		prefix: "getdeadcount"
+		body: "GetDeadCount()${0}"
+	"ObjectReference.getactorslinkedtome":
+		prefix: "getactorslinkedtome"
+		body: "GetActorsLinkedToMe(${1:apLinkKeyword = None}, ${2:apExcludeKeyword = None})${0}"
+	"Game.playeventcamera":
+		prefix: "playeventcamera"
+		body: "Game.PlayEventCamera(${1:CameraShot akCamera}, ${2:ObjectReference akRef})${0}"
+	"ScriptObject.setpropertyvaluenowait":
+		prefix: "setpropertyvaluenowait"
+		body: "SetPropertyValueNoWait(${1:string asProperyName}, ${2:Var aValue})${0}"
+	"Debug.centeroncellandwait":
+		prefix: "centeroncellandwait"
+		body: "Debug.CenterOnCellAndWait(${1:string asCellName})${0}"
+	"Math.cos":
+		prefix: "cos"
+		body: "Math.cos(${1:float afValue})${0}"
+	"Faction.canpaycrimegold":
+		prefix: "canpaycrimegold"
+		body: "CanPayCrimeGold()${0}"
+	"Actor.setdoganimarchetypeagitated":
+		prefix: "setdoganimarchetypeagitated"
+		body: "SetDogAnimArchetypeAgitated()${0}"
+	"Actor.removefromfaction":
+		prefix: "removefromfaction"
+		body: "RemoveFromFaction(${1:Faction akFaction})${0}"
+	"InputEnableLayer.disableplayercontrols":
+		prefix: "disableplayercontrols"
+		body: "DisablePlayerControls(${1:bool abMovement = true}, ${2:bool abFighting = true}, ${3:bool abCamSwitch = false}, ${4:bool abLooking = false}, ${5:bool abSneaking = false}, ${6:bool abMenu = true}, ${7:bool abActivate = true}, ${8:bool abJournalTabs = false}, ${9:bool abVATS = true}, ${10:bool abFavorites = true}, ${11:bool abRunning = false})${0}"
+	"Actor.removeperk":
+		prefix: "removeperk"
+		body: "RemovePerk(${1:Perk akPerk})${0}"
+	"Game.setplayerreportcrime":
+		prefix: "setplayerreportcrime"
+		body: "Game.SetPlayerReportCrime(${1:bool abReportCrime = true})${0}"
+	"ObjectReference.stoptranslation":
+		prefix: "stoptranslation"
+		body: "StopTranslation()${0}"
+	"Game.startdialoguecameraorcenterontarget":
+		prefix: "startdialoguecameraorcenterontarget"
+		body: "Game.StartDialogueCameraOrCenterOnTarget(${1:ObjectReference akCameraTarget = None})${0}"
+	"ObjectReference.isactivationblocked":
+		prefix: "isactivationblocked"
+		body: "IsActivationBlocked()${0}"
+	"Game.findrandomreferenceofanytypeinlistfromref":
+		prefix: "findrandomreferenceofanytypeinlistfromref"
+		body: "Game.FindRandomReferenceOfAnyTypeInListFromRef(${1:FormList arBaseObjectsA}, ${2:ObjectReference arCenter}, ${3:float afRadius})${0}"
+	"CommonArrayFunctions.checkobjectreferenceagainstreferencealiasarray":
+		prefix: "checkobjectreferenceagainstreferencealiasarray"
+		body: "CommonArrayFunctions.CheckObjectReferenceAgainstReferenceAliasArray(${1:ObjectReference ObjectToCheck}, ${2:ReferenceAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}"
+	"Actor.setplayercontrols":
+		prefix: "setplayercontrols"
+		body: "SetPlayerControls(${1:bool abControls})${0}"
+	"ObjectReference.hassharedpowergrid":
+		prefix: "hassharedpowergrid"
+		body: "HasSharedPowerGrid(${1:ObjectReference akChild})${0}"
+	"Cell.setfogpower":
+		prefix: "setfogpower"
+		body: "SetFogPower(${1:float afPower})${0}"
+	"Location.setcleared":
+		prefix: "setcleared"
+		body: "SetCleared(${1:bool abCleared = true})${0}"
+	"CommonArrayFunctions.checkformagainstarray":
+		prefix: "checkformagainstarray"
+		body: "CommonArrayFunctions.CheckFormAgainstArray(${1:Form FormToCheck}, ${2:Form[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}"
+	"Actor.getsleepstate":
+		prefix: "getsleepstate"
+		body: "GetSleepState()${0}"
+	"Actor.hasspell":
+		prefix: "hasspell"
+		body: "HasSpell(${1:Form akForm})${0}"
+	"ObjectReference.removecomponents":
+		prefix: "removecomponents"
+		body: "RemoveComponents(${1:Component akComponent}, ${2:int aiCount}, ${3:bool abSilent = false})${0}"
+	"Game.hidetitlesequencemenu":
+		prefix: "hidetitlesequencemenu"
+		body: "Game.HideTitleSequenceMenu()${0}"
+	"Game.getplayergrabbedref":
+		prefix: "getplayergrabbedref"
+		body: "Game.GetPlayerGrabbedRef()${0}"
+	"RefCollectionAlias.setvalue":
+		prefix: "setvalue"
+		body: "SetValue(${1:ActorValue akActorValue}, ${2:float fValue})${0}"
+	"Scene.stop":
+		prefix: "stop"
+		body: "Stop()${0}"
+	"Cell.setpublic":
+		prefix: "setpublic"
+		body: "SetPublic(${1:bool abPublic = True})${0}"
+	"ObjectReference.setradioon":
+		prefix: "setradioon"
+		body: "SetRadioOn(${1:bool abOn = true})${0}"
+	"InputEnableLayer.enableactivate":
+		prefix: "enableactivate"
+		body: "EnableActivate(${1:abEnable = true})${0}"
+	"ObjectReference.blockactivation":
+		prefix: "blockactivation"
+		body: "BlockActivation(${1:bool abBlocked = True}, ${2:bool abHideActivateText = false})${0}"
+	"ObjectReference.movetonearestnavmeshlocation":
+		prefix: "movetonearestnavmeshlocation"
+		body: "MoveToNearestNavmeshLocation()${0}"
+	"ActiveMagicEffect.getcasteractor":
+		prefix: "getcasteractor"
+		body: "GetCasterActor()${0}"
+	"Quest.isstarting":
+		prefix: "isstarting"
+		body: "IsStarting()${0}"
+	"Actor.getrace":
+		prefix: "getrace"
+		body: "GetRace()${0}"
+	"ReferenceAlias.trytoenablenowait":
+		prefix: "trytoenablenowait"
+		body: "TryToEnableNoWait()${0}"
+	"Game.getaggressionav":
+		prefix: "getaggressionav"
+		body: "Game.GetAggressionAV()${0}"
+	"Game.showfirstpersongeometry":
+		prefix: "showfirstpersongeometry"
+		body: "Game.ShowFirstPersonGeometry(${1:bool abShow = True})${0}"
+	"ObjectReference.ispowered":
+		prefix: "ispowered"
+		body: "IsPowered()${0}"
+	"SoundCategory.setfrequency":
+		prefix: "setfrequency"
+		body: "SetFrequency(${1:float afFrequencyCoeffecient})${0}"
+	"ObjectReference.setposition":
+		prefix: "setposition"
+		body: "SetPosition(${1:float afX}, ${2:float afY}, ${3:float afZ})${0}"
+	"Actor.followersetdistancefar":
+		prefix: "followersetdistancefar"
+		body: "FollowerSetDistanceFar()${0}"
+	"ObjectReference.setactorcause":
+		prefix: "setactorcause"
+		body: "SetActorCause(${1:Actor akActor})${0}"
+	"RefCollectionAlias.getfirstownedobject":
+		prefix: "getfirstownedobject"
+		body: "GetFirstOwnedObject(${1:Actor actorOwner})${0}"
+	"Game.shakecontroller":
+		prefix: "shakecontroller"
+		body: "Game.ShakeController(${1:float afLeftStrength}, ${2:float afRightStrength}, ${3:float afDuration})${0}"
+	"Actor.gethighestrelationshiprank":
+		prefix: "gethighestrelationshiprank"
+		body: "GetHighestRelationshipRank()${0}"
+	"Faction.isfactionincrimegroup":
+		prefix: "isfactionincrimegroup"
+		body: "IsFactionInCrimeGroup(${1:Faction akOther})${0}"
+	"ObjectReference.setanimationvariablefloat":
+		prefix: "setanimationvariablefloat"
+		body: "SetAnimationVariableFloat(${1:string asVariableName}, ${2:float afNewValue})${0}"
+	"ObjectReference.is3dloaded":
+		prefix: "is3dloaded"
+		body: "Is3DLoaded()${0}"
+	"ObjectReference.cleardestruction":
+		prefix: "cleardestruction"
+		body: "ClearDestruction()${0}"
+	"Actor.isbeingriddenby":
+		prefix: "isbeingriddenby"
+		body: "IsBeingRiddenBy(${1:Actor akActor})${0}"
+	"ScriptObject.registerforlooksmenuevent":
+		prefix: "registerforlooksmenuevent"
+		body: "RegisterForLooksMenuEvent()${0}"
+	"TopicInfo.getowningquest":
+		prefix: "getowningquest"
+		body: "GetOwningQuest()${0}"
+	"SoundCategory.mute":
+		prefix: "mute"
+		body: "Mute()${0}"
+	"LeveledSpell.addform":
+		prefix: "addform"
+		body: "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}"
+	"Alias.getowningquest":
+		prefix: "getowningquest"
+		body: "GetOwningQuest()${0}"
+	"Game.getenduranceav":
+		prefix: "getenduranceav"
+		body: "Game.GetEnduranceAV()${0}"
+	"FormList.addform":
+		prefix: "addform"
+		body: "AddForm(${1:Form apForm})${0}"
+	"Actor.killsilent":
+		prefix: "killsilent"
+		body: "KillSilent(${1:Actor akKiller = None})${0}"
+	"Game.setchargenhudmode":
+		prefix: "setchargenhudmode"
+		body: "Game.SetCharGenHUDMode(${1:int aiCGHUDMode})${0}"
+	"Quest.getalias":
+		prefix: "getalias"
+		body: "GetAlias(${1:int iAliasID})${0}"
+	"Actor.setanimarchetypeneutral":
+		prefix: "setanimarchetypeneutral"
+		body: "SetAnimArchetypeNeutral()${0}"
+	"Quest.setobjectivefailed":
+		prefix: "setobjectivefailed"
+		body: "SetObjectiveFailed(${1:int aiObjective}, ${2:bool abFailed = true})${0}"
+	"Debug.tracefunction":
+		prefix: "tracefunction"
+		body: "Debug.TraceFunction(${1:string asTextToPrint = \\\"Tracing function on request\\\"}, ${2:int aiSeverity = 0})${0}"
+	"RefCollectionAlias.moveallto":
+		prefix: "moveallto"
+		body: "MoveAllTo(${1:ObjectReference akTarget})${0}"
+	"Actor.setheadtracking":
+		prefix: "setheadtracking"
+		body: "SetHeadTracking(${1:bool abEnable = true})${0}"
+	"Actor.isinkillmove":
+		prefix: "isinkillmove"
+		body: "IsInKillMove()${0}"
+	"ObjectReference.attachmodtoinventoryitem":
+		prefix: "attachmodtoinventoryitem"
+		body: "AttachModToInventoryItem(${1:Form akItem}, ${2:ObjectMod akMod})${0}"
+	"Actor.enddeferredkill":
+		prefix: "enddeferredkill"
+		body: "EndDeferredKill()${0}"
+	"CommonArrayFunctions.checkobjectagainstkeywordarray":
+		prefix: "checkobjectagainstkeywordarray"
+		body: "CommonArrayFunctions.CheckObjectAgainstKeywordArray(${1:ObjectReference ObjectToCheck}, ${2:Keyword[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false})${0}"
+	"Game.forcethirdperson":
+		prefix: "forcethirdperson"
+		body: "Game.ForceThirdPerson()${0}"
+	"ObjectReference.setradiofrequency":
+		prefix: "setradiofrequency"
+		body: "SetRadioFrequency(${1:float afFrequency})${0}"
+	"Quest.updatecurrentinstanceglobal":
+		prefix: "updatecurrentinstanceglobal"
+		body: "UpdateCurrentInstanceGlobal(${1:GlobalVariable aUpdateGlobal})${0}"
+	"Game.getplayerlevel":
+		prefix: "getplayerlevel"
+		body: "Game.GetPlayerLevel()${0}"
+	"Actor.attachashpile":
+		prefix: "attachashpile"
+		body: "AttachAshPile(${1:Form akAshPileBase = None})${0}"
+	"Actor.dispelallspells":
+		prefix: "dispelallspells"
+		body: "DispelAllSpells()${0}"
+	"ObjectReference.getheadingangle":
+		prefix: "getheadingangle"
+		body: "GetHeadingAngle(${1:ObjectReference akOther})${0}"
+	"Location.islinkedlocation":
+		prefix: "islinkedlocation"
+		body: "IsLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}"
+	"ReferenceAlias.trytoevaluatepackage":
+		prefix: "trytoevaluatepackage"
+		body: "TryToEvaluatePackage()${0}"
+	"Actor.setfactionrank":
+		prefix: "setfactionrank"
+		body: "SetFactionRank(${1:Faction akFaction}, ${2:int aiRank})${0}"
+	"ObjectReference.resumeaudio":
+		prefix: "resumeaudio"
+		body: "ResumeAudio()${0}"
+	"ObjectReference.setangle":
+		prefix: "setangle"
+		body: "SetAngle(${1:float afXAngle}, ${2:float afYAngle}, ${3:float afZAngle})${0}"
+	"VisualEffect.stop":
+		prefix: "stop"
+		body: "Stop(${1:ObjectReference akObject})${0}"
+	"Actor.isplayerslastriddenhorse":
+		prefix: "isplayerslastriddenhorse"
+		body: "IsPlayersLastRiddenHorse()${0}"
+	"Faction.setcrimegold":
+		prefix: "setcrimegold"
+		body: "SetCrimeGold(${1:int aiGold})${0}"
+	"InputEnableLayer.isvatsenabled":
+		prefix: "isvatsenabled"
+		body: "IsVATSEnabled()${0}"
+	"Actor.isallowedtofly":
+		prefix: "isallowedtofly"
+		body: "IsAllowedToFly()${0}"
+	"Array.add":
+		prefix: "add"
+		body: "Add(${1:elementType akElement}, ${2:int aiCount = 1})${0}"
+	"ObjectReference.isindialoguewithplayer":
+		prefix: "isindialoguewithplayer"
+		body: "IsInDialogueWithPlayer()${0}"
+	"Debug.tracestack":
+		prefix: "tracestack"
+		body: "Debug.TraceStack(${1:string asTextToPrint = \\\"Tracing stack on request\\\"}, ${2:int aiSeverity = 0})${0}"
+	"Actor.isdead":
+		prefix: "isdead"
+		body: "IsDead()${0}"
+	"Actor.playsubgraphanimation":
+		prefix: "playsubgraphanimation"
+		body: "PlaySubGraphAnimation(${1:string asEventName})${0}"
+	"Actor.setanimarchetypeirritated":
+		prefix: "setanimarchetypeirritated"
+		body: "SetAnimArchetypeIrritated()${0}"
+	"ObjectReference.getnthlinkedref":
+		prefix: "getnthlinkedref"
+		body: "GetNthLinkedRef(${1:int aiLinkedRef}, ${2:Keyword apKeyword = None})${0}"
+	"Actor.removespell":
+		prefix: "removespell"
+		body: "RemoveSpell(${1:Spell akSpell})${0}"
+	"ObjectReference.canfasttraveltomarker":
+		prefix: "canfasttraveltomarker"
+		body: "CanFastTravelToMarker()${0}"
+	"Game.requestsave":
+		prefix: "requestsave"
+		body: "Game.RequestSave()${0}"
+	"ObjectReference.applyconveyorbelt":
+		prefix: "applyconveyorbelt"
+		body: "ApplyConveyorBelt(${1:string aTarget}, ${2:float aLinVelX}, ${3:float aLinVelY}, ${4:float aLinVelZ}, ${5:bool abOn = true}, ${6:bool abReverse = false})${0}"
+	"Debug.dumpeventregistrations":
+		prefix: "dumpeventregistrations"
+		body: "Debug.DumpEventRegistrations(${1:ScriptObject akScript})${0}"
+	"Location.getreftypedeadcount":
+		prefix: "getreftypedeadcount"
+		body: "GetRefTypeDeadCount(${1:LocationRefType akRefType})${0}"
+	"Quest.hasobjective":
+		prefix: "hasobjective"
+		body: "HasObjective(${1:int aiObjective})${0}"
+	"Actor.getkiller":
+		prefix: "getkiller"
+		body: "GetKiller()${0}"
+	"Debug.getplatformname":
+		prefix: "getplatformname"
+		body: "Debug.GetPlatformName()${0}"
+	"Actor.followersetdistancemedium":
+		prefix: "followersetdistancemedium"
+		body: "FollowerSetDistanceMedium()${0}"
+	"MiscObject.getobjectcomponentcount":
+		prefix: "getobjectcomponentcount"
+		body: "GetObjectComponentCount(${1:Component akComponent})${0}"
+	"ScriptObject.registerfordetectionloslost":
+		prefix: "registerfordetectionloslost"
+		body: "RegisterForDetectionLOSLost(${1:Actor akViewer}, ${2:ObjectReference akTarget})${0}"
+	"ScriptObject.unregisterforlooksmenuevent":
+		prefix: "unregisterforlooksmenuevent"
+		body: "UnregisterForLooksMenuEvent()${0}"
+	"Utility.waitgametime":
+		prefix: "waitgametime"
+		body: "Utility.WaitGameTime(${1:float afHours})${0}"
+	"Cell.isattached":
+		prefix: "isattached"
+		body: "IsAttached()${0}"
+	"Faction.setally":
+		prefix: "setally"
+		body: "SetAlly(${1:Faction akOther}, ${2:bool abSelfIsFriendToOther = false}, ${3:bool abOtherIsFriendToSelf = false})${0}"
+	"ObjectReference.getcurrentscene":
+		prefix: "getcurrentscene"
+		body: "GetCurrentScene()${0}"
+	"Actor.setcombatstyle":
+		prefix: "setcombatstyle"
+		body: "SetCombatStyle(${1:CombatStyle akCombatStyle})${0}"
+	"Actor.addspell":
+		prefix: "addspell"
+		body: "AddSpell(${1:Spell akSpell}, ${2:bool abVerbose = true})${0}"
+	"Quest.isactive":
+		prefix: "isactive"
+		body: "IsActive()${0}"
+	"ActorBase.getrace":
+		prefix: "getrace"
+		body: "GetRace()${0}"
+	"EncounterZone.countactors":
+		prefix: "countactors"
+		body: "CountActors(${1:apRequiredLinkedRefKeyword = None}, ${2:apExcludeLinkedRefKeyword = None})${0}"
+	"ScriptObject.unregisterforallradiationdamageevents":
+		prefix: "unregisterforallradiationdamageevents"
+		body: "UnregisterForAllRadiationDamageEvents()${0}"
+	"ScriptObject.callfunction":
+		prefix: "callfunction"
+		body: "CallFunction(${1:string asFuncName}, ${2:Var[] aParams})${0}"
+	"ObjectReference.islocked":
+		prefix: "islocked"
+		body: "IsLocked()${0}"
+	"Actor.pathtoreference":
+		prefix: "pathtoreference"
+		body: "PathToReference(${1:ObjectReference aTarget}, ${2:float afWalkRunPercent})${0}"
+	"ScriptObject.unregisterforplayerteleport":
+		prefix: "unregisterforplayerteleport"
+		body: "UnregisterForPlayerTeleport()${0}"
+	"ScriptObject.unregisterforhitevent":
+		prefix: "unregisterforhitevent"
+		body: "UnregisterForHitEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akAggressorFilter = None}, ${3:Form akSourceFilter = None}, ${4:Form akProjectileFilter = None}, ${5:int aiPowerFilter = -1}, ${6:int aiSneakFilter = -1}, ${7:int aiBashFilter = -1}, ${8:int aiBlockFilter = -1}, ${9:bool abMatch = true})${0}"
+	"Actor.markitemasfavorite":
+		prefix: "markitemasfavorite"
+		body: "MarkItemAsFavorite(${1:Form akItem}, ${2:int aiSlot=-1})${0}"
+	"Game.showallmapmarkers":
+		prefix: "showallmapmarkers"
+		body: "Game.ShowAllMapMarkers()${0}"
+	"Actor.setghost":
+		prefix: "setghost"
+		body: "SetGhost(${1:bool abIsGhost = true})${0}"
+	"InputEnableLayer.enablefasttravel":
+		prefix: "enablefasttravel"
+		body: "EnableFastTravel(${1:abEnable = true})${0}"
+	"ObjectReference.getopenstate":
+		prefix: "getopenstate"
+		body: "GetOpenState()${0}"
+	"ObjectReference.movetomyeditorlocation":
+		prefix: "movetomyeditorlocation"
+		body: "MoveToMyEditorLocation()${0}"
+	"Location.removelinkedlocation":
+		prefix: "removelinkedlocation"
+		body: "RemoveLinkedLocation(${1:Location akLoc}, ${2:Keyword akKeyword})${0}"
+	"Actor.isinironsights":
+		prefix: "isinironsights"
+		body: "IsInIronSights()${0}"
+	"Game.getplayerfollowers":
+		prefix: "getplayerfollowers"
+		body: "Game.GetPlayerFollowers()${0}"
+	"Actor.equipspell":
+		prefix: "equipspell"
+		body: "EquipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}"
+	"Utility.randomint":
+		prefix: "randomint"
+		body: "Utility.RandomInt(${1:int aiMin = 0}, ${2:int aiMax = 100})${0}"
+	"ObjectReference.setradiovolume":
+		prefix: "setradiovolume"
+		body: "SetRadioVolume(${1:float afVolume})${0}"
+	"Actor.cleararrested":
+		prefix: "cleararrested"
+		body: "ClearArrested()${0}"
+	"Game.isfavoritescontrolsenabled":
+		prefix: "isfavoritescontrolsenabled"
+		body: "Game.IsFavoritesControlsEnabled()${0}"
+	"Quest.setqueststage":
+		prefix: "setqueststage"
+		body: "Quest.SetQuestStage(${1:QuestStage questStageToSet})${0}"
+	"Location.hasreftype":
+		prefix: "hasreftype"
+		body: "HasRefType(${1:LocationRefType akRefType})${0}"
+	"ObjectReference.lock":
+		prefix: "lock"
+		body: "Lock(${1:bool abLock = true}, ${2:bool abAsOwner = false})${0}"
+	"Quest.isobjectivefailed":
+		prefix: "isobjectivefailed"
+		body: "IsObjectiveFailed(${1:int aiObjective})${0}"
+	"Debug.traceself":
+		prefix: "traceself"
+		body: "Debug.TraceSelf(${1:ScriptObject CallingScript}, ${2:string FunctionName}, ${3:string StringToTrace})${0}"
+	"LocationAlias.clear":
+		prefix: "clear"
+		body: "Clear()${0}"
+	"InputEnableLayer.isfasttravelenabled":
+		prefix: "isfasttravelenabled"
+		body: "IsFastTravelEnabled()${0}"
+	"Cell.isinterior":
+		prefix: "isinterior"
+		body: "IsInterior()${0}"
+	"Game.precachechargen":
+		prefix: "precachechargen"
+		body: "Game.PrecacheCharGen()${0}"
+	"InputEnableLayer.iszkeyenabled":
+		prefix: "iszkeyenabled"
+		body: "IsZKeyEnabled()${0}"
+	"FormList.getat":
+		prefix: "getat"
+		body: "GetAt(${1:int aiIndex})${0}"
+	"ReferenceAlias.trytogetvalue":
+		prefix: "trytogetvalue"
+		body: "TryToGetValue(${1:ActorValue akAV})${0}"
+	"CommonArrayFunctions.checklocationagainstlocationaliasarray":
+		prefix: "checklocationagainstlocationaliasarray"
+		body: "CommonArrayFunctions.CheckLocationAgainstLocationAliasArray(${1:Location ObjectToCheck}, ${2:LocationAlias[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}"
+	"CommonArrayFunctions.getfirstfoundfactioninarrayforactor":
+		prefix: "getfirstfoundfactioninarrayforactor"
+		body: "CommonArrayFunctions.GetFirstFoundFactionInArrayForActor(${1:Actor ActorToCheck}, ${2:Faction[] ArrayToCheck})${0}"
+	"Actor.snapintointeraction":
+		prefix: "snapintointeraction"
+		body: "SnapIntoInteraction(${1:ObjectReference akTarget})${0}"
+	"ObjectReference.getkey":
+		prefix: "getkey"
+		body: "GetKey()${0}"
+	"ObjectReference.moveto":
+		prefix: "moveto"
+		body: "MoveTo(${1:ObjectReference akTarget}, ${2:float afXOffset = 0.0}, ${3:float afYOffset = 0.0}, ${4:float afZOffset = 0.0}, ${5:bool abMatchRotation = true})${0}"
+	"Faction.modcrimegold":
+		prefix: "modcrimegold"
+		body: "ModCrimeGold(${1:int aiAmount}, ${2:bool abViolent = False})${0}"
+	"Game.cleartempeffects":
+		prefix: "cleartempeffects"
+		body: "Game.ClearTempEffects()${0}"
+	"ObjectReference.getcurrentdestructionstage":
+		prefix: "getcurrentdestructionstage"
+		body: "GetCurrentDestructionStage()${0}"
+	"ObjectReference.getcomponentcount":
+		prefix: "getcomponentcount"
+		body: "GetComponentCount(${1:Form akItem = None})${0}"
+	"Array.remove":
+		prefix: "remove"
+		body: "Remove(${1:int aiLocation}, ${2:int aiCount = 1})${0}"
+	"Message.unshowashelpmessage":
+		prefix: "unshowashelpmessage"
+		body: "UnshowAsHelpMessage()${0}"
+	"ScriptObject.registerformagiceffectapplyevent":
+		prefix: "registerformagiceffectapplyevent"
+		body: "RegisterForMagicEffectApplyEvent(${1:ScriptObject akTarget}, ${2:ScriptObject akCasterFilter = None}, ${3:Form akEffectFilter = None}, ${4:bool abMatch = true})${0}"
+	"ObjectReference.getanimationvariablefloat":
+		prefix: "getanimationvariablefloat"
+		body: "GetAnimationVariableFloat(${1:string asVariableName})${0}"
+	"ObjectReference.disable":
+		prefix: "disable"
+		body: "Disable(${1:bool abFadeOut = False})${0}"
+	"Utility.setinifloat":
+		prefix: "setinifloat"
+		body: "Utility.SetINIFloat(${1:string ini}, ${2:float value})${0}"
+	"Actor.isdismembered":
+		prefix: "isdismembered"
+		body: "IsDismembered(${1:string asBodyPart = \\\"\\\"})${0}"
+	"Location.haseverbeencleared":
+		prefix: "haseverbeencleared"
+		body: "HasEverBeenCleared()${0}"
+	"Math.abs":
+		prefix: "abs"
+		body: "Math.abs(${1:float afValue})${0}"
+	"Quest.isobjectivedisplayed":
+		prefix: "isobjectivedisplayed"
+		body: "IsObjectiveDisplayed(${1:int aiObjective})${0}"
+	"ObjectReference.setplayerhastaken":
+		prefix: "setplayerhastaken"
+		body: "SetPlayerHasTaken(${1:bool abTaken = true})${0}"
+	"Game.servetime":
+		prefix: "servetime"
+		body: "Game.ServeTime()${0}"
+	"Actor.killessential":
+		prefix: "killessential"
+		body: "KillEssential(${1:Actor akKiller = None})${0}"
+	"ScriptObject.unregisterforremoteevent":
+		prefix: "unregisterforremoteevent"
+		body: "UnregisterForRemoteEvent(${1:ScriptObject akEventSource}, ${2:ScriptEventName asEventName})${0}"
+	"ScriptObject.registerformenuopencloseevent":
+		prefix: "registerformenuopencloseevent"
+		body: "RegisterForMenuOpenCloseEvent(${1:string asMenuName})${0}"
+	"Debug.traceandbox":
+		prefix: "traceandbox"
+		body: "Debug.TraceAndBox(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}"
+	"ActorBase.isunique":
+		prefix: "isunique"
+		body: "IsUnique()${0}"
+	"ObjectReference.setdestroyed":
+		prefix: "setdestroyed"
+		body: "SetDestroyed(${1:bool abDestroyed = true})${0}"
+	"ObjectReference.getheight":
+		prefix: "getheight"
+		body: "GetHeight()${0}"
+	"Actor.unequipspell":
+		prefix: "unequipspell"
+		body: "UnequipSpell(${1:Spell akSpell}, ${2:int aiSource})${0}"
+	"Debug.setfootik":
+		prefix: "setfootik"
+		body: "Debug.SetFootIK(${1:bool abFootIK})${0}"
+	"LeveledActor.addform":
+		prefix: "addform"
+		body: "AddForm(${1:Form apForm}, ${2:int auiLevel})${0}"
+	"ObjectReference.isconveyorbelton":
+		prefix: "isconveyorbelton"
+		body: "IsConveyorBeltOn()${0}"
+	"Actor.startfrenzyattack":
+		prefix: "startfrenzyattack"
+		body: "StartFrenzyAttack(${1:float aChance = 0.1}, ${2:float aInterval = 0.5})${0}"
+	"Debug.trace":
+		prefix: "trace"
+		body: "Debug.Trace(${1:string asTextToPrint}, ${2:int aiSeverity = 0})${0}"
+	"Game.isplugininstalled":
+		prefix: "isplugininstalled"
+		body: "Game.IsPluginInstalled(${1:string asName})${0}"
+	"Quest.setobjectivedisplayed":
+		prefix: "setobjectivedisplayed"
+		body: "SetObjectiveDisplayed(${1:int aiObjective}, ${2:bool abDisplayed = true}, ${3:bool abForce = false})${0}"
+	"Actor.setsubgraphfloatvariable":
+		prefix: "setsubgraphfloatvariable"
+		body: "SetSubGraphFloatVariable(${1:string asVariableName}, ${2:float afValue})${0}"
+	"RefCollectionAlias.setessential":
+		prefix: "setessential"
+		body: "SetEssential(${1:bool bSetEssential = true})${0}"
+	"EncounterZone.reset":
+		prefix: "reset"
+		body: "Reset()${0}"
+	"Quest.reset":
+		prefix: "reset"
+		body: "Reset()${0}"
+	"ReferenceAlias.getreference":
+		prefix: "getreference"
+		body: "GetReference()${0}"
+	"Game.getintelligenceav":
+		prefix: "getintelligenceav"
+		body: "Game.GetIntelligenceAV()${0}"
+	"Quest.getstagedone":
+		prefix: "getstagedone"
+		body: "GetStageDone(${1:int aiStage})${0}"
+	"Game.setcameratarget":
+		prefix: "setcameratarget"
+		body: "Game.SetCameraTarget(${1:Actor arTarget})${0}"
+	"Actor.isessential":
+		prefix: "isessential"
+		body: "IsEssential()${0}"
+	"Scene.getowningquest":
+		prefix: "getowningquest"
+		body: "GetOwningQuest()${0}"
+	"Weather.getcurrentweather":
+		prefix: "getcurrentweather"
+		body: "Weather.GetCurrentWeather()${0}"
+	"ObjectReference.hasactorrefowner":
+		prefix: "hasactorrefowner"
+		body: "HasActorRefOwner()${0}"
+	"ActorBase.setessential":
+		prefix: "setessential"
+		body: "SetEssential(${1:bool abEssential = true})${0}"
+	"ObjectReference.calculateencounterlevel":
+		prefix: "calculateencounterlevel"
+		body: "CalculateEncounterLevel(${1:int aiDifficulty = 4})${0}"
+	"InputEnableLayer.enablemovement":
+		prefix: "enablemovement"
+		body: "EnableMovement(${1:abEnable = true})${0}"
+	"Actor.hasparentrelationship":
+		prefix: "hasparentrelationship"
+		body: "HasParentRelationship(${1:Actor akOther})${0}"
+	"RefCollectionAlias.getat":
+		prefix: "getat"
+		body: "GetAt(${1:int aiIndex})${0}"
+	"Location.getreftypealivecount":
+		prefix: "getreftypealivecount"
+		body: "GetRefTypeAliveCount(${1:LocationRefType akRefType})${0}"
+	"ObjectReference.getanglex":
+		prefix: "getanglex"
+		body: "GetAngleX()${0}"
+	"Game.isplayerradioon":
+		prefix: "isplayerradioon"
+		body: "Game.IsPlayerRadioOn()${0}"
+	"Math.ceiling":
+		prefix: "ceiling"
+		body: "Math.Ceiling(${1:float afValue})${0}"
+	"Actor.isinpowerarmor":
+		prefix: "isinpowerarmor"
+		body: "IsInPowerArmor()${0}"
+	"ObjectReference.playimpacteffect":
+		prefix: "playimpacteffect"
+		body: "PlayImpactEffect(${1:ImpactDataSet akImpactEffect}, ${2:string asNodeName = \\\"\\\"}, ${3:float afPickDirX = 0.0}, ${4:float afPickDirY = 0.0}, ${5:float afPickDirZ = -1.0}, ${6:float afPickLength = 512.0}, ${7:bool abApplyNodeRotation = false}, ${8:bool abUseNodeLocalRotation = false})${0}"
+	"Cell.getactorowner":
+		prefix: "getactorowner"
+		body: "GetActorOwner()${0}"
+	"Utility.getcurrentgametime":
+		prefix: "getcurrentgametime"
+		body: "Utility.GetCurrentGameTime()${0}"
+	"Sound.play":
+		prefix: "play"
+		body: "Play(${1:ObjectReference akSource})${0}"
+	"ObjectReference.hasnode":
+		prefix: "hasnode"
+		body: "HasNode(${1:string asNodeName})${0}"
+	"ObjectReference.setopen":
+		prefix: "setopen"
+		body: "SetOpen(${1:bool abOpen = true})${0}"
+	"Actor.getequippedshield":
+		prefix: "getequippedshield"
+		body: "GetEquippedShield()${0}"
+	"Utility.gametimetostring":
+		prefix: "gametimetostring"
+		body: "Utility.GameTimeToString(${1:float afGameTime})${0}"
+	"Actor.getlightlevel":
+		prefix: "getlightlevel"
+		body: "GetLightLevel()${0}"
+	"Debug.stopstackprofiling":
+		prefix: "stopstackprofiling"
+		body: "Debug.StopStackProfiling()${0}"
+	"ObjectReference.getresourcedamage":
+		prefix: "getresourcedamage"
+		body: "GetResourceDamage(${1:ActorValue akAV = None})${0}"
+	"Actor.getequippeditemtype":
+		prefix: "getequippeditemtype"
+		body: "GetEquippedItemType(${1:int aiEquipIndex})${0}"
+	"ActorBase.getuniqueactor":
+		prefix: "getuniqueactor"
+		body: "GetUniqueActor()${0}"
+	"Actor.allowcompanion":
+		prefix: "allowcompanion"
+		body: "AllowCompanion(${1:bool MakeCompanionIfNoneCurrently = true}, ${2:bool ForceCompanion = false})${0}"
+	"Utility.getcurrentrealtime":
+		prefix: "getcurrentrealtime"
+		body: "Utility.GetCurrentRealTime()${0}"
+	"Utility.setiniint":
+		prefix: "setiniint"
+		body: "Utility.SetINIInt(${1:string ini}, ${2:int value})${0}"
+	"Actor.setavailabletobecompanion":
+		prefix: "setavailabletobecompanion"
+		body: "SetAvailableToBeCompanion()${0}"
+	"Actor.hasassociation":
+		prefix: "hasassociation"
+		body: "HasAssociation(${1:AssociationType akAssociation}, ${2:Actor akOther = None})${0}"
+	"Actor.setplayerresistingarrest":
+		prefix: "setplayerresistingarrest"
+		body: "SetPlayerResistingArrest()${0}"
+	"ObjectReference.forceaddragdolltoworld":
+		prefix: "forceaddragdolltoworld"
+		body: "ForceAddRagdollToWorld()${0}"
+	"Actor.makeplayerfriend":
+		prefix: "makeplayerfriend"
+		body: "MakePlayerFriend()${0}"
+	"CommonArrayFunctions.isactorinarrayhostiletoactor":
+		prefix: "isactorinarrayhostiletoactor"
+		body: "CommonArrayFunctions.IsActorInArrayHostileToActor(${1:Actor ActorToCheck}, ${2:ObjectReference[] ArrayToCheck})${0}"
+	"Weapon.getammo":
+		prefix: "getammo"
+		body: "GetAmmo()${0}"
+	"Faction.getinfamy":
+		prefix: "getinfamy"
+		body: "GetInfamy()${0}"
+	"ObjectReference.isownedby":
+		prefix: "isownedby"
+		body: "IsOwnedBy(${1:Actor akOwner})${0}"
+	"Actor.switchtopowerarmor":
+		prefix: "switchtopowerarmor"
+		body: "SwitchToPowerArmor(${1:ObjectReference aArmorFurniture})${0}"
+	"Array.insert":
+		prefix: "insert"
+		body: "Insert(${1:elementType akElement}, ${2:int aiLocation})${0}"
+	"RefCollectionAlias.enableall":
+		prefix: "enableall"
+		body: "EnableAll(${1:bool bFadeIn = false})${0}"
+	"Actor.playidle":
+		prefix: "playidle"
+		body: "PlayIdle(${1:Idle akIdle})${0}"
+	"MusicType.remove":
+		prefix: "remove"
+		body: "Remove()${0}"
+	"Game.getxpforlevel":
+		prefix: "getxpforlevel"
+		body: "Game.GetXPForLevel(${1:int auiLevel})${0}"
+	"Game.showspecialmenu":
+		prefix: "showspecialmenu"
+		body: "Game.ShowSPECIALMenu(${1:int aiPointPool}, ${2:bool abStatsLocked})${0}"
+	"InputEnableLayer.isrunningenabled":
+		prefix: "isrunningenabled"
+		body: "IsRunningEnabled()${0}"
+	"Actor.stopcombatalarm":
+		prefix: "stopcombatalarm"
+		body: "StopCombatAlarm()${0}"
+	"Quest.resetspeechchallenges":
+		prefix: "resetspeechchallenges"
+		body: "ResetSpeechChallenges()${0}"
+	"ObjectReference.placeatme":
+		prefix: "placeatme"
+		body: "PlaceAtMe(${1:Form akFormToPlace}, ${2:int aiCount = 1}, ${3:bool abForcePersist = false}, ${4:bool abInitiallyDisabled = false}, ${5:bool abDeleteWhenAble = true})${0}"
+	"ObjectReference.setanimationvariablebool":
+		prefix: "setanimationvariablebool"
+		body: "SetAnimationVariableBool(${1:string asVariableName}, ${2:bool abNewValue})${0}"
+	"Quest.setobjectivecompleted":
+		prefix: "setobjectivecompleted"
+		body: "SetObjectiveCompleted(${1:int aiObjective}, ${2:bool abCompleted = true})${0}"
+	"ObjectReference.knockareaeffect":
+		prefix: "knockareaeffect"
+		body: "KnockAreaEffect(${1:float afMagnitude}, ${2:float afRadius})${0}"
+	"Actor.showbartermenu":
+		prefix: "showbartermenu"
+		body: "ShowBarterMenu()${0}"
+	"ScriptObject.registerfortrackedstatsevent":
+		prefix: "registerfortrackedstatsevent"
+		body: "RegisterForTrackedStatsEvent(${1:string asStat}, ${2:int aiThreshold})${0}"
+	"ObjectReference.dropobject":
+		prefix: "dropobject"
+		body: "DropObject(${1:Form akObject}, ${2:int aiCount = 1})${0}"
+	"ScriptObject.registerforplayerwait":
+		prefix: "registerforplayerwait"
+		body: "RegisterForPlayerWait()${0}"
+	"ScriptObject.registerfordistancegreaterthanevent":
+		prefix: "registerfordistancegreaterthanevent"
+		body: "RegisterForDistanceGreaterThanEvent(${1:ScriptObject akObj1}, ${2:ScriptObject akObj2}, ${3:float afDistance})${0}"
+	"Game.isfasttravelcontrolsenabled":
+		prefix: "isfasttravelcontrolsenabled"
+		body: "Game.IsFastTravelControlsEnabled()${0}"
+	"Math.acos":
+		prefix: "acos"
+		body: "Math.acos(${1:float afValue})${0}"
+	"Actor.isunconscious":
+		prefix: "isunconscious"
+		body: "IsUnconscious()${0}"
+	"Actor.setvehicle":
+		prefix: "setvehicle"
+		body: "SetVehicle(${1:Actor akVehicle})${0}"
+	"ObjectReference.getradiovolume":
+		prefix: "getradiovolume"
+		body: "GetRadioVolume()${0}"
+	"Game.isactivatecontrolsenabled":
+		prefix: "isactivatecontrolsenabled"
+		body: "Game.IsActivateControlsEnabled()${0}"
+	"ReferenceAlias.trytoclear":
+		prefix: "trytoclear"
+		body: "TryToClear()${0}"
+	"ObjectReference.fanmotoron":
+		prefix: "fanmotoron"
+		body: "FanMotorOn(${1:bool abOn = true})${0}"
+	"CommonArrayFunctions.checklocationagainstarray":
+		prefix: "checklocationagainstarray"
+		body: "CommonArrayFunctions.CheckLocationAgainstArray(${1:Location ObjectToCheck}, ${2:Location[] ArrayToCheck}, ${3:bool returnValueIfArrayIsEmpty = false}, ${4:bool matchIfChildLocation = false})${0}"
+	"Actor.changeheadpart":
+		prefix: "changeheadpart"
+		body: "ChangeHeadPart(${1:headpart apHeadPart}, ${2:bool abRemovePart = false}, ${3:bool abRemoveExtraParts = false})${0}"
+	"ObjectReference.getlocklevel":
+		prefix: "getlocklevel"
+		body: "GetLockLevel()${0}"
+	"Actor.setnotshowonstealthmeter":
+		prefix: "setnotshowonstealthmeter"
+		body: "SetNotShowOnStealthMeter(${1:bool abNotShow})${0}"
+	"Faction.setplayerexpelled":
+		prefix: "setplayerexpelled"
+		body: "SetPlayerExpelled(${1:bool abIsExpelled = true})${0}"
+	"ObjectReference.isteleportarealoaded":
+		prefix: "isteleportarealoaded"
+		body: "IsTeleportAreaLoaded()${0}"
+	"ObjectReference.setactorowner":
+		prefix: "setactorowner"
+		body: "SetActorOwner(${1:ActorBase akActorBase}, ${2:bool abNoCrime = false})${0}"
+	"ObjectReference.getwidth":
+		prefix: "getwidth"
+		body: "GetWidth()${0}"
+	"Math.sqrt":
+		prefix: "sqrt"
+		body: "Math.sqrt(${1:float afValue})${0}"
+	"Utility.callglobalfunction":
+		prefix: "callglobalfunction"
+		body: "Utility.CallGlobalFunction(${1:string asScriptName}, ${2:string asFuncName}, ${3:Var[] aParams})${0}"
+	"ObjectReference.getpositiony":
+		prefix: "getpositiony"
+		body: "GetPositionY()${0}"
+	"MagicEffect.getassociatedskill":
+		prefix: "getassociatedskill"
+		body: "GetAssociatedSkill()${0}"
+	"Faction.setenemy":
+		prefix: "setenemy"
+		body: "SetEnemy(${1:Faction akOther}, ${2:bool abSelfIsNeutralToOther = false}, ${3:bool abOtherIsNeutralToSelf = false})${0}"
+	"ObjectReference.getworkshopresourcedamage":
+		prefix: "getworkshopresourcedamage"
+		body: "GetWorkshopResourceDamage(${1:ActorValue akAV = None})${0}"
+	"InputEnableLayer.enablesprinting":
+		prefix: "enablesprinting"
+		body: "EnableSprinting(${1:abEnable = true})${0}"
+	"Weather.getskymode":
+		prefix: "getskymode"
+		body: "Weather.GetSkyMode()${0}"
+	"Package.gettemplate":
+		prefix: "gettemplate"
+		body: "GetTemplate()${0}"
+	"ActiveMagicEffect.dispel":
+		prefix: "dispel"
+		body: "Dispel()${0}"
+	"Game.usinggamepad":
+		prefix: "usinggamepad"
+		body: "Game.UsingGamepad()${0}"
+	"Actor.modfactionrank":
+		prefix: "modfactionrank"
+		body: "ModFactionRank(${1:Faction akFaction}, ${2:int aiMod})${0}"
+	"ObjectReference.getradiofrequency":
+		prefix: "getradiofrequency"
+		body: "GetRadioFrequency()${0}"
+	"Debug.messagebox":
+		prefix: "messagebox"
+		body: "Debug.MessageBox(${1:string asMessageBoxText})${0}"
+	"Actor.followersetdistancenear":
+		prefix: "followersetdistancenear"
+		body: "FollowerSetDistanceNear()${0}"
+	"Quest.failallobjectives":
+		prefix: "failallobjectives"
+		body: "FailAllObjectives()${0}"
+	"ObjectReference.preloadexteriorcell":
+		prefix: "preloadexteriorcell"
+		body: "PreloadExteriorCell()${0}"
+	"ObjectReference.hasdirectlos":
+		prefix: "hasdirectlos"
+		body: "HasDirectLOS(${1:ObjectReference akTarget}, ${2:string asSourceNode = \\\"\\\"}, ${3:string asTargetNode = \\\"\\\"})${0}"
+	"ObjectReference.playsyncedanimationandwaitss":
+		prefix: "playsyncedanimationandwaitss"
+		body: "PlaySyncedAnimationAndWaitSS(${1:string asAnimation1}, ${2:string asEvent1}, ${3:ObjectReference akObj2}, ${4:string asAnimation2}, ${5:string asEvent2})${0}"
+	"Ingredient.learneffect":
+		prefix: "learneffect"
+		body: "LearnEffect(${1:int aiIndex})${0}"
+	"Location.isloaded":
+		prefix: "isloaded"
+		body: "IsLoaded()${0}"
+	"ScriptObject.canceltimer":
+		prefix: "canceltimer"
+		body: "CancelTimer(${1:int aiTimerID = 0})${0}"
+	"ActorBase.setprotected":
+		prefix: "setprotected"
+		body: "SetProtected(${1:bool abProtected = true})${0}"
+	"Faction.playerpaycrimegold":
+		prefix: "playerpaycrimegold"
+		body: "PlayerPayCrimeGold(${1:bool abRemoveStolenItems = True}, ${2:bool abGoToJail = True})${0}"
+	"ObjectReference.getlinkedrefchain":
+		prefix: "getlinkedrefchain"
+		body: "GetLinkedRefChain(${1:keyword apKeyword = None}, ${2:int iMaxExpectedLinkedRefs = 100})${0}"
+	"Actor.dogplaceinmouth":
+		prefix: "dogplaceinmouth"
+		body: "DogPlaceInMouth(${1:Form akItem})${0}"
+	"GlobalVariable.setvalue":
+		prefix: "setvalue"
+		body: "SetValue(${1:float afValue})${0}"
+	"ObjectReference.getbasevalue":
+		prefix: "getbasevalue"
+		body: "GetBaseValue(${1:ActorValue akAV})${0}"
+	"GlobalVariable.getvalue":
+		prefix: "getvalue"
+		body: "GetValue()${0}"
