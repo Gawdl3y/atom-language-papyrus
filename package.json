@@ -10,6 +10,13 @@
   "bugs": {
     "url": "https://github.com/Gawdl3y/atom-language-papyrus/issues"
   },
+  "keywords": [
+    "language",
+    "grammar",
+    "papyrus",
+    "fallout",
+    "skyrim"
+  ],
   "engines": {
     "atom": "*",
     "node": "*"
