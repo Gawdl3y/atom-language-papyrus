@@ -10,5 +10,5 @@
 		commentStart: '; '
 		foldStartPattern: '(?i)^\\s*(if|property|struct|group|state|event|(\\S+\\s+)?function)'
 		foldEndPattern: '(?i)^\\s*(endif|endproperty|endstruct|endgroup|endstate|endevent|endfunction)'
-		increaseIndentPattern: '(?i)^\\s*((\\w+\\s+)?function|(auto\\s+)?state|event|elseif|else|if|while|\\w+\\s+property(?!.*\\bauto(readonly)?\\b))\\b|group|struct'
-		decreaseIndentPattern: '(?i)^\\s*(endfunction|endstate|endevent|elseif|else|endif|endwhile|endproperty|endgroup|endstruct)\\b'
+		increaseIndentPattern: '(?i)^\\s*((\\w+\\s+)?function|(auto\\s+)?state|event|elseif|else|if|while|struct|group|\\w+\\s+property(?!.*\\bauto(readonly)?\\b))\\b'
+		decreaseIndentPattern: '(?i)^\\s*(endfunction|endstate|endevent|elseif|else|endif|endwhile|endstruct|endgroup|endproperty)\\b'
