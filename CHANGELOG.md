@@ -1,4 +1,6 @@
 ## 2.0
+- 2.0.4
+	* Fixed indentation after `EndStruct` and `EndGroup` in the Fallout 4 grammar
 - 2.0.3
 	* Fixed hexadecimal highlighting in the Fallout 4 Papyrus grammar
 	* Removed the ending word boundary from the hexadecimal match for both Papyrus grammars
