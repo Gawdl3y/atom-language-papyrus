@@ -157,7 +157,7 @@
                 'name': 'constant.numeric.float.papyrus.skyrim'
             }
             {
-                'match': '(?i)\\b(0x[0-9a-f]+)\\b'
+                'match': '(?i)\\b(0x[0-9a-f]+)'
                 'name': 'constant.numeric.integer.hexadecimal.papyrus.skyrim'
             }
             {

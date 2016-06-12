@@ -226,7 +226,7 @@ repository:
 				match: "\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])"
 			}
 			{
-				match: '(?i)\\b(0x[0-9a-f]+)\\b'
+				match: '(?i)\\b(0x[0-9a-f]+)'
 				name: 'constant.numeric.integer.hexadecimal.papyrus.fallout4'
 			}
 			{
