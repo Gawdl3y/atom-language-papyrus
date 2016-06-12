@@ -1,4 +1,8 @@
 ## 2.0
+- 2.0.2
+	* Added keywords/tags to the package
+- 2.0.1
+	* Added links to build packages to readme
 - 2.0.0
 	* Added Fallout 4 support
 
