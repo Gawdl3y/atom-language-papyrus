@@ -1,4 +1,7 @@
 ## 2.0
+- 2.0.3
+	* Fixed hexadecimal highlighting in the Fallout 4 Papyrus grammar
+	* Removed the ending word boundary from the hexadecimal match for both Papyrus grammars
 - 2.0.2
 	* Added keywords/tags to the package
 - 2.0.1
