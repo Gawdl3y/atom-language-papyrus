@@ -30,7 +30,7 @@ patterns: [
 			}
 			{
 				name: "keyword.language.script-flag.papyrus.fallout4"
-				match: "(?i)(conditional|default|hidden|native|const)"
+				match: "(?i)(conditional|default|hidden|native|const|debugonly|betaonly)"
 			}
 		]
 		begin: "(?i)^\\s*(scriptname)\\s+([:\\w]+)(\\s+(extends)\\s+(\\S+))?"
@@ -151,7 +151,7 @@ patterns: [
 	}
 	{
 		name: "storage.modifier.papyrus.fallout4"
-		match: "(?i)\\b(global|hidden|native|const|conditional)\\b"
+		match: "(?i)\\b(global|hidden|native|const|conditional|debugonly|betaonly)\\b"
 	}
 	{
 		name: "variable.language.papyrus.fallout4"
