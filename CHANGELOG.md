@@ -1,4 +1,6 @@
 ## 2.0
+- 2.0.5
+	* Fixed missing debugOnly and betaOnly highlighting
 - 2.0.4
 	* Fixed indentation after `EndStruct` and `EndGroup` in the Fallout 4 grammar
 - 2.0.3
