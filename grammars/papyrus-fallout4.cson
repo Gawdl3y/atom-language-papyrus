@@ -138,6 +138,10 @@ patterns: [
 		match: "\\=|\\+\\=|-\\=|\\*\\=|/\\=|%\\="
 	}
 	{
+		name: "keyword.operator.cast.papyrus.fallout4"
+		match: "(?i)\\b(as)\\b"
+	}
+	{
 		name: "keyword.control.flow.papyrus.fallout4"
 		match: "(?i)\\b(if|else|elseif|endif|while|endwhile|return)\\b"
 	}
