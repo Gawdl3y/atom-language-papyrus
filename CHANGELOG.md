@@ -1,6 +1,8 @@
 ## 2.0
+- 2.0.6
+	* Fixed missing `as` (cast operator) highlighting in the Fallout 4 grammar
 - 2.0.5
-	* Fixed missing debugOnly and betaOnly highlighting
+	* Fixed missing `debugOnly` and `betaOnly` highlighting in the Fallout 4 grammar
 - 2.0.4
 	* Fixed indentation after `EndStruct` and `EndGroup` in the Fallout 4 grammar
 - 2.0.3
