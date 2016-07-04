@@ -1,4 +1,6 @@
 ## 2.0
+- 2.0.7
+	* Fixed string escape highlighting in the Fallout 4 grammar
 - 2.0.6
 	* Fixed missing `as` (cast operator) highlighting in the Fallout 4 grammar
 - 2.0.5
