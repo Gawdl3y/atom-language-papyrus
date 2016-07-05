@@ -1,4 +1,6 @@
 ## 2.0
+- 2.0.8
+	* Fixed missing `customEvent` highlighting in the Fallout 4 grammar (man, Bethesda's Sublime plugin is lacking)
 - 2.0.7
 	* Fixed string escape highlighting in the Fallout 4 grammar
 - 2.0.6
