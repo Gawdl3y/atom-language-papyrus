@@ -123,6 +123,15 @@ patterns: [
 		match: "(?i)\\b(group)\\s+(\\S*)\\s*(CollapsedOnRef|CollapsedOnBase|Collapsed)?\\s*\\n"
 	}
 	{
+		captures:
+			"1":
+				name: "keyword.control.customevent.papyrus.fallout4"
+			"2":
+				name: "entity.name.customevent.papyrus.fallout4"
+		name: "meta.customevent.papyrus.fallout4"
+		match: "(?i)\\b(customevent)\\s+(\\S*)\\s*\\n"
+	}
+	{
 		include: "#constants"
 	}
 	{
