@@ -148,7 +148,7 @@ patterns: [
 	}
 	{
 		name: "keyword.operator.cast.papyrus.fallout4"
-		match: "(?i)\\b(as)\\b"
+		match: "(?i)\\b(as|is)\\b"
 	}
 	{
 		name: "keyword.control.flow.papyrus.fallout4"
